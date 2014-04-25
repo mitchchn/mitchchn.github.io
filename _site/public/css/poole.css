@@ -48,18 +48,20 @@ body {
 }
 
 html {
-  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   line-height: 1.6;
 }
 @media (min-width: 38em) {
   html {
-    font-size: 17px;
+    font-size: 1.04em;
   }
 }
 
 body {
-  color: #515151;
+  color: #333;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -67,13 +69,14 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  /*#color: #514ED9;*/
+  color: #7b77ff;
   text-decoration: none;
 }
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  text-decoration: underline;
+  color: #BAA8C1;
 }
 
 /* Headings */
@@ -81,13 +84,21 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: 400;
   line-height: 1.25;
-  color: #313131;
+  color: #333;
   text-rendering: optimizeLegibility;
 }
+
 h1 {
-  font-size: 2rem;
-  font-weight: normal
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
 }
+
+h1 a:hover {
+	text-decoration: none;
+	color: #7b77ff;
+}
+
 h2 {
   margin-top: 1rem;
   font-size: 1.5rem;
@@ -126,6 +137,7 @@ dd {
 }
 
 /* Misc */
+ 
 hr {
   position: relative;
   margin: 1.5rem 0;
@@ -211,9 +223,10 @@ pre code {
 /* Quotes */
 blockquote {
   padding: .5rem 1rem;
-  margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  margin: 1.2rem 1.8rem;
+  color: #444;
+  font-weight: 300;
+  border-left: 2px solid #7b77ff;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -284,7 +297,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 38rem;
+  max-width: 42rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
@@ -299,18 +312,42 @@ tbody tr:nth-child(odd) th {
  */
 
 .masthead {
-  padding-top:    1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
+	background: #7b77ff;
+	padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #505050;
 }
+
+.masthead-title .dot {
+	color: #b6b6fb;
+}
+
 .masthead-title a {
-  color: #505050;
+  color: #fff;
 }
+
+.masthead-title a:hover {
+	/*color: #999;*/
+}
+
+.masthead-title a::after {
+	content: "↩";
+	display: inline-block;
+	margin-left: 0.4em;
+	font-size: 0.8em;
+	color: #ccc;
+}
+
+
+.masthead-title a:hover:after {
+	color: #999;
+}
+
+
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
@@ -331,23 +368,52 @@ tbody tr:nth-child(odd) th {
   margin-bottom: 4em;
 }
 
+.post-content {
+	margin-top: 2rem;
+}
+
+.post-separator {
+	display: block;
+	border-top: 1px dotted #7b77ff;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
 /* Blog post or page title */
-.page-title,
-.post-title,
 .post-title a {
-  color: #303030;
+	color: inherit;
 }
 .page-title,
 .post-title {
   margin-top: 0;
+  text-align: center;
+}
+
+.link-post {
+	font-size: 1.5em;
+	color: #7b77ff;
+}
+
+.link-arrow {	
+	display: block;
+	text-align: center;
+	font-size: 2em;
+	color: #7b77ff;
 }
 
 /* Meta data line below post title */
 .post-date {
   display: block;
-  margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
+  text-align: center;
+  font-weight: 300;
+}
+
+.permalink {
+	font-size: 1.125em;
+	padding-left: 10px;
+	display: inline;
 }
 
 /* Related posts */

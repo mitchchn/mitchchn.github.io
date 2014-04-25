@@ -6,8 +6,7 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
+title:            mitchchn•me
 description:      Base theme for Jekyll themes by @mdo.
 url:              http://getpoole.com
 
@@ -15,7 +14,7 @@ author:
   name:           Mark Otto
   url:            https://twitter.com/mdo
 
-paginate:         1
+paginate:         3
 
 # Custom vars
 version:          1.0.0

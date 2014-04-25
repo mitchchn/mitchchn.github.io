@@ -1,0 +1,10 @@
+<header class = "post-header">
+  <span class="post-date">{{ page.date | date: "%A – %B %d, %Y" }}
+    <a class="permalink" href={{post.url}}>&infin;</a></span>
+  {% if page.link %}
+  	  <h1 class="post-title link-post"><a class="link-post" href={{post.link}}>{{ page.title }}</a></h1>
+  	  <span class="link-arrow"><a href={{post.linkk}}>&#8594;</a></span>
+	{% else %}
+  	<h1 class="post-title">{{ page.title }}</h1>
+  {% endif %}
+</header>

@@ -1,11 +1,12 @@
 ---
-layout: default
+layout: master
 ---
 
 <div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
+{% include page-header.html %}
+	<div class = "post-content">
+		{{ content }}
+	</div>
 </div>
 
 <div class="related">
