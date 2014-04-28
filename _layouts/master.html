@@ -4,22 +4,31 @@
   {% include head.html %}
 
   <body>
-    <div class="masthead">
-    	<div class="container">
-    	    <h2 class="masthead-title">
-          	<a href="/" title="Home">mitchchn<span class="dot">&bull;</span>me</a>
-          <small>{{ site.tagline }}</small>
-        </h2>
-    	</div>
-    </div>
-    <div class="container content">
-			{{ content }}
-      <div class="footer">
-        <p>
-          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-        </p>
+    
+    {% include masthead.html %}
+
+    <!-- Main Blog Content -->
+    <div role="content">
+      <div class="row">
+      {{ content }}
+      <div class="clear large-12 medium-12 small-12">&nbsp;</div>
       </div>
     </div>
 
+
+
+    <div class="row">
+    <div class="footer large-11 medium-11 large-centered medium-centered columns">
+        <p>
+          &copy; {{ site.time | date: '%Y' }} Mitchell Cohen.
+        </p>
+    </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
   </body>
 </html>

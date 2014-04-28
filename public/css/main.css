@@ -1,0 +1,255 @@
+/*
+ * Colors
+ * Purple (links): #8967CA
+ * a68dd7
+ * 742aa8
+ * Alt: #7047BF;
+ * Dark: #2D1152;
+ * Body text: #333
+ * Soft: #A68DD7;
+ */
+
+
+ body {
+    border-top: 3px solid #9037cd;
+    font-family: "Alegreya", serif;
+ }
+
+/*
+ * UI elements
+ */
+
+a {
+    color: #9037cd;
+    text-decoration: underline;
+}
+
+a:hover,a:focus {
+    color: #a760d7;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4
+{
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+p {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    text-rendering: optimizeLegibility;
+}
+
+blockquote {
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    padding-left: 1em;
+    border-width: 2px;
+    border-color: #9037cd;
+}
+
+nav a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+nav a.first {
+    margin-left: 0px;
+}
+
+nav a.last {
+    margin-right: 0px;
+}
+
+
+
+/*
+ * Masthead
+ */
+
+.masthead {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: #222;
+}
+
+.masthead,
+.masthead h1,
+.masthead a {
+    font-family: "Alegreya Sans";
+    color: #fff;
+}
+
+.logo a {
+    text-decoration: none;
+}
+.fa-coffee {
+    display: block;
+    font-size: 7rem;
+}
+
+.title {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.tagline {
+    font-weight: 500;
+    margin-left: 10px;
+    font-size: 100%;
+    color: #CCC;
+}
+
+.navigation {
+    margin: 0;
+    list-style-type: none;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.navigation a {
+    color: #CBCBCB;
+    display: inline;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 105%;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    color: #fff;
+}
+
+@media only screen and (min-width: 64.063em){
+    .masthead {
+        text-align: left;
+    }
+    .logo {
+        margin-top: 25px;
+    }
+    .fa-coffee {
+        font-size: 2.5em;
+        vertical-align: top;
+        margin-top: 5px;
+        display: inline;
+    }
+    .title {
+        font-size: 2em;
+        display: inline;
+    }
+} 
+
+
+/*
+ * Articles
+ */
+
+.post-separator {
+    color: #9037cd;
+}
+
+.post {
+    margin: 48px auto;
+}
+
+.post-header {
+    text-align: left;
+}
+
+.post-header a {
+    text-decoration: none;
+}
+
+h1.post-title{
+
+    margin: 0;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+h1.post-title a {
+    color: #333;
+}
+
+h1.post-title a:hover,
+h1.post-title a:focus {
+    color: #9037cd !important;
+}
+
+h2.link-post {
+    font-weight: 600;
+}
+
+a.link-post:hover:after,
+a.link-post:focus:after {
+    color: #a760d7;
+}
+
+a.link-post:after{
+    position: absolute;
+    color: #aaa;
+    content: ' ⇢';
+}
+
+.link-arrow {
+    text-decoration: none !important;
+    color: #888;
+}
+
+.controls {
+    font-family: "Alegreya Sans", sans-serif;
+    display: block;
+    margin-top: 1.25em;
+    font-size: 1.15em;
+    font-weight: 300;
+    color: #888;
+}
+
+.controls a {
+    text-decoration: none;
+}
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5 {
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.post-content {
+    margin-top: 3em;
+}
+
+.post-content a {
+}
+
+.post-content a:hover {
+    text-decoration: none;
+}
+
+.post-bar a {
+    color: #9037cd;
+}
+
+hr.post-separator {
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination h3 {
+    color: #777;
+    display: inline;
+}
+
+.footer {
+    margin-top: 32px;
+}

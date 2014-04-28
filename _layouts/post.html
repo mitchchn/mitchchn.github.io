@@ -2,25 +2,30 @@
 layout: master
 ---
 
-<div class="post">
+<article class="post large-9 large-centered medium-9 medium-centered columns">
 {% include page-header.html %}
 	<div class = "post-content">
-		{{ content }}
+    {{content}}
 	</div>
-</div>
+<nav class = "controls">
+<a class="first" href={{post.url}}><i class="fa fa-chain"></i>&nbsp;[PERMALINK]</a>
+</nav>
+</article>
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="page-navigation large-10 large-centered medium-10 medium-centered columns"> 
+        <div class="left"> 
+        {% if page.previous.url %}
+        <p> 
+                <a href="{{page.previous.url}}" title="Previous Post: 
+{{page.previous.title}}">&laquo; {{page.previous.title}}</a></p> 
+        {% endif %} 
+        </div> 
+
+        <div class="right"> 
+        {% if page.next.url %} 
+        <p>
+                <a href="{{page.next.url}}" title="next Post: 
+{{page.next.title}}">{{page.next.title}} &raquo; </a></p> 
+        {% endif %} 
+        </div> 
 </div>

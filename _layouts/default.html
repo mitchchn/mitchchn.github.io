@@ -1,30 +1,31 @@
 ---
 layout: master
 ---
+   {% for post in paginator.posts %}
+    <article class="post large-9 large-centered medium-9 medium-centered columns">
+      {% include fp-post-header.html %} 
+            {% include post-content.html %}
+    </article>
+      <hr class="post-separator large-8 large-centered medium-8 medium-centered small-8 small-centered column">
+{% endfor %}
+  <div class="spacer large-12 medium-12 small-12 columns"></div>
 
-<div class = "posts">
-	{% for post in paginator.posts %}
-		<div class = "post">
-			{% include fp-post-header.html %}
-			{% include post-content.html %}
-		</div>
-		<hr class = "post-separator">
-	{% endfor %}
+<div class="row">
+<div class="pagination large-12 large-centered medium-10 medium-centered small-10 small-centered columns">
+{% if paginator.next_page %}
+  <h3><a class="pagination-item older" href="/page{{paginator.next_page}}"><i class="fa fa-arrow-circle-left">&nbsp;</i>Older</a></h3>
+{% else %}
+  <h3><span class="pagination-item older">Older</span></h3>
+{% endif %}
+{% if paginator.previous_page %}
+  {% if paginator.page == 2 %}
+    <h3><a class="pagination-item newer" href="/">&nbsp;Newer
+    &nbsp;<i class="fa fa-arrow-circle-right"></i></a></h3>
+  {% else %}
+    <h3><a class="pagination-item newer" href="/page{{paginator.previous_page}}">&nbsp;Newer</a></h3>
+  {% endif %}
+{% else %}
+  <h3><span class="pagination-item newer">&nbsp;Newer</span></h3>
+{% endif %}
 </div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
 </div>

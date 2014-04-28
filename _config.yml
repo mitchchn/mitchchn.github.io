@@ -3,16 +3,17 @@ markdown:         redcarpet
 pygments:         true
 
 # Permalinks
-permalink:        pretty
+permalink:        none
 
 # Setup
-title:            mitchchn•me
+title:            mitchchn.me
+tagline:          Computers, coffee, code, and giant spiders.
 description:      Base theme for Jekyll themes by @mdo.
-url:              http://getpoole.com
+url:              http://mitchchn.me
 
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
+  name:           Mitchell Cohen
+  url:            https://twitter.com/mitchchn
 
 paginate:         3
 
@@ -20,4 +21,4 @@ paginate:         3
 version:          1.0.0
 
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/mitchchn
