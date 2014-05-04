@@ -29,15 +29,15 @@
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/public/js/app.js"></script>
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
   </head>
 
   <body>
     <div class="sticky">
-  <nav class="top-bar" data-topbar data-options="sticky_on:large">
+  <nav class="top-bar" data-topbar data-options="sticky_on:medium">
     <ul class="title-area">
       <li class="name">
         <h1><a href="/">
@@ -90,7 +90,7 @@
 
 </div>
 <div id="main"></div>
-  <div class="row">
+  <div class="row"> 
    
     <article class="post large-9 large-centered medium-9 medium-centered columns">
       <header class = "post-header">
@@ -119,15 +119,15 @@
 
 <p>And no, it’s not because we aren’t <a href="http://j-source.ca/article/opinion-why-journalism-schools-must-teach-code—even-if-every-journalist-not-wired-way">wired that way</a>. Rather, it’s because coding feels detached from what we know and what we’re good at. We’re writers, researchers, and reporters. That’s our trade. We don’t have the time or motivation to futz around with arcane syntax, any more than we have the time to learn plumbing. We’re just not interested. We’d rather be writing.</p>
 
-<p>Advocates for teaching code like to go on about “digital literacy” and buzzwords like “big data.” They’ll tell you that you need to learn code <em>right this second</em> because otherwise no one will hire you, and you’re missing out so-get-with-the-program-already. They mean well, but I’m not a fan of this line of reasoning. Not only is it condescending to call educated people illiterate for not learning a skill outside of their field, but it’s hard to encourage <em>anyone</em> to step out of their comfort zone and learn something new by guilting them into doing it.<sup id="fnref:driver"><a href="#fn:driver" class="footnote">1</a></sup></p>
+<p>Advocates for teaching code like to go on about “digital literacy” and throw around buzzwords like “big data.” They’ll tell you that you need to start learning code <em>right this second</em> because otherwise no one will hire you, and you’re missing out so-get-with-the-program-already. They mean well, but I’m not a fan of this line of reasoning. Not only is it condescending to call educated people illiterate for not learning a skill outside of their field, but it’s hard to encourage <em>anyone</em> to step out of their comfort zone and learn something new by guilting them into doing it.<sup id="fnref:driver"><a href="#fn:driver" class="footnote">1</a></sup></p>
 
 <p>Nor is it necessary for everyone and anyone to learn to code. People in most professions can ignore programming entirely and not be any worse off for it. Not everyone needs to be make an app or be a <a href="https://www.youtube.com/watch?v=dFUlAQZB9Ng">badass hacker</a>. There’s little point in code-for-code’s-sake, and less point in teaching programming to every single person in college or kindergarten, or whenever the idealists believe we’re supposed to learn it.</p>
 
 <p>That said, a certain kind of coding <em>is</em> useful for journalists who write on the web. And in 2014, that means pretty much all of us. So we have enough a good enough reason to learn what coding is all about and how (and why) we should integrate it into our work.</p>
 
-<p>But that’s easier said than done. The online tutorials that exist are, for the most part, unhelpful and irrelevant. They’re out of date, teaching code and techniques that were current in the mid-00s or earlier. But even the good resources are geared toward developers and designers, not writers. They cover topics we simply don’t need to know about, and leave out others that we should. They don’t teach us how code can actually enrich our online writing and help us work more efficiently. (Most of us aren’t even aware that code <em>can</em> help us work more efficiently.)</p>
+<p>But that’s easier said than done. The online tutorials that exist are, for the most part, unhelpful and irrelevant. They’re out of date, teaching code and techniques that were current in the mid-00s or earlier. But even the good resources are geared toward developers and designers, not writers. They cover topics we don’t need to know about, and leave out others that we should. They don’t teach us how code can actually enrich our online writing and help us work more efficiently. (Most of us aren’t even aware that code <em>can</em> help us work more efficiently.)</p>
 
-<p>Yes, we can use code to make flashy animations and churn through data. But we can also use it in our day-to-day writing. The goal of this series is to demonstrate how.</p>
+<p>Yes, we can use code to make flashy animations and churn through data. But we can also use it in our day-to-day writing. The goal of this series is to show you how.</p>
 
 <h2 id="who">2. Who</h2>
 
@@ -148,9 +148,9 @@
 <p>So we should probably have some idea how it works. Just as print journalists should know what happens between the time when a draft leaves their desk and the newspaper hits a doorstop, web writers should have a general understanding of the technologies that power the modern Internet. That’s why one aim of this series is to provide context by explaining things like what goes on behind the scenes in your CMS when you write a post.</p>
 
 <p><img src="/public/img/HTML5_Logo_512.png" style="float: right; width: 25%; height: 25%" />
-But before we get that far, we have to start with the basics. That includes learning about the three key technologies that make up the modern web: <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Javascript</strong>. The first is by far the most relevant to writers, so we are going to spend the majority of these posts learning how to write it in a way that’s stylistically modern and clean. Afterward, we’ll talk about tools that can make writing HTML easier and more enjoyable – and come up with a web writing and coding workflow that you can use from your first draft right up until you hit “publish.”</p>
+But before we get that far, we have to start with the basics. That includes learning about <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, the trifecta of languages that power the modern web. Of the three, HTML is by far the most relevant to writers, so we are going to spend many of these posts learning how to write it in a way that’s stylistically modern and clean. Afterward, we’ll talk about tools that can make writing code easier and more enjoyable – and come up with a web writing and coding workflow that you can use from your first draft right up until you hit “publish.”</p>
 
-<p>The first tutorials may seem simplistic if you’ve studied HTML before, but it may be worth your while to skim them – especially if you learned HTML more than a couple years ago. The web is always changing, and web culture and technology changes with it. This series covers <strong>HTML5</strong> – the newest version of the venerable standard. It’s generally similar to earlier versions, but  makes some important syntax and philosophical changes that affect even the most basic code.</p>
+<p>The first tutorials may seem simplistic if you’ve studied HTML before, but it may be worth your while to skim them – especially if you learned HTML more than a couple years ago. The web is always changing, and web culture and technology changes with it. This series covers <strong>HTML5</strong> – the newest version of the venerable standard. It’s much like the earlier versions, but makes some important syntax and philosophical changes that affect even the most basic code.</p>
 
 <p>We’ll start later this week with Part 1: <strong>Text Editing — Reppin’ It Old School.</strong></p>
 

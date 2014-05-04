@@ -106,8 +106,8 @@ article {
   margin-top: 3.765rem;
 }
 /* line 78, ../sass/screen.scss */
-article h3 {
-  letter-spacing: -.1px;
+article h1, article h2, article h3 {
+  letter-spacing: -.3px;
 }
 /* line 81, ../sass/screen.scss */
 article sup {
