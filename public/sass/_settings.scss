@@ -16,7 +16,7 @@
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
-$base-font-size: 18px;
+$base-font-size: 20px;
 
 // This is the default html and body font-size for the base rem value.
 $rem-base: $base-font-size;
@@ -40,7 +40,7 @@ $total-columns: 12;
 
 // Global
 
-$header-font: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$header-font: "lft-etica", "Georgia", Helvetica, Arial, sans-serif;
 $copy-font: "adelle", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $accent-font: $header-font;
 
@@ -122,22 +122,22 @@ $large: $large-up;
 // TYPOGRAPHY
 //
 
-$equal-margin: rem-calc(29.124);
+$equal-margin: rem-calc(29);
 
 $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
 $header-font-family: $header-font;
-$header-font-weight: 700;
+$header-font-weight: 600;
 $header-font-style: normal;
 $header-font-color: #222;
 $header-line-height: 1.61;
-$header-top-margin: $equal-margin;
+$header-top-margin: $equal-margin * 1.5;
 $header-bottom-margin: $equal-margin/1.5;
 $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(47);
+$h1-font-size: rem-calc(44);
 $h2-font-size: rem-calc(29);
 $h3-font-size: rem-calc(22);
 $h4-font-size: rem-calc(18);

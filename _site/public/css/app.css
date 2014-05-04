@@ -66,9 +66,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 34, ../sass/screen.scss */
 .elegant, .controls, .controls a {
-  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "lft-etica", "Georgia", Helvetica, Arial, sans-serif !important;
   color: #666;
-  font-size: 0.889rem !important;
+  font-size: 0.75rem !important;
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -106,8 +106,8 @@ article {
   margin-top: 3.765rem;
 }
 /* line 78, ../sass/screen.scss */
-article h1, article h2, article h3 {
-  letter-spacing: -.3px;
+article h2, article h3 {
+  text-transform: uppercase;
 }
 /* line 81, ../sass/screen.scss */
 article sup {
@@ -153,24 +153,25 @@ article .footnotes p {
 
 /* line 114, ../sass/screen.scss */
 header h1 {
+  font-weight: 700;
   margin-top: 0;
   line-height: 1.2em;
   margin-bottom: 0.618rem;
 }
-/* line 120, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 header h1:not(.link-post) a {
   color: #222222;
 }
-/* line 123, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 header h1:not(.link-post) a:hover {
   color: #9037cd;
   text-decoration: none;
 }
-/* line 128, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 header h1.link-post {
-  font-size: 1.61111rem;
+  font-size: 1.45rem;
 }
-/* line 131, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 header .link-post:after {
   content: ' ⇢';
   color: #666;
@@ -180,96 +181,96 @@ header .link-post:after {
 /*
  * Classes
  */
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .name h1 {
   font-size: 1rem !important;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 148, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .name h1 a {
   text-decoration: none;
 }
-/* line 150, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .name h1 a i {
-  font-size: 1.22222rem;
+  font-size: 1.1rem;
 }
-/* line 153, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .name h1 a i:hover {
   color: #9037cd;
 }
-/* line 157, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .name h1 a:hover i {
   color: #9037cd;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .translucent {
   background-color: rgba(250, 250, 250, 0.97) !important;
   -moz-box-shadow: 0 1px #e0e0e0 !important;
   -webkit-box-shadow: 0 1px #e0e0e0 !important;
   box-shadow: 0 1px #e0e0e0 !important;
 }
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .translucent a {
   color: #333 !important;
 }
-/* line 170, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .translucent .menu-icon a::after {
   box-shadow: 0 10px 0 1px #9037cd, 0 16px 0 1px #9037cd, 0 22px 0 1px #9037cd !important;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .top-bar {
-  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "lft-etica", "Georgia", Helvetica, Arial, sans-serif !important;
   -moz-box-shadow: 0 1px #666;
   -webkit-box-shadow: 0 1px #666;
   box-shadow: 0 1px #666;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .past-main {
   background-color: #333;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .centered {
   text-align: center;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .link-post:after:hover {
   text-decoration: none !important;
 }
 
-/* line 195, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .hero {
-  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "lft-etica", "Georgia", Helvetica, Arial, sans-serif !important;
   padding-top: 25px;
   padding-bottom: 10px;
   background: #333;
 }
-/* line 200, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .hero p {
   color: #ccc;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .icons li {
   display: inline;
   margin-right: 5px;
 }
-/* line 210, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .icons a {
   text-decoration: none;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .icon {
   padding-top: 7px;
   padding-left: 1px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #fff;
   background: #333;
   line-height: 35px;
@@ -282,12 +283,12 @@ header .link-post:after {
   border-radius: 50%;
 }
 
-/* line 225, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .icon-small {
   padding-top: 5px;
   padding-left: 1px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #333;
   background: #CCC;
   line-height: 28px;
@@ -300,38 +301,38 @@ header .link-post:after {
   border-radius: 50%;
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .icon:hover {
   background: #9037cd !important;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .icon-small:hover {
   background: #9037cd;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 244, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .text-icon {
   padding-right: 2px;
 }
 
-/* line 248, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .controls {
   margin-bottom: 2.036rem;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .tag {
   font-weight: 400 !important;
 }
 
-/* line 261, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 footer.controls {
   font-weight: 400 !important;
 }
-/* line 262, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 footer.controls a {
   font-weight: 400 !important;
   display: block;
@@ -395,7 +396,7 @@ html, body {
 /* line 306, ../../bower_components/foundation/scss/foundation/components/_global.scss */
 html,
 body {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* line 309, ../../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -741,7 +742,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 52.22222rem;
+  max-width: 47rem;
   *zoom: 1;
 }
 /* line 116, ../../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -767,8 +768,8 @@ select {
 /* line 217, ../../bower_components/foundation/scss/foundation/components/_grid.scss */
 .row .row {
   width: auto;
-  margin-left: -0.83333rem;
-  margin-right: -0.83333rem;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
   margin-top: 0;
   margin-bottom: 0;
   max-width: none;
@@ -803,8 +804,8 @@ select {
 /* line 223, ../../bower_components/foundation/scss/foundation/components/_grid.scss */
 .column,
 .columns {
-  padding-left: 0.83333rem;
-  padding-right: 0.83333rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   width: 100%;
   float: left;
 }
@@ -982,8 +983,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.83333rem;
-    padding-right: 0.83333rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     float: left;
   }
 
@@ -1322,8 +1323,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.83333rem;
-    padding-right: 0.83333rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     float: left;
   }
 
@@ -1830,8 +1831,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.83333rem;
-    padding-right: 0.83333rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     float: left;
   }
 
@@ -2167,8 +2168,8 @@ select {
 }
 /* line 52, ../../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
 .inline-list {
-  margin: 0 auto 0.94444rem auto;
-  margin-left: -1.22222rem;
+  margin: 0 auto 0.85rem auto;
+  margin-left: -1.1rem;
   margin-right: 0;
   padding: 0;
   list-style: none;
@@ -2178,7 +2179,7 @@ select {
 .inline-list > li {
   list-style: none;
   float: left;
-  margin-left: 1.22222rem;
+  margin-left: 1.1rem;
   display: block;
 }
 /* line 46, ../../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
@@ -2194,18 +2195,18 @@ button, .button {
   font-family: "adelle", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
-  margin: 0 0 1.11111rem;
+  margin: 0 0 1rem;
   position: relative;
   text-decoration: none;
   text-align: center;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   display: inline-block;
-  padding-top: 0.88889rem;
-  padding-right: 1.77778rem;
-  padding-bottom: 0.94444rem;
-  padding-left: 1.77778rem;
-  font-size: 0.88889rem;
+  padding-top: 0.8rem;
+  padding-right: 1.6rem;
+  padding-bottom: 0.85rem;
+  padding-left: 1.6rem;
+  font-size: 0.8rem;
   background-color: #9037cd;
   border-color: #742aa6;
   color: white;
@@ -2263,27 +2264,27 @@ button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus
 }
 /* line 197, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.large, .button.large {
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 1.05556rem;
-  padding-left: 2rem;
-  font-size: 1.11111rem;
+  padding-top: 0.9rem;
+  padding-right: 1.8rem;
+  padding-bottom: 0.95rem;
+  padding-left: 1.8rem;
+  font-size: 1rem;
 }
 /* line 198, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.small, .button.small {
-  padding-top: 0.77778rem;
-  padding-right: 1.55556rem;
-  padding-bottom: 0.83333rem;
-  padding-left: 1.55556rem;
-  font-size: 0.72222rem;
+  padding-top: 0.7rem;
+  padding-right: 1.4rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.4rem;
+  font-size: 0.65rem;
 }
 /* line 199, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.tiny, .button.tiny {
-  padding-top: 0.55556rem;
-  padding-right: 1.11111rem;
-  padding-bottom: 0.61111rem;
-  padding-left: 1.11111rem;
-  font-size: 0.61111rem;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.55rem;
+  padding-left: 1rem;
+  font-size: 0.55rem;
 }
 /* line 200, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.expand, .button.expand {
@@ -2294,12 +2295,12 @@ button.expand, .button.expand {
 /* line 202, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.left-align, .button.left-align {
   text-align: left;
-  text-indent: 0.66667rem;
+  text-indent: 0.6rem;
 }
 /* line 203, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.right-align, .button.right-align {
   text-align: right;
-  padding-right: 0.66667rem;
+  padding-right: 0.6rem;
 }
 /* line 205, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.radius, .button.radius {
@@ -2490,12 +2491,12 @@ meta.foundation-mq-topbar {
 .top-bar .name {
   height: 60px;
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
 }
 /* line 185, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name h1 {
   line-height: 60px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 0;
 }
 /* line 189, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -2516,7 +2517,7 @@ meta.foundation-mq-topbar {
 .top-bar .toggle-topbar a {
   color: white;
   text-transform: uppercase;
-  font-size: 0.72222rem;
+  font-size: 0.65rem;
   font-weight: bold;
   position: relative;
   display: block;
@@ -2582,7 +2583,7 @@ meta.foundation-mq-topbar {
   height: auto;
   display: block;
   background: #333333;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
 }
 /* line 292, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -2601,14 +2602,14 @@ meta.foundation-mq-topbar {
   padding: 12px 0 12px 0;
   padding-left: 20px;
   font-family: "adelle", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.72222rem;
+  font-size: 0.65rem;
   font-weight: normal;
   text-transform: none;
   background: #333333;
 }
 /* line 313, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button {
-  font-size: 0.72222rem;
+  font-size: 0.65rem;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #9037cd;
@@ -2667,7 +2668,7 @@ meta.foundation-mq-topbar {
 }
 /* line 324, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > button {
-  font-size: 0.72222rem;
+  font-size: 0.65rem;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #9037cd;
@@ -2833,7 +2834,7 @@ meta.foundation-mq-topbar {
   text-transform: uppercase;
   color: #777777;
   font-weight: bold;
-  font-size: 0.55556rem;
+  font-size: 0.5rem;
 }
 
 /* line 426, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -2873,7 +2874,7 @@ meta.foundation-mq-topbar {
   .top-bar input,
   .top-bar .button,
   .top-bar button {
-    font-size: 0.77778rem;
+    font-size: 0.7rem;
     position: relative;
     top: 7px;
   }
@@ -2884,7 +2885,7 @@ meta.foundation-mq-topbar {
 
   /* line 452, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
-    max-width: 52.22222rem;
+    max-width: 47rem;
     margin: 0 auto;
     margin-bottom: 0rem;
   }
@@ -3350,17 +3351,17 @@ p {
   font-weight: normal;
   font-size: 1.01rem;
   line-height: 1.55;
-  margin-bottom: 1.618rem;
+  margin-bottom: 1.45rem;
   text-rendering: optimizeLegibility;
 }
 /* line 219, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 p.lead {
-  font-size: 1.20444rem;
+  font-size: 1.185rem;
   line-height: 1.6;
 }
 /* line 221, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 p aside {
-  font-size: 0.77778rem;
+  font-size: 0.7rem;
   line-height: 1.35;
   font-style: italic;
 }
@@ -3368,13 +3369,13 @@ p aside {
 /* Default header styles */
 /* line 229, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: "lft-etica", "Georgia", Helvetica, Arial, sans-serif;
+  font-weight: 600;
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
-  margin-top: 1.618rem;
-  margin-bottom: 1.07867rem;
+  margin-top: 2.175rem;
+  margin-bottom: 0.96667rem;
   line-height: 1.61;
 }
 /* line 239, ../../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -3386,22 +3387,22 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 /* line 246, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 {
-  font-size: 2.05556rem;
+  font-size: 1.7rem;
 }
 
 /* line 247, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 h2 {
-  font-size: 1.05556rem;
+  font-size: 0.95rem;
 }
 
 /* line 248, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 h3 {
-  font-size: 0.94444rem;
+  font-size: 0.85rem;
 }
 
 /* line 249, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 h4 {
-  font-size: 0.72222rem;
+  font-size: 0.65rem;
 }
 
 /* line 250, ../../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -3428,7 +3429,7 @@ hr {
   border: solid #dddddd;
   border-width: 1px 0 0;
   clear: both;
-  margin: 1.11111rem 0 1.05556rem;
+  margin: 1rem 0 0.95rem;
   height: 0;
 }
 
@@ -3467,7 +3468,7 @@ ol,
 dl {
   font-size: 1.01rem;
   line-height: 1.55;
-  margin-bottom: 1.618rem;
+  margin-bottom: 1.45rem;
   list-style-position: outside;
   font-family: inherit;
 }
@@ -3483,7 +3484,7 @@ ul.no-bullet {
 /* line 304, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 ul.no-bullet li ul,
 ul.no-bullet li ol {
-  margin-left: 1.11111rem;
+  margin-left: 1rem;
   margin-bottom: 0;
   list-style: none;
 }
@@ -3492,7 +3493,7 @@ ul.no-bullet li ol {
 /* line 317, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 ul li ul,
 ul li ol {
-  margin-left: 1.11111rem;
+  margin-left: 1rem;
   margin-bottom: 0;
 }
 /* line 325, ../../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -3527,7 +3528,7 @@ ol {
 /* line 339, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 ol li ul,
 ol li ol {
-  margin-left: 1.11111rem;
+  margin-left: 1rem;
   margin-bottom: 0;
 }
 
@@ -3539,7 +3540,7 @@ dl dt {
 }
 /* line 352, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 dl dd {
-  margin-bottom: 0.66667rem;
+  margin-bottom: 0.6rem;
 }
 
 /* Abbreviations */
@@ -3561,14 +3562,14 @@ abbr {
 /* Blockquotes */
 /* line 369, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote {
-  margin: 0 0 1.618rem;
-  padding: 0.5rem 1.11111rem 0.5rem 1.05556rem;
+  margin: 0 0 1.45rem;
+  padding: 0.45rem 1rem 0.45rem 0.95rem;
   border-left: 5px solid #9037cd;
 }
 /* line 374, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite {
   display: block;
-  font-size: 0.72222rem;
+  font-size: 0.65rem;
   color: #555555;
 }
 /* line 378, ../../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -3592,9 +3593,9 @@ blockquote p {
 /* line 395, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 .vcard {
   display: inline-block;
-  margin: 0 0 1.11111rem 0;
+  margin: 0 0 1rem 0;
   border: 1px solid #dddddd;
-  padding: 0.55556rem 0.66667rem;
+  padding: 0.5rem 0.6rem;
 }
 /* line 401, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 .vcard li {
@@ -3604,7 +3605,7 @@ blockquote p {
 /* line 405, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 .vcard .fn {
   font-weight: bold;
-  font-size: 0.83333rem;
+  font-size: 0.75rem;
 }
 
 /* line 412, ../../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -3617,7 +3618,7 @@ blockquote p {
   text-decoration: none;
   font-weight: bold;
   border: none;
-  padding: 0 0.05556rem;
+  padding: 0 0.05rem;
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -3628,22 +3629,22 @@ blockquote p {
 
   /* line 426, ../../bower_components/foundation/scss/foundation/components/_type.scss */
   h1 {
-    font-size: 2.61111rem;
+    font-size: 2.2rem;
   }
 
   /* line 427, ../../bower_components/foundation/scss/foundation/components/_type.scss */
   h2 {
-    font-size: 1.61111rem;
+    font-size: 1.45rem;
   }
 
   /* line 428, ../../bower_components/foundation/scss/foundation/components/_type.scss */
   h3 {
-    font-size: 1.22222rem;
+    font-size: 1.1rem;
   }
 
   /* line 429, ../../bower_components/foundation/scss/foundation/components/_type.scss */
   h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 /*

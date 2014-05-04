@@ -12,9 +12,8 @@ layout: master
       <hr class="post-separator large-8 large-centered medium-8 medium-centered small-8 small-centered column">
 {% endfor %}
 </div>
-  <div class="spacer large-12 medium-12 small-12 columns"></div>
-
-<ul class="pagination-centered">
+<div class="row">
+<ul class="pagination-centered large-9 large-centered medium-9 medium-centered columns">
 {% if paginator.next_page %}
   <li class="arrow"><a href="/page{{paginator.next_page}}">&laquo; Older</a></li>
 {% else %}
@@ -30,3 +29,4 @@ layout: master
   <li class="arrow unavailable">Newer &raquo;</li>
 {% endif %}
 </ul>
+</div>

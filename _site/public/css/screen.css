@@ -66,9 +66,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 34, ../sass/screen.scss */
 .elegant, .controls, .controls a {
-  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "lft-etica", "Georgia", Helvetica, Arial, sans-serif !important;
   color: #666;
-  font-size: 0.889rem !important;
+  font-size: 0.75rem !important;
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -106,8 +106,8 @@ article {
   margin-top: 3.765rem;
 }
 /* line 78, ../sass/screen.scss */
-article h1, article h2, article h3 {
-  letter-spacing: -.3px;
+article h2, article h3 {
+  text-transform: uppercase;
 }
 /* line 81, ../sass/screen.scss */
 article sup {
@@ -153,24 +153,25 @@ article .footnotes p {
 
 /* line 114, ../sass/screen.scss */
 header h1 {
+  font-weight: 700;
   margin-top: 0;
   line-height: 1.2em;
   margin-bottom: 0.618rem;
 }
-/* line 120, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 header h1:not(.link-post) a {
   color: #222222;
 }
-/* line 123, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 header h1:not(.link-post) a:hover {
   color: #9037cd;
   text-decoration: none;
 }
-/* line 128, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 header h1.link-post {
-  font-size: 1.61111rem;
+  font-size: 1.45rem;
 }
-/* line 131, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 header .link-post:after {
   content: ' ⇢';
   color: #666;
@@ -180,96 +181,96 @@ header .link-post:after {
 /*
  * Classes
  */
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .name h1 {
   font-size: 1rem !important;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 148, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .name h1 a {
   text-decoration: none;
 }
-/* line 150, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .name h1 a i {
-  font-size: 1.22222rem;
+  font-size: 1.1rem;
 }
-/* line 153, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .name h1 a i:hover {
   color: #9037cd;
 }
-/* line 157, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .name h1 a:hover i {
   color: #9037cd;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .translucent {
   background-color: rgba(250, 250, 250, 0.97) !important;
   -moz-box-shadow: 0 1px #e0e0e0 !important;
   -webkit-box-shadow: 0 1px #e0e0e0 !important;
   box-shadow: 0 1px #e0e0e0 !important;
 }
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .translucent a {
   color: #333 !important;
 }
-/* line 170, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .translucent .menu-icon a::after {
   box-shadow: 0 10px 0 1px #9037cd, 0 16px 0 1px #9037cd, 0 22px 0 1px #9037cd !important;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .top-bar {
-  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "lft-etica", "Georgia", Helvetica, Arial, sans-serif !important;
   -moz-box-shadow: 0 1px #666;
   -webkit-box-shadow: 0 1px #666;
   box-shadow: 0 1px #666;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .past-main {
   background-color: #333;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .centered {
   text-align: center;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .link-post:after:hover {
   text-decoration: none !important;
 }
 
-/* line 195, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .hero {
-  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "lft-etica", "Georgia", Helvetica, Arial, sans-serif !important;
   padding-top: 25px;
   padding-bottom: 10px;
   background: #333;
 }
-/* line 200, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .hero p {
   color: #ccc;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .icons li {
   display: inline;
   margin-right: 5px;
 }
-/* line 210, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .icons a {
   text-decoration: none;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .icon {
   padding-top: 7px;
   padding-left: 1px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #fff;
   background: #333;
   line-height: 35px;
@@ -282,12 +283,12 @@ header .link-post:after {
   border-radius: 50%;
 }
 
-/* line 225, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .icon-small {
   padding-top: 5px;
   padding-left: 1px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #333;
   background: #CCC;
   line-height: 28px;
@@ -300,38 +301,38 @@ header .link-post:after {
   border-radius: 50%;
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .icon:hover {
   background: #9037cd !important;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .icon-small:hover {
   background: #9037cd;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 244, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .text-icon {
   padding-right: 2px;
 }
 
-/* line 248, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .controls {
   margin-bottom: 2.036rem;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .tag {
   font-weight: 400 !important;
 }
 
-/* line 261, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 footer.controls {
   font-weight: 400 !important;
 }
-/* line 262, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 footer.controls a {
   font-weight: 400 !important;
   display: block;
