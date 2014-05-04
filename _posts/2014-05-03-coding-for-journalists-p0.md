@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Practical coding for Journalists — Part 0: Why, Who, What"
+title: "Practical Coding for Journalists — Part 0: Why, Who, What"
 tag: coding for journalists
 ---
 
