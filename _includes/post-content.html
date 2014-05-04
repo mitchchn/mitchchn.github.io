@@ -1,3 +1,11 @@
 <div class="post-content">
-	{{ post.content }}
+{{ post.content }}
 </div>
+<footer class = "controls">
+ {% if post.tag %}
+  <a class="tag controls">
+  <i class="fa fa-tag text-icon"></i><span>{{ post.tag }}</span>
+  </a>
+  {% endif %}
+<a class="permalink" href={{post.url}}><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
+</footer>

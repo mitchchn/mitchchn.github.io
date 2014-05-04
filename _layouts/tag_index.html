@@ -1,0 +1,17 @@
+---
+layout: master
+---
+<h2 class="post_title">{{page.title}}</h2>
+<div class="row">
+
+  {% for post in site.posts %}
+  {% for tag in post.tags %}
+  {% if tag == page.tag %}
+  <article class="post large-9 large-centered medium-9 medium-centered columns">
+      {% include fp-post-header.html %} 
+    </article>
+    <hr class="post-separator large-8 large-centered medium-8 medium-centered small-8 small-centered column">
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</div>

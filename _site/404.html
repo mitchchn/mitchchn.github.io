@@ -10,68 +10,101 @@
 
     <!-- CSS -->
     <!-- Foundation -->
-    <link rel="stylesheet" href="/public/css/foundation.css" />
-    <!--<link rel="stylesheet" href="/public/css/normalize.css" />-->
+    <link rel="stylesheet" href="/public/css/app.css" />
+
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    
+    
     <!-- Pygments -->
     <link rel="stylesheet" href="/public/css/syntax.css">
-    <!-- Custom -->
-    <link rel="stylesheet" href="/public/css/main.css">
+
+
 
     <!-- Fonts -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-    <link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,400,500,600,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700' rel='stylesheet' type='text/css'>
 
-    <script src="js/vendor/modernizr.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="//use.typekit.net/ikl3fnm.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/public/js/app.js"></script>
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
   </head>
 
-
   <body>
-    
-    <div class="masthead">
-    <div class="row">
-        <div class="logo large-9 large-centered columns">
-            <a class="brand" href="/" title="Home">
-                <i class="fa fa-coffee"></i>
-                <h1 class="title">
-                <span class="former">mitchchn</span><span class="latter">.me</span>
-                </h1>
-            </a>
-            <small class="tagline" style="vertical-align: text-top">
-                (Computers, coffee, code <strike>and giant spiders</strike>)
-            </small>
-            <nav class="navigation">
-                <a class="first" href="http://twitter.com/mitchchn">About</a>
-                <span style="color: #A68DD7">●</span>
-                <a href="http://twitter.com/mitchchn">Twitter</a>
-            </nav>
-        </div>
-        <div>
-        </div>
-    </div>
+    <div class="sticky">
+  <nav class="top-bar" data-topbar data-options="sticky_on:large">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/">
+            <i class="fa fa-coffee"></i>
+            mitchchn.me
+            </a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#">About</a></li>
+      <li class="has-dropdown">
+        <a href="#">Categories</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
 </div>
-
 
     <!-- Main Blog Content -->
-    <div role="content">
-      <div class="row">
-         
+    <div class="content" role="content">
+      <div class="hero">
+    <p class="centered">Coffee, code, literature, language, <s>and giant spiders.</s></p>
+    <nav>
+      <ul class="icons text-center">
+          <li>
+            <a href="http://twitter.com/mitchchn">
+                <i class="icon-small purple-bg fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://github.com/mitchchn">
+                <i class="icon-small purple-bg fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://github.com/mitchchn">
+                <i class="icon-small purple-bg fa fa-thumb-tack"></i>
+            </a>
+          </li>
+
+        </ul>
+    </nav>
+
+
+</div>
+<div id="main"></div>
+  <div class="row">
+   
+</div>
   <div class="spacer large-12 medium-12 small-12 columns"></div>
 
-<div class="row">
-<div class="pagination large-12 large-centered medium-10 medium-centered small-10 small-centered columns">
+<ul class="pagination-centered">
 
-  <h3><span class="pagination-item older">Older</span></h3>
+  <li class="arrow unavailable">&laquo; Older</li>
 
 
-  <h3><span class="pagination-item newer">&nbsp;Newer</span></h3>
+  <li class="arrow unavailable">Newer &raquo;</li>
 
-</div>
-</div>
-      <div class="clear large-12 medium-12 small-12">&nbsp;</div>
-      </div>
+</ul>
+
+      <div class="clear large-12 medium-12">&nbsp;</div>
     </div>
 
 
@@ -84,8 +117,18 @@
     </div>
     </div>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script type="text/javascript">
+// get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+var mainbottom = $('#main').offset().top + $('#main').height();
+// on scroll, 
+$(window).scroll( function() {
+    var value = $(window).scrollTop();
+    if ( value > mainbottom )
+        $(".top-bar").addClass("translucent");
+    else
+        $(".top-bar").removeClass("translucent");
+});
+</script>
     <script>
       $(document).foundation();
     </script>

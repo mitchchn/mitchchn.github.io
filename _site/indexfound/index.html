@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      mitchchn.me
+    </title>
+
+    <!-- CSS -->
+    <!-- Foundation -->
+    <link rel="stylesheet" href="/public/css/app.css" />
+
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    
+    
+    <!-- Pygments -->
+    <link rel="stylesheet" href="/public/css/syntax.css">
+
+
+
+    <!-- Fonts -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="//use.typekit.net/ikl3fnm.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/public/js/app.js"></script>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body>
+    <div class="sticky">
+  <nav class="top-bar" data-topbar data-options="sticky_on:large">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/">
+            <i class="fa fa-coffee"></i>
+            mitchchn.me
+            </a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#">About</a></li>
+      <li class="has-dropdown">
+        <a href="#">Categories</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+</div>
+
+    <!-- Main Blog Content -->
+    <div class="content" role="content">
+      <div class="hero">
+    <p class="centered">Coffee, code, literature, language, <s>and giant spiders.</s></p>
+    <nav>
+      <ul class="icons text-center">
+          <li>
+            <a href="http://twitter.com/mitchchn">
+                <i class="icon-small purple-bg fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://github.com/mitchchn">
+                <i class="icon-small purple-bg fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://github.com/mitchchn">
+                <i class="icon-small purple-bg fa fa-thumb-tack"></i>
+            </a>
+          </li>
+
+        </ul>
+    </nav>
+
+
+</div>
+<div id="main"></div>
+  <div class="row">
+   
+</div>
+  <div class="spacer large-12 medium-12 small-12 columns"></div>
+
+<ul class="pagination-centered">
+
+  <li class="arrow unavailable">&laquo; Older</li>
+
+
+  <li class="arrow unavailable">Newer &raquo;</li>
+
+</ul>
+
+      <div class="clear large-12 medium-12">&nbsp;</div>
+    </div>
+
+
+
+    <div class="row">
+    <div class="footer large-11 medium-11 large-centered medium-centered columns">
+        <p>
+          &copy; 2014 Mitchell Cohen.
+        </p>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+// get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+var mainbottom = $('#main').offset().top + $('#main').height();
+// on scroll, 
+$(window).scroll( function() {
+    var value = $(window).scrollTop();
+    if ( value > mainbottom )
+        $(".top-bar").addClass("translucent");
+    else
+        $(".top-bar").removeClass("translucent");
+});
+</script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

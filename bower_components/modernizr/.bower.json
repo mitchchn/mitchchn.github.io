@@ -1,0 +1,14 @@
+{
+  "name": "modernizr",
+  "homepage": "https://github.com/Modernizr/Modernizr",
+  "version": "2.8.0",
+  "_release": "2.8.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.8.0",
+    "commit": "1d6c0382adb0dafa827ac0f62b23d524d43b0689"
+  },
+  "_source": "git://github.com/Modernizr/Modernizr.git",
+  "_target": ">= 2.7.2",
+  "_originalSource": "modernizr"
+}

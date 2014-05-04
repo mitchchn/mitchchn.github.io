@@ -4,15 +4,12 @@
   {% include head.html %}
 
   <body>
-    
     {% include masthead.html %}
 
     <!-- Main Blog Content -->
-    <div role="content">
-      <div class="row">
+    <div class="content" role="content">
       {{ content }}
-      <div class="clear large-12 medium-12 small-12">&nbsp;</div>
-      </div>
+      <div class="clear large-12 medium-12">&nbsp;</div>
     </div>
 
 
@@ -25,8 +22,18 @@
     </div>
     </div>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script type="text/javascript">
+// get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+var mainbottom = $('#main').offset().top + $('#main').height();
+// on scroll, 
+$(window).scroll( function() {
+    var value = $(window).scrollTop();
+    if ( value > mainbottom )
+        $(".top-bar").addClass("translucent");
+    else
+        $(".top-bar").removeClass("translucent");
+});
+</script>
     <script>
       $(document).foundation();
     </script>

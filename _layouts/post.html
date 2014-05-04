@@ -1,15 +1,19 @@
 ---
 layout: master
+
 ---
 
+<div id="main"></div>
+<div class="row">
 <article class="post large-9 large-centered medium-9 medium-centered columns">
-{% include page-header.html %}
-	<div class = "post-content">
-    {{content}}
-	</div>
-<nav class = "controls">
-<a class="first" href={{post.url}}><i class="fa fa-chain"></i>&nbsp;[PERMALINK]</a>
-</nav>
+  {% include post-header.html %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+  <footer class = "controls">
+    <a class="permalink" href={{post.url}}><i class="fa fa-chain"></i>&nbsp;[PERMALINK]</a>
+  </footer>
 </article>
 
 <div class="page-navigation large-10 large-centered medium-10 medium-centered columns"> 
@@ -28,4 +32,5 @@ layout: master
 {{page.next.title}}">{{page.next.title}} &raquo; </a></p> 
         {% endif %} 
         </div> 
+</div>
 </div>

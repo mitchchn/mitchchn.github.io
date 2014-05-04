@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      About &middot; mitchchn.me
+    </title>
+
+    <!-- CSS -->
+    <!-- Foundation -->
+    <link rel="stylesheet" href="/public/css/app.css" />
+
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    
+    
+    <!-- Pygments -->
+    <link rel="stylesheet" href="/public/css/syntax.css">
+
+
+
+    <!-- Fonts -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="//use.typekit.net/ikl3fnm.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/public/js/app.js"></script>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body>
+    <div class="sticky">
+  <nav class="top-bar" data-topbar data-options="sticky_on:large">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/">
+            <i class="fa fa-coffee"></i>
+            mitchchn.me
+            </a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#">About</a></li>
+      <li class="has-dropdown">
+        <a href="#">Categories</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+</div>
+
+    <!-- Main Blog Content -->
+    <div class="content" role="content">
+      <div class="page">
+  <h1 class="page-title">About</h1>
+  <section class="post-content">
+	<p class="message">
+  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+</p>
+
+In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+
+There are currently two themes built on Poole:
+
+* [Hyde](http://hyde.getpoole.com)
+* [Lanyon](http://lanyon.getpoole.com)
+
+Learn more and contribute on [GitHub](https://github.com/poole).
+
+## Setup
+
+Some fun facts about the setup of this project include:
+
+* Built for [Jekyll](http://jekyllrb.com)
+* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
+* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
+* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+
+Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+
+Thanks for reading!
+
+</section>
+<footer class = "controls">
+<a class="permalink" href=/about/><i class="fa fa-chain"></i>&nbsp;[PERMALINK]</a>
+</footer>}
+</div>
+
+      <div class="clear large-12 medium-12">&nbsp;</div>
+    </div>
+
+
+
+    <div class="row">
+    <div class="footer large-11 medium-11 large-centered medium-centered columns">
+        <p>
+          &copy; 2014 Mitchell Cohen.
+        </p>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+// get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+var mainbottom = $('#main').offset().top + $('#main').height();
+// on scroll, 
+$(window).scroll( function() {
+    var value = $(window).scrollTop();
+    if ( value > mainbottom )
+        $(".top-bar").addClass("translucent");
+    else
+        $(".top-bar").removeClass("translucent");
+});
+</script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

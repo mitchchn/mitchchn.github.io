@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-04-28T19:21:39-04:00</updated>
+ <updated>2014-05-04T01:15:19-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -13,79 +13,63 @@
 
  
  <entry>
-   <title>What's Jekyll?</title>
-   <link href="http://mitchchn.me/whats-jekyll.html"/>
-   <updated>2014-04-25T00:00:00-04:00</updated>
-   <id>http://mitchchn.me/whats-jekyll</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project&amp;#39;s readme&lt;/a&gt;:&lt;/p&gt;
+   <title>Practical coding for Journalists — Part 0: Why, Who, What</title>
+   <link href="http://mitchchn.me/2014/05/03/coding-for-journalists-p0/"/>
+   <updated>2014-05-03T00:00:00-04:00</updated>
+   <id>http://mitchchn.me/2014/05/03/coding-for-journalists-p0</id>
+   <content type="html">&lt;h2 id=&quot;why&quot;&gt;1. Why&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.niemanlab.org/2012/09/miranda-mulligan-want-to-produce-hirable-grads-journalism-schools-teach-them-to-code/&quot;&gt;Learn to code&lt;/a&gt;, they say.&lt;/p&gt;
 
-&lt;p&gt;It&amp;#39;s an immensely useful tool. Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Modo decus consternatique diversas</title>
-   <link href="http://mitchchn.me/whats-jekyll.html"/>
-   <updated>2013-12-31T00:00:00-05:00</updated>
-   <id>http://mitchchn.me/whats-jekyll</id>
-   <content type="html">&lt;p&gt;Lorem markdownum dives, est neglectos &lt;strong&gt;classe&lt;/strong&gt; tellus: superest lacrimis. De
-causa fingit poterit poscebatur pars frugiferas Thebae sua, Taenarius anxia:
-ora? Ita vigor Ismenides triones.&lt;/p&gt;
+&lt;p&gt;It’s advice that most of us have heard at school or in the workplace, but that few of us ever really act upon.&lt;/p&gt;
 
-&lt;p&gt;Est iuxta fortis ignibus cernit alta abstrahere nisi: manu cui quod, volenti de
-Peleus amnis lenis ad solet. &lt;em&gt;Editus namque&lt;/em&gt; fuit. Et ictu subterque quam victa
-pando, crescentemque quid senes frondibus artus latravit murmur: stimulos
-Iliaden ad.&lt;/p&gt;
+&lt;p&gt;And no, it’s not because we aren’t &lt;a href=&quot;http://j-source.ca/article/opinion-why-journalism-schools-must-teach-code—even-if-every-journalist-not-wired-way&quot;&gt;wired that way&lt;/a&gt;. Rather, it’s because coding feels detached from what we know and what we’re good at. We’re writers, researchers, and reporters. That’s our trade. We don’t have the time or motivation to futz around with arcane syntax, any more than we have the time to learn plumbing. We’re just not interested. We’d rather be writing.&lt;/p&gt;
 
-&lt;h2&gt;Uno illa iter penthea&lt;/h2&gt;
+&lt;p&gt;Advocates for teaching code like to go on about “digital literacy” and “big data” and “mobile. They’ll tell you that you need to learn code &lt;em&gt;right this second&lt;/em&gt; because otherwise no one will hire you, and you’re missing out so-get-with-the-program-already. They mean well, but I’m not a fan of this line of reasoning. Not only is it condescending to call educated people illiterate for not learning a skill outside of their field, but it’s hard to encourage &lt;em&gt;anyone&lt;/em&gt; to step out of their comfort zone and learn something new by guilting them into doing it.&lt;sup id=&quot;fnref:driver&quot;&gt;&lt;a href=&quot;#fn:driver&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;Audaci et Amazone aureus ut veteres urbis sitientes flumen palmas &lt;em&gt;signa&lt;/em&gt;, et
-decorum cupit enim! Agantur et unam et quod. Eventuque gerit vias posuere retia
-corpore multae thalamoque duxque quacumque &lt;a href=&quot;http://textfromdog.tumblr.com/&quot;&gt;concipit
-odioque&lt;/a&gt;, in. &lt;em&gt;Gravior&lt;/em&gt; in cuspide parte
-sprevit, ille illuc anus nam adesset haec lacertosi sub Hiberi radix? Unde facti
-et dare, pedibusque ora fallat temptat, da ille Haemonio quidque australem
-vocat, crepitantia.&lt;/p&gt;
+&lt;p&gt;Nor is it necessary for everyone and anyone to learn to code. People in most professions can ignore programming entirely and not be any worse off for it. Not everyone needs to be make an app or be a &lt;a href=&quot;https://www.youtube.com/watch?v=dFUlAQZB9Ng&quot;&gt;badass hacker&lt;/a&gt;. There’s little point in code-for-code’s-sake, and less point in teaching programming to every single person in college or kindergarten, or whenever the idealists believe we’re supposed to learn it.&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;Ratem ubi quas dies; facis, sua solae hoc oetaeas si incessit ignarus stipite
-urbis. Dubio pace populo, &lt;em&gt;invenit&lt;/em&gt; dea vera porrigit verba, adversaque inpar
-nunc lati anguem attollite mediis quod, huic.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;That said, a certain kind of coding &lt;em&gt;is&lt;/em&gt; useful for journalists who write on the web. And in 2014, that means pretty much all of us. So we have enough a good enough reason to learn what coding is all about and how (and why) we should integrate it into our work.&lt;/p&gt;
 
-&lt;h2&gt;Non sumus munere Phaethon audis exanimis manant&lt;/h2&gt;
+&lt;p&gt;But that’s easier said than done. The online tutorials that exist are, for the most part, unhelpful and irrelevant. They’re out of date, teaching code and techniques that were current in the mid-00s or earlier. But even the good resources are geared toward developers and designers, not writers. They cover topics we simply don’t need to know about, and leave out others that we should. They don’t teach us how code can actually enrich our online writing and help us work more efficiently. (Most of us aren’t even aware that code &lt;em&gt;can&lt;/em&gt; help us work more efficiently.)&lt;/p&gt;
 
-&lt;p&gt;Atria qui &lt;em&gt;gregibus crimina supervolat&lt;/em&gt; plagarum portibus pudet, miseranda
-rubuerunt et rerum officioque puto, foret equos; tendit. Quoque detractare
-monstri coniunx et cecidit tamen, nuda sidera antemnas. In &lt;a href=&quot;http://textfromdog.tumblr.com/&quot;&gt;tyranni
-veniente&lt;/a&gt;, animi fugit simul &lt;strong&gt;accipis aequatam
-occupat&lt;/strong&gt; conclamat corpore vivere tria ferro finemque. Queritur nympha ea
-fibris quod Dianae contra, et et rota.&lt;/p&gt;
+&lt;p&gt;Yes, we can use code to make flashy animations and churn through data. But we can also use it in our day-to-day writing. The goal of this series is to demonstrate how.&lt;/p&gt;
 
-&lt;p&gt;Vox isse Aeneadae Hector; adhuc, in, diva! Illa et quinque saxea, iram effugit
-nolet; arbore cornua, cedere!&lt;/p&gt;
+&lt;h2 id=&quot;who&quot;&gt;2. Who&lt;/h2&gt;
 
-&lt;h2&gt;Dis erit ille ingens Iuppiter suorum verendam&lt;/h2&gt;
+&lt;p&gt;This series of posts is aimed at journalists and other kinds of writers. For that reason, it’s going to follow a different path from most “Intro to HTML” tutorials.&lt;sup id=&quot;fnref:hyper&quot;&gt;&lt;a href=&quot;#fn:hyper&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; You won’t learn how to build a website or app from scratch (although you could certainly go on to do just that), but you will learn languages, techniques and best practices that you can apply whenever you write for the web.&lt;/p&gt;
 
-&lt;p&gt;Solis de, &lt;strong&gt;an hic donasse&lt;/strong&gt; est sensit quam umbrosa annisque pectora
-horriferamque atque et. Placuit nollet rector. Prius istis circum Danaen,
-aequales ad vivere hauserit rictuque, venit, fumi!&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;floating.radcabCut = ole(retinaAjaxPower + compatibleCase * ddr_pixel_optic,
-        92, scsi_impact(78, inkjet));
-program_metadata = recycle;
-var device = 22;
-basic_cluster = third_lte_boot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Aestibus obscurum et Pico unum: sinus occidimus duratur citharae. Corruit
-cecidisse &lt;strong&gt;aqua dubitare locoque&lt;/strong&gt; temeraria &lt;strong&gt;promissa&lt;/strong&gt;. Quid dignus ego erat
-vocat opportuna oraque, Phyleus dixerat requiemque res, virgo iniusti? Ales
-&lt;em&gt;artes&lt;/em&gt;, robore pactique vitam supplex quod sola nurusque addidit trahatur cum
-ante fertur. Me &lt;em&gt;vivit&lt;/em&gt; ne quoque solida magnosque et iussus ipse flumina
-tremulo?&lt;/p&gt;
+&lt;p&gt;We’re also going to explore tools that can make you &lt;a href=&quot;https://www.youtube.com/watch?v=xK0njkATf84&amp;amp;feature=kp&quot;&gt;happier and more productive&lt;/a&gt; as a digital content creator, like version control, incremental backups, and writing in Markdown. These topics are outside the scope of a typical web development course, but they’re incredibly useful for anyone who writes online.&lt;/p&gt;
+
+&lt;p&gt;If you’ve put off learning HTML at least a dozen times before, this is the series for you. If you already know some HTML but begrudge having to use it, this series will make you want to choose it first, every time. The idea is to go from “knowing” HTML to &lt;em&gt;using&lt;/em&gt; HTML in a way that’s productive and efficient.&lt;/p&gt;
+
+&lt;p&gt;It’s true that getting to this stage takes some practice and time investment. But being able to work in code is worth it – not just for your resume, but to add to your personal arsenal of skills as a writer.&lt;/p&gt;
+
+&lt;p&gt;And if you’re already an HTML pro, stick around. You might still learn a thing or two.&lt;/p&gt;
+
+&lt;h2 id=&quot;what&quot;&gt;3. What&lt;/h2&gt;
+
+&lt;p&gt;No one in journalism needs any more convincing that the web matters. In a few short years, the conversation has shifted from ‘digital” to “digital first” to “digital only.” For many of us, web has completely replaced pen and paper as our tool of the trade.&lt;/p&gt;
+
+&lt;p&gt;So we should probably have some idea how it works. Just as print journalists should know what happens between the time a draft leaves their desk and the paper hits a customer’s doorstop, web writers should have a general understanding of the technologies that power the modern Internet. That’s why one aim of this series is to provide context by explaining what’s going on behind the scenes of your CMS when you write a post.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/HTML5_Logo_512.png&quot; style=&quot;float: right; width: 25%; height: 25%&quot; /&gt;
+But before we get that far, we have to start with the basics. That includes learning about the three key technologies that make up the modern web: &lt;strong&gt;HTML&lt;/strong&gt;, &lt;strong&gt;CSS&lt;/strong&gt;, and &lt;strong&gt;Javascript&lt;/strong&gt;. The first is by far the most relevant to writers, so we are going to spend the majority of these posts learning how to write it in a way that’s stylistically modern and clean. Afterward, we’ll talk about tools that can make writing HTML easier and more enjoyable — and come up with a web writing workflow that you can use from your first draft right up until you hit “publish”.&lt;/p&gt;
+
+&lt;p&gt;The first tutorials may seem simplistic if you already know some HTML, but it may be worth your while to skim them – especially if you learned HTML more than a couple years ago. The web is always changing, and web culture and technology changes with it. This series covers &lt;strong&gt;HTML5&lt;/strong&gt; – the newest version of the venerable standard, which makes some important syntax and philosophy changes that affect even the most basic code.&lt;/p&gt;
+
+&lt;p&gt;We’ll start with Part 1: &lt;strong&gt;Text Editing — Reppin’ It Old School.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:driver&quot;&gt;
+      &lt;p&gt;Yes mom, I’ll get my driver’s license soon. Promise. I &lt;em&gt;know&lt;/em&gt; it’s embarrassing that I’m 24 and I still don’t have it. OK, technically I had it but I let it expire. But that’s beside the point. Quit nagging. Sheesh. &lt;a href=&quot;#fnref:driver&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:hyper&quot;&gt;
+      &lt;p&gt;For instance, I won’t bother explaining that HTML stands for “Hypertext Markup Language.” No one has called it that since 1993. Seriously. &lt;a href=&quot;#fnref:hyper&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 </content>
  </entry>
  

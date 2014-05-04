@@ -1,6 +1,9 @@
 ---
 layout: master
 ---
+{% include fp-hero.html %}
+<div id="main"></div>
+  <div class="row">
    {% for post in paginator.posts %}
     <article class="post large-9 large-centered medium-9 medium-centered columns">
       {% include fp-post-header.html %} 
@@ -8,24 +11,22 @@ layout: master
     </article>
       <hr class="post-separator large-8 large-centered medium-8 medium-centered small-8 small-centered column">
 {% endfor %}
+</div>
   <div class="spacer large-12 medium-12 small-12 columns"></div>
 
-<div class="row">
-<div class="pagination large-12 large-centered medium-10 medium-centered small-10 small-centered columns">
+<ul class="pagination-centered">
 {% if paginator.next_page %}
-  <h3><a class="pagination-item older" href="/page{{paginator.next_page}}"><i class="fa fa-arrow-circle-left">&nbsp;</i>Older</a></h3>
+  <li class="arrow"><a href="/page{{paginator.next_page}}">&laquo; Older</a></li>
 {% else %}
-  <h3><span class="pagination-item older">Older</span></h3>
+  <li class="arrow unavailable">&laquo; Older</li>
 {% endif %}
 {% if paginator.previous_page %}
   {% if paginator.page == 2 %}
-    <h3><a class="pagination-item newer" href="/">&nbsp;Newer
-    &nbsp;<i class="fa fa-arrow-circle-right"></i></a></h3>
+  <li class="arrow"><a href="/page{{paginator.previous_page}}">&raquo; Newer</a></li>
   {% else %}
-    <h3><a class="pagination-item newer" href="/page{{paginator.previous_page}}">&nbsp;Newer</a></h3>
+    <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer &raquo;</a>
   {% endif %}
 {% else %}
-  <h3><span class="pagination-item newer">&nbsp;Newer</span></h3>
+  <li class="arrow unavailable">Newer &raquo;</li>
 {% endif %}
-</div>
-</div>
+</ul>
