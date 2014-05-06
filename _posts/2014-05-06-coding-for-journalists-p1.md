@@ -5,7 +5,7 @@ layout: post
 
 <img src="/public/img/confession.png">
 
-All code, no matter the language, is written in plain text. Plain text documents are those that don't allow any formatting, including fonts, colours, and sizes. Documents that permit formatting are called rich text.
+All code, no matter the language, is written in plain text. Plain text documents are those that don't allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.
 
 <figure>
     <img src="/public/img/plaintext.png" width="49%">

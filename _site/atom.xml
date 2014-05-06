@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-06T05:49:43-04:00</updated>
+ <updated>2014-05-06T05:57:55-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -19,7 +19,7 @@
    <id>http://mitchchn.me/2014/05/06/coding-for-journalists-p1</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/public/img/confession.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow any formatting, including fonts, colours, and sizes. Documents that permit formatting are called rich text.&lt;/p&gt;
+&lt;p&gt;All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.&lt;/p&gt;
 
 &lt;figure&gt;
     &lt;img src=&quot;/public/img/plaintext.png&quot; width=&quot;49%&quot; /&gt;
