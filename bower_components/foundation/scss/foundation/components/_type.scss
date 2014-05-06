@@ -211,7 +211,7 @@ $align-class-breakpoints:
     p {
       font-family: $paragraph-font-family;
       font-weight: $paragraph-font-weight;
-      font-size: $paragraph-font-size;
+      font-size: $paragraph-font-size - rem-calc(3);
       line-height: $paragraph-line-height;
       margin-bottom: $paragraph-margin-bottom;
       text-rendering: $paragraph-text-rendering;
@@ -244,9 +244,9 @@ $align-class-breakpoints:
     }
 
     h1 { font-size: $h1-font-size - rem-calc(10); }
-    h2 { font-size: $h2-font-size - rem-calc(10); }
+    h2 { font-size: $h2-font-size - rem-calc(5); }
     h3 { font-size: $h3-font-size - rem-calc(5); }
-    h4 { font-size: $h4-font-size - rem-calc(5); }
+    h4 { font-size: $h4-font-size; }
     h5 { font-size: $h5-font-size; }
     h6 { font-size: $h6-font-size; }
 
@@ -427,6 +427,9 @@ $align-class-breakpoints:
       h2 { font-size: $h2-font-size; }
       h3 { font-size: $h3-font-size; }
       h4 { font-size: $h4-font-size; }
+      ul,
+      ol,
+      dl {font-size: $paragraph-font-size; }
     }
 
     // Only include these styles if you want them.

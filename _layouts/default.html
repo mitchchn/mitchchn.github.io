@@ -9,11 +9,18 @@ layout: master
       {% include fp-post-header.html %} 
             {% include post-content.html %}
     </article>
-      <hr class="post-separator large-8 large-centered medium-8 medium-centered small-8 small-centered column">
+    <hr class="post-separator large-8 large-centered medium-8 medium-centered small-8 small-centered column">
 {% endfor %}
 </div>
+
 <div class="row">
-<ul class="pagination-centered large-9 large-centered medium-9 medium-centered columns">
+<div class="large-9 large-centered medium-9 medium-centered columns">
+{% include fp-archive.html %}
+</div>
+</div>
+
+<!-- <div class="pagination-centered">
+<ul class="pagination">
 {% if paginator.next_page %}
   <li class="arrow"><a href="/page{{paginator.next_page}}">&laquo; Older</a></li>
 {% else %}
@@ -30,3 +37,4 @@ layout: master
 {% endif %}
 </ul>
 </div>
+ -->

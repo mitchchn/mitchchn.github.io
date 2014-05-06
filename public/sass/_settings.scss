@@ -16,7 +16,7 @@
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
-$base-font-size: 20px;
+$base-font-size: 19px;
 
 // This is the default html and body font-size for the base rem value.
 $rem-base: $base-font-size;
@@ -58,7 +58,7 @@ $body-font-style: normal;
 // We use these to control text direction settings
 // $text-direction: ltr;
 // $opposite-direction: right;
-// $default-float: left;
+$default-float: left;
 
 // We use these as default colors throughout
 $primary-color: #9037cd;
@@ -133,13 +133,13 @@ $header-font-style: normal;
 $header-font-color: #222;
 $header-line-height: 1.61;
 $header-top-margin: $equal-margin * 1.5;
-$header-bottom-margin: $equal-margin/1.5;
+$header-bottom-margin: $equal-margin/2;
 $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
 $h1-font-size: rem-calc(44);
-$h2-font-size: rem-calc(29);
-$h3-font-size: rem-calc(22);
+$h2-font-size: rem-calc(24);
+$h3-font-size: rem-calc(20);
 $h4-font-size: rem-calc(18);
 $h5-font-size: 1rem;
 $h6-font-size: 1rem;
@@ -186,7 +186,7 @@ $hr-margin: rem-calc(20);
 $list-style-position: outside;
 $list-side-margin: 1.1rem;
 $list-ordered-side-margin: 1.4rem;
-$list-side-margin-no-bullet: 0;
+$list-side-margin-no-bullet: 1;
 $list-nested-margin: rem-calc(20);
 $definition-list-header-weight: bold;
 $definition-list-header-margin-bottom: .3rem;
@@ -776,35 +776,35 @@ $microformat-abbr-font-decoration: none;
 
 // Pagination
 
-// $include-html-nav-classes: $include-html-classes;
+ $include-html-nav-classes: $include-html-classes;
 
 // We use these to control the pagination container
-// $pagination-height: rem-calc(24);
-// $pagination-margin: rem-calc(-5);
+ $pagination-height: rem-calc(24);
+ $pagination-margin: rem-calc(-5);
 
 // We use these to set the list-item properties
-// $pagination-li-float: $default-float;
-// $pagination-li-height: rem-calc(24);
-// $pagination-li-font-color: #222;
-// $pagination-li-font-size: rem-calc(14);
-// $pagination-li-margin: rem-calc(5);
+$pagination-li-float: $default-float;
+$pagination-li-height: rem-calc(24);
+$pagination-li-font-color: #222;
+$pagination-li-font-size: rem-calc(16);
+$pagination-li-margin: rem-calc(5);
 
 // We use these for the pagination anchor links
-// $pagination-link-pad: rem-calc(1 10 1);
-// $pagination-link-font-color: #999;
-// $pagination-link-active-bg: scale-color(#fff, $lightness: -10%);
+$pagination-link-pad: rem-calc(1 10 1);
+$pagination-link-font-color: #999;
+$pagination-link-active-bg: scale-color(#fff, $lightness: -10%);
 
 // We use these for disabled anchor links
-// $pagination-link-unavailable-cursor: default;
-// $pagination-link-unavailable-font-color: #999;
-// $pagination-link-unavailable-bg-active: transparent;
+$pagination-link-unavailable-cursor: default;
+$pagination-link-unavailable-font-color: #999;
+$pagination-link-unavailable-bg-active: transparent;
 
 // We use these for currently selected anchor links
-// $pagination-link-current-background: $primary-color;
-// $pagination-link-current-font-color: #fff;
-// $pagination-link-current-font-weight: bold;
-// $pagination-link-current-cursor: default;
-// $pagination-link-current-active-bg: $primary-color;
+$pagination-link-current-background: $primary-color;
+$pagination-link-current-font-color: #fff;
+$pagination-link-current-font-weight: bold;
+$pagination-link-current-cursor: default;
+$pagination-link-current-active-bg: $primary-color;
 
 // Panels
 

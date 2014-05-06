@@ -34,10 +34,13 @@
 .elegant {
     font-family: $accent-font !important;
     color: #666;
-    font-size: 0.75rem !important;
+    font-size: 0.7rem !important;
     font-weight: 400;
-    letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.shadow {
+ box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 8px 0px;
 }
 
 // Type
@@ -77,6 +80,10 @@ article {
     margin-top: $golden-space;
     h2,h3 {
         text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    ol li {
+        list-style-type: decimal;
     }
     sup {
         font-size: 0.75em !important;
@@ -112,7 +119,7 @@ article {
 header {
     //margin-bottom: 2.2 * $equal-margin;
     h1 {
-        font-weight: 700;
+        font-weight: 800;
         margin-top: 0;
         line-height: 1.2em;
         margin-bottom: 0.618rem;
@@ -135,6 +142,44 @@ header {
             text-decoration: none;
     }
 
+}
+
+kbd {
+padding:0.1em 0.4em;
+border:1px solid #bbb;
+font-size:14px;
+font-family:Helvetica,sans-serif;
+background-color:#f7f7f7;
+color:#333;
+-moz-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+-webkit-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+display:inline-block;
+margin:0 0.1em;
+text-shadow:0 1px 0 #fff;
+line-height:1.4;
+white-space:nowrap;
+}
+
+figure {
+margin-bottom: $equal-margin;
+border-bottom: 1px solid #ccc;
+    figcaption {
+        margin-top: 0.8em;
+        line-height: 1.4;
+        font-size: 75%;
+    }
+}
+
+pre + p {
+    margin-bottom: $equal-margin;
+}
+
+code {
+    color: #000;
 }
 
 /*
@@ -197,6 +242,8 @@ header {
     font-family: $accent-font !important;
     padding-top: 25px;
     padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     background: #333;
     p {
         color: #ccc;
@@ -215,7 +262,6 @@ header {
 
 .icon {
     padding-top: 7px;
-    padding-left: 1px;
     text-align: center;
     font-size: $h4-font-size;
     color: #fff;
@@ -224,10 +270,10 @@ header {
 }
 
 .icon-small {
-    padding-top: 5px;
-    padding-left: 1px;
+    padding-top: 3px;
+    padding-left: 0px;
     text-align: center;
-    font-size: $h4-font-size;
+    font-size: 24px;
     color: #333;
     background: #CCC;
     @include make-circle-icon(29px);  
@@ -251,13 +297,45 @@ header {
         @extend .elegant;
     a {
         @extend .elegant;
-    }
+        }
     }
 
     .tag {
             font-weight: 400 !important;
         }
 
+.section-title {
+    text-transform: uppercase;
+    font-size: $h4-font-size;
+}
+
+#archive {
+    time {
+        @extend .elegant;
+        margin-right: 25px;
+    }
+    .post-list {
+        margin-left: 0;
+    }
+    .recent-post {
+        align: left;
+    }
+}
+
+#footnotediv {
+    @extend .shadow;
+    border-radius: 15px;
+    padding: 15px;
+    color: #fff;
+    border: 3px solid $primary-color;
+    background: #333;
+    p {
+        font-family: $accent-font !important;
+        font-size: 80% !important;
+        font-weight: 600 !important;
+        margin-bottom: 0 !important;
+    }
+}
 
 footer.controls {
     a{

@@ -16,18 +16,22 @@
     
     
     <!-- Pygments -->
-    <link rel="stylesheet" href="/public/css/syntax.css">
+    <!--<link rel="stylesheet" href="/public/css/syntax.css">-->
 
 
 
     <!-- Fonts -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script type="text/javascript" src="//use.typekit.net/ikl3fnm.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 
-<link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="//use.typekit.net/ikl3fnm.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- JS -->
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <link rel="stylesheet" href="/public/css/paraiso.css" />
 
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
@@ -50,12 +54,9 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li class="active"><a href="#">About</a></li>
-      <li class="has-dropdown">
-        <a href="#">Categories</a>
-        <ul class="dropdown">
-          <li><a href="#">First link in dropdown</a></li>
-        </ul>
+      <li><a href="#">About</a></li>
+      <li>
+        <a href="archive">Archive</a>
       </li>
     </ul>
   </section>
@@ -65,38 +66,39 @@
     <!-- Main Blog Content -->
     <div class="content" role="content">
       <div class="page">
-  <h1 class="page-title">About</h1>
-  <section class="post-content">
-	<p class="message">
+    <div class="large-9 large-centered medium-9 medium-centered columns">
+    <h1 class="page-title">About</h1>
+    <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+<p>In the novel, <em>The Strange Case of Dr. Jeykll and Mr. Hyde</em>, Mr. Poole is Dr. Jekyll’s virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It’s made by <a href="https://twitter.com/mdo">@mdo</a>.</p>
 
-There are currently two themes built on Poole:
+<p>There are currently two themes built on Poole:</p>
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+<ul>
+  <li><a href="http://hyde.getpoole.com">Hyde</a></li>
+  <li><a href="http://lanyon.getpoole.com">Lanyon</a></li>
+</ul>
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+<p>Learn more and contribute on <a href="https://github.com/poole">GitHub</a>.</p>
 
-## Setup
+<h2 id="setup">Setup</h2>
 
-Some fun facts about the setup of this project include:
+<p>Some fun facts about the setup of this project include:</p>
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+<ul>
+  <li>Built for <a href="http://jekyllrb.com">Jekyll</a></li>
+  <li>Developed on GitHub and hosted for free on <a href="https://pages.github.com">GitHub Pages</a></li>
+  <li>Coded with <a href="http://sublimetext.com">Sublime Text 2</a>, an amazing code editor</li>
+  <li>Designed and developed while listening to music like <a href="https://soundcloud.com/maddecent/sets/blood-bros-series">Blood Bros Trilogy</a></li>
+</ul>
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+<p>Have questions or suggestions? Feel free to <a href="https://github.com/poole/issues/new">open an issue on GitHub</a> or <a href="https://twitter.com/mdo">ask me on Twitter</a>.</p>
 
-Thanks for reading!
+<p>Thanks for reading!</p>
 
-</section>
-<footer class = "controls">
-<a class="permalink" href=/about/><i class="fa fa-chain"></i>&nbsp;[PERMALINK]</a>
-</footer>}
+  </div>
 </div>
 
       <div class="clear large-12 medium-12">&nbsp;</div>
@@ -107,10 +109,94 @@ Thanks for reading!
     <div class="row">
     <div class="footer large-11 medium-11 large-centered medium-centered columns">
         <p>
+        <small>
           &copy; 2014 Mitchell Cohen.
+        </small>
         </p>
     </div>
     </div>
+
+    <script type="text/javascript">
+// this script requires jQuery
+$(document).ready(function() {
+    Footnotes.setup();
+});
+
+var Footnotes = {
+    footnotetimeout: false,
+    setup: function() {
+        var footnotelinks = $("a[class='footnote']")
+
+    $('body').click(function(e) {
+      if (!$(e.target).closest('#footnotediv').length){
+        Footnotes.footnoteoout();
+    }
+    });
+
+    $(footnotelinks).click(function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+      });
+
+        footnotelinks.unbind('click',Footnotes.footnoteover);
+        footnotelinks.unbind('mouseout',Footnotes.footnoteoout);
+        
+        footnotelinks.bind('click',Footnotes.footnoteover);
+        document.bind('click',Footnotes.footnoteoout);
+    },
+    footnoteover: function() {
+        clearTimeout(Footnotes.footnotetimeout);
+        $('#footnotediv').stop();
+        $('#footnotediv').remove();
+        
+        var id = $(this).attr('href').substr(1);
+        var position = $(this).offset();
+    
+        var div = $(document.createElement('div'));
+        div.attr('id','footnotediv');
+        //div.bind('mouseover',Footnotes.divover);
+        //div.bind('mouseout',Footnotes.footnoteoout);
+
+        var el = document.getElementById(id);
+        div.html($(el).html());
+        
+        div.css({
+            position:'absolute',
+            width:'400px',
+            opacity:1.0
+        });
+        $(document.body).append(div);
+
+        var left = position.left;
+        if(left + 420  > $(window).width() + $(window).scrollLeft())
+            left = $(window).width() - 420 + $(window).scrollLeft();
+        var top = position.top+20;
+        if(top + div.height() > $(window).height() + $(window).scrollTop())
+            top = position.top - div.height() - 15;
+        div.css({
+            left:left,
+            top:top
+        });
+    },
+    footnoteoout: function() {
+        Footnotes.footnotetimeout = setTimeout(function() {
+            $('#footnotediv').animate({
+                opacity: 0
+            }, 600, function() {
+                $('#footnotediv').remove();
+            });
+        },100);
+    },
+    divover: function() {
+        clearTimeout(Footnotes.footnotetimeout);
+        $('#footnotediv').stop();
+        $('#footnotediv').css({
+                opacity: 1.0
+        });
+    }
+}
+    </script>
+
 
     <script type="text/javascript">
 // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable

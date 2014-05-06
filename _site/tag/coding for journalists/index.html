@@ -16,18 +16,22 @@
     
     
     <!-- Pygments -->
-    <link rel="stylesheet" href="/public/css/syntax.css">
+    <!--<link rel="stylesheet" href="/public/css/syntax.css">-->
 
 
 
     <!-- Fonts -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script type="text/javascript" src="//use.typekit.net/ikl3fnm.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 
-<link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="//use.typekit.net/ikl3fnm.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- JS -->
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <link rel="stylesheet" href="/public/css/paraiso.css" />
 
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
@@ -50,12 +54,9 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li class="active"><a href="#">About</a></li>
-      <li class="has-dropdown">
-        <a href="#">Categories</a>
-        <ul class="dropdown">
-          <li><a href="#">First link in dropdown</a></li>
-        </ul>
+      <li><a href="#">About</a></li>
+      <li>
+        <a href="archive">Archive</a>
       </li>
     </ul>
   </section>
@@ -67,6 +68,8 @@
       <h2 class="post_title">Posts yolo Tagged &ldquo;coding for journalists&rdquo;</h2>
 <div class="row">
 
+  
+  
   
   
   
@@ -102,10 +105,94 @@
     <div class="row">
     <div class="footer large-11 medium-11 large-centered medium-centered columns">
         <p>
+        <small>
           &copy; 2014 Mitchell Cohen.
+        </small>
         </p>
     </div>
     </div>
+
+    <script type="text/javascript">
+// this script requires jQuery
+$(document).ready(function() {
+    Footnotes.setup();
+});
+
+var Footnotes = {
+    footnotetimeout: false,
+    setup: function() {
+        var footnotelinks = $("a[class='footnote']")
+
+    $('body').click(function(e) {
+      if (!$(e.target).closest('#footnotediv').length){
+        Footnotes.footnoteoout();
+    }
+    });
+
+    $(footnotelinks).click(function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+      });
+
+        footnotelinks.unbind('click',Footnotes.footnoteover);
+        footnotelinks.unbind('mouseout',Footnotes.footnoteoout);
+        
+        footnotelinks.bind('click',Footnotes.footnoteover);
+        document.bind('click',Footnotes.footnoteoout);
+    },
+    footnoteover: function() {
+        clearTimeout(Footnotes.footnotetimeout);
+        $('#footnotediv').stop();
+        $('#footnotediv').remove();
+        
+        var id = $(this).attr('href').substr(1);
+        var position = $(this).offset();
+    
+        var div = $(document.createElement('div'));
+        div.attr('id','footnotediv');
+        //div.bind('mouseover',Footnotes.divover);
+        //div.bind('mouseout',Footnotes.footnoteoout);
+
+        var el = document.getElementById(id);
+        div.html($(el).html());
+        
+        div.css({
+            position:'absolute',
+            width:'400px',
+            opacity:1.0
+        });
+        $(document.body).append(div);
+
+        var left = position.left;
+        if(left + 420  > $(window).width() + $(window).scrollLeft())
+            left = $(window).width() - 420 + $(window).scrollLeft();
+        var top = position.top+20;
+        if(top + div.height() > $(window).height() + $(window).scrollTop())
+            top = position.top - div.height() - 15;
+        div.css({
+            left:left,
+            top:top
+        });
+    },
+    footnoteoout: function() {
+        Footnotes.footnotetimeout = setTimeout(function() {
+            $('#footnotediv').animate({
+                opacity: 0
+            }, 600, function() {
+                $('#footnotediv').remove();
+            });
+        },100);
+    },
+    divover: function() {
+        clearTimeout(Footnotes.footnotetimeout);
+        $('#footnotediv').stop();
+        $('#footnotediv').css({
+                opacity: 1.0
+        });
+    }
+}
+    </script>
+
 
     <script type="text/javascript">
 // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable

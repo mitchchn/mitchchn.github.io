@@ -16,18 +16,22 @@
     
     
     <!-- Pygments -->
-    <link rel="stylesheet" href="/public/css/syntax.css">
+    <!--<link rel="stylesheet" href="/public/css/syntax.css">-->
 
 
 
     <!-- Fonts -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script type="text/javascript" src="//use.typekit.net/ikl3fnm.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 
-<link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="//use.typekit.net/ikl3fnm.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- JS -->
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <link rel="stylesheet" href="/public/css/paraiso.css" />
 
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
@@ -50,12 +54,9 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li class="active"><a href="#">About</a></li>
-      <li class="has-dropdown">
-        <a href="#">Categories</a>
-        <ul class="dropdown">
-          <li><a href="#">First link in dropdown</a></li>
-        </ul>
+      <li><a href="#">About</a></li>
+      <li>
+        <a href="archive">Archive</a>
       </li>
     </ul>
   </section>
@@ -92,6 +93,127 @@
 <div id="main"></div>
   <div class="row"> 
    
+    <article class="post large-9 large-centered medium-9 medium-centered columns">
+      <header class = "post-header">
+  
+  	<h1 class="post-title"><a href=/2014/05/06/coding-for-journalists-p1/>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</a></h1>
+  
+  
+  <div class="controls">
+  <time class="controls post-date">May 06, 2014</time>
+  </div>
+ <!---->
+</header> 
+            <div class="post-content">
+<p><img src="/public/img/confession.png" /></p>
+
+<p>All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow any formatting, including fonts, colours, and sizes. Documents that permit formatting are called rich text.</p>
+
+<figure>
+    <img src="/public/img/plaintext.png" width="49%" />
+    <img src="/public/img/richtext.png" width="49%" />
+    <figcaption><span class="elegant">Plain and Rich&mdash;</span> Even if we were to change the font in the right document to match that of the left, it still wouldn't be plain text. It's the underlying file format that counts.</figcaption>
+</figure>
+
+<p>Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is <abbr title="What You See is What You Get">WYSIWYG</abbr>. But plain text is the only format web browsers truly understand. To start writing HTML, you’ll need to to write plain text with a <strong>text editor.</strong></p>
+
+<h2 id="choose-your-editor">Choose your editor</h2>
+
+<p>In the hands of a skilled coder, a text editor is like a Jedi’s lightsaber: <em>not as clumsy or random as a word processor. An elegant weapon, for a more civilized age.</em> Armed with her trusty text editor, a coder can whip up anything from a blog post to the next Facebook. The only limits are her imagination, her free time, and her venture capital.</p>
+
+<p>Which text editor you decide to code with is a matter of personal taste. Like any tool, use the one you find most comfortable. Since plain text is a free and open format, you can always switch later.</p>
+
+<p>Windows and OS X come with <strong>Notepad</strong> and <strong>TextEdit</strong>, respectively. They can both get the job done, but they’re missing some helpful quality-of-life features. Two fantastic and free alternatives are <a href="http://www.notepad-plus-plus.org">Notepad++</a> for PCs and <a href="http://barebones.com/products/textwrangler/">TextWrangler</a> for the Mac. For the rest of this series, we’ll assume you’re using one of these apps.</p>
+
+<p>Text editors are for more than just code. They’re ideal for writing, too. There are <a href="http://bettermess.com/a-plain-text-primer/">many reasons</a> to do your online writing in plain text, and I won’t <a href="http://www.macworld.com/article/1161549/forget_fancy_formatting_why_plain_text_is_best.html">cover them</a> in this post. But the most important reason is quite simple: <strong>everything you publish on the web ends up as plain text.</strong> Specifically, it ends up as HTML.</p>
+
+<p>Even if you write your articles in Google Drive or MS Word, they’re going to be converted to plain text and HTML at some point. (And if you’ve ever copied and pasted from Word into WordPress, you’ll know that plenty gets lost in translation.)</p>
+
+<p>If you write online, you’ll find you just can’t avoid plain text and HTML—no matter how hard you try. So skip the middleman: practice coding <em>and</em> writing in your text editor. It will make your life much simpler.<sup id="fnref:format"><a href="#fn:format" class="footnote">1</a></sup></p>
+
+<h2 id="get-your-code-on">Get your code on</h2>
+
+<p>Once you’ve downloaded and installed a text editor, open it up to a blank document. Since you’re a writer, the first thing you’ll want to do is turn on word wrap:<sup id="fnref:wrap"><a href="#fn:wrap" class="footnote">2</a></sup></p>
+
+<figure>
+    <img src="/public/img/wrap_tw.png" />
+    <figcaption><span class="elegant">Enabling word wrap&mdash;</span>In <strong>TextWrangler</strong>, click the <strong>T</strong> in the top left corner and choose <em>Soft Wrap Text</em>. In <strong>Notepad++</strong>, go to the <strong>View</strong> menu and choose <em>Word wrap</em>.</figcaption>
+</figure>
+
+<p>Next, copy or type the following line of code into your editor:</p>
+
+<pre><code>Hello &lt;strong&gt;World&lt;/strong&gt;
+</code></pre>
+
+<p>
+</p>
+<p>Save your document. Name it <code>helloworld.html</code>. (Make sure the extension is <code>.html</code> and not <code>.txt</code> or <code>.html.txt</code>.) Save it to the Desktop or a folder where you can easily find it.<sup id="fnref:src"><a href="#fn:src" class="footnote">3</a></sup> If you’ve named the file correctly, your editor will recognize that you’re writing HTML code and highlight the <code>&lt;strong&gt;</code> tags in a distinctive colour.</p>
+
+<figure>
+    <img src="/public/img/helloworld_tw.png" />
+    <figcaption><span class="elegant">MY FIRST HTML&mdash;</span>I saved my document as <code>helloworld.html</code> and TextWrangler gave me purple code for my efforts. Your colours might be different.</figcaption>
+</figure>
+
+<p>Once you’ve saved your <code>helloworld.html</code> file, locate it in your file manager and double-click it. It should launch your computer’s default web browser. If that doesn’t happen, right click on the file and select <strong>Open With</strong>, then choose your browser. You should then see your new HTML page in its full glory:</p>
+
+<figure>
+    <img src="/public/img/helloworld.png" />
+    <figcaption><span class="elegant">A webpage&mdash;</span> If you see something else (for instance, bits and pieces of the word <strong>&lt;strong&gt;</strong>) or no formatting at all, go back and double-check the line of code above. Then save your file and try again. If you are using TextEdit on Mac, make sure you're in plain text mode (<strong>Format &gt; Make Plain Text</strong>). If you're using MS Word... don't be.</figcaption>
+</figure>
+
+<p>At this point, you likely have a good of what it is that <code>&lt;strong&gt;</code> does. Web browsers will <b>bolden</b> any text between <code>&lt;strong&gt;</code> and its closing tag, <code>&lt;/strong&gt;</code>. (All closing tags begin with a forward slash, <strong>”/”</strong>.)</p>
+
+<p>Let’s try a different tag. Go back to your file and change the opening <code>&lt;strong&gt;</code> tag to <code>&lt;em&gt;</code>. Do the same to its closing tag: <code>&lt;/em&gt;</code>. Your code should look now like this:</p>
+
+<pre><code>Hello &lt;em&gt;World&lt;/em&gt;
+</code></pre>
+
+<p></p>
+<p>Save your file, then go back to your web browser and refresh the page (<kbd>⌘</kbd>+<kbd>R</kbd> on a Mac, or <kbd>F5</kbd> on Windows). You will need to refresh your browser whenever you make changes to an HTML file for those changes to show up. You should now see this in your browser:</p>
+
+<figure>
+    <img src="/public/img/helloworld_it.png" />
+</figure>
+
+<p>Simple stuff. The <code>&lt;strong&gt;</code> tag tells the browser to make text <strong>strong</strong> (bold), and the <code>&lt;em&gt;</code> tag tells the browser to <em>emphasize</em> (italicize) it.<sup id="fnref:html5"><a href="#fn:html5" class="footnote">4</a></sup> Tags, or elements, are all the words between triangle brackets. They’re visible in your text editor but not in your web browser. Closing tags begin with slashes. Any text between opening and closing tags is affected by those tags. If you grasp these points, you fundamentally understand HTML.</p>
+
+<p>Of course, the rabbit hole goes much deeper—as we will soon see. For now, practice writing longer blocks of text and formatting them with <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code>. Try these exercises:</p>
+
+<ol>
+  <li>Combine multiple <code>&lt;strong&gt;</code> tags.</li>
+  <li>Put an <code>&lt;em&gt;</code> tag right next to a <code>&lt;strong&gt;</code> tag.</li>
+  <li>See what happens when you leave out a closing tag.</li>
+  <li>Go wild. Don’t worry. You can’t break anything. (At least, not until we get to JavaScript!)</li>
+</ol>
+
+<p>Next time, we’ll go into more detail about the way tags behave and what happens when they shack up with other tags. Are you sick of the word “tag” yet? I hope not. See you soon.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:format">
+      <p>If you’re already kinda familiar with HTML and want to start doing more of your writing in plain text, <a href="http://code.tutsplus.com/tutorials/markdown-the-ins-and-outs--net-25482">Markdown</a> is for you. <a href="#fnref:format" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:wrap">
+      <p>Web developers don’t typically use word wrap. Instead, they follow a convention of manually limiting each line of code to 80 characters long. But when you’re composing paragraphs, having to press <kbd>enter</kbd> once every 80 characters gets pretty ridiculous. So turn on word wrap, but try to respect the rule when writing lines that only contain code. <a href="#fnref:wrap" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:src">
+      <p>For bonus nerd points, save all your code to a folder named <b>src</b> (short for “source [code]”). <a href="#fnref:src" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:html5">
+      <p>If you learned HTML several years ago, you may be wondering why I’m using <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> instead of <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code>. We’re already running into a major change in HTML5, which does away with tags that are strictly presentational in favour of tags that are <em>semantic</em>. We’ll learn more about this soon. <a href="#fnref:html5" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+<p><em>Got feedback? <a href="http://twitter.com/mitchchn">@mitchchn</a></em></p>
+<footer class = "controls">
+ 
+<a class="permalink" href=/2014/05/06/coding-for-journalists-p1/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
+</footer>
+    </article>
+    <hr class="post-separator large-8 large-centered medium-8 medium-centered small-8 small-centered column">
+
     <article class="post large-9 large-centered medium-9 medium-centered columns">
       <header class = "post-header">
   
@@ -166,6 +288,7 @@ But before we get that far, we have to start with the basics. That includes lear
 </div>
 
 </div>
+<p><em>Got feedback? <a href="http://twitter.com/mitchchn">@mitchchn</a></em></p>
 <footer class = "controls">
  
   <a class="tag controls">
@@ -175,11 +298,28 @@ But before we get that far, we have to start with the basics. That includes lear
 <a class="permalink" href=/2014/05/03/coding-for-journalists-p0/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
 </footer>
     </article>
-      <hr class="post-separator large-8 large-centered medium-8 medium-centered small-8 small-centered column">
+    <hr class="post-separator large-8 large-centered medium-8 medium-centered small-8 small-centered column">
 
 </div>
+
 <div class="row">
-<ul class="pagination-centered large-9 large-centered medium-9 medium-centered columns">
+<div class="large-9 large-centered medium-9 medium-centered columns">
+<section id="archive">
+  <h4 class="section-title">Recent posts</h4>
+   <ul class="post-list">
+  
+      <li class="recent-post"><time>06 May</time><a href="/2014/05/06/coding-for-journalists-p1/">Coding for Journalists, Part 1: Text Editing and First Steps with HTML</a></li>
+  
+      <li class="recent-post"><time>03 May</time><a href="/2014/05/03/coding-for-journalists-p0/">Coding for Journalists, Part 0: Why Code?</a></li>
+  
+  </ul>
+</section>
+
+</div>
+</div>
+
+<!-- <div class="pagination-centered">
+<ul class="pagination">
 
   <li class="arrow unavailable">&laquo; Older</li>
 
@@ -188,7 +328,7 @@ But before we get that far, we have to start with the basics. That includes lear
 
 </ul>
 </div>
-
+ -->
       <div class="clear large-12 medium-12">&nbsp;</div>
     </div>
 
@@ -197,10 +337,94 @@ But before we get that far, we have to start with the basics. That includes lear
     <div class="row">
     <div class="footer large-11 medium-11 large-centered medium-centered columns">
         <p>
+        <small>
           &copy; 2014 Mitchell Cohen.
+        </small>
         </p>
     </div>
     </div>
+
+    <script type="text/javascript">
+// this script requires jQuery
+$(document).ready(function() {
+    Footnotes.setup();
+});
+
+var Footnotes = {
+    footnotetimeout: false,
+    setup: function() {
+        var footnotelinks = $("a[class='footnote']")
+
+    $('body').click(function(e) {
+      if (!$(e.target).closest('#footnotediv').length){
+        Footnotes.footnoteoout();
+    }
+    });
+
+    $(footnotelinks).click(function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+      });
+
+        footnotelinks.unbind('click',Footnotes.footnoteover);
+        footnotelinks.unbind('mouseout',Footnotes.footnoteoout);
+        
+        footnotelinks.bind('click',Footnotes.footnoteover);
+        document.bind('click',Footnotes.footnoteoout);
+    },
+    footnoteover: function() {
+        clearTimeout(Footnotes.footnotetimeout);
+        $('#footnotediv').stop();
+        $('#footnotediv').remove();
+        
+        var id = $(this).attr('href').substr(1);
+        var position = $(this).offset();
+    
+        var div = $(document.createElement('div'));
+        div.attr('id','footnotediv');
+        //div.bind('mouseover',Footnotes.divover);
+        //div.bind('mouseout',Footnotes.footnoteoout);
+
+        var el = document.getElementById(id);
+        div.html($(el).html());
+        
+        div.css({
+            position:'absolute',
+            width:'400px',
+            opacity:1.0
+        });
+        $(document.body).append(div);
+
+        var left = position.left;
+        if(left + 420  > $(window).width() + $(window).scrollLeft())
+            left = $(window).width() - 420 + $(window).scrollLeft();
+        var top = position.top+20;
+        if(top + div.height() > $(window).height() + $(window).scrollTop())
+            top = position.top - div.height() - 15;
+        div.css({
+            left:left,
+            top:top
+        });
+    },
+    footnoteoout: function() {
+        Footnotes.footnotetimeout = setTimeout(function() {
+            $('#footnotediv').animate({
+                opacity: 0
+            }, 600, function() {
+                $('#footnotediv').remove();
+            });
+        },100);
+    },
+    divover: function() {
+        clearTimeout(Footnotes.footnotetimeout);
+        $('#footnotediv').stop();
+        $('#footnotediv').css({
+                opacity: 1.0
+        });
+    }
+}
+    </script>
+
 
     <script type="text/javascript">
 // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable

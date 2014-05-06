@@ -4,13 +4,120 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-04T07:11:47-04:00</updated>
+ <updated>2014-05-06T05:49:43-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</title>
+   <link href="http://mitchchn.me/2014/05/06/coding-for-journalists-p1/"/>
+   <updated>2014-05-06T00:00:00-04:00</updated>
+   <id>http://mitchchn.me/2014/05/06/coding-for-journalists-p1</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/public/img/confession.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow any formatting, including fonts, colours, and sizes. Documents that permit formatting are called rich text.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/public/img/plaintext.png&quot; width=&quot;49%&quot; /&gt;
+    &lt;img src=&quot;/public/img/richtext.png&quot; width=&quot;49%&quot; /&gt;
+    &lt;figcaption&gt;&lt;span class=&quot;elegant&quot;&gt;Plain and Rich&amp;mdash;&lt;/span&gt; Even if we were to change the font in the right document to match that of the left, it still wouldn&#39;t be plain text. It&#39;s the underlying file format that counts.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is &lt;abbr title=&quot;What You See is What You Get&quot;&gt;WYSIWYG&lt;/abbr&gt;. But plain text is the only format web browsers truly understand. To start writing HTML, you’ll need to to write plain text with a &lt;strong&gt;text editor.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;choose-your-editor&quot;&gt;Choose your editor&lt;/h2&gt;
+
+&lt;p&gt;In the hands of a skilled coder, a text editor is like a Jedi’s lightsaber: &lt;em&gt;not as clumsy or random as a word processor. An elegant weapon, for a more civilized age.&lt;/em&gt; Armed with her trusty text editor, a coder can whip up anything from a blog post to the next Facebook. The only limits are her imagination, her free time, and her venture capital.&lt;/p&gt;
+
+&lt;p&gt;Which text editor you decide to code with is a matter of personal taste. Like any tool, use the one you find most comfortable. Since plain text is a free and open format, you can always switch later.&lt;/p&gt;
+
+&lt;p&gt;Windows and OS X come with &lt;strong&gt;Notepad&lt;/strong&gt; and &lt;strong&gt;TextEdit&lt;/strong&gt;, respectively. They can both get the job done, but they’re missing some helpful quality-of-life features. Two fantastic and free alternatives are &lt;a href=&quot;http://www.notepad-plus-plus.org&quot;&gt;Notepad++&lt;/a&gt; for PCs and &lt;a href=&quot;http://barebones.com/products/textwrangler/&quot;&gt;TextWrangler&lt;/a&gt; for the Mac. For the rest of this series, we’ll assume you’re using one of these apps.&lt;/p&gt;
+
+&lt;p&gt;Text editors are for more than just code. They’re ideal for writing, too. There are &lt;a href=&quot;http://bettermess.com/a-plain-text-primer/&quot;&gt;many reasons&lt;/a&gt; to do your online writing in plain text, and I won’t &lt;a href=&quot;http://www.macworld.com/article/1161549/forget_fancy_formatting_why_plain_text_is_best.html&quot;&gt;cover them&lt;/a&gt; in this post. But the most important reason is quite simple: &lt;strong&gt;everything you publish on the web ends up as plain text.&lt;/strong&gt; Specifically, it ends up as HTML.&lt;/p&gt;
+
+&lt;p&gt;Even if you write your articles in Google Drive or MS Word, they’re going to be converted to plain text and HTML at some point. (And if you’ve ever copied and pasted from Word into WordPress, you’ll know that plenty gets lost in translation.)&lt;/p&gt;
+
+&lt;p&gt;If you write online, you’ll find you just can’t avoid plain text and HTML—no matter how hard you try. So skip the middleman: practice coding &lt;em&gt;and&lt;/em&gt; writing in your text editor. It will make your life much simpler.&lt;sup id=&quot;fnref:format&quot;&gt;&lt;a href=&quot;#fn:format&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;get-your-code-on&quot;&gt;Get your code on&lt;/h2&gt;
+
+&lt;p&gt;Once you’ve downloaded and installed a text editor, open it up to a blank document. Since you’re a writer, the first thing you’ll want to do is turn on word wrap:&lt;sup id=&quot;fnref:wrap&quot;&gt;&lt;a href=&quot;#fn:wrap&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/public/img/wrap_tw.png&quot; /&gt;
+    &lt;figcaption&gt;&lt;span class=&quot;elegant&quot;&gt;Enabling word wrap&amp;mdash;&lt;/span&gt;In &lt;strong&gt;TextWrangler&lt;/strong&gt;, click the &lt;strong&gt;T&lt;/strong&gt; in the top left corner and choose &lt;em&gt;Soft Wrap Text&lt;/em&gt;. In &lt;strong&gt;Notepad++&lt;/strong&gt;, go to the &lt;strong&gt;View&lt;/strong&gt; menu and choose &lt;em&gt;Word wrap&lt;/em&gt;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Next, copy or type the following line of code into your editor:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Hello &amp;lt;strong&amp;gt;World&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;
+&lt;/p&gt;
+&lt;p&gt;Save your document. Name it &lt;code&gt;helloworld.html&lt;/code&gt;. (Make sure the extension is &lt;code&gt;.html&lt;/code&gt; and not &lt;code&gt;.txt&lt;/code&gt; or &lt;code&gt;.html.txt&lt;/code&gt;.) Save it to the Desktop or a folder where you can easily find it.&lt;sup id=&quot;fnref:src&quot;&gt;&lt;a href=&quot;#fn:src&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; If you’ve named the file correctly, your editor will recognize that you’re writing HTML code and highlight the &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags in a distinctive colour.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/public/img/helloworld_tw.png&quot; /&gt;
+    &lt;figcaption&gt;&lt;span class=&quot;elegant&quot;&gt;MY FIRST HTML&amp;mdash;&lt;/span&gt;I saved my document as &lt;code&gt;helloworld.html&lt;/code&gt; and TextWrangler gave me purple code for my efforts. Your colours might be different.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Once you’ve saved your &lt;code&gt;helloworld.html&lt;/code&gt; file, locate it in your file manager and double-click it. It should launch your computer’s default web browser. If that doesn’t happen, right click on the file and select &lt;strong&gt;Open With&lt;/strong&gt;, then choose your browser. You should then see your new HTML page in its full glory:&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/public/img/helloworld.png&quot; /&gt;
+    &lt;figcaption&gt;&lt;span class=&quot;elegant&quot;&gt;A webpage&amp;mdash;&lt;/span&gt; If you see something else (for instance, bits and pieces of the word &lt;strong&gt;&amp;lt;strong&amp;gt;&lt;/strong&gt;) or no formatting at all, go back and double-check the line of code above. Then save your file and try again. If you are using TextEdit on Mac, make sure you&#39;re in plain text mode (&lt;strong&gt;Format &amp;gt; Make Plain Text&lt;/strong&gt;). If you&#39;re using MS Word... don&#39;t be.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;At this point, you likely have a good of what it is that &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; does. Web browsers will &lt;b&gt;bolden&lt;/b&gt; any text between &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; and its closing tag, &lt;code&gt;&amp;lt;/strong&amp;gt;&lt;/code&gt;. (All closing tags begin with a forward slash, &lt;strong&gt;”/”&lt;/strong&gt;.)&lt;/p&gt;
+
+&lt;p&gt;Let’s try a different tag. Go back to your file and change the opening &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag to &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;. Do the same to its closing tag: &lt;code&gt;&amp;lt;/em&amp;gt;&lt;/code&gt;. Your code should look now like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Hello &amp;lt;em&amp;gt;World&amp;lt;/em&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Save your file, then go back to your web browser and refresh the page (&lt;kbd&gt;⌘&lt;/kbd&gt;+&lt;kbd&gt;R&lt;/kbd&gt; on a Mac, or &lt;kbd&gt;F5&lt;/kbd&gt; on Windows). You will need to refresh your browser whenever you make changes to an HTML file for those changes to show up. You should now see this in your browser:&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/public/img/helloworld_it.png&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Simple stuff. The &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag tells the browser to make text &lt;strong&gt;strong&lt;/strong&gt; (bold), and the &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag tells the browser to &lt;em&gt;emphasize&lt;/em&gt; (italicize) it.&lt;sup id=&quot;fnref:html5&quot;&gt;&lt;a href=&quot;#fn:html5&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; Tags, or elements, are all the words between triangle brackets. They’re visible in your text editor but not in your web browser. Closing tags begin with slashes. Any text between opening and closing tags is affected by those tags. If you grasp these points, you fundamentally understand HTML.&lt;/p&gt;
+
+&lt;p&gt;Of course, the rabbit hole goes much deeper—as we will soon see. For now, practice writing longer blocks of text and formatting them with &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;. Try these exercises:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Combine multiple &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags.&lt;/li&gt;
+  &lt;li&gt;Put an &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag right next to a &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag.&lt;/li&gt;
+  &lt;li&gt;See what happens when you leave out a closing tag.&lt;/li&gt;
+  &lt;li&gt;Go wild. Don’t worry. You can’t break anything. (At least, not until we get to JavaScript!)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Next time, we’ll go into more detail about the way tags behave and what happens when they shack up with other tags. Are you sick of the word “tag” yet? I hope not. See you soon.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:format&quot;&gt;
+      &lt;p&gt;If you’re already kinda familiar with HTML and want to start doing more of your writing in plain text, &lt;a href=&quot;http://code.tutsplus.com/tutorials/markdown-the-ins-and-outs--net-25482&quot;&gt;Markdown&lt;/a&gt; is for you. &lt;a href=&quot;#fnref:format&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:wrap&quot;&gt;
+      &lt;p&gt;Web developers don’t typically use word wrap. Instead, they follow a convention of manually limiting each line of code to 80 characters long. But when you’re composing paragraphs, having to press &lt;kbd&gt;enter&lt;/kbd&gt; once every 80 characters gets pretty ridiculous. So turn on word wrap, but try to respect the rule when writing lines that only contain code. &lt;a href=&quot;#fnref:wrap&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:src&quot;&gt;
+      &lt;p&gt;For bonus nerd points, save all your code to a folder named &lt;b&gt;src&lt;/b&gt; (short for “source [code]”). &lt;a href=&quot;#fnref:src&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:html5&quot;&gt;
+      &lt;p&gt;If you learned HTML several years ago, you may be wondering why I’m using &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; instead of &lt;code&gt;&amp;lt;b&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;i&amp;gt;&lt;/code&gt;. We’re already running into a major change in HTML5, which does away with tags that are strictly presentational in favour of tags that are &lt;em&gt;semantic&lt;/em&gt;. We’ll learn more about this soon. &lt;a href=&quot;#fnref:html5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Coding for Journalists, Part 0: Why Code?</title>
