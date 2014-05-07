@@ -3,7 +3,7 @@ title: "Coding for Journalists, Part 1: Text Editing and First Steps with HTML"
 layout: post
 ---
 
-<img src="/public/img/confession.png">
+<img class src="/public/img/confession.png">
 
 All code, no matter the language, is written in plain text. Plain text documents are those that don't allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.
 
@@ -42,8 +42,7 @@ Next, copy or type the following line of code into your editor:
 
     Hello <strong>World</strong>
 
-<p>
-</p>
+
 Save your document. Name it `helloworld.html`. (Make sure the extension is `.html` and not `.txt` or `.html.txt`.) Save it to the Desktop or a folder where you can easily find it.[^src] If you've named the file correctly, your editor will recognize that you're writing HTML code and highlight the `<strong>` tags in a distinctive colour.
 
 <figure>
@@ -65,7 +64,6 @@ Let's try a different tag. Go back to your file and change the opening `<strong>
 
     Hello <em>World</em>
 
-<p></p>
 Save your file, then go back to your web browser and refresh the page (<kbd>&#8984;</kbd>+<kbd>R</kbd> on a Mac, or <kbd>F5</kbd> on Windows). You will need to refresh your browser whenever you make changes to an HTML file for those changes to show up. You should now see this in your browser:
 
 <figure>

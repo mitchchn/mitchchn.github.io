@@ -10,10 +10,7 @@
 
     <!-- CSS -->
     <!-- Foundation -->
-    <link rel="stylesheet" href="/public/css/app.css" />
-
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    
+    <link rel="stylesheet" href="/public/css/app.css" />    
     
     <!-- Pygments -->
     <!--<link rel="stylesheet" href="/public/css/syntax.css">-->
@@ -36,7 +33,12 @@
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/public/js/app.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+
+    <!-- Custom JS -->
+    <script src="/public/js/custom.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -119,7 +121,7 @@
  <!---->
 </header> 
             <div class="post-content">
-<p><img src="/public/img/confession.png" /></p>
+<p><img class="" src="/public/img/confession.png" /></p>
 
 <p>All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.</p>
 
@@ -159,8 +161,6 @@
 <pre><code>Hello &lt;strong&gt;World&lt;/strong&gt;
 </code></pre>
 
-<p>
-</p>
 <p>Save your document. Name it <code>helloworld.html</code>. (Make sure the extension is <code>.html</code> and not <code>.txt</code> or <code>.html.txt</code>.) Save it to the Desktop or a folder where you can easily find it.<sup id="fnref:src"><a href="#fn:src" class="footnote">3</a></sup> If you’ve named the file correctly, your editor will recognize that you’re writing HTML code and highlight the <code>&lt;strong&gt;</code> tags in a distinctive colour.</p>
 
 <figure>
@@ -182,7 +182,6 @@
 <pre><code>Hello &lt;em&gt;World&lt;/em&gt;
 </code></pre>
 
-<p></p>
 <p>Save your file, then go back to your web browser and refresh the page (<kbd>⌘</kbd>+<kbd>R</kbd> on a Mac, or <kbd>F5</kbd> on Windows). You will need to refresh your browser whenever you make changes to an HTML file for those changes to show up. You should now see this in your browser:</p>
 
 <figure>
@@ -288,7 +287,7 @@ But before we get that far, we have to start with the basics. That includes lear
 
 <p>The first tutorials may seem simplistic if you’ve studied HTML before, but it may be worth your while to skim them—especially if you learned HTML more than a couple years ago. The web is always changing, and web culture and technology changes with it. This series covers <strong>HTML5</strong>—the newest version of the venerable standard. It’s much like the earlier versions, but makes some important syntax and philosophical changes that affect even the most basic code.</p>
 
-<p>We’ll start later this week with Part 1: <strong>Text Editing — Reppin’ It Old School.</strong></p>
+<p>We’ll start later this week with <strong>Part 1:</strong> <a href="/2014/05/06/coding-for-journalists-p1">Text Editing — Reppin’ It Old School</a></p>
 
 <div class="footnotes">
   <ol>
@@ -357,103 +356,20 @@ But before we get that far, we have to start with the basics. That includes lear
         </p>
     </div>
     </div>
-
-    <script type="text/javascript">
-// this script requires jQuery
-$(document).ready(function() {
-    Footnotes.setup();
-});
-
-var Footnotes = {
-    footnotetimeout: false,
-    setup: function() {
-        var footnotelinks = $("a[class='footnote']")
-
-    $('body').click(function(e) {
-      if (!$(e.target).closest('#footnotediv').length){
-        Footnotes.footnoteoout();
-    }
-    });
-
-    $(footnotelinks).click(function(e) {
-        e.stopPropagation();
-        e.preventDefault();
-      });
-
-        footnotelinks.unbind('click',Footnotes.footnoteover);
-        footnotelinks.unbind('mouseout',Footnotes.footnoteoout);
-        
-        footnotelinks.bind('click',Footnotes.footnoteover);
-        document.bind('click',Footnotes.footnoteoout);
-    },
-    footnoteover: function() {
-        clearTimeout(Footnotes.footnotetimeout);
-        $('#footnotediv').stop();
-        $('#footnotediv').remove();
-        
-        var id = $(this).attr('href').substr(1);
-        var position = $(this).offset();
-    
-        var div = $(document.createElement('div'));
-        div.attr('id','footnotediv');
-        //div.bind('mouseover',Footnotes.divover);
-        //div.bind('mouseout',Footnotes.footnoteoout);
-
-        var el = document.getElementById(id);
-        div.html($(el).html());
-        
-        div.css({
-            position:'absolute',
-            width:'400px',
-            opacity:1.0
-        });
-        $(document.body).append(div);
-
-        var left = position.left;
-        if(left + 420  > $(window).width() + $(window).scrollLeft())
-            left = $(window).width() - 420 + $(window).scrollLeft();
-        var top = position.top+20;
-        if(top + div.height() > $(window).height() + $(window).scrollTop())
-            top = position.top - div.height() - 15;
-        div.css({
-            left:left,
-            top:top
-        });
-    },
-    footnoteoout: function() {
-        Footnotes.footnotetimeout = setTimeout(function() {
-            $('#footnotediv').animate({
-                opacity: 0
-            }, 600, function() {
-                $('#footnotediv').remove();
-            });
-        },100);
-    },
-    divover: function() {
-        clearTimeout(Footnotes.footnotetimeout);
-        $('#footnotediv').stop();
-        $('#footnotediv').css({
-                opacity: 1.0
-        });
-    }
-}
-    </script>
-
-
-    <script type="text/javascript">
-// get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
-var mainbottom = $('#main').offset().top + $('#main').height();
-// on scroll, 
-$(window).scroll( function() {
-    var value = $(window).scrollTop();
-    if ( value > mainbottom )
-        $(".top-bar").addClass("translucent");
-    else
-        $(".top-bar").removeClass("translucent");
-});
-</script>
     <script>
       $(document).foundation();
     </script>
+    <script>
+      // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+    var mainbottom = $('#main').offset().top + $('#main').height();
+    // on scroll, 
+    $(window).scroll( function() {
+        var value = $(window).scrollTop();
+        if ( value > mainbottom )
+            $(".top-bar").addClass("translucent");
+        else
+            $(".top-bar").removeClass("translucent");
+    });
+  </script>
   </body>
 </html>

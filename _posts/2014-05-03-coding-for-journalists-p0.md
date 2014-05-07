@@ -48,7 +48,7 @@ But before we get that far, we have to start with the basics. That includes lear
 
 The first tutorials may seem simplistic if you've studied HTML before, but it may be worth your while to skim them---especially if you learned HTML more than a couple years ago. The web is always changing, and web culture and technology changes with it. This series covers **HTML5**---the newest version of the venerable standard. It's much like the earlier versions, but makes some important syntax and philosophical changes that affect even the most basic code.
 
-We'll start later this week with Part 1: **Text Editing — Reppin' It Old School.**
+We'll start later this week with **Part 1:** [Text Editing — Reppin' It Old School](/2014/05/06/coding-for-journalists-p1)
 
 [^hyper]: For instance, I won't bother explaining that HTML stands for "Hypertext Markup Language." No one has called it that since 1993. Seriously.
 

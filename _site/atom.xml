@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-06T15:18:10-04:00</updated>
+ <updated>2014-05-06T20:52:38-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -17,7 +17,7 @@
    <link href="http://mitchchn.me/2014/05/06/coding-for-journalists-p1/"/>
    <updated>2014-05-06T00:00:00-04:00</updated>
    <id>http://mitchchn.me/2014/05/06/coding-for-journalists-p1</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/public/img/confession.png&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img class=&quot;&quot; src=&quot;/public/img/confession.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.&lt;/p&gt;
 
@@ -57,8 +57,6 @@
 &lt;pre&gt;&lt;code&gt;Hello &amp;lt;strong&amp;gt;World&amp;lt;/strong&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;
-&lt;/p&gt;
 &lt;p&gt;Save your document. Name it &lt;code&gt;helloworld.html&lt;/code&gt;. (Make sure the extension is &lt;code&gt;.html&lt;/code&gt; and not &lt;code&gt;.txt&lt;/code&gt; or &lt;code&gt;.html.txt&lt;/code&gt;.) Save it to the Desktop or a folder where you can easily find it.&lt;sup id=&quot;fnref:src&quot;&gt;&lt;a href=&quot;#fn:src&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; If you’ve named the file correctly, your editor will recognize that you’re writing HTML code and highlight the &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags in a distinctive colour.&lt;/p&gt;
 
 &lt;figure&gt;
@@ -80,7 +78,6 @@
 &lt;pre&gt;&lt;code&gt;Hello &amp;lt;em&amp;gt;World&amp;lt;/em&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;Save your file, then go back to your web browser and refresh the page (&lt;kbd&gt;⌘&lt;/kbd&gt;+&lt;kbd&gt;R&lt;/kbd&gt; on a Mac, or &lt;kbd&gt;F5&lt;/kbd&gt; on Windows). You will need to refresh your browser whenever you make changes to an HTML file for those changes to show up. You should now see this in your browser:&lt;/p&gt;
 
 &lt;figure&gt;
@@ -165,7 +162,7 @@ But before we get that far, we have to start with the basics. That includes lear
 
 &lt;p&gt;The first tutorials may seem simplistic if you’ve studied HTML before, but it may be worth your while to skim them—especially if you learned HTML more than a couple years ago. The web is always changing, and web culture and technology changes with it. This series covers &lt;strong&gt;HTML5&lt;/strong&gt;—the newest version of the venerable standard. It’s much like the earlier versions, but makes some important syntax and philosophical changes that affect even the most basic code.&lt;/p&gt;
 
-&lt;p&gt;We’ll start later this week with Part 1: &lt;strong&gt;Text Editing — Reppin’ It Old School.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We’ll start later this week with &lt;strong&gt;Part 1:&lt;/strong&gt; &lt;a href=&quot;/2014/05/06/coding-for-journalists-p1&quot;&gt;Text Editing — Reppin’ It Old School&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;

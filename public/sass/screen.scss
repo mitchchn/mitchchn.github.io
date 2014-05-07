@@ -22,8 +22,10 @@
     //line-height: $height - 2;
     text-align: center;
     height: 0;
-    padding-left: $width *8;
-    padding-right: $width * 8;
+    padding-left: $width;
+    padding-right: $width;
+    padding-top: 0;
+    padding-bottom: 0;
   -webkit-border-radius: $rounded-corner-radius;
   -moz-border-radius: $rounded-corner-radius;
   -ms-border-radius: $rounded-corner-radius;
@@ -75,6 +77,10 @@ p {
     }
 }
 
+.row.full-width {
+     width: 100%;
+     max-width: 100%;
+}
 
 article {
     margin-top: $golden-space;
@@ -91,8 +97,9 @@ article {
         position: relative;
         top: -2px !important;
         margin-left: 2px;
+        margin-right: 5px;
         font-weight: bold;
-        @include make-oval-icon(1px);  
+        @include make-oval-icon(10px);  
         background: #bbb;
         color: #fff;
         text-decoration: none;
@@ -103,14 +110,19 @@ article {
             text-decoration: none;
         }
     }
+    .thumb {
+        width: 100%;
+    }
     .footnotes {
         border-top: 1px solid #aaa;
         padding-top: 0.4rem;
         ol {
             list-style-type:decimal;
+
         }
         p {
             font-size: 80% !important;
+            margin-bottom: $equal-margin / 2;
         }
     }
 }
@@ -176,18 +188,14 @@ border-bottom: 1px solid #ccc;
 
 pre {
     white-space: pre-wrap;
-    font-size: 75%;
+    font-size: $paragraph-font-size;
     @media #{$medium} {
         font-size: $base-font-size;
     }
 }
 
 pre + p {
-    margin-bottom: $equal-margin;
-}
-
-code {
-    color: #000;
+    margin-top: $equal-margin;
 }
 
 /*
@@ -247,7 +255,6 @@ code {
 }
 
 .hero {
-    font-family: $accent-font !important;
     padding-top: 25px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -342,6 +349,9 @@ code {
         font-size: 80% !important;
         font-weight: 600 !important;
         margin-bottom: 0 !important;
+        a.reversefootnote {
+            display: none;
+        }
     }
 }
 

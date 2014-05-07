@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 .elegant, .controls, .controls a, #archive time {
   font-family: "lft-etica", "Georgia", Helvetica, Arial, sans-serif !important;
   color: #666;
@@ -73,65 +73,74 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-transform: uppercase;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .shadow, #footnotediv {
   box-shadow: rgba(0, 0, 0, 0.29804) 0px 0px 8px 0px;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 html {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 blockquote {
   background: #f4f4f4;
   color: #222;
 }
-/* line 67, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 blockquote p {
   margin-bottom: 0;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 72, ../sass/screen.scss */
+  /* line 74, ../sass/screen.scss */
   p {
     font-size: 1.01rem !important;
   }
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
+.row.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 85, ../sass/screen.scss */
 article {
   margin-top: 3.765rem;
 }
-/* line 81, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 article h2, article h3 {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-/* line 85, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 article ol li {
   list-style-type: decimal;
 }
-/* line 88, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 article sup {
   font-size: 0.75em !important;
 }
-/* line 90, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 article sup a {
   position: relative;
   top: -2px !important;
   margin-left: 2px;
+  margin-right: 5px;
   font-weight: bold;
   text-align: center;
   height: 0;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
@@ -140,54 +149,59 @@ article sup a {
   color: #fff;
   text-decoration: none;
 }
-/* line 100, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 article sup a:hover {
   background: #888;
   color: #fff;
   text-decoration: none;
 }
-/* line 106, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
+article .thumb {
+  width: 100%;
+}
+/* line 116, ../sass/screen.scss */
 article .footnotes {
   border-top: 1px solid #aaa;
   padding-top: 0.4rem;
 }
-/* line 109, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 article .footnotes ol {
   list-style-type: decimal;
 }
-/* line 112, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 article .footnotes p {
   font-size: 80% !important;
+  margin-bottom: 0.68421rem;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 header h1 {
   font-weight: 800;
   margin-top: 0;
   line-height: 1.2em;
   margin-bottom: 0.618rem;
 }
-/* line 128, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 header h1:not(.link-post) a {
   color: #222222;
 }
-/* line 131, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 header h1:not(.link-post) a:hover {
   color: #9037cd;
   text-decoration: none;
 }
-/* line 136, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 header h1.link-post {
   font-size: 1.26316rem;
 }
-/* line 139, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 header .link-post:after {
   content: ' ⇢';
   color: #666;
   text-decoration: none;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 kbd {
   padding: 0.1em 0.4em;
   border: 1px solid #bbb;
@@ -208,83 +222,78 @@ kbd {
   white-space: nowrap;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 figure {
-  margin-bottom: 1.52632rem;
+  margin-bottom: 1.36842rem;
   border-bottom: 1px solid #ccc;
 }
-/* line 170, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 figure figcaption {
   margin-top: 0.8em;
   line-height: 1.4;
   font-size: 75%;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 pre {
   white-space: pre-wrap;
-  font-size: 75%;
+  font-size: 1.01rem;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 177, ../sass/screen.scss */
+  /* line 189, ../sass/screen.scss */
   pre {
     font-size: 19px;
   }
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 pre + p {
-  margin-bottom: 1.52632rem;
-}
-
-/* line 189, ../sass/screen.scss */
-code {
-  color: #000;
+  margin-top: 1.36842rem;
 }
 
 /*
  * Classes
  */
-/* line 198, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .name h1 {
   font-size: 1rem !important;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 202, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .name h1 a {
   text-decoration: none;
 }
-/* line 204, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .name h1 a i {
   font-size: 1.05263rem;
 }
-/* line 207, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .name h1 a i:hover {
   color: #9037cd;
 }
-/* line 211, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .name h1 a:hover i {
   color: #9037cd;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .translucent {
   background-color: rgba(250, 250, 250, 0.97) !important;
   -moz-box-shadow: 0 1px #e0e0e0 !important;
   -webkit-box-shadow: 0 1px #e0e0e0 !important;
   box-shadow: 0 1px #e0e0e0 !important;
 }
-/* line 221, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .translucent a {
   color: #333 !important;
 }
-/* line 224, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .translucent .menu-icon a::after {
   box-shadow: 0 10px 0 1px #9037cd, 0 16px 0 1px #9037cd, 0 22px 0 1px #9037cd !important;
 }
 
-/* line 230, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .top-bar {
   font-family: "lft-etica", "Georgia", Helvetica, Arial, sans-serif !important;
   -moz-box-shadow: 0 1px #666;
@@ -292,46 +301,45 @@ code {
   box-shadow: 0 1px #666;
 }
 
-/* line 237, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .past-main {
   background-color: #333;
 }
 
-/* line 241, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .centered {
   text-align: center;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .link-post:after:hover {
   text-decoration: none !important;
 }
 
-/* line 249, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .hero {
-  font-family: "lft-etica", "Georgia", Helvetica, Arial, sans-serif !important;
   padding-top: 25px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   background: #333;
 }
-/* line 256, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .hero p {
   color: #ccc;
 }
 
-/* line 262, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .icons li {
   display: inline;
   margin-right: 5px;
 }
-/* line 266, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .icons a {
   text-decoration: none;
 }
 
-/* line 271, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .icon {
   padding-top: 7px;
   text-align: center;
@@ -348,7 +356,7 @@ code {
   border-radius: 50%;
 }
 
-/* line 280, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .icon-small {
   padding-top: 3px;
   padding-left: 0px;
@@ -366,53 +374,53 @@ code {
   border-radius: 50%;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .icon:hover {
   background: #9037cd !important;
 }
 
-/* line 293, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 .icon-small:hover {
   background: #9037cd;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 299, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .text-icon {
   padding-right: 2px;
 }
 
-/* line 303, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .controls {
   margin-bottom: 2.036rem;
 }
 
-/* line 311, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 .tag {
   font-weight: 400 !important;
 }
 
-/* line 315, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .section-title {
   text-transform: uppercase;
   font-size: 0.94737rem;
 }
 
-/* line 321, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 #archive time {
   margin-right: 25px;
 }
-/* line 325, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 #archive .post-list {
   margin-left: 0;
 }
-/* line 328, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 #archive .recent-post {
   align: left;
 }
 
-/* line 333, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 #footnotediv {
   border-radius: 15px;
   padding: 15px;
@@ -420,19 +428,23 @@ code {
   border: 3px solid #9037cd;
   background: #333;
 }
-/* line 340, ../sass/screen.scss */
+/* line 347, ../sass/screen.scss */
 #footnotediv p {
   font-family: "lft-etica", "Georgia", Helvetica, Arial, sans-serif !important;
   font-size: 80% !important;
   font-weight: 600 !important;
   margin-bottom: 0 !important;
 }
+/* line 352, ../sass/screen.scss */
+#footnotediv p a.reversefootnote {
+  display: none;
+}
 
-/* line 348, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 footer.controls {
   font-weight: 400 !important;
 }
-/* line 349, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 footer.controls a {
   font-weight: 400 !important;
   display: block;
