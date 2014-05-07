@@ -253,8 +253,8 @@ pre + p {
 
 /* line 201, ../sass/screen.scss */
 code {
-  background: #f6f6f6;
-  padding: 2px 5px;
+  background: #f1f1f1;
+  padding: 2px 3px;
 }
 
 /*
@@ -3638,7 +3638,7 @@ small {
 code {
   font-family: "anonymous-pro", "Consolas", "Liberation Mono", Courier, monospace;
   font-weight: bold;
-  color: #333333;
+  color: #bd260d;
 }
 
 /* Lists */
