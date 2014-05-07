@@ -1,16 +1,14 @@
-/*
-    Paraíso (dark)
-    Created by Jan T. Sott (http://github.com/idleberg)
-    Inspired by the art of Rubens LP (http://www.rubenslp.com.br)
-*/
+/* Tomorrow Night Eighties Theme */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
 
-/* Paraíso Comment */
+/* Tomorrow Comment */
 .hljs-comment,
 .hljs-title {
-  color: #8d8687;
+  color: #999999;
 }
 
-/* Paraíso Red */
+/* Tomorrow Red */
 .hljs-variable,
 .hljs-attribute,
 .hljs-tag,
@@ -23,41 +21,42 @@
 .css .hljs-id,
 .css .hljs-class,
 .css .hljs-pseudo {
-  color: #ef6155;
+  color: #f2777a;
 }
 
-/* Paraíso Orange */
+/* Tomorrow Orange */
 .hljs-number,
 .hljs-preprocessor,
+.hljs-pragma,
 .hljs-built_in,
 .hljs-literal,
 .hljs-params,
 .hljs-constant {
-  color: #f99b15;
+  color: #f99157;
 }
 
-/* Paraíso Yellow */
+/* Tomorrow Yellow */
 .ruby .hljs-class .hljs-title,
 .css .hljs-rules .hljs-attribute {
-  color: #fec418;
+  color: #ffcc66;
 }
 
-/* Paraíso Green */
+/* Tomorrow Green */
 .hljs-string,
 .hljs-value,
 .hljs-inheritance,
 .hljs-header,
 .ruby .hljs-symbol,
 .xml .hljs-cdata {
-  color: #48b685;
+  color: #99cc99;
 }
 
-/* Paraíso Aqua */
+/* Tomorrow Aqua */
 .css .hljs-hexcolor {
-  color: #5bc4bf;
+  color: #66cccc;
 }
 
-/* Paraíso Blue */
+/* Tomorrow Blue */
 .hljs-function,
 .python .hljs-decorator,
 .python .hljs-title,
@@ -66,19 +65,19 @@
 .perl .hljs-sub,
 .javascript .hljs-title,
 .coffeescript .hljs-title {
-  color: #06b6ef;
+  color: #6699cc;
 }
 
-/* Paraíso Purple */
+/* Tomorrow Purple */
 .hljs-keyword,
 .javascript .hljs-function {
-  color: #815ba4;
+  color: #cc99cc;
 }
 
 .hljs {
   display: block;
-  background: #f6f6f6;
-  color: #a39e9b;
+  background: #2d2d2d;
+  color: #cccccc;
   padding: 0.5em;
 }
 

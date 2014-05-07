@@ -50,7 +50,7 @@
 $golden-base: 1rem;
 $golden-h2: 1.1618rem;
 $golden-h1: 2.618rem;
-$golden-space: 3.765rem; 
+$golden-space: 3.765rem;
 $golden-margin: 1.618rem;
 
 
@@ -85,8 +85,7 @@ p {
 article {
     margin-top: $golden-space;
     h2,h3 {
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
+        letter-spacing: -1px;
     }
     ol li {
         list-style-type: decimal;
@@ -99,7 +98,7 @@ article {
         margin-left: 2px;
         margin-right: 5px;
         font-weight: bold;
-        @include make-oval-icon(10px);  
+        @include make-oval-icon(10px);
         background: #bbb;
         color: #fff;
         text-decoration: none;
@@ -131,8 +130,9 @@ article {
 header {
     //margin-bottom: 2.2 * $equal-margin;
     h1 {
-        font-weight: 800;
+        font-weight: 600;
         margin-top: 0;
+        letter-spacing: -2px;
         line-height: 1.2em;
         margin-bottom: 0.618rem;
     }
@@ -196,6 +196,11 @@ pre {
 
 pre + p {
     margin-top: $equal-margin;
+}
+
+code {
+  background: #f6f6f6;
+  padding: 2px 5px;
 }
 
 /*
@@ -291,7 +296,7 @@ pre + p {
     font-size: 24px;
     color: #333;
     background: #CCC;
-    @include make-circle-icon(29px);  
+    @include make-circle-icon(29px);
 }
 
 .icon:hover {
@@ -301,7 +306,7 @@ pre + p {
         background: $primary-color;
         color: #fff;
         text-decoration: none;
-    } 
+    }
 
 .text-icon {
     padding-right: 2px;
