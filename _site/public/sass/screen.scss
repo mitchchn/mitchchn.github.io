@@ -132,7 +132,7 @@ header {
     h1 {
         font-weight: 600;
         margin-top: 0;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         line-height: 1.2em;
         margin-bottom: 0.618rem;
     }
@@ -199,8 +199,22 @@ pre + p {
 }
 
 code {
-  background: #f1f1f1;
-  padding: 2px 3px;
+font-size: 0.8em;
+text-rendering: auto;
+}
+
+p code,
+ul code,
+figure code,
+ol code {
+background: #f0f6fc;
+font-weight: normal;
+border: 1px dashed #ccc;
+color: #333;
+line-height: 1.5714em;
+margin-top: 1.5714em;
+margin-bottom: 0em;
+padding: 0 2px;
 }
 
 /*
