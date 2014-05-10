@@ -237,14 +237,14 @@ padding: 0 2px;
  */
 
 .top-bar {
-    .main-menu {
+    .fp-main-menu {
         margin-top: 70px;
     }
     overflow: visible;
 }
 
 .translucent {
-    .main-menu {
+    .fp-main-menu {
         margin-top: 0;
     }
     .top-bar-section,
@@ -276,6 +276,9 @@ padding: 0 2px;
     .menu-icon a::after{
             box-shadow: 0 10px 0 1px $primary-color, 0 16px 0 1px $primary-color, 0 22px 0 1px $primary-color !important;
         }
+        label {
+        background: #fff !important;
+    }
 
 }
 
@@ -291,6 +294,18 @@ padding: 0 2px;
     margin-right: 35px;
 }
 
+.dropdown li {
+    border: 1px solid #ccc;
+    border-top: 0;
+    border-bottom: 0;
+    a {
+        background: #fff !important;
+        font-size: $h4-font-size !important;
+        border: 0 !important;
+        border-bottom: 1px solid #ccc !important;
+    }
+}
+
 .top-bar {
      .name h1 {
         font-size: $h3-font-size !important;
@@ -303,7 +318,7 @@ padding: 0 2px;
                 font-size: $h3-font-size;
             }
             i:hover {
-                color: #333;
+               //color: #333;
             }
         }
         

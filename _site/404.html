@@ -80,21 +80,13 @@
     <ul class="right">
     <li class="has-dropdown">
         <a href="#">Article</a>
-        <ul class="dropdown">
+        <ul class="dropdown translucent">
             <li><label>Share this article</label><li>
-          <li id="custom-tweet-button"><a href="https://twitter.com/share?text=404: Page not found&url=/404.html">
+          <li id="custom-tweet-button">
+          <a class="popup" href="https://twitter.com/share?text=404: Page not found&url=/404.html">
+          <i class="fa fa-twitter"></i>
           Twitter</a></li>
         </ul>
-
-    <style type="text/css" media="screen">
-      #custom-tweet-button a {
-        display: block;
-        padding: 2px 5px 2px 20px;
-        text-align: right;
-        background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
-        border: 1px solid #ccc;
-      }
-    </style>
 <script>
   $('.popup').click(function(event) {
     var width  = 575,
@@ -117,6 +109,21 @@
     </ul>
     </section>
   
+  <section class="top-bar-section main-menu">
+        <ul class="right">
+        <li class="button-small">
+        <a href="/about">
+        About
+        </a>
+        </li>
+        <li class="button-small">
+        <a href="/archive">
+        Archive
+        </a>
+        </li>
+        </ul>
+    </section>
+    
 </nav>
 </div>
     <!-- Main Blog Content -->
