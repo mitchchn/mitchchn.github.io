@@ -2,18 +2,18 @@
 title: "Coding for Journalists, Part 1: Text Editing and First Steps with HTML"
 layout: post
 ---
-
-<img class src="/public/img/confession.png">
-
+<div class="banner">
+<img src="/public/img/confession.png">
+</div>
 All code, no matter the language, is written in plain text. Plain text documents are those that don't allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.
+
+Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is <abbr title="What You See is What You Get">WYSIWYG</abbr>. But plain text is the only format web browsers truly understand. To start writing HTML, you'll need to to write plain text with a **text editor.**
 
 <figure>
     <img src="/public/img/plaintext.png" width="49%">
     <img src="/public/img/richtext.png" width="49%">
     <figcaption><span class="elegant">Plain and Rich&mdash;</span> Even if we were to change the font in the right document to match that of the left, it still wouldn't be plain text. It's the underlying file format that counts.</figcaption>
 </figure>
-
-Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is <abbr title="What You See is What You Get">WYSIWYG</abbr>. But plain text is the only format web browsers truly understand. To start writing HTML, you'll need to to write plain text with a **text editor.**
 
 ## Choose your editor
 

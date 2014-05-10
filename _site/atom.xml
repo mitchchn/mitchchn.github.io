@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-08T04:53:37-04:00</updated>
+ <updated>2014-05-10T15:15:21-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -17,17 +17,18 @@
    <link href="http://mitchchn.me/2014/05/06/coding-for-journalists-p1/"/>
    <updated>2014-05-06T00:00:00-04:00</updated>
    <id>http://mitchchn.me/2014/05/06/coding-for-journalists-p1</id>
-   <content type="html">&lt;p&gt;&lt;img class=&quot;&quot; src=&quot;/public/img/confession.png&quot; /&gt;&lt;/p&gt;
-
+   <content type="html">&lt;div class=&quot;banner&quot;&gt;
+&lt;img src=&quot;/public/img/confession.png&quot; /&gt;
+&lt;/div&gt;
 &lt;p&gt;All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.&lt;/p&gt;
+
+&lt;p&gt;Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is &lt;abbr title=&quot;What You See is What You Get&quot;&gt;WYSIWYG&lt;/abbr&gt;. But plain text is the only format web browsers truly understand. To start writing HTML, you’ll need to to write plain text with a &lt;strong&gt;text editor.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;figure&gt;
     &lt;img src=&quot;/public/img/plaintext.png&quot; width=&quot;49%&quot; /&gt;
     &lt;img src=&quot;/public/img/richtext.png&quot; width=&quot;49%&quot; /&gt;
     &lt;figcaption&gt;&lt;span class=&quot;elegant&quot;&gt;Plain and Rich&amp;mdash;&lt;/span&gt; Even if we were to change the font in the right document to match that of the left, it still wouldn&#39;t be plain text. It&#39;s the underlying file format that counts.&lt;/figcaption&gt;
 &lt;/figure&gt;
-
-&lt;p&gt;Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is &lt;abbr title=&quot;What You See is What You Get&quot;&gt;WYSIWYG&lt;/abbr&gt;. But plain text is the only format web browsers truly understand. To start writing HTML, you’ll need to to write plain text with a &lt;strong&gt;text editor.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;choose-your-editor&quot;&gt;Choose your editor&lt;/h2&gt;
 

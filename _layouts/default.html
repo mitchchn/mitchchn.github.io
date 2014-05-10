@@ -3,13 +3,12 @@ layout: master
 ---
 {% include fp-hero.html %}
 <div id="main"></div>
-  <div class="row"> 
    {% for post in paginator.posts %}
-    <article class="post large-9 large-centered medium-9 medium-centered columns">
+    <article class="post">
       {% include fp-post-header.html %} 
             {% include post-content.html %}
     </article>
-    <hr class="post-separator large-8 large-centered medium-8 medium-centered small-8 small-centered column">
+    <hr>
 {% endfor %}
 </div>
 

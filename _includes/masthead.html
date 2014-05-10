@@ -1,4 +1,4 @@
-<div class="sticky">
+<div class="tbar contain-to-grid">
   <nav class="top-bar" data-topbar data-options="sticky_on:medium">
     <ul class="title-area">
       <li class="name">
@@ -7,16 +7,64 @@
             mitchchn.me
             </a></h1>
       </li>
-      <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
     </ul>
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
+    {% if page.url != "/" %}
+    <section class="top-bar-section">
     <ul class="right">
-      <li><a href="#">About</a></li>
-      <li>
-        <a href="archive">Archive</a>
-      </li>
+    <li class="has-dropdown">
+        <a href="#">Article</a>
+        <ul class="dropdown">
+            <li><label>Share this article</label><li>
+          <li id="custom-tweet-button"><a href="https://twitter.com/share?text={{page.title}}&url={{page.url}}">
+          Twitter</a></li>
+        </ul>
+
+    <style type="text/css" media="screen">
+      #custom-tweet-button a {
+        display: block;
+        padding: 2px 5px 2px 20px;
+        text-align: right;
+        background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
+        border: 1px solid #ccc;
+      }
+    </style>
+<script>
+  $('.popup').click(function(event) {
+    var width  = 575,
+        height = 400,
+        left   = ($(window).width()  - width)  / 2,
+        top    = ($(window).height() - height) / 2,
+        url    = this.href,
+        opts   = 'status=1' +
+                 ',width='  + width  +
+                 ',height=' + height +
+                 ',top='    + top    +
+                 ',left='   + left;
+    
+    window.open(url, 'twitter', opts);
+ 
+    return false;
+  });
+</script>
+    </li>
     </ul>
-  </section>
+    </section>
+  {% else %}
+  <section class="top-bar-section main-menu">
+        <ul class="right    ">
+        <li class="button-small active">
+        <a href="/about">
+        About
+        </a>
+        </li>
+        <li class="button-small active">
+        <a href="/archive">
+        Archive
+        </a>
+        </li>
+        </ul>
+    </section>
+  {% endif %}
 </nav>
 </div>

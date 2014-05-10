@@ -5,7 +5,6 @@
 
   <body>
     {% include masthead.html %}
-
     <!-- Main Blog Content -->
     <div class="content" role="content">
       {{ content }}
@@ -33,9 +32,9 @@
     $(window).scroll( function() {
         var value = $(window).scrollTop();
         if ( value > mainbottom )
-            $(".top-bar").addClass("translucent");
+            $(".tbar").addClass("translucent fixed");
         else
-            $(".top-bar").removeClass("translucent");
+            $(".tbar").removeClass("translucent fixed");
     });
   </script>
   </body>

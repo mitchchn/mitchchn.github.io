@@ -2,6 +2,7 @@
 
 @import "partials/typography";
 @import "settings";
+@import "bigfoot-default";
 
 
 @mixin make-circle-icon($size) {
@@ -82,35 +83,49 @@ p {
      max-width: 100%;
 }
 
+$post-text-content: "header,footer,
+                    .post-content figure,
+                    .post-content p,
+                    .post-content h2,
+                    .post-content h3,
+                    .post-content blockquote,
+                    .post-content ul,
+                    .post-content ol,
+                    .post-content .footnotes,
+                    .post-content pre";
+
+$post-all-content: "header,footer,
+                    .post-content figure,
+                    .post-content p,
+                    .post-content h2,
+                    .post-content h3,
+                    .post-content blockquote,
+                    .post-content ul,
+                    .post-content ol,
+                    .post-content .footnotes,
+                    .post-content pre,
+                    .post-content .banner";
+
 article {
     margin-top: $golden-space;
+    #{$post-all-content} {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #{$post-text-content} {
+        width: 90%;
+        max-width: 750px;
+    }
+    .banner {
+        margin-bottom: $equal-margin * 2;
+        width: 750px;
+        max-width: 100%;
+    }
     h2,h3 {
         letter-spacing: -1px;
     }
     ol li {
         list-style-type: decimal;
-    }
-    sup {
-        font-size: 0.75em !important;
-        a {
-        position: relative;
-        top: -2px !important;
-        margin-left: 2px;
-        margin-right: 5px;
-        font-weight: bold;
-        @include make-oval-icon(10px);
-        background: #bbb;
-        color: #fff;
-        text-decoration: none;
-        }
-        a:hover {
-            background: #888;
-            color: #fff;
-            text-decoration: none;
-        }
-    }
-    .thumb {
-        width: 100%;
     }
     .footnotes {
         border-top: 1px solid #aaa;
@@ -221,32 +236,42 @@ padding: 0 2px;
  * Classes
  */
 
+.top-bar {
+    .main-menu {
+        margin-top: 70px;
+    }
+    overflow: visible;
+}
 
- .name h1 {
-    font-size: $h5-font-size !important;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    a {
-        text-decoration: none;
-        i {
-            font-size: $h3-font-size;
-        }
-        i:hover {
-            color: $primary-color;
-        }
+.translucent {
+    .main-menu {
+        margin-top: 0;
+    }
+    .top-bar-section,
+    .top-bar,
+    .top-bar ul,
+    .top-bar-section ul,
+    .top-bar-section li,
+    .top-bar-section a,
+    .top-bar-section label {
+        background-color: rgba(255,255,255,1) !important;
+        color: #66757f !important;
+
+    }
+    .top-bar-section .has-dropdown > a::after {
+        border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;
+    }
+    background-color: rgba(255,255,255,1) !important;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);    a {
+        color: #66757f !important;
+    }
+    a:hover {
+        color: $primary-color !important;
     }
     a:hover i {
         color: $primary-color;
-    }
- }
-
-.translucent {
-    background-color: rgba(250,250,250,0.97) !important;
-    -moz-box-shadow: 0 1px #e0e0e0 !important;
-    -webkit-box-shadow: 0 1px #e0e0e0 !important;
-    box-shadow: 0 1px #e0e0e0 !important;
-    a {
-        color: #333 !important;
     }
     .menu-icon a::after{
             box-shadow: 0 10px 0 1px $primary-color, 0 16px 0 1px $primary-color, 0 22px 0 1px $primary-color !important;
@@ -254,11 +279,38 @@ padding: 0 2px;
 
 }
 
-.top-bar {
+.top-bar,
+.top-bar-section,
+.top-bar a,
+.top-bar-section a {
+    text-decoration: none;
     font-family: $accent-font !important;
-    -moz-box-shadow: 0 1px #666;
-    -webkit-box-shadow: 0 1px #666;
-    box-shadow: 0 1px #666;
+}
+
+.top-bar-section ul {
+    margin-right: 35px;
+}
+
+.top-bar {
+     .name h1 {
+        font-size: $h3-font-size !important;
+        font-weight: 400 !important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        a {
+            text-decoration: none;
+            i {
+                font-size: $h3-font-size;
+            }
+            i:hover {
+                color: #333;
+            }
+        }
+        
+     }
+    .twitter .fa-twitter {
+        font-size: $h2-font-size;
+    }
 }
 
 .past-main {
@@ -274,6 +326,12 @@ padding: 0 2px;
 }
 
 .hero {
+    h4 {
+        margin-top:0;
+        color: #ccc;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
     padding-top: 25px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -281,10 +339,12 @@ padding: 0 2px;
     background: #333;
     p {
         color: #ccc;
+        font-size: 0.8em !important;
     }
 }
 
 .icons {
+    margin-left: 0;
     li {
         display: inline;
         margin-right: 5px;
@@ -356,23 +416,23 @@ padding: 0 2px;
     }
 }
 
-#footnotediv {
-    @extend .shadow;
-    border-radius: 15px;
-    padding: 15px;
-    color: #fff;
-    border: 3px solid $primary-color;
-    background: #333;
-    p {
-        font-family: $accent-font !important;
-        font-size: 80% !important;
-        font-weight: 600 !important;
-        margin-bottom: 0 !important;
-        a.reversefootnote {
-            display: none;
-        }
-    }
-}
+// #footnotediv {
+//     @extend .shadow;
+//     border-radius: 15px;
+//     padding: 15px;
+//     color: #fff;
+//     border: 3px solid $primary-color;
+//     background: #333;
+//     p {
+//         font-family: $accent-font !important;
+//         font-size: 80% !important;
+//         font-weight: 600 !important;
+//         margin-bottom: 0 !important;
+//         a.reversefootnote {
+//             display: none;
+//         }
+//     }
+// }
 
 footer.controls {
     a{
