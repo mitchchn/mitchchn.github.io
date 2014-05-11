@@ -8,7 +8,7 @@
             </a></h1>
       </li>
     </ul>
-    {% if page.url != "/" %}
+    {% if page.url != "/index.html" %}
     <section class="top-bar-section">
     <ul class="right">
     <li class="has-dropdown">
@@ -16,7 +16,7 @@
         <ul class="dropdown translucent">
             <li><label>Share this article</label><li>
           <li id="custom-tweet-button">
-          <a class="popup" href="https://twitter.com/share?text={{page.title}}&url={{page.url}}">
+          <a class="popup" href="https://twitter.com/share?text={{page.title}}&url={{site.url}}{{page.url}}">
           <i class="fa fa-twitter"></i>
           Twitter</a></li>
         </ul>

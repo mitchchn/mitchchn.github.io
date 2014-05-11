@@ -72,39 +72,6 @@
       </li>
     </ul>
     
-    <section class="top-bar-section">
-    <ul class="right">
-    <li class="has-dropdown">
-        <a href="#">Article</a>
-        <ul class="dropdown translucent">
-            <li><label>Share this article</label><li>
-          <li id="custom-tweet-button">
-          <a class="popup" href="https://twitter.com/share?text=Home&url=/index.html">
-          <i class="fa fa-twitter"></i>
-          Twitter</a></li>
-        </ul>
-<script>
-  $('.popup').click(function(event) {
-    var width  = 575,
-        height = 400,
-        left   = ($(window).width()  - width)  / 2,
-        top    = ($(window).height() - height) / 2,
-        url    = this.href,
-        opts   = 'status=1' +
-                 ',width='  + width  +
-                 ',height=' + height +
-                 ',top='    + top    +
-                 ',left='   + left;
-    
-    window.open(url, 'twitter', opts);
- 
-    return false;
-  });
-</script>
-    </li>
-    </ul>
-    </section>
-  
   <section class="top-bar-section main-menu">
         <ul class="right">
         <li>
