@@ -8,11 +8,9 @@
       mitchchn.me
     </title>
 
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-    <!--Foundation JS -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <!--<script src="/bower_components/modernizr/modernizr.js"></script>-->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
     <!-- CSS -->
     <!-- Foundation -->
@@ -39,11 +37,10 @@
     <script src="/public/js/bigfoot.min.js"></script>
     <script>$.bigfoot();</script>
 
-
-
     <!-- Custom JS -->
     <script src="/public/js/custom.js"></script>
 
+    <!--Foundation JS -->
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/public/js/app.js"></script>
 
@@ -73,41 +70,35 @@
             mitchchn.me
             </a></h1>
       </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
     </ul>
     
   <section class="top-bar-section main-menu">
         <ul class="right">
-        <li class="button-small">
-        <a href="/about">
-        About
-        </a>
-        </li>
-        <li class="button-small">
+        <li>
         <a href="/archive">
         Archive
         </a>
         </li>
         </ul>
     </section>
-    
-        <script>
-        $('.main-menu').addClass('fp-main-menu');
-        $('.main-menu li').addClass('active');
-        </script>
-    
+
 </nav>
 </div>
     <!-- Main Blog Content -->
-    <div class="content" role="content">
-      <div class="hero">
+    <main role="main">
+    <div class="hero">
+
+    <div class="hero-content fp-hero">
     <div class="row">
-    <div class="large-5 medium-5 columns">
+    <div class="large-2 medium-2 small-3 columns">
+    <div class="me" style="background-image:url('/public/img/mitchell.jpg'); width: 90px;height: 90px; background-size: contain;"></div>       
+    </div>
+    <div class="large-6 medium-6 small-9 columns">
     <p>I'm <strong>Mitchell Cohen</strong>, a writer and technophile from Toronto.
     This is where I write about coffee, code, journalism, language, insomnia <s>and giant spiders.</s></p>
     </div>
-    <div class="push-1 large-3 medium-3 columns">
-        <h4>(Find me)</h4>
+    <div class="right social large-3 medium-3 columns">
+        <h5>(Find me)</h5>
       <ul class="icons">
           <li>
             <a href="http://twitter.com/mitchchn">
@@ -119,25 +110,27 @@
                 <i class="icon-small purple-bg fa fa-github"></i>
             </a>
           </li>
-          <li>
+          <li class="last">
             <a href="http://github.com/mitchchn">
                 <i class="icon-small purple-bg fa fa-thumb-tack"></i>
             </a>
           </li>
         </ul>
     </div>
+    </div>
+    </div>
 
-    <div class="large-3 medium-3 columns">
+
     
-    </div>
-    </div>
+
 </div>
-<div id="main"></div>
+    <div class="content" role="content">
+      <div id="main"></div>
    
     <article class="post">
       <header class = "post-header">
   
-  	<h1 class="post-title"><a href=/2014/05/06/coding-for-journalists-p1/>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</a></h1>
+  	<h2 class="post-title"><a href=/2014/05/06/coding-for-journalists-p1/>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</a></h2>
   
   
   <p class="controls">
@@ -146,118 +139,32 @@
  <!---->
 </header> 
             <div class="post-content">
-<div class="banner">
-<img src="/public/img/confession.png" />
-</div>
 <p>All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.</p>
 
 <p>Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is <abbr title="What You See is What You Get">WYSIWYG</abbr>. But plain text is the only format web browsers truly understand. To start writing HTML, you’ll need to to write plain text with a <strong>text editor.</strong></p>
 
-<figure>
-    <img src="/public/img/plaintext.png" width="49%" />
-    <img src="/public/img/richtext.png" width="49%" />
-    <figcaption><span class="elegant">Plain and Rich&mdash;</span> Even if we were to change the font in the right document to match that of the left, it still wouldn't be plain text. It's the underlying file format that counts.</figcaption>
-</figure>
 
-<h2 id="choose-your-editor">Choose your editor</h2>
 
-<p>In the hands of a skilled coder, a text editor is like a Jedi’s lightsaber: <em>not as clumsy or random as a word processor. An elegant weapon, for a more civilized age.</em> Armed with her trusty text editor, a coder can whip up anything from a blog post to the next Facebook. The only limits are her imagination, her free time, and her venture capital.</p>
-
-<p>Which text editor you decide to code with is a matter of personal taste. Like any tool, use the one you find most comfortable. Since plain text is a free and open format, you can always switch later.</p>
-
-<p>Windows and OS X come with <strong>Notepad</strong> and <strong>TextEdit</strong>, respectively. They can both get the job done, but they’re missing some helpful quality-of-life features. Two fantastic and free alternatives are <a href="http://www.notepad-plus-plus.org">Notepad++</a> for PCs and <a href="http://barebones.com/products/textwrangler/">TextWrangler</a> for the Mac. For the rest of this series, we’ll assume you’re using one of these apps.</p>
-
-<p>Text editors are for more than just code. They’re ideal for writing, too. There are <a href="http://bettermess.com/a-plain-text-primer/">many reasons</a> to do your online writing in plain text, and I won’t <a href="http://www.macworld.com/article/1161549/forget_fancy_formatting_why_plain_text_is_best.html">cover them</a> in this post. But the most important reason is quite simple: <strong>everything you publish on the web ends up as plain text.</strong> Specifically, it ends up as HTML.</p>
-
-<p>Even if you write your articles in Google Drive or MS Word, they’re going to be converted to plain text and HTML at some point. (And if you’ve ever copied and pasted from Word into WordPress, you’ll know that plenty gets lost in translation.)</p>
-
-<p>If you write online, you’ll find you just can’t avoid plain text and HTML—no matter how hard you try. So skip the middleman: practice coding <em>and</em> writing in your text editor. It will make your life much simpler.<sup id="fnref:format"><a href="#fn:format" class="footnote">1</a></sup></p>
-
-<h2 id="get-your-code-on">Get your code on</h2>
-
-<p>Once you’ve downloaded and installed a text editor, open it up to a blank document. Since you’re a writer, the first thing you’ll want to do is turn on word wrap:<sup id="fnref:wrap"><a href="#fn:wrap" class="footnote">2</a></sup></p>
-
-<figure>
-    <img src="/public/img/wrap_tw.png" />
-    <figcaption><span class="elegant">Enabling word wrap&mdash;</span>In <strong>TextWrangler</strong>, click the <strong>T</strong> in the top left corner and choose <em>Soft Wrap Text</em>. In <strong>Notepad++</strong>, go to the <strong>View</strong> menu and choose <em>Word wrap</em>.</figcaption>
-</figure>
-
-<p>Next, copy or type the following line of code into your editor:</p>
-
-<pre><code>Hello &lt;strong&gt;World&lt;/strong&gt;
-</code></pre>
-
-<p>Save your document. Name it <code>helloworld.html</code>. (Make sure the extension is <code>.html</code> and not <code>.txt</code> or <code>.html.txt</code>.) Save it to the Desktop or a folder where you can easily find it.<sup id="fnref:src"><a href="#fn:src" class="footnote">3</a></sup> If you’ve named the file correctly, your editor will recognize that you’re writing HTML code and highlight the <code>&lt;strong&gt;</code> tags in a distinctive colour.</p>
-
-<figure>
-    <img src="/public/img/helloworld_tw.png" />
-    <figcaption><span class="elegant">MY FIRST HTML&mdash;</span>I saved my document as <code>helloworld.html</code> and TextWrangler gave me purple code for my efforts. Your colours might be different.</figcaption>
-</figure>
-
-<p>Once you’ve saved your <code>helloworld.html</code> file, locate it in your file manager and double-click it. It should launch your computer’s default web browser. If that doesn’t happen, right click on the file and select <strong>Open With</strong>, then choose your browser. You should then see your new HTML page in its full glory:</p>
-
-<figure>
-    <img src="/public/img/helloworld.png" />
-    <figcaption><span class="elegant">A webpage&mdash;</span> If you see something else (for instance, bits and pieces of the word <strong>&lt;strong&gt;</strong>) or no formatting at all, go back and double-check the line of code above. Then save your file and try again. If you are using TextEdit on Mac, make sure you're in plain text mode (<strong>Format &gt; Make Plain Text</strong>). If you're using MS Word... don't be.</figcaption>
-</figure>
-
-<p>At this point, you likely have a good of what it is that <code>&lt;strong&gt;</code> does. Web browsers will <b>bolden</b> any text between <code>&lt;strong&gt;</code> and its closing tag, <code>&lt;/strong&gt;</code>. (All closing tags begin with a forward slash, <strong>”/”</strong>.)</p>
-
-<p>Let’s try a different tag. Go back to your file and change the opening <code>&lt;strong&gt;</code> tag to <code>&lt;em&gt;</code>. Do the same to its closing tag: <code>&lt;/em&gt;</code>. Your code should look now like this:</p>
-
-<pre><code>Hello &lt;em&gt;World&lt;/em&gt;
-</code></pre>
-
-<p>Save your file, then go back to your web browser and refresh the page (<kbd>⌘</kbd>+<kbd>R</kbd> on a Mac, or <kbd>F5</kbd> on Windows). You will need to refresh your browser whenever you make changes to an HTML file for those changes to show up. You should now see this in your browser:</p>
-
-<figure>
-    <img src="/public/img/helloworld_it.png" />
-</figure>
-
-<p>Simple stuff. The <code>&lt;strong&gt;</code> tag tells the browser to make text <strong>strong</strong> (bold), and the <code>&lt;em&gt;</code> tag tells the browser to <em>emphasize</em> (italicize) it.<sup id="fnref:html5"><a href="#fn:html5" class="footnote">4</a></sup> Tags, or elements, are all the words between triangle brackets. They’re visible in your text editor but not in your web browser. Closing tags begin with slashes. Any text between opening and closing tags is affected by those tags. If you grasp these points, you fundamentally understand HTML.</p>
-
-<p>Of course, the rabbit hole goes much deeper—as we will soon see. For now, practice writing longer blocks of text and formatting them with <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code>. Try these exercises:</p>
-
-<ol>
-  <li>Combine multiple <code>&lt;strong&gt;</code> tags.</li>
-  <li>Put an <code>&lt;em&gt;</code> tag right next to a <code>&lt;strong&gt;</code> tag.</li>
-  <li>See what happens when you leave out a closing tag.</li>
-  <li>Go wild. Don’t worry. You can’t break anything. (At least, not until we get to JavaScript!)</li>
-</ol>
-
-<p>Next time, we’ll go into more detail about the way tags behave and what happens when they shack up with other tags. Are you sick of the word “tag” yet? I hope not. See you soon.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:format">
-      <p>If you’re already kinda familiar with HTML and want to start doing more of your writing in plain text, <a href="http://code.tutsplus.com/tutorials/markdown-the-ins-and-outs--net-25482">Markdown</a> is for you. <a href="#fnref:format" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:wrap">
-      <p>Web developers don’t typically use word wrap. Instead, they follow a convention of manually limiting each line of code to 80 characters long. But when you’re composing paragraphs, having to press <kbd>enter</kbd> once every 80 characters gets pretty ridiculous. So turn on word wrap, but try to respect the rule when writing lines that only contain code. <a href="#fnref:wrap" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:src">
-      <p>For bonus nerd points, save all your code to a folder named <b>src</b> (short for “source [code]”). <a href="#fnref:src" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:html5">
-      <p>If you learned HTML several years ago, you may be wondering why I’m using <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> instead of <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code>. We’re already running into a major change in HTML5, which does away with tags that are strictly presentational in favour of tags that are <em>semantic</em>. We’ll learn more about this soon. <a href="#fnref:html5" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
+<div class="controls">
+<p><a class="readlink" href="/2014/05/06/coding-for-journalists-p1/">Read more</a></p>
+</div>
 </div>
 
+
 </div>
-<footer class = "controls">
+<!-- <footer class = "controls">
 <p><em>Got feedback? <a href="http://twitter.com/mitchchn">@mitchchn</a></em></p>
 
  
 <a class="permalink" href=/2014/05/06/coding-for-journalists-p1/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
-</footer>
+</footer> -->
     </article>
     <hr>
 
     <article class="post">
       <header class = "post-header">
   
-  	<h1 class="post-title"><a href=/2014/05/03/coding-for-journalists-p0/>Coding for Journalists, Part 0: Why Code?</a></h1>
+  	<h2 class="post-title"><a href=/2014/05/03/coding-for-journalists-p0/>Coding for Journalists, Part 0: Why Code?</a></h2>
   
   
   <p class="controls">
@@ -279,56 +186,16 @@
 
 <p>And no, it’s not because we aren’t <a href="http://j-source.ca/article/opinion-why-journalism-schools-must-teach-code—even-if-every-journalist-not-wired-way">wired that way</a>. We’re smart, adaptable people. The trouble with coding is that it’s so detached from what we know and what we’re good at. We’re writers, researchers, and reporters. That’s our trade. We don’t have the time or motivation to futz around with arcane syntax, any more than we have the time to learn plumbing. We’re just not interested. We’d rather be writing.</p>
 
-<p>Advocates for teaching code like to go on about “digital literacy” and how important it is. They’ll tell you that you need to start learning code <em>right this second</em> because otherwise no one will hire you, ever, and, hey, you’re missing out, so-get-with-the-program-already. They mean well, but I’m not a fan of this line of reasoning. Not only is it condescending to call educated people illiterate for not possessing a skill outside of their field, but you won’t encourage <em>anyone</em> to step out of their comfort zone and learn something new by guilting them into doing it.<sup id="fnref:driver"><a href="#fn:driver" class="footnote">1</a></sup></p>
 
-<p>Truth is, it isn’t necessary for the whole world to learn how to code. People in most professions can ignore programming entirely and not be any worse off for it. Not everyone needs to be make an app or be a <a href="https://www.youtube.com/watch?v=dFUlAQZB9Ng">badass hacker</a>. There’s little point in code-for-code’s-sake, and less point in teaching programming to every single person in college or kindergarten, or whenever we’re supposed to have learned it.</p>
 
-<p>That said, a certain kind of coding <em>is</em> useful for journalists who write on the web. And in 2014, that means pretty much all of us. That alone is a good enough reason to learn what practical coding is all about and how (and why) we should integrate it into our work.</p>
-
-<p>Of course, that’s easier said than done. The online tutorials that exist are, for the most part, unhelpful and irrelevant. They’re out of date, teaching code and techniques that were current in the mid-00s or earlier. But even the good resources are geared toward developers and designers, not writers. They cover topics we don’t need to know about, and leave out others that we should. They don’t teach us how code can actually enrich our online writing and help us work more efficiently. (Most of us aren’t even aware that code <em>can</em> help us work more efficiently.)</p>
-
-<p>Yes, it’s possible to code up flashy animations, interactive features, and data-stuffed bonanzas. But we can also use code on a smaller scale in our day-to-day writing. The goal of this series is to show you how.</p>
-
-<h2 id="who-is-this-for">Who is this for?</h2>
-
-<p>This series of posts is aimed at journalists and other kinds of writers. For that reason, it’s going to follow a different path from most “Intro to HTML” tutorials.<sup id="fnref:hyper"><a href="#fn:hyper" class="footnote">2</a></sup> You won’t learn how to build a website or app from scratch (although you could certainly go on to do just that), but you will learn languages, techniques and best practices that you can apply whenever you make content for the web.</p>
-
-<p>Apart from code itself, we’re going to cover tools that can make you <a href="https://www.youtube.com/watch?v=xK0njkATf84&amp;feature=kp">happier and more productive</a> as a digital creator, such as version control, secure backups, and writing in Markdown. These topics are outside the scope of a typical web development course, but they’re incredibly useful for anyone who writes online.</p>
-
-<p>If you’ve put off learning HTML at least a dozen times before, this is the series for you. If you know some web programming but begrudge having to use it, I hope I can change your mind. Code isn’t just a last-ditch resort for when WordPress is screwing up your formatting; it’s something you can learn to appreciate on its terms. That’s because it’s the simplest and most direct way of manipulating the web.</p>
-
-<p>The idea is to go from “knowing” HTML to <em>using</em> HTML in a way that’s precise and effective. Like <a href="http://en.wikipedia.org/wiki/The_Book_of_Five_Rings">Miyamoto Musashi</a>.</p>
-
-<p>It’s true that getting to that stage takes some practice and time investment. But being able to work in code is worth it—not just for your resume, but to add to your personal arsenal of skills as a writer.</p>
-
-<p>And if you’re already an HTML pro, stick around. You might still learn a thing or two.</p>
-
-<h2 id="what-were-gonna-learn">What we’re gonna learn</h2>
-
-<p>No one who works in media needs any convincing that the web matters. In a few short years, the conversation has shifted from ‘digital” to “digital first” to “digital only.” For many of us, web has completely replaced pen and paper as our tool of the trade.</p>
-
-<p>So we should probably have some idea how it works. Just as print journalists should know what happens between the time when a draft leaves their desk and the newspaper hits a doorstop, web writers should have a general understanding of the technologies that power the modern Internet. That’s why one aim of this series is to provide context by explaining things like what goes on behind the scenes in your CMS when you write a post.</p>
-
-<p><img src="/public/img/HTML5_Logo_512.png" style="float: right; width: 25%; height: 25%" />
-But before we get that far, we have to start with the basics. That includes learning about <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, the trifecta of languages that make up the modern web. Of the three, HTML is by far the most relevant to writers, so we are going to spend many of these posts learning how to write it in a way that’s stylistically modern and clean. Afterward, we’ll talk about tools that can make writing code easier and more enjoyable—and come up with a web production workflow that you can use from your first draft right up until you hit “publish.”</p>
-
-<p>The first tutorials may seem simplistic if you’ve studied HTML before, but it may be worth your while to skim them—especially if you learned HTML more than a couple years ago. The web is always changing, and web culture and technology changes with it. This series covers <strong>HTML5</strong>—the newest version of the venerable standard. It’s much like the earlier versions, but makes some important syntax and philosophical changes that affect even the most basic code.</p>
-
-<p>We’ll start later this week with <strong>Part 1:</strong> <a href="/2014/05/06/coding-for-journalists-p1">Text Editing — Reppin’ It Old School</a></p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:driver">
-      <p>Yes mum, I’ll get my driver’s license soon. Promise. I <em>know</em> it’s embarrassing that I’m 24 and I still don’t have it. OK, technically I had it but I let it expire. But that’s besides the point. I’ll get around to it. Next month. Maybe? <a href="#fnref:driver" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:hyper">
-      <p>For instance, I won’t bother explaining that HTML stands for “Hypertext Markup Language.” No one has called it that since 1993. Seriously. <a href="#fnref:hyper" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
+<div class="controls">
+<p><a class="readlink" href="/2014/05/03/coding-for-journalists-p0/">Read more</a></p>
+</div>
 </div>
 
+
 </div>
-<footer class = "controls">
+<!-- <footer class = "controls">
 <p><em>Got feedback? <a href="http://twitter.com/mitchchn">@mitchchn</a></em></p>
 
  
@@ -337,11 +204,10 @@ But before we get that far, we have to start with the basics. That includes lear
   </a>
   
 <a class="permalink" href=/2014/05/03/coding-for-journalists-p0/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
-</footer>
+</footer> -->
     </article>
     <hr>
 
-</div>
 
 <div class="row">
 <div class="large-9 large-centered medium-9 medium-centered columns">
@@ -372,9 +238,10 @@ But before we get that far, we have to start with the basics. That includes lear
  -->
       <div class="clear large-12 medium-12">&nbsp;</div>
     </div>
+    </main>
 
 
-
+<!--
     <div class="row">
     <div class="footer large-11 medium-11 large-centered medium-centered columns">
         <p>
@@ -384,20 +251,28 @@ But before we get that far, we have to start with the basics. That includes lear
         </p>
     </div>
     </div>
+    -->
     <script>
       $(document).foundation();
     </script>
+
+
     <script>
-      // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
-    var mainbottom = $('#main').offset().top + $('#main').height();
-    // on scroll, 
-    $(window).scroll( function() {
-        var value = $(window).scrollTop();
-        if ( value > mainbottom )
-            $(".tbar").addClass("translucent fixed");
-        else
-            $(".tbar").removeClass("translucent fixed");
-    });
-  </script>
+      var mainbottom = $('#main').offset().top + $('#main').height() + 25;
+
+
+    // // on scroll, 
+    // $(window).scroll( function() {
+    //     var value = $(window).scrollTop();
+    //     if ( value > mainbottom) {
+    //           $(".tbar").addClass("fixed translucent");
+    //         }
+    //     else {
+    //           $(".tbar").removeClass("translucent");
+    //         }
+    // });
+
+    </script> 
+
   </body>
 </html>

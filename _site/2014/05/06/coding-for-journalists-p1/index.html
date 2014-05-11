@@ -8,11 +8,9 @@
       Coding for Journalists, Part 1: Text Editing and First Steps with HTML &middot; mitchchn.me
     </title>
 
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-    <!--Foundation JS -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <!--<script src="/bower_components/modernizr/modernizr.js"></script>-->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
     <!-- CSS -->
     <!-- Foundation -->
@@ -39,11 +37,10 @@
     <script src="/public/js/bigfoot.min.js"></script>
     <script>$.bigfoot();</script>
 
-
-
     <!-- Custom JS -->
     <script src="/public/js/custom.js"></script>
 
+    <!--Foundation JS -->
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/public/js/app.js"></script>
 
@@ -73,7 +70,6 @@
             mitchchn.me
             </a></h1>
       </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
     </ul>
     
     <section class="top-bar-section">
@@ -111,42 +107,51 @@
   
   <section class="top-bar-section main-menu">
         <ul class="right">
-        <li class="button-small">
-        <a href="/about">
-        About
-        </a>
-        </li>
-        <li class="button-small">
+        <li>
         <a href="/archive">
         Archive
         </a>
         </li>
         </ul>
     </section>
-    
+
 </nav>
 </div>
     <!-- Main Blog Content -->
+    <main role="main">
+    <div class="hero">
+
+
+    <div class="hero-content">
+
+<div id="hero-image" class="hero-image" style="background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.498039), rgba(0, 0, 0, 0) 140px, rgba(0, 0, 0, 0.701961)), url('/public/img/confession.png'); opacity: 1;"></div>
+<script type="text/javascript">
+      window.addEventListener("scroll", fadeHero, false);
+</script>
+
+<div class="headline"><h1>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</h1>
+</div>
+</div>
+
+
+    
+
+</div>
     <div class="content" role="content">
       <div id="main"></div>
 <article class="post">
   <header class = "post-header">
-  
-    <h1 class="post-title"><a href=/2014/05/06/coding-for-journalists-p1/>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</a></h1>
-  
-  <div class="controls">
-  <time class="controls post-date">May 06, 2014</time>
+  <div class="post-controls text-center">
+  <time class="post-controls post-date">May 06, 2014</time>
   </div>
  <!---->
 </header>
 
   <div class="post-content">
-    <div class="banner">
-<img src="/public/img/confession.png" />
-</div>
-<p>All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.</p>
+    <p>All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.</p>
 
-<p>Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is <abbr title="What You See is What You Get">WYSIWYG</abbr>. But plain text is the only format web browsers truly understand. To start writing HTML, you’ll need to to write plain text with a <strong>text editor.</strong></p>
+<p>Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is <abbr title="What You See is What You Get">WYSIWYG</abbr>. But plain text is the only format web browsers truly understand. To start writing HTML, you’ll need to to write plain text with a <strong>text editor.</strong>
+<!--more--></p>
 
 <figure>
     <img src="/public/img/plaintext.png" width="49%" />
@@ -253,7 +258,7 @@
                 <a href="/2014/05/03/coding-for-journalists-p0/" title="Previous Post: 
 Coding for Journalists, Part 0: Why Code?">&laquo; Coding for Journalists, Part 0: Why Code?</a></p> 
          
-        </div> 
+        </div>
 
         <div class="right"> 
          
@@ -262,9 +267,10 @@ Coding for Journalists, Part 0: Why Code?">&laquo; Coding for Journalists, Part 
 </div>
       <div class="clear large-12 medium-12">&nbsp;</div>
     </div>
+    </main>
 
 
-
+<!--
     <div class="row">
     <div class="footer large-11 medium-11 large-centered medium-centered columns">
         <p>
@@ -274,20 +280,28 @@ Coding for Journalists, Part 0: Why Code?">&laquo; Coding for Journalists, Part 
         </p>
     </div>
     </div>
+    -->
     <script>
       $(document).foundation();
     </script>
+
+
     <script>
-      // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
-    var mainbottom = $('#main').offset().top + $('#main').height();
-    // on scroll, 
-    $(window).scroll( function() {
-        var value = $(window).scrollTop();
-        if ( value > mainbottom )
-            $(".tbar").addClass("translucent fixed");
-        else
-            $(".tbar").removeClass("translucent fixed");
-    });
-  </script>
+      var mainbottom = $('#main').offset().top + $('#main').height() + 25;
+
+
+    // // on scroll, 
+    // $(window).scroll( function() {
+    //     var value = $(window).scrollTop();
+    //     if ( value > mainbottom) {
+    //           $(".tbar").addClass("fixed translucent");
+    //         }
+    //     else {
+    //           $(".tbar").removeClass("translucent");
+    //         }
+    // });
+
+    </script> 
+
   </body>
 </html>

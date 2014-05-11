@@ -35,21 +35,22 @@ $include-html-global-classes: $include-html-classes;
 $include-html-grid-classes: $include-html-classes;
 $include-xl-html-grid-classes: false;
 
-$row-width: rem-calc(765);
+$row-width: rem-calc(750);
 $total-columns: 12;
 
 // Global
 
-$header-font: "lft-etica", "Georgia", Helvetica, Arial, sans-serif;
+//$header-font: "lft-etica", "Georgia", Helvetica, Arial, sans-serif;
 $copy-font: "adelle", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$accent-font: $header-font;
+$header-font: $copy-font;
+$accent-font: "lft-etica", "Georgia", Helvetica, Arial, sans-serif;
 $mono-font: "Menlo", "Monaco", "Consolas", "DejaVu Sans Mono", monospace;
 
 
 // We use these to control various global styles
-//$body-bg: #fafafa;
+//$body-bg: #colfafa;
 $body-font-color: #313131;
-$body-bg: #fafafa;
+$body-bg: #fff;
 $body-font-family: $copy-font;
 $body-font-weight: 400;
 $body-font-style: normal;
@@ -69,6 +70,9 @@ $alert-color: #f04124;
 $success-color: #43AC6A;
 $warning-color: #f08a24;
 $info-color: #a0d3e8;
+
+// Additional
+$soft-color: #777;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -139,9 +143,9 @@ $header-bottom-margin: $equal-margin/2;
 $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(44);
-$h2-font-size: rem-calc(24);
-$h3-font-size: rem-calc(20);
+$h1-font-size: rem-calc(49);
+$h2-font-size: rem-calc(30);
+$h3-font-size: rem-calc(19);
 $h4-font-size: rem-calc(18);
 $h5-font-size: 0.9rem;
 $h6-font-size: 1rem;
@@ -1179,7 +1183,7 @@ $pagination-link-current-active-bg: $primary-color;
    $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-   $topbar-bg-color: #333;
+   $topbar-bg-color: rgba(34,34,34, 0.8);
    $topbar-bg: $topbar-bg-color;
 
    $topbar-tint-color: #fff;
@@ -1210,7 +1214,7 @@ $topbar-dropdown-toggle-alpha: 0.4;
     $topbar-link-font-size: rem-calc(13);
     $topbar-link-hover-lightness: -40%; // Darken by 10%
     $topbar-link-bg: $topbar-bg;
-    $topbar-link-bg-hover: #272727;
+    $topbar-link-bg-hover: $primary-color;
     $topbar-link-bg-active: $primary-color;
     $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
     $topbar-link-font-family: $body-font-family;

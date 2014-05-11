@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-10T16:07:14-04:00</updated>
+ <updated>2014-05-11T16:04:23-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -17,12 +17,10 @@
    <link href="http://mitchchn.me/2014/05/06/coding-for-journalists-p1/"/>
    <updated>2014-05-06T00:00:00-04:00</updated>
    <id>http://mitchchn.me/2014/05/06/coding-for-journalists-p1</id>
-   <content type="html">&lt;div class=&quot;banner&quot;&gt;
-&lt;img src=&quot;/public/img/confession.png&quot; /&gt;
-&lt;/div&gt;
-&lt;p&gt;All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.&lt;/p&gt;
+   <content type="html">&lt;p&gt;All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.&lt;/p&gt;
 
-&lt;p&gt;Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is &lt;abbr title=&quot;What You See is What You Get&quot;&gt;WYSIWYG&lt;/abbr&gt;. But plain text is the only format web browsers truly understand. To start writing HTML, you’ll need to to write plain text with a &lt;strong&gt;text editor.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is &lt;abbr title=&quot;What You See is What You Get&quot;&gt;WYSIWYG&lt;/abbr&gt;. But plain text is the only format web browsers truly understand. To start writing HTML, you’ll need to to write plain text with a &lt;strong&gt;text editor.&lt;/strong&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;figure&gt;
     &lt;img src=&quot;/public/img/plaintext.png&quot; width=&quot;49%&quot; /&gt;
@@ -126,7 +124,8 @@
 
 &lt;p&gt;It’s advice that most of us have heard at school or in a newsroom, but that few of us ever really act upon.&lt;/p&gt;
 
-&lt;p&gt;And no, it’s not because we aren’t &lt;a href=&quot;http://j-source.ca/article/opinion-why-journalism-schools-must-teach-code—even-if-every-journalist-not-wired-way&quot;&gt;wired that way&lt;/a&gt;. We’re smart, adaptable people. The trouble with coding is that it’s so detached from what we know and what we’re good at. We’re writers, researchers, and reporters. That’s our trade. We don’t have the time or motivation to futz around with arcane syntax, any more than we have the time to learn plumbing. We’re just not interested. We’d rather be writing.&lt;/p&gt;
+&lt;p&gt;And no, it’s not because we aren’t &lt;a href=&quot;http://j-source.ca/article/opinion-why-journalism-schools-must-teach-code—even-if-every-journalist-not-wired-way&quot;&gt;wired that way&lt;/a&gt;. We’re smart, adaptable people. The trouble with coding is that it’s so detached from what we know and what we’re good at. We’re writers, researchers, and reporters. That’s our trade. We don’t have the time or motivation to futz around with arcane syntax, any more than we have the time to learn plumbing. We’re just not interested. We’d rather be writing.
+&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;Advocates for teaching code like to go on about “digital literacy” and how important it is. They’ll tell you that you need to start learning code &lt;em&gt;right this second&lt;/em&gt; because otherwise no one will hire you, ever, and, hey, you’re missing out, so-get-with-the-program-already. They mean well, but I’m not a fan of this line of reasoning. Not only is it condescending to call educated people illiterate for not possessing a skill outside of their field, but you won’t encourage &lt;em&gt;anyone&lt;/em&gt; to step out of their comfort zone and learn something new by guilting them into doing it.&lt;sup id=&quot;fnref:driver&quot;&gt;&lt;a href=&quot;#fn:driver&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 

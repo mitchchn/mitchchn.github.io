@@ -1,11 +1,16 @@
 <div class="hero">
+{% if page.url == "/" %}
+    <div class="hero-content fp-hero">
     <div class="row">
-    <div class="large-5 medium-5 columns">
+    <div class="large-2 medium-2 small-3 columns">
+    <div class="me" style="background-image:url('/public/img/mitchell.jpg'); width: 90px;height: 90px; background-size: contain;"></div>       
+    </div>
+    <div class="large-6 medium-6 small-9 columns">
     <p>I'm <strong>Mitchell Cohen</strong>, a writer and technophile from Toronto.
     This is where I write about coffee, code, journalism, language, insomnia <s>and giant spiders.</s></p>
     </div>
-    <div class="push-1 large-3 medium-3 columns">
-        <h4>(Find me)</h4>
+    <div class="right social large-3 medium-3 columns">
+        <h5>(Find me)</h5>
       <ul class="icons">
           <li>
             <a href="http://twitter.com/mitchchn">
@@ -17,16 +22,32 @@
                 <i class="icon-small purple-bg fa fa-github"></i>
             </a>
           </li>
-          <li>
+          <li class="last">
             <a href="http://github.com/mitchchn">
                 <i class="icon-small purple-bg fa fa-thumb-tack"></i>
             </a>
           </li>
         </ul>
     </div>
+    </div>
+    </div>
 
-    <div class="large-3 medium-3 columns">
+{% else %}
+
+    <div class="hero-content">
+{% if page.banner %}
+<div id="hero-image" class="hero-image" style="background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.498039), rgba(0, 0, 0, 0) 140px, rgba(0, 0, 0, 0.701961)), url('{{page.banner}}'); opacity: 1;"></div>
+<script type="text/javascript">
+      window.addEventListener("scroll", fadeHero, false);
+</script>
+{% else %}
+<div id="hero-image" class="hero-no-image"></div>
+{% endif %}
+<div class="headline"><h1>{{page.title}}</h1>
+</div>
+</div>
+
+{% endif %}
     
-    </div>
-    </div>
+
 </div>

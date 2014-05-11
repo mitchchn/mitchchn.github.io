@@ -8,11 +8,9 @@
       404: Page not found &middot; mitchchn.me
     </title>
 
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-    <!--Foundation JS -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <!--<script src="/bower_components/modernizr/modernizr.js"></script>-->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
     <!-- CSS -->
     <!-- Foundation -->
@@ -39,11 +37,10 @@
     <script src="/public/js/bigfoot.min.js"></script>
     <script>$.bigfoot();</script>
 
-
-
     <!-- Custom JS -->
     <script src="/public/js/custom.js"></script>
 
+    <!--Foundation JS -->
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/public/js/app.js"></script>
 
@@ -73,7 +70,6 @@
             mitchchn.me
             </a></h1>
       </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
     </ul>
     
     <section class="top-bar-section">
@@ -111,58 +107,36 @@
   
   <section class="top-bar-section main-menu">
         <ul class="right">
-        <li class="button-small">
-        <a href="/about">
-        About
-        </a>
-        </li>
-        <li class="button-small">
+        <li>
         <a href="/archive">
         Archive
         </a>
         </li>
         </ul>
     </section>
-    
+
 </nav>
 </div>
     <!-- Main Blog Content -->
-    <div class="content" role="content">
-      <div class="hero">
-    <div class="row">
-    <div class="large-5 medium-5 columns">
-    <p>I'm <strong>Mitchell Cohen</strong>, a writer and technophile from Toronto.
-    This is where I write about coffee, code, journalism, language, insomnia <s>and giant spiders.</s></p>
-    </div>
-    <div class="push-1 large-3 medium-3 columns">
-        <h4>(Find me)</h4>
-      <ul class="icons">
-          <li>
-            <a href="http://twitter.com/mitchchn">
-                <i class="icon-small purple-bg fa fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://github.com/mitchchn">
-                <i class="icon-small purple-bg fa fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://github.com/mitchchn">
-                <i class="icon-small purple-bg fa fa-thumb-tack"></i>
-            </a>
-          </li>
-        </ul>
-    </div>
+    <main role="main">
+    <div class="hero">
 
-    <div class="large-3 medium-3 columns">
+
+    <div class="hero-content">
+
+<div id="hero-image" class="hero-no-image"></div>
+
+<div class="headline"><h1>404: Page not found</h1>
+</div>
+</div>
+
+
     
-    </div>
-    </div>
+
 </div>
-<div id="main"></div>
+    <div class="content" role="content">
+      <div id="main"></div>
    
-</div>
 
 <div class="row">
 <div class="large-9 large-centered medium-9 medium-centered columns">
@@ -193,9 +167,10 @@
  -->
       <div class="clear large-12 medium-12">&nbsp;</div>
     </div>
+    </main>
 
 
-
+<!--
     <div class="row">
     <div class="footer large-11 medium-11 large-centered medium-centered columns">
         <p>
@@ -205,20 +180,28 @@
         </p>
     </div>
     </div>
+    -->
     <script>
       $(document).foundation();
     </script>
+
+
     <script>
-      // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
-    var mainbottom = $('#main').offset().top + $('#main').height();
-    // on scroll, 
-    $(window).scroll( function() {
-        var value = $(window).scrollTop();
-        if ( value > mainbottom )
-            $(".tbar").addClass("translucent fixed");
-        else
-            $(".tbar").removeClass("translucent fixed");
-    });
-  </script>
+      var mainbottom = $('#main').offset().top + $('#main').height() + 25;
+
+
+    // // on scroll, 
+    // $(window).scroll( function() {
+    //     var value = $(window).scrollTop();
+    //     if ( value > mainbottom) {
+    //           $(".tbar").addClass("fixed translucent");
+    //         }
+    //     else {
+    //           $(".tbar").removeClass("translucent");
+    //         }
+    // });
+
+    </script> 
+
   </body>
 </html>

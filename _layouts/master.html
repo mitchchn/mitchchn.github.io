@@ -6,13 +6,16 @@
   <body>
     {% include masthead.html %}
     <!-- Main Blog Content -->
+    <main role="main">
+    {% include fp-hero.html %}
     <div class="content" role="content">
       {{ content }}
       <div class="clear large-12 medium-12">&nbsp;</div>
     </div>
+    </main>
 
 
-
+<!--
     <div class="row">
     <div class="footer large-11 medium-11 large-centered medium-centered columns">
         <p>
@@ -22,20 +25,28 @@
         </p>
     </div>
     </div>
+    -->
     <script>
       $(document).foundation();
     </script>
+
+
     <script>
-      // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
-    var mainbottom = $('#main').offset().top + $('#main').height();
-    // on scroll, 
-    $(window).scroll( function() {
-        var value = $(window).scrollTop();
-        if ( value > mainbottom )
-            $(".tbar").addClass("translucent fixed");
-        else
-            $(".tbar").removeClass("translucent fixed");
-    });
-  </script>
+      var mainbottom = $('#main').offset().top + $('#main').height() + 25;
+
+
+    // // on scroll, 
+    // $(window).scroll( function() {
+    //     var value = $(window).scrollTop();
+    //     if ( value > mainbottom) {
+    //           $(".tbar").addClass("fixed translucent");
+    //         }
+    //     else {
+    //           $(".tbar").removeClass("translucent");
+    //         }
+    // });
+
+    </script> 
+
   </body>
 </html>

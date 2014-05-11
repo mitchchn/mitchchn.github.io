@@ -10,6 +10,7 @@ tag: coding for journalists
 It's advice that most of us have heard at school or in a newsroom, but that few of us ever really act upon.
 
 And no, it's not because we aren't [wired that way](http://j-source.ca/article/opinion-why-journalism-schools-must-teach-code—even-if-every-journalist-not-wired-way). We're smart, adaptable people. The trouble with coding is that it's so detached from what we know and what we're good at. We're writers, researchers, and reporters. That's our trade. We don't have the time or motivation to futz around with arcane syntax, any more than we have the time to learn plumbing. We're just not interested. We'd rather be writing.
+<!--more-->
 
 Advocates for teaching code like to go on about "digital literacy" and how important it is. They'll tell you that you need to start learning code *right this second* because otherwise no one will hire you, ever, and, hey, you're missing out, so-get-with-the-program-already. They mean well, but I'm not a fan of this line of reasoning. Not only is it condescending to call educated people illiterate for not possessing a skill outside of their field, but you won't encourage *anyone* to step out of their comfort zone and learn something new by guilting them into doing it.[^driver]
 

@@ -10,12 +10,17 @@ title:            mitchchn.me
 tagline:          Computers, coffee, code, and giant spiders.
 description:      Base theme for Jekyll themes by @mdo.
 url:              http://mitchchn.me
+paginate:         3
 
+# Me
 author:
   name:           Mitchell Cohen
   url:            https://twitter.com/mitchchn
 
-paginate:         3
+
+# Posts
+excerpt_separator: "<!--more-->"
+
 
 # Custom vars
 version:          1.0.0

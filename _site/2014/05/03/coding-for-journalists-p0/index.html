@@ -8,11 +8,9 @@
       Coding for Journalists, Part 0: Why Code? &middot; mitchchn.me
     </title>
 
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-    <!--Foundation JS -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <!--<script src="/bower_components/modernizr/modernizr.js"></script>-->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
     <!-- CSS -->
     <!-- Foundation -->
@@ -39,11 +37,10 @@
     <script src="/public/js/bigfoot.min.js"></script>
     <script>$.bigfoot();</script>
 
-
-
     <!-- Custom JS -->
     <script src="/public/js/custom.js"></script>
 
+    <!--Foundation JS -->
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="/public/js/app.js"></script>
 
@@ -73,7 +70,6 @@
             mitchchn.me
             </a></h1>
       </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
     </ul>
     
     <section class="top-bar-section">
@@ -111,31 +107,39 @@
   
   <section class="top-bar-section main-menu">
         <ul class="right">
-        <li class="button-small">
-        <a href="/about">
-        About
-        </a>
-        </li>
-        <li class="button-small">
+        <li>
         <a href="/archive">
         Archive
         </a>
         </li>
         </ul>
     </section>
-    
+
 </nav>
 </div>
     <!-- Main Blog Content -->
+    <main role="main">
+    <div class="hero">
+
+
+    <div class="hero-content">
+
+<div id="hero-image" class="hero-no-image"></div>
+
+<div class="headline"><h1>Coding for Journalists, Part 0: Why Code?</h1>
+</div>
+</div>
+
+
+    
+
+</div>
     <div class="content" role="content">
       <div id="main"></div>
 <article class="post">
   <header class = "post-header">
-  
-    <h1 class="post-title"><a href=/2014/05/03/coding-for-journalists-p0/>Coding for Journalists, Part 0: Why Code?</a></h1>
-  
-  <div class="controls">
-  <time class="controls post-date">May 03, 2014</time>
+  <div class="post-controls text-center">
+  <time class="post-controls post-date">May 03, 2014</time>
   </div>
  <!--
    <p class="category">
@@ -152,7 +156,8 @@
 
 <p>It’s advice that most of us have heard at school or in a newsroom, but that few of us ever really act upon.</p>
 
-<p>And no, it’s not because we aren’t <a href="http://j-source.ca/article/opinion-why-journalism-schools-must-teach-code—even-if-every-journalist-not-wired-way">wired that way</a>. We’re smart, adaptable people. The trouble with coding is that it’s so detached from what we know and what we’re good at. We’re writers, researchers, and reporters. That’s our trade. We don’t have the time or motivation to futz around with arcane syntax, any more than we have the time to learn plumbing. We’re just not interested. We’d rather be writing.</p>
+<p>And no, it’s not because we aren’t <a href="http://j-source.ca/article/opinion-why-journalism-schools-must-teach-code—even-if-every-journalist-not-wired-way">wired that way</a>. We’re smart, adaptable people. The trouble with coding is that it’s so detached from what we know and what we’re good at. We’re writers, researchers, and reporters. That’s our trade. We don’t have the time or motivation to futz around with arcane syntax, any more than we have the time to learn plumbing. We’re just not interested. We’d rather be writing.
+<!--more--></p>
 
 <p>Advocates for teaching code like to go on about “digital literacy” and how important it is. They’ll tell you that you need to start learning code <em>right this second</em> because otherwise no one will hire you, ever, and, hey, you’re missing out, so-get-with-the-program-already. They mean well, but I’m not a fan of this line of reasoning. Not only is it condescending to call educated people illiterate for not possessing a skill outside of their field, but you won’t encourage <em>anyone</em> to step out of their comfort zone and learn something new by guilting them into doing it.<sup id="fnref:driver"><a href="#fn:driver" class="footnote">1</a></sup></p>
 
@@ -212,7 +217,7 @@ But before we get that far, we have to start with the basics. That includes lear
 <div class="page-navigation large-10 large-centered medium-10 medium-centered columns"> 
         <div class="left"> 
          
-        </div> 
+        </div>
 
         <div class="right"> 
          
@@ -225,9 +230,10 @@ Coding for Journalists, Part 1: Text Editing and First Steps with HTML">Coding f
 </div>
       <div class="clear large-12 medium-12">&nbsp;</div>
     </div>
+    </main>
 
 
-
+<!--
     <div class="row">
     <div class="footer large-11 medium-11 large-centered medium-centered columns">
         <p>
@@ -237,20 +243,28 @@ Coding for Journalists, Part 1: Text Editing and First Steps with HTML">Coding f
         </p>
     </div>
     </div>
+    -->
     <script>
       $(document).foundation();
     </script>
+
+
     <script>
-      // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
-    var mainbottom = $('#main').offset().top + $('#main').height();
-    // on scroll, 
-    $(window).scroll( function() {
-        var value = $(window).scrollTop();
-        if ( value > mainbottom )
-            $(".tbar").addClass("translucent fixed");
-        else
-            $(".tbar").removeClass("translucent fixed");
-    });
-  </script>
+      var mainbottom = $('#main').offset().top + $('#main').height() + 25;
+
+
+    // // on scroll, 
+    // $(window).scroll( function() {
+    //     var value = $(window).scrollTop();
+    //     if ( value > mainbottom) {
+    //           $(".tbar").addClass("fixed translucent");
+    //         }
+    //     else {
+    //           $(".tbar").removeClass("translucent");
+    //         }
+    // });
+
+    </script> 
+
   </body>
 </html>

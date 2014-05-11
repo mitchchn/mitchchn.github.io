@@ -1,16 +1,16 @@
 ---
 layout: master
 ---
-{% include fp-hero.html %}
+
+
 <div id="main"></div>
    {% for post in paginator.posts %}
     <article class="post">
       {% include fp-post-header.html %} 
-            {% include post-content.html %}
+            {% include fp-post-content.html %}
     </article>
     <hr>
 {% endfor %}
-</div>
 
 <div class="row">
 <div class="large-9 large-centered medium-9 medium-centered columns">
