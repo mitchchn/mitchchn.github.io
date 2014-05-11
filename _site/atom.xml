@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-11T16:45:15-04:00</updated>
+ <updated>2014-05-11T17:32:02-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -108,7 +108,7 @@
       &lt;p&gt;For bonus nerd points, save all your code to a folder named &lt;b&gt;src&lt;/b&gt; (short for “source [code]”). &lt;a href=&quot;#fnref:src&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:html5&quot;&gt;
-      &lt;p&gt;If you learned HTML several years ago, you may be wondering why I’m using &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; instead of &lt;code&gt;&amp;lt;b&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;i&amp;gt;&lt;/code&gt;. We’re already running into a major change in HTML5, which does away with tags that are strictly presentational in favour of tags that are &lt;em&gt;semantic&lt;/em&gt;. We’ll learn more about this soon. &lt;a href=&quot;#fnref:html5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;If you learned HTML several years ago, you may be wondering why I’m using &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; and &lt;code&gt;&lt;em&gt;&amp;lt;/code&amp;gt; instead of `&lt;b&gt;` and `&lt;i&gt;`. We&#39;re already running into a major change in HTML5, which does away with tags that are strictly presentational in favour of tags that are *semantic*. We&#39;ll learn more about this soon.&lt;/i&gt;&lt;/b&gt;&lt;/em&gt;&lt;/code&gt; &lt;a href=&quot;#fnref:html5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;

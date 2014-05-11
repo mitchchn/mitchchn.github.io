@@ -94,7 +94,7 @@ Next time, we'll go into more detail about the way tags behave and what happens 
 
 [^src]: For bonus nerd points, save all your code to a folder named <b>src</b> (short for "source [code]").
 
-[^html5]: If you learned HTML several years ago, you may be wondering why I'm using `<strong>` and `<em>` instead of `<b>` and `<i>`. We're already running into a major change in HTML5, which does away with tags that are strictly presentational in favour of tags that are *semantic*. We'll learn more about this soon.
+[^html5]: If you learned HTML several years ago, you may be wondering why I'm using `<strong>` and <code><em></code> instead of `<b>` and `<i>`. We're already running into a major change in HTML5, which does away with tags that are strictly presentational in favour of tags that are *semantic*. We'll learn more about this soon.
 
 
 

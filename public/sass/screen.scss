@@ -165,7 +165,9 @@
 .hero-content {
 
     .hero-image {
-    height: 380px;
+    height: 480px;
+    background-size: contain;
+    -moz-background-size: contain;
     @media #{$medium} {
         height: 700px;
         display: block;
@@ -522,6 +524,11 @@ padding: 0 2px;
 
 .hero {
     .me {
+        width: 60px;
+        height: 60px;
+        @media #{$medium} {
+            width: 90px;height: 90px; 
+        }
         border-radius: 100%;
     }
     h5 {
