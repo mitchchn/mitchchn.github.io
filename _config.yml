@@ -3,7 +3,7 @@ markdown:         kramdown
 pygments:         true
 
 # Permalinks
-permalink:        pretty  
+permalink:        /:year/:title/
 
 # Setup
 title:            mitchchn.me

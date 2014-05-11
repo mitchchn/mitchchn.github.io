@@ -1,5 +1,5 @@
 <div class="hero">
-{% if page.url == "/" %}
+{% if page.url == "/index.html" %}
     <div class="hero-content fp-hero">
     <div class="row">
     <div class="large-2 medium-2 small-3 columns">
@@ -36,7 +36,7 @@
 
     <div class="hero-content">
 {% if page.banner %}
-<div id="hero-image" class="hero-image" style="background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.498039), rgba(0, 0, 0, 0) 140px, rgba(0, 0, 0, 0.701961)), url('{{page.banner}}'); opacity: 1;"></div>
+<div id="hero-image" class="hero-image" style="background-image: url('{{page.banner}}'); opacity: 1;"></div>
 <script type="text/javascript">
       window.addEventListener("scroll", fadeHero, false);
 </script>

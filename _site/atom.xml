@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-11T16:04:23-04:00</updated>
+ <updated>2014-05-11T16:45:15-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</title>
-   <link href="http://mitchchn.me/2014/05/06/coding-for-journalists-p1/"/>
+   <link href="http://mitchchn.me/2014/coding-for-journalists-p1/"/>
    <updated>2014-05-06T00:00:00-04:00</updated>
-   <id>http://mitchchn.me/2014/05/06/coding-for-journalists-p1</id>
+   <id>http://mitchchn.me/2014/coding-for-journalists-p1</id>
    <content type="html">&lt;p&gt;All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.&lt;/p&gt;
 
 &lt;p&gt;Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is &lt;abbr title=&quot;What You See is What You Get&quot;&gt;WYSIWYG&lt;/abbr&gt;. But plain text is the only format web browsers truly understand. To start writing HTML, you’ll need to to write plain text with a &lt;strong&gt;text editor.&lt;/strong&gt;
@@ -117,9 +117,9 @@
  
  <entry>
    <title>Coding for Journalists, Part 0: Why Code?</title>
-   <link href="http://mitchchn.me/2014/05/03/coding-for-journalists-p0/"/>
+   <link href="http://mitchchn.me/2014/coding-for-journalists-p0/"/>
    <updated>2014-05-03T00:00:00-04:00</updated>
-   <id>http://mitchchn.me/2014/05/03/coding-for-journalists-p0</id>
+   <id>http://mitchchn.me/2014/coding-for-journalists-p0</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.niemanlab.org/2012/09/miranda-mulligan-want-to-produce-hirable-grads-journalism-schools-teach-them-to-code/&quot;&gt;Learn to code&lt;/a&gt;, they say.&lt;/p&gt;
 
 &lt;p&gt;It’s advice that most of us have heard at school or in a newsroom, but that few of us ever really act upon.&lt;/p&gt;

@@ -72,6 +72,39 @@
       </li>
     </ul>
     
+    <section class="top-bar-section">
+    <ul class="right">
+    <li class="has-dropdown">
+        <a href="#">Article</a>
+        <ul class="dropdown translucent">
+            <li><label>Share this article</label><li>
+          <li id="custom-tweet-button">
+          <a class="popup" href="https://twitter.com/share?text=Home&url=/index.html">
+          <i class="fa fa-twitter"></i>
+          Twitter</a></li>
+        </ul>
+<script>
+  $('.popup').click(function(event) {
+    var width  = 575,
+        height = 400,
+        left   = ($(window).width()  - width)  / 2,
+        top    = ($(window).height() - height) / 2,
+        url    = this.href,
+        opts   = 'status=1' +
+                 ',width='  + width  +
+                 ',height=' + height +
+                 ',top='    + top    +
+                 ',left='   + left;
+    
+    window.open(url, 'twitter', opts);
+ 
+    return false;
+  });
+</script>
+    </li>
+    </ul>
+    </section>
+  
   <section class="top-bar-section main-menu">
         <ul class="right">
         <li>
@@ -130,7 +163,7 @@
     <article class="post">
       <header class = "post-header">
   
-  	<h2 class="post-title"><a href=/2014/05/06/coding-for-journalists-p1/>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</a></h2>
+  	<h2 class="post-title"><a href=/2014/coding-for-journalists-p1/>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</a></h2>
   
   
   <p class="controls">
@@ -146,7 +179,7 @@
 
 
 <div class="controls">
-<p><a class="readlink" href="/2014/05/06/coding-for-journalists-p1/">Read more</a></p>
+<p><a class="readlink" href="/2014/coding-for-journalists-p1/">Read more</a></p>
 </div>
 </div>
 
@@ -156,7 +189,7 @@
 <p><em>Got feedback? <a href="http://twitter.com/mitchchn">@mitchchn</a></em></p>
 
  
-<a class="permalink" href=/2014/05/06/coding-for-journalists-p1/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
+<a class="permalink" href=/2014/coding-for-journalists-p1/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
 </footer> -->
     </article>
     <hr>
@@ -164,7 +197,7 @@
     <article class="post">
       <header class = "post-header">
   
-  	<h2 class="post-title"><a href=/2014/05/03/coding-for-journalists-p0/>Coding for Journalists, Part 0: Why Code?</a></h2>
+  	<h2 class="post-title"><a href=/2014/coding-for-journalists-p0/>Coding for Journalists, Part 0: Why Code?</a></h2>
   
   
   <p class="controls">
@@ -189,7 +222,7 @@
 
 
 <div class="controls">
-<p><a class="readlink" href="/2014/05/03/coding-for-journalists-p0/">Read more</a></p>
+<p><a class="readlink" href="/2014/coding-for-journalists-p0/">Read more</a></p>
 </div>
 </div>
 
@@ -203,7 +236,7 @@
   <i class="fa fa-tag text-icon"></i><span>coding for journalists</span>
   </a>
   
-<a class="permalink" href=/2014/05/03/coding-for-journalists-p0/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
+<a class="permalink" href=/2014/coding-for-journalists-p0/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
 </footer> -->
     </article>
     <hr>
@@ -215,9 +248,9 @@
   <h4 class="section-title">Recent posts</h4>
    <ul class="post-list">
   
-      <li class="recent-post"><time>06 May</time><a href="/2014/05/06/coding-for-journalists-p1/">Coding for Journalists, Part 1: Text Editing and First Steps with HTML</a></li>
+      <li class="recent-post"><time>06 May</time><a href="/2014/coding-for-journalists-p1/">Coding for Journalists, Part 1: Text Editing and First Steps with HTML</a></li>
   
-      <li class="recent-post"><time>03 May</time><a href="/2014/05/03/coding-for-journalists-p0/">Coding for Journalists, Part 0: Why Code?</a></li>
+      <li class="recent-post"><time>03 May</time><a href="/2014/coding-for-journalists-p0/">Coding for Journalists, Part 0: Why Code?</a></li>
   
   </ul>
 </section>
