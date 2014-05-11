@@ -78,8 +78,7 @@ Of course, the rabbit hole goes much deeper---as we will soon see. For now, prac
 1. Combine multiple `<strong>` tags.
 2. Put an `<em>` tag right next to a `<strong>` tag.
 3. See what happens when you leave out a closing tag.
-4. 
-Go wild. Don't worry. You can't break anything. (At least, not until we get to JavaScript!)
+4. Go wild. Don't worry. You can't break anything. (At least, not until we get to JavaScript!)
 
 Next time, we'll go into more detail about the way tags behave and what happens when they shack up with other tags. Are you sick of the word "tag" yet? I hope not. See you soon.
 
@@ -94,7 +93,7 @@ Next time, we'll go into more detail about the way tags behave and what happens 
 
 [^src]: For bonus nerd points, save all your code to a folder named <b>src</b> (short for "source [code]").
 
-[^html5]: If you learned HTML several years ago, you may be wondering why I'm using `<strong>` and <code><em></code> instead of `<b>` and `<i>`. We're already running into a major change in HTML5, which does away with tags that are strictly presentational in favour of tags that are *semantic*. We'll learn more about this soon.
+[^html5]: If you learned HTML several years ago, you may be wondering why I'm using `<strong>` and `<em>` instead of `<b>` and `<i>`. We're already running into a major change in HTML5, which does away with tags that are strictly presentational in favour of tags that are *semantic*. We'll learn more about this soon.
 
 
 
