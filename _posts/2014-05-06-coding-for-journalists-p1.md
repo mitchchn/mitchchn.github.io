@@ -1,7 +1,7 @@
 ---
 title: "Coding for Journalists, Part 1: Text Editing and First Steps with HTML"
 layout: post
-banner: "/public/img/confession.png"
+banner: "/public/img/confession2.png"
 ---
 
 All code, no matter the language, is written in plain text. Plain text documents are those that don't allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.

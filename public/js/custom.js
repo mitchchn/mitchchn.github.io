@@ -7,7 +7,7 @@ function fadeHero(event) {
   // for optimal performance. Does not exclude trackpads.
   if ('ontouchstart' in document.documentElement == false) {
     if (window.pageYOffset > 0) {
-      $('.hero-image').css('opacity', (1 - (1/380) * window.pageYOffset ));
+      $('.hero-image').css('opacity', (1 - (1/400) * window.pageYOffset ));
       //$('.spinner').css('opacity', (1 / (window.pageYOffset / 150)) - 0.3);
       //$('.hero-heading').css('bottom', (80 - (window.pageYOffset / 8)) + 'px');
     } else {
