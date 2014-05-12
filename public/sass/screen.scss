@@ -190,11 +190,29 @@
     // filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
     }
     .hero-no-image {
-        height: 30px;
+        height: 300px;
     }
 
-.headline {
-    @extend .center-width;
+    .headline {
+        @extend .center-width;
+        h1 {
+            line-height: 1.3em;
+            color: #fff !important;
+        }
+    }
+
+    .headline-no-image {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 25px;
+        h1 {
+            line-height: 1.3em;
+            color: #fff !important;
+        }
+    }
+
+.headline-image {
     position: absolute;
     left: 0;
     right: 0;
@@ -202,12 +220,6 @@
     top: 25%;
     @media #{$medium} {
         top: 45%;
-    }
-    h1 {
-        line-height: 1.3em;
-        color: #fff !important;
-
-
     }
     .down-arrow {
         position: absolute;
