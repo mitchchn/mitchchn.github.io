@@ -169,7 +169,7 @@
     background-size: contain;
     -moz-background-size: contain;
     @media #{$medium} {
-        height: 700px;
+        height: 750px;
         display: block;
     }
     width: 100%;
@@ -181,13 +181,13 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    filter: blur(2px); 
-    -webkit-filter: blur(2px); 
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px); 
-    -ms-filter: blur(2px);
-    filter: url('/public/img/blur.svg#blur');
-    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
+    // filter: blur(2px); 
+    // -webkit-filter: blur(2px); 
+    // -moz-filter: blur(2px);
+    // -o-filter: blur(2px); 
+    // -ms-filter: blur(2px);
+    // filter: url('/public/img/blur.svg#blur');
+    // filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
     }
     .hero-no-image {
         height: 300px;
@@ -199,10 +199,20 @@
     left: 0;
     right: 0;
     bottom: 0;
+    color: #fff !important;
     h1 {
         line-height: 1.3em;
-        padding-bottom: 0.5em;
         color: #fff !important;
+    }
+    .down-arrow {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        text-align: center;
+    i {
+        font-size: 200%;
+    }
     }
 }
 

@@ -36,7 +36,7 @@
     <!-- Bigfoot JS -->
     <script src="/public/js/bigfoot.min.js"></script>
     <script>$.bigfoot();</script>
-
+    
     <!-- Custom JS -->
     <script src="/public/js/custom.js"></script>
 
@@ -122,15 +122,17 @@
     <div class="hero">
 
 
-    <div class="hero-content">
+<div class="hero-content">
 
-<div id="hero-image" class="hero-image" style="background-image: url('/public/img/confession2.png'); opacity: 1;"></div>
-<script type="text/javascript">
-      window.addEventListener("scroll", fadeHero, false);
-</script>
-
-<div class="headline"><h1>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</h1>
+<div id="hero-image" class="hero-image" style="background-image: url('/public/img/confession3.png');" data-0="opacity: 1;" data-450="opacity:0;"></div>
+<div class="headline" data-0="top: 350px;" data-475="top: 470px;"><h1>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</h1>
+ <!--<script type="text/javascript">window.addEventListener("scroll", fadeHero, false);</script>-->
+<div class="down-arrow">
+<i class= "fa fa-chevron-down" data-0="opacity: 1;" data-300="opacity: 0;"></i>
 </div>
+</div>
+
+
 </div>
 
 
@@ -285,6 +287,10 @@ Coding for Journalists, Part 0: Why Code?">&laquo; Coding for Journalists, Part 
       $(document).foundation();
     </script>
 
+
+    <!-- Skrollr -->
+    <script src="/public/js/skrollr.min.js"></script>
+    <script>var s = skrollr.init();</script>
 
     <script>
       var mainbottom = $('#main').offset().top + $('#main').height() + 25;
