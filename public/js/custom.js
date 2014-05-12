@@ -21,3 +21,23 @@
 //     }
 //   }
 // };
+
+
+var header_resize = function(){
+    var tallness = $(window).innerHeight();
+    if (tallness > 300) {
+        $('.hero-image').css('height', tallness - tallness * 0.10 + "px");
+    }
+    else {
+        $('.hero-image').css('height', 300 + "px");
+    }
+}
+
+
+$(document).ready(function() {
+header_resize();
+});
+
+$( window ).resize(function() {
+header_resize();
+});

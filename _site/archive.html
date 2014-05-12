@@ -10,7 +10,7 @@
 
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
+    <script src="/public/js/scrollto.js"></script>
 
     <!-- CSS -->
     <!-- Foundation -->
@@ -36,7 +36,7 @@
     <!-- Bigfoot JS -->
     <script src="/public/js/bigfoot.min.js"></script>
     <script>$.bigfoot();</script>
-    
+
     <!-- Custom JS -->
     <script src="/public/js/custom.js"></script>
 
@@ -183,7 +183,11 @@
 
     <!-- Skrollr -->
     <script src="/public/js/skrollr.min.js"></script>
-    <script>var s = skrollr.init();</script>
+    <script>
+    if ('ontouchstart' in document.documentElement == false) {
+      var s = skrollr.init();
+    }
+    </script>
 
     <script>
       var mainbottom = $('#main').offset().top + $('#main').height() + 25;
@@ -201,6 +205,13 @@
     // });
 
     </script> 
+  <script>
+      $("#scroll-to-content").click(function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $('body').scrollTo('#post-content');
+    });
+</script>
 
   </body>
 </html>

@@ -33,7 +33,11 @@
 
     <!-- Skrollr -->
     <script src="/public/js/skrollr.min.js"></script>
-    <script>var s = skrollr.init();</script>
+    <script>
+    if ('ontouchstart' in document.documentElement == false) {
+      var s = skrollr.init();
+    }
+    </script>
 
     <script>
       var mainbottom = $('#main').offset().top + $('#main').height() + 25;
@@ -51,6 +55,13 @@
     // });
 
     </script> 
+  <script>
+      $("#scroll-to-content").click(function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $('body').scrollTo('#post-content');
+    });
+</script>
 
   </body>
 </html>
