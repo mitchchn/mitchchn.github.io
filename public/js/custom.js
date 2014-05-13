@@ -25,11 +25,14 @@
 
 var header_resize = function(){
     var tallness = $(window).innerHeight();
-    if (tallness > 300) {
-        $('.hero-image').css('height', tallness - tallness * 0.10 + "px");
+    if (tallness < 600  && tallness > 400) {
+        $('.hero-image').css('height', tallness + "px");
+    }
+    else if (tallness < 400) {
+        $('.hero-image').css('height', "400" + "px");
     }
     else {
-        $('.hero-image').css('height', 300 + "px");
+        $('.hero-image').css('height', "450" + "px");
     }
 }
 

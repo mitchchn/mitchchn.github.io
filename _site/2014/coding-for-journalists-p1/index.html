@@ -8,8 +8,10 @@
       Coding for Journalists, Part 1: Text Editing and First Steps with HTML &middot; mitchchn.me
     </title>
 
-    <!--JQuery-->
+    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- JQuery plugins -->
     <script src="/public/js/scrollto.js"></script>
 
     <!-- CSS -->
@@ -37,6 +39,9 @@
     <script src="/public/js/bigfoot.min.js"></script>
     <script>$.bigfoot();</script>
 
+    <!-- Skrollr -->
+    <script src="/public/js/skrollr.min.js"></script>
+  
     <!-- Custom JS -->
     <script src="/public/js/custom.js"></script>
 
@@ -124,11 +129,11 @@
 
 <div class="hero-content">
 
-<div id="hero-image" class="hero-image" style="background-image: url('/public/img/confession3.png');" data-0="opacity: 1;" data-450="opacity:0;"></div>
-<div class="headline headline-image" data-0="top: 45%" data-475="top: 60%;"><h1>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</h1>
+<div id="hero-image" class="hero-image" style="background-image: url('/public/img/confession3.png');" data-0="opacity: 1;" data-200="opacity:0;"></div>
+<div class="headline headline-image" data-0="top: 25%;" data-300="top: 50%;"><h1>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</h1>
  <!--<script type="text/javascript">window.addEventListener("scroll", fadeHero, false);</script>-->
 <div class="down-arrow">
-<a id="scroll-to-content" href="#post-content"><i class= "fa fa-chevron-down" data-0="opacity: 1;" data-300="opacity: 0;"></i></a>
+<a id="scroll-to-content" href="#post-content"><i class= "fa fa-chevron-down" data-0="opacity: 1;" data-200="opacity: 0;"></i></a>
 </div>
 </div>
 
@@ -142,14 +147,14 @@
     <div class="content" role="content">
       <div id="main"></div>
 <article class="post">
-  <header class = "post-header">
+  <header class = "post-header" id="post-content">
   <div class="post-controls text-center">
   <time class="post-controls post-date">May 06, 2014</time>
   </div>
  <!---->
 </header>
 
-  <div id="post-content" class="post-content">
+  <div class="post-content">
     <p>All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.</p>
 
 <p>Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is <abbr title="What You See is What You Get">WYSIWYG</abbr>. But plain text is the only format web browsers truly understand. To start writing HTML, you’ll need to to write plain text with a <strong>text editor.</strong>
@@ -289,29 +294,13 @@ Coding for Journalists, Part 0: Why Code?">&laquo; Coding for Journalists, Part 
 
 
     <!-- Skrollr -->
-    <script src="/public/js/skrollr.min.js"></script>
     <script>
     if ('ontouchstart' in document.documentElement == false) {
-      var s = skrollr.init();
+      var page_skrollr = skrollr.init();
     }
     </script>
 
-    <script>
-      var mainbottom = $('#main').offset().top + $('#main').height() + 25;
-
-
-    // // on scroll, 
-    // $(window).scroll( function() {
-    //     var value = $(window).scrollTop();
-    //     if ( value > mainbottom) {
-    //           $(".tbar").addClass("fixed translucent");
-    //         }
-    //     else {
-    //           $(".tbar").removeClass("translucent");
-    //         }
-    // });
-
-    </script> 
+  <!-- scrollTo -->
   <script>
       $("#scroll-to-content").click(function (e) {
         e.stopPropagation();

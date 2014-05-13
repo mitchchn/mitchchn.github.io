@@ -8,8 +8,10 @@
       About &middot; mitchchn.me
     </title>
 
-    <!--JQuery-->
+    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- JQuery plugins -->
     <script src="/public/js/scrollto.js"></script>
 
     <!-- CSS -->
@@ -37,6 +39,9 @@
     <script src="/public/js/bigfoot.min.js"></script>
     <script>$.bigfoot();</script>
 
+    <!-- Skrollr -->
+    <script src="/public/js/skrollr.min.js"></script>
+  
     <!-- Custom JS -->
     <script src="/public/js/custom.js"></script>
 
@@ -190,29 +195,13 @@
 
 
     <!-- Skrollr -->
-    <script src="/public/js/skrollr.min.js"></script>
     <script>
     if ('ontouchstart' in document.documentElement == false) {
-      var s = skrollr.init();
+      var page_skrollr = skrollr.init();
     }
     </script>
 
-    <script>
-      var mainbottom = $('#main').offset().top + $('#main').height() + 25;
-
-
-    // // on scroll, 
-    // $(window).scroll( function() {
-    //     var value = $(window).scrollTop();
-    //     if ( value > mainbottom) {
-    //           $(".tbar").addClass("fixed translucent");
-    //         }
-    //     else {
-    //           $(".tbar").removeClass("translucent");
-    //         }
-    // });
-
-    </script> 
+  <!-- scrollTo -->
   <script>
       $("#scroll-to-content").click(function (e) {
         e.stopPropagation();

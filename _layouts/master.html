@@ -32,29 +32,13 @@
 
 
     <!-- Skrollr -->
-    <script src="/public/js/skrollr.min.js"></script>
     <script>
     if ('ontouchstart' in document.documentElement == false) {
-      var s = skrollr.init();
+      var page_skrollr = skrollr.init();
     }
     </script>
 
-    <script>
-      var mainbottom = $('#main').offset().top + $('#main').height() + 25;
-
-
-    // // on scroll, 
-    // $(window).scroll( function() {
-    //     var value = $(window).scrollTop();
-    //     if ( value > mainbottom) {
-    //           $(".tbar").addClass("fixed translucent");
-    //         }
-    //     else {
-    //           $(".tbar").removeClass("translucent");
-    //         }
-    // });
-
-    </script> 
+  <!-- scrollTo -->
   <script>
       $("#scroll-to-content").click(function (e) {
         e.stopPropagation();
