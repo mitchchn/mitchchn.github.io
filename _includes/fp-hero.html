@@ -37,7 +37,7 @@
 <div class="hero-content">
 {% if page.banner %}
 <div id="hero-image" class="hero-image" style="background-image: url('{{page.banner}}');" data-0="opacity: 1;" data-400="opacity:0;"></div>
-<div class="headline headline-image" data-0="top: 50%;" data-300="top: 55%;"><h1>{{page.title}}</h1>
+<div class="headline headline-image" data-0="top: 50%;" data-300="top: 55%;"><h1 itemprop="name">{{page.title}}</h1>
  <!--<script type="text/javascript">window.addEventListener("scroll", fadeHero, false);</script>-->
 <div class="down-arrow">
 <a id="scroll-to-content" href="#post-content"><i class= "fa fa-chevron-down" data-0="opacity: 1;" data-200="opacity: 0;"></i></a>
@@ -46,7 +46,7 @@
 
 {% else %}
 <div id="hero-image" class="hero-no-image"></div>
-<div class="headline headline-no-image"><h1>{{page.title}}</h1></div>
+<div class="headline headline-no-image"><h1 itemprop="name">{{page.title}}</h1></div>
 {% endif %}
 </div>
 
