@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-13T05:08:49-04:00</updated>
+ <updated>2014-05-13T05:10:46-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -151,7 +151,7 @@ This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; para
     &lt;figcaption&gt;&lt;span class=&quot;elegant&quot;&gt;Replacing paragraph breaks with tags&amp;mdash;&lt;/span&gt;In &lt;strong&gt;TextWrangler&lt;/strong&gt;, go to &lt;strong&gt;Search -&amp;gt; Find&lt;/strong&gt; and set up the above search. Make sure &#39;Grep&#39; is checked. Hit &lt;strong&gt;Replace All&lt;/strong&gt;. The only manual change you will need to make is to add a single opening &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag before your first paragraph.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Or alternatively, just get used to writing &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; a whole lot. It’s not so bad. &lt;span style=&quot;font-family: &#39;comic sans ms&#39;&quot;&gt;&lt;strong&gt;Better than manually fixing the layout in your coworker’s Word document set in Comic Sans MS.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Or alternatively, just get used to writing &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; a whole lot. It’s not so bad.Better than manually fixing the multi-column layout in your coworker’s Word document which for some &lt;span style=&quot;font-family: &#39;comic sans ms&#39;&quot;&gt;&lt;strong&gt;inexcusable reason was set in Comic Sans MS.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;In Part 3, we’ll learn the dozen or so HTML tags every writer should know.&lt;/p&gt;
 

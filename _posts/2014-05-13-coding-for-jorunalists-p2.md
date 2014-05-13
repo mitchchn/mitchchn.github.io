@@ -121,7 +121,7 @@ Manually inserting `<p>` tags between paragraphs is one of the most tedious part
     <figcaption><span class="elegant">Replacing paragraph breaks with tags&mdash;</span>In <strong>TextWrangler</strong>, go to <strong>Search -> Find</strong> and set up the above search. Make sure 'Grep' is checked. Hit <strong>Replace All</strong>. The only manual change you will need to make is to add a single opening <code>&lt;p&gt;</code> tag before your first paragraph.</figcaption>
 </figure>
 
-Or alternatively, just get used to writing `<p>` a whole lot. It's not so bad. <span style="font-family: 'comic sans ms'"><strong>Better than manually fixing the layout in your coworker's Word document set in Comic Sans MS.</strong></span>
+Or alternatively, just get used to writing `<p>` a whole lot. It's not so bad.Better than manually fixing the multi-column layout in your coworker's Word document which for some <span style="font-family: 'comic sans ms'"><strong>inexcusable reason was set in Comic Sans MS.</strong></span>
 
 In Part 3, we'll learn the dozen or so HTML tags every writer should know.
 
