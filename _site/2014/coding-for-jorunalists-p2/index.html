@@ -285,12 +285,12 @@ This is supposed to be &lt;strong&gt;another&lt;/strong&gt; paragraph.
 <ol>
   <li><strong>WordPress</strong> will automatically convert blank lines into paragraph breaks. If you know your code will be going into WordPress, simply ignore the <code>&lt;p&gt;</code> tag and press enter twice between paragraphs. Then copy your code into the WordPress text editor and submit your post. Other CMSes may also have an option to work this way.</li>
   <li><a href="http://bywordapp.com/markdown/guide.html">Markdown</a> treats blank lines as paragraph breaks, just like WordPress. Many CMSes support Markdown either natively or with plugins.</li>
-  <li>Use the <strong>Find</strong> feature in your text editor to search for line breaks and replace them with <code>&lt;p&gt;</code> tags. Write your article with blank lines between paragraphs, and then use a <a href="http://regex.bastardsbook.com">regular expression</a> to replace <code>\n</code> with <code>&lt;/p&gt;&lt;p&gt;</code>.</li>
+  <li>Use the <strong>Find</strong> feature in your text editor to search for line breaks and replace them with <code>&lt;p&gt;</code> tags. Write your article with blank lines between paragraphs, and then use a <a href="http://regex.bastardsbook.com">regular expression</a> to replace <code>\n\n</code> (two consecutive line breaks) with <code>&lt;/p&gt;&lt;p&gt;</code>.</li>
 </ol>
 
 <figure>
     <img src="/public/img/regexp.png" />
-    <figcaption><span class="elegant">Replacing paragraph breaks with tags&mdash;</span>In <strong>TextWrangler</strong>, go to <strong>Search -&gt; Find</strong> and set up the above search. Make sure 'Grep' is checked. Hit <strong>Replace All</strong>. Afterward, all you will need to do is to add a single opening <code>&lt;p&gt;</code> tag before your first paragraph.</figcaption>
+    <figcaption><span class="elegant">Replacing paragraph breaks with tags&mdash;</span>In <strong>TextWrangler</strong>, go to <strong>Search -&gt; Find</strong> and set up the above search. Make sure 'Grep' is checked. Hit <strong>Replace All</strong>. Afterward, you will need to add a single opening <code>&lt;p&gt;</code> tag before your first paragraph and a single closing tag after your last.</figcaption>
 </figure>
 
 <p>Alternatively, just get used to writing <code>&lt;p&gt;</code> a whole lot. It’s not so bad. Better than manually fixing the multi-column layout in your coworker’s Word document <span style="font-family: 'comic sans ms'"><strong>which for some inexcusable reason was set in Comic Sans MS.</strong></span></p>

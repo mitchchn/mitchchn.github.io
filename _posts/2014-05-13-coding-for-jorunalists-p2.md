@@ -118,11 +118,11 @@ Manually inserting `<p>` tags between paragraphs is one of the most tedious part
 
 1. **WordPress** will automatically convert blank lines into paragraph breaks. If you know your code will be going into WordPress, simply ignore the `<p>` tag and press enter twice between paragraphs. Then copy your code into the WordPress text editor and submit your post. Other CMSes may also have an option to work this way.
 2. [Markdown](http://bywordapp.com/markdown/guide.html) treats blank lines as paragraph breaks, just like WordPress. Many CMSes support Markdown either natively or with plugins.
-3. Use the **Find** feature in your text editor to search for line breaks and replace them with `<p>` tags. Write your article with blank lines between paragraphs, and then use a [regular expression](http://regex.bastardsbook.com) to replace `\n` with `</p><p>`.
+3. Use the **Find** feature in your text editor to search for line breaks and replace them with `<p>` tags. Write your article with blank lines between paragraphs, and then use a [regular expression](http://regex.bastardsbook.com) to replace `\n\n` (two consecutive line breaks) with `</p><p>`.
 
 <figure>
     <img src="/public/img/regexp.png">
-    <figcaption><span class="elegant">Replacing paragraph breaks with tags&mdash;</span>In <strong>TextWrangler</strong>, go to <strong>Search -> Find</strong> and set up the above search. Make sure 'Grep' is checked. Hit <strong>Replace All</strong>. Afterward, all you will need to do is to add a single opening <code>&lt;p&gt;</code> tag before your first paragraph.</figcaption>
+    <figcaption><span class="elegant">Replacing paragraph breaks with tags&mdash;</span>In <strong>TextWrangler</strong>, go to <strong>Search -> Find</strong> and set up the above search. Make sure 'Grep' is checked. Hit <strong>Replace All</strong>. Afterward, you will need to add a single opening <code>&lt;p&gt;</code> tag before your first paragraph and a single closing tag after your last.</figcaption>
 </figure>
 
 Alternatively, just get used to writing `<p>` a whole lot. It's not so bad. Better than manually fixing the multi-column layout in your coworker's Word document <span style="font-family: 'comic sans ms'"><strong>which for some inexcusable reason was set in Comic Sans MS.</strong></span>
