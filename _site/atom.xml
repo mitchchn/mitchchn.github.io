@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-13T12:57:57-04:00</updated>
+ <updated>2014-05-13T13:05:13-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -87,7 +87,7 @@
   &lt;p&gt;&lt;em&gt;&lt;strong&gt;All TV&lt;/strong&gt; and no beer make Homer &lt;strong&gt;go crazy.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;In this example, &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; is a parent tag with two children (the two &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags). The &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags are siblings to each other. Child tags inherit properties from parent tags, but tags don’t have any affect on their siblings. Child tags can also be parents to their own child tags—passing down their own traits along with those of the original parents (“grandparents”).&lt;/p&gt;
+&lt;p&gt;In this example, &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; is a parent tag with two children (the two &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags). The &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags are siblings to each other. Child tags inherit properties from parent tags, but tags don’t have any effect on their siblings. Child tags can also be parents to their own child tags—passing down their own traits along with those of the original parents (“grandparents”).&lt;/p&gt;
 
 &lt;p&gt;As you can imagine, nesting more than a few tags together can make your code  difficult to read—and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in &lt;strong&gt;indented style.&lt;/strong&gt; The above example could be written out like this:&lt;/p&gt;
 
