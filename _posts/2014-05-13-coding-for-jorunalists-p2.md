@@ -29,7 +29,7 @@ HTML tags interact in predictable ways. One features of tags is that they can **
 
 ...produces the following output:
 
-><strong><em>It was the best of times, it was the blurst of times.</em></strong
+><strong><em>It was the best of times, it was the blurst of times.</em></stronh>
 
 The `<strong>` tag encapsulates the `<em>` tag, which encloses the text on the inside. Both tags apply their respective formatting inward, causing the contents to be rendered in both bold and italic.
 
