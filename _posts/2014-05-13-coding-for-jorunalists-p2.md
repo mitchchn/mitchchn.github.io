@@ -63,10 +63,10 @@ In this example, `<em>` is a parent tag with two children (the two `<strong>` ta
 
 As you can imagine, nesting more than a few tags together can make your code  difficult to read---and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in **indented style.** The above code could be written out like this:
 
-        <em>
-            <strong>All TV</strong> and no beer make Homer
-            <strong>go crazy.</strong>
-        </em>
+    <em>
+        <strong>All TV</strong> and no beer make Homer
+        <strong>go crazy.</strong>
+    </em>
 
 On each new line, hit the <kbd>tab</kbd> key to indent child tags and line up sibling tags. Your text editor will keep track of what level you're on when you press <kbd>enter</kbd>. To go "up" a level, press <kbd>backspace</kbd> at the beginning of a line. You can also select one or more lines of code and press <kbd>shift</kbd> + <kbd>tab</kbd> to unindent them by a single level. Because it's a good habit to get into, I'll be using indented style for most examples from now on.
 
