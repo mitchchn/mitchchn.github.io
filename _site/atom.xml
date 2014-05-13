@@ -4,13 +4,169 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-12T21:39:15-04:00</updated>
+ <updated>2014-05-13T04:34:51-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Coding for Journalists, Part 2: HTML — Workflows, Nesting and Paragraphs</title>
+   <link href="http://mitchchn.me/2014/coding-for-jorunalists-p2/"/>
+   <updated>2014-05-09T00:00:00-04:00</updated>
+   <id>http://mitchchn.me/2014/coding-for-jorunalists-p2</id>
+   <content type="html">&lt;p&gt;In &lt;a href=&quot;/2014/coding-for-journalists-p1/&quot;&gt;Part 1&lt;/a&gt;, we set up our environment and tested it out with a little HTML code. More importantly, we built a basic &lt;strong&gt;coding workflow.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Having and practicing a good workflow is important—not just for the sake of productivity, but because every project is different. A new employer might mean having to learn a new CMS, for instance, or even a new programming language. That’s why it’s important not to learn specific tools, but to have simple procedures that you know well and can fall back on.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Your new coding environment might not be as fancy as something like &lt;a href=&quot;http://www.codecademy.com&quot;&gt;Codeacademy&lt;/a&gt;, but it will work anywhere, from your blog to the Huffington Post. To recap, the steps in our HTML workflow are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Write your prose and code in a text editor.&lt;/li&gt;
+  &lt;li&gt;Save the file with the extension &lt;code&gt;.html&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Double-click the HTML file to view it in your web browser.&lt;/li&gt;
+  &lt;li&gt;Make changes and corrections to your code, re-save the file, and reload the page.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now that we’re comfortable with this process, it’s time to learn more HTML.&lt;/p&gt;
+
+&lt;h2 id=&quot;nesting&quot;&gt;Nesting&lt;/h2&gt;
+
+&lt;p&gt;As we saw in Part 1, HTML is a language of tags. There are a few dozen tags in &lt;a href=&quot;https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5/HTML5_element_list&quot;&gt;HTML5&lt;/a&gt; (down from well over a hundred in HTML4). We’ll learn what many of them are for, but first let’s take a look at what they all have in common.&lt;/p&gt;
+
+&lt;p&gt;HTML tags interact in predictable ways. One features of tags is that they can &lt;strong&gt;nest&lt;/strong&gt;, stacking together like Russian dolls. Nested tags inherit the properties of their surrounding tags. For instance, this line of code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;It was the best of times, it was the blurst of times.&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;…produces the following output:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;It was the best of times, it was the blurst of times.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags encapsulate the &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tags, which encapsulate the text on the inside. Both tags apply their respective formatting to their inner contents. Tag nesting does not have to be symmetrical:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;It was the best of times, &amp;lt;em&amp;gt;it was was the blurst of times.&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;It was the best of times, &lt;em&gt;it was was the blurst of times.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this case, the &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag applies to the entire line, but the &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag only affects the second half.&lt;/p&gt;
+
+&lt;p&gt;Notice that in both examples, the tags are closed in reverse order from how they were opened. This pattern is called &lt;strong&gt;Last In, First Out (LIFO).&lt;/strong&gt; Following this practice in your own code is crucial. The innermost opening tag should &lt;em&gt;always&lt;/em&gt; get the innermost closing tag. The outermost opening tag should &lt;em&gt;always&lt;/em&gt; get the outermost closing tag. For instance, this line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;Please don&#39;t do this.&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;…is bad HTML. So is this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;em&amp;gt;&amp;lt;strong&amp;gt;Also don&#39;t do&amp;lt;/em&amp;gt; this. Please.&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you ignore my advice and type these lines of code into your text editor (try it!) they will still work as expected. HTML is designed to be resilient, and browsers are forgiving of simple mistakes.&lt;sup id=&quot;fnref:nesting&quot;&gt;&lt;a href=&quot;#fn:nesting&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; But why learn bad habits? Learn to nest correctly. &lt;strong&gt;LIFO.&lt;/strong&gt;&lt;sup id=&quot;fnref:fifo&quot;&gt;&lt;a href=&quot;#fn:fifo&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;parents-children-and-siblings&quot;&gt;Parents, children, and siblings&lt;/h3&gt;
+
+&lt;p&gt;Tags can either be on the outside (“parents”), inside other tags (“children”), or at the same level in the tag hierarchy (“siblings”). For instance, this line of code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;em&amp;gt;&amp;lt;strong&amp;gt;All TV&amp;lt;/strong&amp;gt; and no beer make Homer &amp;lt;strong&amp;gt;go crazy.&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;&lt;strong&gt;All TV&lt;/strong&gt; and no beer make Homer &lt;strong&gt;go crazy.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this example, &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; is a parent tag with two children (the two &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags). The &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags are also siblings to each other. Child tags inherit properties from parent tags, but sibling tags do not affect each other. Child tags can also be parents to their own child tags, passing down both their own properties and those of the original parents (“grandparents”).&lt;/p&gt;
+
+&lt;p&gt;As you can imagine, nesting more than a few tags together can make your code very difficult to read—and almost impossible to bugfix. For more intricate structures, it’s good to format your code in a &lt;strong&gt;tree structure.&lt;/strong&gt; For instance, the above code could also be written out like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    &amp;lt;em&amp;gt;
+        &amp;lt;strong&amp;gt;All TV&amp;lt;/strong&amp;gt; and no beer make Homer
+        &amp;lt;strong&amp;gt;go crazy.&amp;lt;/strong&amp;gt;
+    &amp;lt;/em&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On each new line, hit the &lt;kbd&gt;tab&lt;/kbd&gt; key to indent child tags and line up sibling tags. Your text editor will keep track of what level you’re on when you press &lt;kbd&gt;enter&lt;/kbd&gt;. To go “up” a level, press &lt;kbd&gt;backspace&lt;/kbd&gt; at the beginning of a line. You can also select one or more lines of code and press &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;tab&lt;/kbd&gt; to unindent them by a single level.&lt;/p&gt;
+
+&lt;p&gt;There is no limit to how deep the tag hierarchy can go—grandchildren, great-grandchildren, etc.—or how many sibling tags can exist at a particular level. Indeed, most webpages are built with long and intricate &lt;strong&gt;tag trees.&lt;/strong&gt; But no matter how deep or shallow the tree gets, the same principle applies: &lt;strong&gt;tags on the inside inherit all the properties of tags on the outside.&lt;/strong&gt; For this reason, writing good HTML is as much about structuring tags as it is about choosing them.&lt;/p&gt;
+
+&lt;h2 id=&quot;whitespace-and-the-paragraph-tag-p&quot;&gt;Whitespace and the Paragraph Tag &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Whitespace in HTML is insignifcant. Extra spaces, tabs and line breaks are treated by web browsers as if they weren’t there at all:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;This&amp;lt;/strong&amp;gt;       is
+        weirdly-formatted
+
+and &amp;lt;em&amp;gt;ugly 
+&amp;lt;/em&amp;gt;            
+              code.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;&lt;strong&gt;This&lt;/strong&gt; is weirdly-formatted and &lt;em&gt;ugly&lt;/em&gt; code.&lt;/blockquote&gt;
+
+&lt;p&gt;Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the tree format shown above). But this creates problems for writers who need to write in paragraphs (all of them):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This is &amp;lt;strong&amp;gt;one&amp;lt;/strong&amp;gt; paragraph.
+
+This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; paragraph.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;This is &lt;strong&gt;one&lt;/strong&gt; paragraph. This is supposed to be &lt;strong&gt;another&lt;/strong&gt; paragraph.&lt;/blockquote&gt;
+
+&lt;p&gt;Thankfully, there’s a tag for that. Using the HTML &lt;strong&gt;paragraph tag&lt;/strong&gt; &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, we can get the expected behaviour:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
+This is &amp;lt;strong&amp;gt;one&amp;lt;/strong&amp;gt; paragraph.
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; paragraph.
+&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;&lt;p&gt;This is &lt;strong&gt;one&lt;/strong&gt; paragraph.&lt;/p&gt;&lt;p&gt;This is supposed to be &lt;strong&gt;another&lt;/strong&gt; paragraph.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Like most tags, the &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag has an opening tag and a closing tag: &lt;code&gt;&amp;lt;/p&amp;gt;&lt;/code&gt; It is a good practice to wrap all your paragraphs in &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags. They will not only get the proper amount of line-spacing, but also the correct fonts, colours, and formatting that your site has set up for its body copy.&lt;sup id=&quot;fnref:br&quot;&gt;&lt;a href=&quot;#fn:br&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Manually inserting &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags between paragraphs is one of the most tedious parts of writing prose in HTML. For that reason, coders and writers have come up with several ways to make the task easier: &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;WordPress&lt;/strong&gt; will automatically convert blank lines into paragraph breaks. If you know your code will be going into WordPress, simply ignore the &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag and press enter twice between paragraphs. Then copy your code into the WordPress text editor and submit your post. Other CMSes may also have an option to work this way.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bywordapp.com/markdown/guide.html&quot;&gt;Markdown&lt;/a&gt; treats blank lines as paragraph breaks, just like WordPress. Many CMSes support Markdown either natively or with plugins.&lt;/li&gt;
+  &lt;li&gt;Use the &lt;strong&gt;Find&lt;/strong&gt; feature in your text editor to search for line breaks and replace them with new lines. Write your article with blank lines between paragraphs, and then use the &lt;a href=&quot;http://regex.bastardsbook.com&quot;&gt;regular expression&lt;/a&gt; feature in your editor to replace &lt;code&gt;\n&lt;/code&gt; with &lt;code&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/public/img/regexp.png&quot; /&gt;
+    &lt;figcaption&gt;&lt;span class=&quot;elegant&quot;&gt;Replacing paragraph breaks with tags&amp;mdash;&lt;/span&gt;In &lt;strong&gt;TextWrangler&lt;/strong&gt;, go to &lt;strong&gt;Search -&amp;gt; Find&lt;/strong&gt; and set up the above search. Make sure &#39;Grep&#39; is checked. Hit &lt;strong&gt;Replace All&lt;/strong&gt;. The only manual change you will need to make is to add a single opening &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag before your first paragraph.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Or alternatively, just get used to writing &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; a whole lot. It’s not so bad. &lt;span style=&quot;font-family: &#39;comic sans ms&#39;&quot;&gt;&lt;strong&gt;Better than manually fixing the layout in your coworker’s Word document set in Comic Sans MS.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;In Part 3, we’ll learn the dozen or so HTML tags every writer should know.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:nesting&quot;&gt;
+      &lt;p&gt;Just as browsers will forgive out-of-order nesting, they will also try to make sense of your code if you accidentally leave out closing tags. Depending on various factors, an unclosed tag will apply to the rest of the section or the rest of the &lt;em&gt;entire page&lt;/em&gt;. This is probably not what you intended to happen. So nest properly, and close your tags. &lt;a href=&quot;#fnref:nesting&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:fifo&quot;&gt;
+      &lt;p&gt;The opposite, found in certain programming languages, is called FIFO: first in first out. &lt;a href=&quot;#fnref:fifo&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:br&quot;&gt;
+      &lt;p&gt;The &lt;strong&gt;line break tag&lt;/strong&gt; &amp;lt;br&amp;gt; creates one or more manual line breaks between blocks of text. Using multiple &amp;lt;br&amp;gt; tags is a little like hitting ‘enter’ a bunch of times in Word. But &amp;lt;br&amp;gt; does not come with any of the formatting benefits of the &amp;lt;p&amp;gt; tag. It can cause ugly layout inconsistencies. Use it only as a last resort. &lt;a href=&quot;#fnref:br&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</title>
