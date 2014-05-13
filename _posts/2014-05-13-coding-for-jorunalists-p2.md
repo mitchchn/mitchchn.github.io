@@ -88,7 +88,7 @@ Whitespace in HTML is insignifcant. Extra spaces, tabs and line breaks are treat
 
 <blockquote><strong>This</strong> is weirdly-formatted and <em>ugly</em> but technically correct code.</blockquote>
 
-Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the indented style shown above). But this creates problems for writers who need to write in paragraphs (all of them):
+Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the indented style shown above). But this "feature" creates problems for writers who need to write in paragraphs:
 
     This is <strong>one</strong> paragraph.
 
@@ -96,7 +96,7 @@ Because HTML ignores whitespace, you have the freedom to format your code howeve
   
 <blockquote>This is <strong>one</strong> paragraph. This is supposed to be <strong>another</strong> paragraph.</blockquote>
 
-Thankfully, there's a tag for that. Using the HTML **paragraph tag** `<p>`, we can get the expected behaviour:
+Unless you instruct the browser otherwise, your lovely  paragraphs will be smushed together onto one line. Thankfully, there's a tag for that. Using the HTML **paragraph tag** `<p>`, we can get the expected behaviour:
 
     <p>
         This is <strong>one</strong> paragraph.
