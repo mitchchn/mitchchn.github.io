@@ -51,7 +51,7 @@ If you ignore my advice and type these lines of code into your text editor (try 
 
 ### Parents, children, and siblings
 
-Tags can either be on the outside ("parents"), inside other tags ("children"), or at the same level in the tag hierarchy ("siblings"). For instance, this line of code:
+Tags can be on the outside of other tags ("parents"), inside other tags ("children"), or at the same level as other tags in the tag hierarchy ("siblings"). This line of code contains parent, child and sibling tags:
 
     <em><strong>All TV</strong> and no beer make Homer <strong>go crazy.</strong></em>
 
@@ -59,7 +59,7 @@ Tags can either be on the outside ("parents"), inside other tags ("children"), o
 
 In this example, `<em>` is a parent tag with two children (the two `<strong>` tags). The `<strong>` tags are also siblings to each other. Child tags inherit properties from parent tags, but sibling tags do not affect each other. Child tags can also be parents to their own child tags, passing down both their own properties and those of the original parents ("grandparents").
 
-As you can imagine, nesting more than a few tags together can make your code very difficult to read---and almost impossible to bugfix. For more intricate structures, it's good to format your code in a **tree structure.** For instance, the above code could also be written out like this:
+As you can imagine, nesting more than a few tags together can make your code  difficult to read---and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in a **tree structure.** For instance, the above code could also be written out like this:
 
         <em>
             <strong>All TV</strong> and no beer make Homer
@@ -69,10 +69,10 @@ As you can imagine, nesting more than a few tags together can make your code ver
 On each new line, hit the <kbd>tab</kbd> key to indent child tags and line up sibling tags. Your text editor will keep track of what level you're on when you press <kbd>enter</kbd>. To go "up" a level, press <kbd>backspace</kbd> at the beginning of a line. You can also select one or more lines of code and press <kbd>shift</kbd> + <kbd>tab</kbd> to unindent them by a single level.
 
 
-There is no limit to how deep the tag hierarchy can go---grandchildren, great-grandchildren, etc.---or how many sibling tags can exist at a particular level. Indeed, most webpages are built with long and intricate **tag trees.** But no matter how deep or shallow the tree gets, the same principle applies: **tags on the inside inherit all the properties of tags on the outside.** For this reason, writing good HTML is as much about structuring tags as it is about choosing them.
+There is no limit to how deep the tag hierarchy can go---grandchildren, great-grandchildren, etc.---or how many sibling tags can exist at a particular level. As a matter of fact, most webpages are built with long and intricate **tag trees.** But no matter how branches the tree sprouts, the same principle applies: **child tags inherit all the properties of their parents (and grandparents, and great-grandparents.....)** For this reason, writing good HTML is as much about structuring your tags as it is about choosing them.
 
 
-## Whitespace and the Paragraph Tag `<p>`
+## Whitespace and the Paragraph Tag: `<p>`
 
 Whitespace in HTML is insignifcant. Extra spaces, tabs and line breaks are treated by web browsers as if they weren't there at all:
 
@@ -128,5 +128,3 @@ In Part 3, we'll learn the dozen or so HTML tags every writer should know.
 [^nesting]: Just as browsers will forgive out-of-order nesting, they will also try to make sense of your code if you accidentally leave out closing tags. Depending on various factors, an unclosed tag will apply to the rest of the section or the rest of the *entire page*. This is probably not what you intended to happen. So nest properly, and close your tags.
 
 [^br]: The **line break tag** &lt;br&gt; creates one or more manual line breaks between blocks of text. Using multiple &lt;br&gt; tags is a little like hitting 'enter' a bunch of times in Word. But &lt;br&gt; does not come with any of the formatting benefits of the &lt;p&gt; tag. It can cause ugly layout inconsistencies. Use it only as a last resort.
-
-
