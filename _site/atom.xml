@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-13T05:06:15-04:00</updated>
+ <updated>2014-05-13T05:08:49-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -114,7 +114,7 @@ and ugly&amp;lt;em&amp;gt; but
 
 &lt;blockquote&gt;&lt;strong&gt;This&lt;/strong&gt; is weirdly-formatted and &lt;em&gt;ugly&lt;/em&gt; but technically correct code.&lt;/blockquote&gt;
 
-&lt;p&gt;Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the indented style shown above). But this “feature” creates problems for writers who need to write in paragraphs:&lt;/p&gt;
+&lt;p&gt;Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the indented style shown above). But this little “feature” creates problems for writers who need the ability to write in paragraphs:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;This is &amp;lt;strong&amp;gt;one&amp;lt;/strong&amp;gt; paragraph.
 
@@ -123,7 +123,7 @@ This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; para
 
 &lt;blockquote&gt;This is &lt;strong&gt;one&lt;/strong&gt; paragraph. This is supposed to be &lt;strong&gt;another&lt;/strong&gt; paragraph.&lt;/blockquote&gt;
 
-&lt;p&gt;Unless you instruct the browser otherwise, your lovely  paragraphs will be smushed together onto one line. Thankfully, there’s a tag for that. Using the HTML &lt;strong&gt;paragraph tag&lt;/strong&gt; &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, we can get the expected behaviour:&lt;/p&gt;
+&lt;p&gt;Unless you instruct the browser otherwise, your beautifully-crafted  paragraphs will all be smushed together onto one line. Thankfully, there’s a tag for that. Using the HTML &lt;strong&gt;paragraph tag&lt;/strong&gt; &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, we can get the expected behaviour:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
     This is &amp;lt;strong&amp;gt;one&amp;lt;/strong&amp;gt; paragraph.
