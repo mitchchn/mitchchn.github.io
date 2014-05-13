@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-13T14:51:40-04:00</updated>
+ <updated>2014-05-13T14:52:19-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -46,7 +46,7 @@
 &lt;p&gt;…produces the following output:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;&lt;em&gt;It was the best of times, it was the blurst of times.&lt;/em&gt;&amp;lt;/stronh&amp;gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;It was the best of times, it was the blurst of times.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag encapsulates the &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag, which encloses the text on the inside. Both tags apply their respective formatting inward, causing the contents to be rendered in both bold and italic.&lt;/p&gt;
