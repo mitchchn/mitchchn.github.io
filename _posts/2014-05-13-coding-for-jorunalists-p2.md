@@ -29,9 +29,11 @@ HTML tags interact in predictable ways. One features of tags is that they can **
 
 ...produces the following output:
 
-><strong><em>It was the best of times, it was the blurst of times.</em></strong>
+><strong><em>It was the best of times, it was the blurst of times.</em></strong
 
-The `<strong>` tags encapsulate the `<em>` tags, which encapsulate the text on the inside. Both tags apply their respective formatting to their inner contents. Tag nesting does not have to be symmetrical:
+The `<strong>` tag encapsulates the `<em>` tag, which encloses the text on the inside. Both tags apply their respective formatting inward, causing the contents to be rendered in both bold and italic.
+
+Tag nesting does not have to be symmetrical:
 
     <strong>It was the best of times, <em>it was was the blurst of times.</em></strong>
 
@@ -61,7 +63,7 @@ Tags can be on the outside of other tags ("parents"), inside other tags ("childr
 
 In this example, `<em>` is a parent tag with two children (the two `<strong>` tags). The `<strong>` tags are siblings to each other. Child tags inherit properties from parent tags, but tags don't have any affect on their siblings. Child tags can also be parents to their own child tags---passing down their own traits along with those of the original parents ("grandparents").
 
-As you can imagine, nesting more than a few tags together can make your code  difficult to read---and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in **indented style.** The above code could be written out like this:
+As you can imagine, nesting more than a few tags together can make your code  difficult to read---and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in **indented style.** The above example could be written out like this:
 
     <em>
         <strong>All TV</strong> and no beer make Homer
@@ -71,7 +73,9 @@ As you can imagine, nesting more than a few tags together can make your code  di
 On each new line, hit the <kbd>tab</kbd> key to indent child tags and line up sibling tags. Your text editor will keep track of what level you're on when you press <kbd>enter</kbd>. To go "up" a level, press <kbd>backspace</kbd> at the beginning of a line. You can also select one or more lines of code and press <kbd>shift</kbd> + <kbd>tab</kbd> to unindent them by a single level. Because it's a good habit to get into, I'll be using indented style for most examples from now on.
 
 
-There is no limit to how deep the tag hierarchy can go---grandchildren, great-grandchildren, etc.---or how many sibling tags can exist at a particular level. As a matter of fact, most webpages are built with long and intricate **tag trees.** But no matter how many branches the tree sprouts, the same principle applies: **child tags inherit all the properties of their parents (and grandparents, and great-grandparents.....)** For this reason, writing good HTML is as much about structuring your tags as it is about choosing them.
+There is no limit to how deep the tag hierarchy can go---grandchildren, great-grandchildren, etc.---or how many sibling tags can exist at a particular level. As a matter of fact, most webpages are built with long and intricate **tag trees.**
+
+But no matter how many tall the tree gets or how many branches it sprouts, the same principle applies everywhere: child tags inherit all the inheritable properties of their parents (and grandparents, and great-grandparents...). For this reason, writing good HTML is as much about <em>structuring</em> your tags as it is about choosing them.
 
 
 ## Whitespace and the Paragraph Tag: `<p>`
@@ -88,7 +92,7 @@ Whitespace in HTML is insignifcant. Extra spaces, tabs and line breaks are treat
 
 <blockquote><strong>This</strong> is weirdly-formatted and <em>ugly</em> but technically correct code.</blockquote>
 
-Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the indented style shown above). But this little "feature" creates problems for writers who need the ability to write in paragraphs:
+Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the indented style demonstrated above). But this little "feature" creates problems for writers who need the ability to write in paragraphs:
 
     This is <strong>one</strong> paragraph.
 
@@ -108,24 +112,24 @@ Unless you instruct the browser otherwise, your beautifully-crafted  paragraphs 
 
 <blockquote><p>This is <strong>one</strong> paragraph.</p><p>This is supposed to be <strong>another</strong> paragraph.</p></blockquote>
 
-Like most tags, the `<p>` tag has an opening tag and a closing tag: `</p>` It is a good practice to wrap all your paragraphs in `<p>` tags. They will not only get the proper amount of line-spacing, but also the correct fonts, colours, and formatting that your site has set up for its body copy.[^br]
+Like most tags, the `<p>` tag has an opening tag and a closing tag: `</p>` It's good practice to wrap every paragraph in `<p>` tags. Not only will they get the proper amount of line-spacing, but also the correct fonts, colours, and formatting that your site has set up for body copy.[^br]
 
 Manually inserting `<p>` tags between paragraphs is one of the most tedious parts of writing prose in HTML. For that reason, coders and writers have come up with several ways to make the task easier: 
 
 1. **WordPress** will automatically convert blank lines into paragraph breaks. If you know your code will be going into WordPress, simply ignore the `<p>` tag and press enter twice between paragraphs. Then copy your code into the WordPress text editor and submit your post. Other CMSes may also have an option to work this way.
 2. [Markdown](http://bywordapp.com/markdown/guide.html) treats blank lines as paragraph breaks, just like WordPress. Many CMSes support Markdown either natively or with plugins.
-3. Use the **Find** feature in your text editor to search for line breaks and replace them with new lines. Write your article with blank lines between paragraphs, and then use the [regular expression](http://regex.bastardsbook.com) feature in your editor to replace `\n` with `</p><p>`.
+3. Use the **Find** feature in your text editor to search for line breaks and replace them with `<p>` tags. Write your article with blank lines between paragraphs, and then use a [regular expression](http://regex.bastardsbook.com) to replace `\n` with `</p><p>`.
 
 <figure>
     <img src="/public/img/regexp.png">
-    <figcaption><span class="elegant">Replacing paragraph breaks with tags&mdash;</span>In <strong>TextWrangler</strong>, go to <strong>Search -> Find</strong> and set up the above search. Make sure 'Grep' is checked. Hit <strong>Replace All</strong>. The only manual change you will need to make is to add a single opening <code>&lt;p&gt;</code> tag before your first paragraph.</figcaption>
+    <figcaption><span class="elegant">Replacing paragraph breaks with tags&mdash;</span>In <strong>TextWrangler</strong>, go to <strong>Search -> Find</strong> and set up the above search. Make sure 'Grep' is checked. Hit <strong>Replace All</strong>. Afterward, all you will need to do is to add a single opening <code>&lt;p&gt;</code> tag before your first paragraph.</figcaption>
 </figure>
 
-Or alternatively, just get used to writing `<p>` a whole lot. It's not so bad. Better than manually fixing the multi-column layout in your coworker's Word document <span style="font-family: 'comic sans ms'"><strong>which for some inexcusable reason was set in Comic Sans MS.</strong></span>
+Alternatively, just get used to writing `<p>` a whole lot. It's not so bad. Better than manually fixing the multi-column layout in your coworker's Word document <span style="font-family: 'comic sans ms'"><strong>which for some inexcusable reason was set in Comic Sans MS.</strong></span>
 
-In Part 3, we'll learn the dozen or so HTML tags every writer should know.
+In Part 3, we'll see the dozen or so HTML tags every writer should know.
 
-[^fifo]: The opposite, found in certain programming languages, is called FIFO: first in first out.
+[^fifo]: The pattern opposite, found in certain programming languages, is FIFO: First In First Out.
 
 
 [^nesting]: Just as browsers will forgive out-of-order nesting, they will also try to make sense of your code if you accidentally leave out closing tags. Depending on various factors, an unclosed tag will apply to the rest of the section or the rest of the *entire page*. This is probably not what you intended to happen. So nest properly, and close your tags.
