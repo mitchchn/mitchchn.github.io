@@ -39,7 +39,9 @@ The `<strong>` tags encapsulate the `<em>` tags, which encapsulate the text on t
 
 In this case, the `<strong>` tag applies to the entire line, but the `<em>` tag only affects the second half.
 
-Notice that in both examples, the tags are closed in reverse order from how they were opened. This pattern is called **Last In, First Out (LIFO).** Following this practice in your own code is crucial. The innermost opening tag should *always* get the innermost closing tag. The outermost opening tag should *always* get the outermost closing tag. For instance, this line:
+Notice that in both examples, the tags are closed in reverse order from how they were opened. This pattern is called **Last In, First Out (LIFO).** Following this practice in your own code is crucial. The innermost opening tag should *always* get the innermost closing tag. The outermost opening tag should *always* get the outermost closing tag.
+
+This line:
 
     <strong><em>Please don't do this.</strong></em>
 
@@ -59,17 +61,17 @@ Tags can be on the outside of other tags ("parents"), inside other tags ("childr
 
 In this example, `<em>` is a parent tag with two children (the two `<strong>` tags). The `<strong>` tags are siblings to each other. Child tags inherit properties from parent tags, but tags don't have any affect on their siblings. Child tags can also be parents to their own child tags---passing down their own traits along with those of the original parents ("grandparents").
 
-As you can imagine, nesting more than a few tags together can make your code  difficult to read---and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in a **tree structure.** For instance, the above code could also be written out like this:
+As you can imagine, nesting more than a few tags together can make your code  difficult to read---and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in **indented style.** The above code could be written out like this:
 
         <em>
             <strong>All TV</strong> and no beer make Homer
             <strong>go crazy.</strong>
         </em>
 
-On each new line, hit the <kbd>tab</kbd> key to indent child tags and line up sibling tags. Your text editor will keep track of what level you're on when you press <kbd>enter</kbd>. To go "up" a level, press <kbd>backspace</kbd> at the beginning of a line. You can also select one or more lines of code and press <kbd>shift</kbd> + <kbd>tab</kbd> to unindent them by a single level.
+On each new line, hit the <kbd>tab</kbd> key to indent child tags and line up sibling tags. Your text editor will keep track of what level you're on when you press <kbd>enter</kbd>. To go "up" a level, press <kbd>backspace</kbd> at the beginning of a line. You can also select one or more lines of code and press <kbd>shift</kbd> + <kbd>tab</kbd> to unindent them by a single level. Because it's a good habit to get into, I'll be using indented style for most examples from now on.
 
 
-There is no limit to how deep the tag hierarchy can go---grandchildren, great-grandchildren, etc.---or how many sibling tags can exist at a particular level. As a matter of fact, most webpages are built with long and intricate **tag trees.** But no matter how branches the tree sprouts, the same principle applies: **child tags inherit all the properties of their parents (and grandparents, and great-grandparents.....)** For this reason, writing good HTML is as much about structuring your tags as it is about choosing them.
+There is no limit to how deep the tag hierarchy can go---grandchildren, great-grandchildren, etc.---or how many sibling tags can exist at a particular level. As a matter of fact, most webpages are built with long and intricate **tag trees.** But no matter how many branches the tree sprouts, the same principle applies: **child tags inherit all the properties of their parents (and grandparents, and great-grandparents.....)** For this reason, writing good HTML is as much about structuring your tags as it is about choosing them.
 
 
 ## Whitespace and the Paragraph Tag: `<p>`
@@ -79,13 +81,14 @@ Whitespace in HTML is insignifcant. Extra spaces, tabs and line breaks are treat
     <strong>This</strong>       is
             weirdly-formatted
 
-    and <em>ugly 
+    and ugly<em> but
     </em>            
+      technically correct
                   code.
 
-<blockquote><strong>This</strong> is weirdly-formatted and <em>ugly</em> code.</blockquote>
+<blockquote><strong>This</strong> is weirdly-formatted and <em>ugly</em> but technically correct code.</blockquote>
 
-Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the tree format shown above). But this creates problems for writers who need to write in paragraphs (all of them):
+Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the indented style shown above). But this creates problems for writers who need to write in paragraphs (all of them):
 
     This is <strong>one</strong> paragraph.
 
@@ -96,11 +99,11 @@ Because HTML ignores whitespace, you have the freedom to format your code howeve
 Thankfully, there's a tag for that. Using the HTML **paragraph tag** `<p>`, we can get the expected behaviour:
 
     <p>
-    This is <strong>one</strong> paragraph.
+        This is <strong>one</strong> paragraph.
     </p>
     
     <p>
-    This is supposed to be <strong>another</strong> paragraph.
+        This is supposed to be <strong>another</strong> paragraph.
     </p>
 
 <blockquote><p>This is <strong>one</strong> paragraph.</p><p>This is supposed to be <strong>another</strong> paragraph.</p></blockquote>

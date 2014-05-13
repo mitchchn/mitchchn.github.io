@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-13T04:48:11-04:00</updated>
+ <updated>2014-05-13T05:00:29-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -60,7 +60,9 @@
 
 &lt;p&gt;In this case, the &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag applies to the entire line, but the &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag only affects the second half.&lt;/p&gt;
 
-&lt;p&gt;Notice that in both examples, the tags are closed in reverse order from how they were opened. This pattern is called &lt;strong&gt;Last In, First Out (LIFO).&lt;/strong&gt; Following this practice in your own code is crucial. The innermost opening tag should &lt;em&gt;always&lt;/em&gt; get the innermost closing tag. The outermost opening tag should &lt;em&gt;always&lt;/em&gt; get the outermost closing tag. For instance, this line:&lt;/p&gt;
+&lt;p&gt;Notice that in both examples, the tags are closed in reverse order from how they were opened. This pattern is called &lt;strong&gt;Last In, First Out (LIFO).&lt;/strong&gt; Following this practice in your own code is crucial. The innermost opening tag should &lt;em&gt;always&lt;/em&gt; get the innermost closing tag. The outermost opening tag should &lt;em&gt;always&lt;/em&gt; get the outermost closing tag.&lt;/p&gt;
+
+&lt;p&gt;This line:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;Please don&#39;t do this.&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -85,7 +87,7 @@
 
 &lt;p&gt;In this example, &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; is a parent tag with two children (the two &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags). The &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags are siblings to each other. Child tags inherit properties from parent tags, but tags don’t have any affect on their siblings. Child tags can also be parents to their own child tags—passing down their own traits along with those of the original parents (“grandparents”).&lt;/p&gt;
 
-&lt;p&gt;As you can imagine, nesting more than a few tags together can make your code  difficult to read—and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in a &lt;strong&gt;tree structure.&lt;/strong&gt; For instance, the above code could also be written out like this:&lt;/p&gt;
+&lt;p&gt;As you can imagine, nesting more than a few tags together can make your code  difficult to read—and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in &lt;strong&gt;indented style.&lt;/strong&gt; The above code could be written out like this:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;    &amp;lt;em&amp;gt;
         &amp;lt;strong&amp;gt;All TV&amp;lt;/strong&amp;gt; and no beer make Homer
@@ -93,9 +95,9 @@
     &amp;lt;/em&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;On each new line, hit the &lt;kbd&gt;tab&lt;/kbd&gt; key to indent child tags and line up sibling tags. Your text editor will keep track of what level you’re on when you press &lt;kbd&gt;enter&lt;/kbd&gt;. To go “up” a level, press &lt;kbd&gt;backspace&lt;/kbd&gt; at the beginning of a line. You can also select one or more lines of code and press &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;tab&lt;/kbd&gt; to unindent them by a single level.&lt;/p&gt;
+&lt;p&gt;On each new line, hit the &lt;kbd&gt;tab&lt;/kbd&gt; key to indent child tags and line up sibling tags. Your text editor will keep track of what level you’re on when you press &lt;kbd&gt;enter&lt;/kbd&gt;. To go “up” a level, press &lt;kbd&gt;backspace&lt;/kbd&gt; at the beginning of a line. You can also select one or more lines of code and press &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;tab&lt;/kbd&gt; to unindent them by a single level. Because it’s a good habit to get into, I’ll be using indented style for most examples from now on.&lt;/p&gt;
 
-&lt;p&gt;There is no limit to how deep the tag hierarchy can go—grandchildren, great-grandchildren, etc.—or how many sibling tags can exist at a particular level. As a matter of fact, most webpages are built with long and intricate &lt;strong&gt;tag trees.&lt;/strong&gt; But no matter how branches the tree sprouts, the same principle applies: &lt;strong&gt;child tags inherit all the properties of their parents (and grandparents, and great-grandparents…..)&lt;/strong&gt; For this reason, writing good HTML is as much about structuring your tags as it is about choosing them.&lt;/p&gt;
+&lt;p&gt;There is no limit to how deep the tag hierarchy can go—grandchildren, great-grandchildren, etc.—or how many sibling tags can exist at a particular level. As a matter of fact, most webpages are built with long and intricate &lt;strong&gt;tag trees.&lt;/strong&gt; But no matter how many branches the tree sprouts, the same principle applies: &lt;strong&gt;child tags inherit all the properties of their parents (and grandparents, and great-grandparents…..)&lt;/strong&gt; For this reason, writing good HTML is as much about structuring your tags as it is about choosing them.&lt;/p&gt;
 
 &lt;h2 id=&quot;whitespace-and-the-paragraph-tag-p&quot;&gt;Whitespace and the Paragraph Tag: &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;&lt;/h2&gt;
 
@@ -104,14 +106,15 @@
 &lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;This&amp;lt;/strong&amp;gt;       is
         weirdly-formatted
 
-and &amp;lt;em&amp;gt;ugly 
+and ugly&amp;lt;em&amp;gt; but
 &amp;lt;/em&amp;gt;            
+  technically correct
               code.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;blockquote&gt;&lt;strong&gt;This&lt;/strong&gt; is weirdly-formatted and &lt;em&gt;ugly&lt;/em&gt; code.&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;strong&gt;This&lt;/strong&gt; is weirdly-formatted and &lt;em&gt;ugly&lt;/em&gt; but technically correct code.&lt;/blockquote&gt;
 
-&lt;p&gt;Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the tree format shown above). But this creates problems for writers who need to write in paragraphs (all of them):&lt;/p&gt;
+&lt;p&gt;Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the indented style shown above). But this creates problems for writers who need to write in paragraphs (all of them):&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;This is &amp;lt;strong&amp;gt;one&amp;lt;/strong&amp;gt; paragraph.
 
@@ -123,11 +126,11 @@ This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; para
 &lt;p&gt;Thankfully, there’s a tag for that. Using the HTML &lt;strong&gt;paragraph tag&lt;/strong&gt; &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, we can get the expected behaviour:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
-This is &amp;lt;strong&amp;gt;one&amp;lt;/strong&amp;gt; paragraph.
+    This is &amp;lt;strong&amp;gt;one&amp;lt;/strong&amp;gt; paragraph.
 &amp;lt;/p&amp;gt;
 
 &amp;lt;p&amp;gt;
-This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; paragraph.
+    This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; paragraph.
 &amp;lt;/p&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
