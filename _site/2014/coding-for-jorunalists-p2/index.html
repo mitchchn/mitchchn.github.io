@@ -221,7 +221,7 @@
   <p><em><strong>All TV</strong> and no beer make Homer <strong>go crazy.</strong></em></p>
 </blockquote>
 
-<p>In this example, <code>&lt;em&gt;</code> is a parent tag with two children (the two <code>&lt;strong&gt;</code> tags). The <code>&lt;strong&gt;</code> tags are also siblings to each other. Child tags inherit properties from parent tags, but sibling tags do not affect each other. Child tags can also be parents to their own child tags, passing down both their own properties and those of the original parents (“grandparents”).</p>
+<p>In this example, <code>&lt;em&gt;</code> is a parent tag with two children (the two <code>&lt;strong&gt;</code> tags). The <code>&lt;strong&gt;</code> tags are siblings to each other. Child tags inherit properties from parent tags, but tags don’t have any affect on their siblings. Child tags can also be parents to their own child tags—passing down their own traits along with those of the original parents (“grandparents”).</p>
 
 <p>As you can imagine, nesting more than a few tags together can make your code  difficult to read—and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in a <strong>tree structure.</strong> For instance, the above code could also be written out like this:</p>
 

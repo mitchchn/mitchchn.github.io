@@ -57,7 +57,7 @@ Tags can be on the outside of other tags ("parents"), inside other tags ("childr
 
 ><em><strong>All TV</strong> and no beer make Homer <strong>go crazy.</strong></em>
 
-In this example, `<em>` is a parent tag with two children (the two `<strong>` tags). The `<strong>` tags are also siblings to each other. Child tags inherit properties from parent tags, but sibling tags do not affect each other. Child tags can also be parents to their own child tags, passing down both their own properties and those of the original parents ("grandparents").
+In this example, `<em>` is a parent tag with two children (the two `<strong>` tags). The `<strong>` tags are siblings to each other. Child tags inherit properties from parent tags, but tags don't have any affect on their siblings. Child tags can also be parents to their own child tags---passing down their own traits along with those of the original parents ("grandparents").
 
 As you can imagine, nesting more than a few tags together can make your code  difficult to read---and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in a **tree structure.** For instance, the above code could also be written out like this:
 
