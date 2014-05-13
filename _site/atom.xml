@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-13T18:36:26-04:00</updated>
+ <updated>2014-05-13T18:55:38-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Coding for Journalists, Part 2: HTML — Workflows, Nesting and Paragraphs</title>
-   <link href="http://mitchchn.me/2014/coding-for-jorunalists-p2/"/>
+   <link href="http://mitchchn.me/2014/coding-for-journalists-p2/"/>
    <updated>2014-05-13T00:00:00-04:00</updated>
-   <id>http://mitchchn.me/2014/coding-for-jorunalists-p2</id>
+   <id>http://mitchchn.me/2014/coding-for-journalists-p2</id>
    <content type="html">&lt;p&gt;In &lt;a href=&quot;/2014/coding-for-journalists-p1/&quot;&gt;Part 1&lt;/a&gt;, we set up our environment and tested it out with a little HTML code. More importantly, we built a basic &lt;strong&gt;coding workflow.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Having and practicing a good workflow is important—not just for the sake of productivity, but because every project is different. A new employer might mean having to learn a new CMS, for instance, or even a new programming language. That’s why it’s important not to learn specific tools, but to have simple procedures that you know well and can fall back on.&lt;/p&gt;
