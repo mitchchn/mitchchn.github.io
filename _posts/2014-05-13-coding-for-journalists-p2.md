@@ -2,6 +2,8 @@
 title: "Coding for Journalists, Part 2: HTML — Workflows, Nesting and Paragraphs"
 layout: post
 banner: "/public/img/confession3.png"
+
+redirect_from: "/2014/coding-for-jorunalists-p2/"
 ---
 
 In [Part 1](/2014/coding-for-journalists-p1/), we set up our environment and tested it out with a little HTML code. More importantly, we built a basic **coding workflow.**
