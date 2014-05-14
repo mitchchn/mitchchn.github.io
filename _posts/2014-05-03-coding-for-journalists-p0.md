@@ -2,6 +2,7 @@
 layout: post
 title: "Coding for Journalists, Part 0: Why Code?"
 tag: coding for journalists
+redirect_from: "/2014/05/03/coding-for-journalists-p0/"
 ---
 
 
