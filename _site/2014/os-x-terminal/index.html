@@ -166,13 +166,13 @@
 
 <p>If you point <code>open</code> at a file instead, it will try to load the file with its associated GUI application. For instance, <code>open screenshot.png</code> on an image should open the image in Preview. You can use the flag <code>-a</code> to choose the application, or <code>-e</code> to open the file in TextEdit.</p>
 
-<p>Running <code>open</code> on a directory will take you straight to that directory in a Finder window. This is especially useful for bringing up the current directory, by typing <code>open .</code>.</p>
+<p>Running <code>open</code> on a directory will take you straight to that directory in a Finder window. This is especially useful for bringing up the current directory by typing <code>open .</code></p>
 
 <p>Remember that the integration between Finder and Terminal goes both ways – if you drag a file from Finder into a Terminal window, its full path gets pasted into the command line.</p>
 
 <h2 id="pbcopy-and-pbpaste">2. <strong>pbcopy</strong> and <strong>pbpaste</strong></h2>
 
-<p>These two commands let you copy and paste text from the command line. Of course, you could also just use your mouse — but the real power of <code>pbcopy</code> and <code>pbbpaste</code>comes from the fact that they’re UNIX commands, and that means they benefit from piping, redirection, and the ability to be in scripts in conjunction with other commands. Typing:</p>
+<p>These two commands let you copy and paste text from the command line. Of course, you could also just use your mouse—but the real power of <code>pbcopy</code> and <code>pbpaste</code> comes from the fact that they’re UNIX commands, and that means they benefit from piping, redirection, and the ability to be in scripts in conjunction with other commands. Typing:</p>
 
 <pre><code>$ ls ~ | pbcopy
 </code></pre>

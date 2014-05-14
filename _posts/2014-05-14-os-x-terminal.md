@@ -18,7 +18,7 @@ The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If yo
 
 If you point `open` at a file instead, it will try to load the file with its associated GUI application. For instance, `open screenshot.png` on an image should open the image in Preview. You can use the flag `-a` to choose the application, or `-e` to open the file in TextEdit.
 
-Running `open` on a directory will take you straight to that directory in a Finder window. This is especially useful for bringing up the current directory, by typing `open .`.
+Running `open` on a directory will take you straight to that directory in a Finder window. This is especially useful for bringing up the current directory by typing `open .`
 
 Remember that the integration between Finder and Terminal goes both ways -- if you drag a file from Finder into a Terminal window, its full path gets pasted into the command line.
 
@@ -27,7 +27,7 @@ Remember that the integration between Finder and Terminal goes both ways -- if y
 
 ## 2. **pbcopy** and **pbpaste**
 
-These two commands let you copy and paste text from the command line. Of course, you could also just use your mouse — but the real power of `pbcopy` and `pbbpaste`comes from the fact that they're UNIX commands, and that means they benefit from piping, redirection, and the ability to be in scripts in conjunction with other commands. Typing:
+These two commands let you copy and paste text from the command line. Of course, you could also just use your mouse---but the real power of `pbcopy` and `pbpaste` comes from the fact that they're UNIX commands, and that means they benefit from piping, redirection, and the ability to be in scripts in conjunction with other commands. Typing:
 
     $ ls ~ | pbcopy
 

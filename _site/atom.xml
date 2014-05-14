@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-14T17:50:47-04:00</updated>
+ <updated>2014-05-14T18:10:49-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -32,13 +32,13 @@
 
 &lt;p&gt;If you point &lt;code&gt;open&lt;/code&gt; at a file instead, it will try to load the file with its associated GUI application. For instance, &lt;code&gt;open screenshot.png&lt;/code&gt; on an image should open the image in Preview. You can use the flag &lt;code&gt;-a&lt;/code&gt; to choose the application, or &lt;code&gt;-e&lt;/code&gt; to open the file in TextEdit.&lt;/p&gt;
 
-&lt;p&gt;Running &lt;code&gt;open&lt;/code&gt; on a directory will take you straight to that directory in a Finder window. This is especially useful for bringing up the current directory, by typing &lt;code&gt;open .&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Running &lt;code&gt;open&lt;/code&gt; on a directory will take you straight to that directory in a Finder window. This is especially useful for bringing up the current directory by typing &lt;code&gt;open .&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Remember that the integration between Finder and Terminal goes both ways – if you drag a file from Finder into a Terminal window, its full path gets pasted into the command line.&lt;/p&gt;
 
 &lt;h2 id=&quot;pbcopy-and-pbpaste&quot;&gt;2. &lt;strong&gt;pbcopy&lt;/strong&gt; and &lt;strong&gt;pbpaste&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;These two commands let you copy and paste text from the command line. Of course, you could also just use your mouse — but the real power of &lt;code&gt;pbcopy&lt;/code&gt; and &lt;code&gt;pbbpaste&lt;/code&gt;comes from the fact that they’re UNIX commands, and that means they benefit from piping, redirection, and the ability to be in scripts in conjunction with other commands. Typing:&lt;/p&gt;
+&lt;p&gt;These two commands let you copy and paste text from the command line. Of course, you could also just use your mouse—but the real power of &lt;code&gt;pbcopy&lt;/code&gt; and &lt;code&gt;pbpaste&lt;/code&gt; comes from the fact that they’re UNIX commands, and that means they benefit from piping, redirection, and the ability to be in scripts in conjunction with other commands. Typing:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ ls ~ | pbcopy
 &lt;/code&gt;&lt;/pre&gt;
