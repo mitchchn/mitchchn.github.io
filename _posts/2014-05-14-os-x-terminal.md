@@ -135,4 +135,4 @@ You can have fun with Homebrew too: `brew install archey` will get you **Archey*
 
 But the best part about Homebrew? It keeps all its files i a single directory: `/usr/local/`. That means you can install newer versions of system software, such as `python` and `mysql`, without interfering with the built-in equivalents. If you ever want to remove Homebrew, all you have to do is delete the contents of `/usr/local/`.
 
-For more fun with Terminal.app , here is an A-Z list of [all available console commands in OS X 10.9 Mavericks](http://ss64.com/osx/).
+For more fun with **Terminal.app**, here is an A-Z list of [all available console commands in OS X 10.9 Mavericks](http://ss64.com/osx/).
