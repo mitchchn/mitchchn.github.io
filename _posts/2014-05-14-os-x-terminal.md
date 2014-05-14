@@ -121,7 +121,7 @@ You can set the voice (and language!) used by `say` by changing the default sett
 
 ## 8. **brew**
 
-Akright--this isn't technically a native command. But no OS X power user should be without [Homebrew](http://brew.sh). The website calls it "The missing package manager for OS X," and that couldn't be truer. If you've ever used `apt-get` in Linux, you will feel right at home in Homebrew. `brew` gives you easy access to thousands of free apps and utilities from the open source community. 
+Alright--this isn't technically a native command. But no OS X power user should be without [Homebrew](http://brew.sh). The website calls it "The missing package manager for OS X," and that couldn't be truer. If you've ever used `apt-get` in Linux, you will feel right at home in Homebrew. `brew` gives you easy access to thousands of free apps and utilities from the open source community. 
 
 For instance, `brew install imagemagick` will set you up with [ImageMagick](http://www.imagemagick.org), a powerful utility that makes it possible to do anything from whipping up animated gifs to converting images between dozens of different types. `brew install node` will get you [NodeJS](http://nodejs.org), the hot new tool for developing and running server-side JavaScript apps on your Mac.
 

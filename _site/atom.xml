@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-14T17:47:07-04:00</updated>
+ <updated>2014-05-14T17:50:47-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -138,7 +138,7 @@
 
 &lt;h2 id=&quot;brew&quot;&gt;8. &lt;strong&gt;brew&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;Akright–this isn’t technically a native command. But no OS X power user should be without &lt;a href=&quot;http://brew.sh&quot;&gt;Homebrew&lt;/a&gt;. The website calls it “The missing package manager for OS X,” and that couldn’t be truer. If you’ve ever used &lt;code&gt;apt-get&lt;/code&gt; in Linux, you will feel right at home in Homebrew. &lt;code&gt;brew&lt;/code&gt; gives you easy access to thousands of free apps and utilities from the open source community. &lt;/p&gt;
+&lt;p&gt;Alright–this isn’t technically a native command. But no OS X power user should be without &lt;a href=&quot;http://brew.sh&quot;&gt;Homebrew&lt;/a&gt;. The website calls it “The missing package manager for OS X,” and that couldn’t be truer. If you’ve ever used &lt;code&gt;apt-get&lt;/code&gt; in Linux, you will feel right at home in Homebrew. &lt;code&gt;brew&lt;/code&gt; gives you easy access to thousands of free apps and utilities from the open source community. &lt;/p&gt;
 
 &lt;p&gt;For instance, &lt;code&gt;brew install imagemagick&lt;/code&gt; will set you up with &lt;a href=&quot;http://www.imagemagick.org&quot;&gt;ImageMagick&lt;/a&gt;, a powerful utility that makes it possible to do anything from whipping up animated gifs to converting images between dozens of different types. &lt;code&gt;brew install node&lt;/code&gt; will get you &lt;a href=&quot;http://nodejs.org&quot;&gt;NodeJS&lt;/a&gt;, the hot new tool for developing and running server-side JavaScript apps on your Mac.&lt;/p&gt;
 
