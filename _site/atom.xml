@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-14T17:42:45-04:00</updated>
+ <updated>2014-05-14T17:46:40-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -17,7 +17,7 @@
    <link href="http://mitchchn.me/2014/os-x-terminal/"/>
    <updated>2014-05-14T00:00:00-04:00</updated>
    <id>http://mitchchn.me/2014/os-x-terminal</id>
-   <content type="html">&lt;p&gt;The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If you’re migrating from Linux, you’ll find many familiar commands work the way you expect. But power users often aren’t aware that OS X comes with a number of its own text-absed utilites not found on any other operating system. Learning about these more esoteric programs can make you more productive on the command line and help you bridge the gap between UNIX and your Mac.&lt;/p&gt;
+   <content type="html">&lt;p&gt;The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If you’re migrating from Linux, you’ll find many familiar commands work the way you expect. But power users often aren’t aware that OS X comes with a number of its own text-based utilites not found on any other operating system. Learning about these Mac-only programs can make you more productive on the command line and help you bridge the gap between UNIX and your Mac.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -28,7 +28,7 @@
 &lt;pre&gt;&lt;code&gt;$ open /Applications/Safari.app/
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;…will launch Safari as if you had double-clicked its icon in the Finder.&lt;/p&gt;
+&lt;p&gt;…will launch Safari as if you had double-clicked its icon in the Finder.&lt;sup id=&quot;fnref:bundles&quot;&gt;&lt;a href=&quot;#fn:bundles&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;If you point &lt;code&gt;open&lt;/code&gt; at a file instead, it will try to load the file with its associated GUI application. For instance, &lt;code&gt;open screenshot.png&lt;/code&gt; on an image should open the image in Preview. You can use the flag &lt;code&gt;-a&lt;/code&gt; to choose the application, or &lt;code&gt;-e&lt;/code&gt; to open the file in TextEdit.&lt;/p&gt;
 
@@ -116,7 +116,7 @@
 
 &lt;h2 id=&quot;say&quot;&gt;6. &lt;strong&gt;say&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;This is a fun one: &lt;code&gt;say&lt;/code&gt; converts text to speech, using the same TTS engine OS X uses for &lt;a href=&quot;http://www.apple.com/accessibility/osx/voiceover/&quot;&gt;VoiceOver&lt;/a&gt;. Without any options, &lt;code&gt;say&lt;/code&gt; will simply speak whatever text you give it out loud.:&lt;sup id=&quot;fnref:mac&quot;&gt;&lt;a href=&quot;#fn:mac&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;This is a fun one: &lt;code&gt;say&lt;/code&gt; converts text to speech, using the same TTS engine OS X uses for &lt;a href=&quot;http://www.apple.com/accessibility/osx/voiceover/&quot;&gt;VoiceOver&lt;/a&gt;. Without any options, &lt;code&gt;say&lt;/code&gt; will simply speak whatever text you give it out loud.:&lt;sup id=&quot;fnref:mac&quot;&gt;&lt;a href=&quot;#fn:mac&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ say &quot;Never trust a computer you can&#39;t lift.&quot;
 &lt;/code&gt;&lt;/pre&gt;
@@ -154,6 +154,9 @@
 &lt;p&gt;For more fun with Terminal.app , here is an A-Z list of &lt;a href=&quot;http://ss64.com/osx/&quot;&gt;all available console commands in OS X 10.9 Mavericks&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
+    &lt;li id=&quot;fn:bundles&quot;&gt;
+      &lt;p&gt;Recall that OS X apps are not true executables, but actually special directories (bundles) with the extension &lt;em&gt;.app&lt;/em&gt;. &lt;code&gt;open&lt;/code&gt; is the only way to launch these programs from the command line. It can also launch  other “files” that are truly bundles, such as Pages documents.  &lt;a href=&quot;#fnref:bundles&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
     &lt;li id=&quot;fn:mac&quot;&gt;
       &lt;p&gt;https://www.youtube.com/watch?v=G0FtgZNOD44 &lt;a href=&quot;#fnref:mac&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;

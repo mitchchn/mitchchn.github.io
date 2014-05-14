@@ -3,7 +3,7 @@ title: Eight Terminal Utilities Every OS X Command Line User Should Know
 layout: post
 ---
 
-The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If you're migrating from Linux, you'll find many familiar commands work the way you expect. But power users often aren't aware that OS X comes with a number of its own text-absed utilites not found on any other operating system. Learning about these more esoteric programs can make you more productive on the command line and help you bridge the gap between UNIX and your Mac.
+The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If you're migrating from Linux, you'll find many familiar commands work the way you expect. But power users often aren't aware that OS X comes with a number of its own text-based utilites not found on any other operating system. Learning about these Mac-only programs can make you more productive on the command line and help you bridge the gap between UNIX and your Mac.
 
 <!--more-->
 
@@ -14,7 +14,7 @@ The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If yo
 
     $ open /Applications/Safari.app/
 
-...will launch Safari as if you had double-clicked its icon in the Finder.
+...will launch Safari as if you had double-clicked its icon in the Finder.[^bundles]
 
 If you point `open` at a file instead, it will try to load the file with its associated GUI application. For instance, `open screenshot.png` on an image should open the image in Preview. You can use the flag `-a` to choose the application, or `-e` to open the file in TextEdit.
 
@@ -22,7 +22,7 @@ Running `open` on a directory will take you straight to that directory in a Find
 
 Remember that the integration between Finder and Terminal goes both ways -- if you drag a file from Finder into a Terminal window, its full path gets pasted into the command line.
 
-[^bundles]: Recall that OS X apps are not true executables, but actually special folders (bundles) with the extension *.app*. Using `open` you can also launch  other "files" that are truly bundles, such as Pages documents. 
+[^bundles]: Recall that OS X apps are not true executables, but actually special directories (bundles) with the extension *.app*. `open` is the only way to launch these programs from the command line. It can also launch  other "files" that are truly bundles, such as Pages documents. 
 
 
 ## 2. **pbcopy** and **pbpaste**

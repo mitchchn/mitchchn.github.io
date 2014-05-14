@@ -151,7 +151,7 @@
 </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If you’re migrating from Linux, you’ll find many familiar commands work the way you expect. But power users often aren’t aware that OS X comes with a number of its own text-absed utilites not found on any other operating system. Learning about these more esoteric programs can make you more productive on the command line and help you bridge the gap between UNIX and your Mac.</p>
+    <p>The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If you’re migrating from Linux, you’ll find many familiar commands work the way you expect. But power users often aren’t aware that OS X comes with a number of its own text-based utilites not found on any other operating system. Learning about these Mac-only programs can make you more productive on the command line and help you bridge the gap between UNIX and your Mac.</p>
 
 <!--more-->
 
@@ -162,7 +162,7 @@
 <pre><code>$ open /Applications/Safari.app/
 </code></pre>
 
-<p>…will launch Safari as if you had double-clicked its icon in the Finder.</p>
+<p>…will launch Safari as if you had double-clicked its icon in the Finder.<sup id="fnref:bundles"><a href="#fn:bundles" class="footnote">1</a></sup></p>
 
 <p>If you point <code>open</code> at a file instead, it will try to load the file with its associated GUI application. For instance, <code>open screenshot.png</code> on an image should open the image in Preview. You can use the flag <code>-a</code> to choose the application, or <code>-e</code> to open the file in TextEdit.</p>
 
@@ -250,7 +250,7 @@
 
 <h2 id="say">6. <strong>say</strong></h2>
 
-<p>This is a fun one: <code>say</code> converts text to speech, using the same TTS engine OS X uses for <a href="http://www.apple.com/accessibility/osx/voiceover/">VoiceOver</a>. Without any options, <code>say</code> will simply speak whatever text you give it out loud.:<sup id="fnref:mac"><a href="#fn:mac" class="footnote">1</a></sup></p>
+<p>This is a fun one: <code>say</code> converts text to speech, using the same TTS engine OS X uses for <a href="http://www.apple.com/accessibility/osx/voiceover/">VoiceOver</a>. Without any options, <code>say</code> will simply speak whatever text you give it out loud.:<sup id="fnref:mac"><a href="#fn:mac" class="footnote">2</a></sup></p>
 
 <pre><code>$ say "Never trust a computer you can't lift."
 </code></pre>
@@ -288,6 +288,9 @@
 <p>For more fun with Terminal.app , here is an A-Z list of <a href="http://ss64.com/osx/">all available console commands in OS X 10.9 Mavericks</a>.</p>
 <div class="footnotes">
   <ol>
+    <li id="fn:bundles">
+      <p>Recall that OS X apps are not true executables, but actually special directories (bundles) with the extension <em>.app</em>. <code>open</code> is the only way to launch these programs from the command line. It can also launch  other “files” that are truly bundles, such as Pages documents.  <a href="#fnref:bundles" class="reversefootnote">&#8617;</a></p>
+    </li>
     <li id="fn:mac">
       <p>https://www.youtube.com/watch?v=G0FtgZNOD44 <a href="#fnref:mac" class="reversefootnote">&#8617;</a></p>
     </li>
