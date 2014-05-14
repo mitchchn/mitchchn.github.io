@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-14T17:42:03-04:00</updated>
+ <updated>2014-05-14T17:42:45-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Eight Terminal Utilities Every OS X Command Line User Should Know</title>
-   <link href="http://mitchchn.me/2014/os%20x%20terminal/"/>
+   <link href="http://mitchchn.me/2014/os-x-terminal/"/>
    <updated>2014-05-14T00:00:00-04:00</updated>
-   <id>http://mitchchn.me/2014/os x terminal</id>
+   <id>http://mitchchn.me/2014/os-x-terminal</id>
    <content type="html">&lt;p&gt;The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If you’re migrating from Linux, you’ll find many familiar commands work the way you expect. But power users often aren’t aware that OS X comes with a number of its own text-absed utilites not found on any other operating system. Learning about these more esoteric programs can make you more productive on the command line and help you bridge the gap between UNIX and your Mac.&lt;/p&gt;
 
 &lt;!--more--&gt;
