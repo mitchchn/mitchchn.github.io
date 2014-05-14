@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      8 Terminal Utilities Every OS X User Should Know &middot; mitchchn.me
+      Eight Terminal Utilities Every OS X Command Line User Should Know &middot; mitchchn.me
     </title>
 
     <link rel="author" href="https://plus.google.com/110540326631570531773" />
@@ -86,7 +86,7 @@
         <ul class="dropdown translucent">
             <li><label>Share this article</label><li>
           <li id="custom-tweet-button">
-          <a class="popup" href="https://twitter.com/share?text=8 Terminal Utilities Every OS X User Should Know&url=http://mitchchn.me/2014/2014-05-14-os+x+terminal/">
+          <a class="popup" href="https://twitter.com/share?text=Eight Terminal Utilities Every OS X Command Line User Should Know&url=http://mitchchn.me/2014/os%20x%20terminal/">
           <i class="fa fa-twitter"></i>
           Twitter</a></li>
         </ul>
@@ -132,7 +132,7 @@
 <div class="hero-content">
 
 <div id="hero-image" class="hero-no-image"></div>
-<div class="headline headline-no-image"><h1 itemprop="name">8 Terminal Utilities Every OS X User Should Know</h1></div>
+<div class="headline headline-no-image"><h1 itemprop="name">Eight Terminal Utilities Every OS X Command Line User Should Know</h1></div>
 
 </div>
 
@@ -145,13 +145,17 @@
 <article class="post">
   <header class = "post-header" id="post-content">
   <div class="post-controls text-center">
-  <time class="post-controls post-date" datetime="2014-05-13 23:44:51 -0400" itemprop="datePublished" content="2014-05-13">May 13, 2014</time>&nbsp;&bull;&nbsp;<span itemprop="author">Mitchell Cohen</span>
+  <time class="post-controls post-date" datetime="2014-05-14 00:00:00 -0400" itemprop="datePublished" content="2014-05-14">May 14, 2014</time>&nbsp;&bull;&nbsp;<span itemprop="author">Mitchell Cohen</span>
   </div>
  <!---->
 </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h2 id="open">1. <strong>open</strong></h2>
+    <p>The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If you’re migrating from Linux, you’ll find many familiar commands work the way you expect. But power users often aren’t aware that OS X comes with a number of its own text-absed utilites not found on any other operating system. Learning about these more esoteric programs can make you more productive on the command line and help you bridge the gap between UNIX and your Mac.</p>
+
+<!--more-->
+
+<h2 id="open">1. <strong>open</strong></h2>
 
 <p><code>open</code> opens files, directories and applications. Exciting, right? But it really does come in handy as a <strong>command-line double-click.</strong> For instance, typing:</p>
 
@@ -180,7 +184,8 @@
 
 <p>Using <code>pbcopy</code> with pipes is a great way to capture the output of a command without having to scroll up and carefully select it. This makes it easy to share diagnostic information. <code>pbcopy</code> and <code>pbpaste</code> can also be used to automate or speed up certain kinds of tasks. For instance, if you want to save email subject lines to a task list, you could copy the subjects from Mail.app and run:</p>
 
-<p><code>$ pbpaste &gt;&gt; tasklist.txt</code></p>
+<pre><code>$ pbpaste &gt;&gt; tasklist.txt
+</code></pre>
 
 <h2 id="mdfind">3. <strong>mdfind</strong></h2>
 
@@ -223,46 +228,71 @@
 
 <h2 id="launchctl">5. <strong>launchctl</strong></h2>
 
-<p><code>launchctl</code> lets you interact with the OS X init script system, <code>launchd</code>. Using launch agents and launch daemons, you can control the services that start up when you turn on your computer. You can even set up scripts to run periodically in the background.</p>
+<p><code>launchctl</code> lets you interact with the OS X init script system, <code>launchd</code>. By With launch daemons and launch agents, you can control the services that start up when you boot your computer. You can even set up scripts to run periodically or at timed intervals in the background.</p>
 
-<p>For example, if you’d like to have the Apache web server start up when you boot your Mac, simply type:</p>
+<p>For example, if you’d like to have the Apache web server start automatically when you turn on your Mac, simply type:</p>
 
 <pre><code>$ sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
 </code></pre>
 
-<p>Running <code>launchctl list</code> will show you what launch scripts are currently running. You can use <code>sudo launchctl unload -w [path/to/script]</code> to remove scripts from your boot sequence.</p>
+<p>Running <code>launchctl list</code> will show you what launch scripts that are currently running. You can use <code>sudo launchctl unload -w [path/to/script]</code> to remove scripts from your boot sequence. I like to remove the auto-update “helpers” created by Adobe apps and Microsoft Office.</p>
 
-<p>Launch agents and dademons are stored in the folllowing locations:</p>
+<p>Launchd scripts are stored in the folllowing locations:</p>
 
-<pre><code>~/Library/LaunchAgents         Per-user agents provided by the user.
-/Library/LaunchAgents          Per-user agents provided by the administrator.
-/Library/LaunchDaemons         System-wide daemons provided by the administrator.
-/System/Library/LaunchAgents   Per-user agents provided by OS X.
-/System/Library/LaunchDaemons  System-wide daemons provided by OS X.
+<pre><code>~/Library/LaunchAgents    
+/Library/LaunchAgents          
+/Library/LaunchDaemons
+/System/Library/LaunchAgents
+/System/Library/LaunchDaemons
 </code></pre>
 
-<p>(This information is from Paul Annesley’s <a href="http://paul.annesley.cc/2012/09/mac-os-x-launchd-is-cool/">blog post</a>, which also provides a great walkthrough of the contents of a launchd script.)</p>
-
-<p>If you’d like to learn how to write your own launch scripts, Apple provides some useful documentation on their <a href="https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html">Developer site</a>. You can also use the <a href="http://www.peterborgapps.com/lingon/">Lingon</a> app if you’d prefer to avoid the command line entirely.</p>
+<p>To see what goes into a launch agent or daemon, there’s a great blog post by <a href="http://paul.annesley.cc/2012/09/mac-os-x-launchd-is-cool/">Paul Annesley</a> that walks you through the file format. And if you’d like to learn how to write your own <code>launchd</code> scripts, Apple provides some helpful documentation on their <a href="https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html">Developer site</a>. There’s also the fantastic <a href="http://www.peterborgapps.com/lingon/">Lingon</a> app if you’d prefer to avoid the command line entirely.</p>
 
 <h2 id="say">6. <strong>say</strong></h2>
 
-<p>This is a fun one: <code>say</code> converts text to speech, using the same TTS engine OS X uses for <a href="http://www.apple.com/accessibility/osx/voiceover/">VoiceOver</a>. Without any options, <code>say</code> will simply speak whatever text you give it out loud:</p>
+<p>This is a fun one: <code>say</code> converts text to speech, using the same TTS engine OS X uses for <a href="http://www.apple.com/accessibility/osx/voiceover/">VoiceOver</a>. Without any options, <code>say</code> will simply speak whatever text you give it out loud.:<sup id="fnref:mac"><a href="#fn:mac" class="footnote">1</a></sup></p>
 
-<pre><code>$ say "Never trust a computer you can't lift."[^mac]
+<pre><code>$ say "Never trust a computer you can't lift."
 </code></pre>
 
-<p>You can change the default voice (and language!) from the <strong>Dictation &amp; Speech</strong> panel in System Preferences.</p>
+<p>You can also use <code>say</code> to speak the contents of a text file with the <code>-f</code> flag, and you can store the resulting audio clip with the <code>-o</code> flag:</p>
 
-<h2 id="brew">7. <strong>brew</strong></h2>
+<pre><code>$ say -f mynovel.txt -o myaudiobook.aiff
+</code></pre>
 
-<p>OK–this isn’t technically a native command. But no OS X power user should be without <a href="http://brew.sh">Homebrew</a>. The website calls it “The missing package manager for OS X,” and that couldn’t be truer. If you’ve ever used <code>apt-get</code> in Linux, you will feel right at home in Homebrew. <code>brew</code> gives you easy access to thousands of free apps and utilities from the open source community. </p>
+<p>The <code>say</code> command can be useful in place of console logging or alert sounds in scripts. For instance, you can set up an Automator or <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> script to do batch file processing and then announce the completion with <code>say</code>.</p>
+
+<p>But the most enjoyable use for <code>say</code> is rather more sinister: if you have <code>ssh</code> access to a friend or coworker’s Mac, you can silently log into their machine and haunt them through the command line. Give ‘em a Siri-ous surprise.</p>
+
+<p>You can set the voice (and language!) used by <code>say</code> by changing the default setting in the <strong>Dictation &amp; Speech</strong> panel in System Preferences.</p>
+
+<h2 id="disktuil">7. <strong>disktuil</strong></h2>
+
+<p><code>diskutil</code> is a command line interface to the <strong>Disk Utility</strong> that comes with OS X. It can do everything its graphical cousin can, but it also has some additional capabilities—such as filling a disk with zeroes or random data. Simply type <code>diskutil list</code> to see the path names of disks and removable media attached to your machine, and then point the command at the volume you want to operate on. Be careful: <code>diskutil</code> can permanently destroy data if it’s used incorrectly.</p>
+
+<h2 id="brew">8. <strong>brew</strong></h2>
+
+<p>Akright–this isn’t technically a native command. But no OS X power user should be without <a href="http://brew.sh">Homebrew</a>. The website calls it “The missing package manager for OS X,” and that couldn’t be truer. If you’ve ever used <code>apt-get</code> in Linux, you will feel right at home in Homebrew. <code>brew</code> gives you easy access to thousands of free apps and utilities from the open source community. </p>
 
 <p>For instance, <code>brew install imagemagick</code> will set you up with <a href="http://www.imagemagick.org">ImageMagick</a>, a powerful utility that makes it possible to do anything from whipping up animated gifs to converting images between dozens of different types. <code>brew install node</code> will get you <a href="http://nodejs.org">NodeJS</a>, the hot new tool for developing and running server-side JavaScript apps on your Mac.</p>
 
-<p>You can have fun with Homebrew too: <code>brew install archey</code> gives you <strong>Archey</strong>, a fun script for displaying your Mac’s specs next to a colourful Apple logo. The selection in Homebrew is huge—and because it’s so easy to create <a href="https://github.com/Homebrew/homebrew/wiki/Formula-Cookbook">formulas</a>, new packages are being added all the time.</p>
+<p>You can have fun with Homebrew too: <code>brew install archey</code> will get you <strong>Archey</strong>, a fun script for displaying your Mac’s specs next to a colourful Apple logo. The selection in Homebrew is huge—and because it’s so easy to create <a href="https://github.com/Homebrew/homebrew/wiki/Formula-Cookbook">formulas</a>, new packages are being added all the time.</p>
+
+<figure>
+    <img src="/public/img/archey.png" />
+    <figcaption><span class="elegant">Archey&mdash;</span>My command line brings all the boys to the yard.</figcaption>
+</figure>
 
 <p>But the best part about Homebrew? It keeps all its files i a single directory: <code>/usr/local/</code>. That means you can install newer versions of system software, such as <code>python</code> and <code>mysql</code>, without interfering with the built-in equivalents. If you ever want to remove Homebrew, all you have to do is delete the contents of <code>/usr/local/</code>.</p>
+
+<p>For more fun with Terminal.app , here is an A-Z list of <a href="http://ss64.com/osx/">all available console commands in OS X 10.9 Mavericks</a>.</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:mac">
+      <p>https://www.youtube.com/watch?v=G0FtgZNOD44 <a href="#fnref:mac" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
   </div>
   <footer class = "controls">
@@ -275,8 +305,8 @@
         <div class="left"> 
         
         <p> 
-                <a href="/2014/2014-04-25-whats-jekyll/" title="Previous Post: 
-What's Jekyll?">&laquo; What's Jekyll?</a></p> 
+                <a href="/2014/coding-for-journalists-p2/" title="Previous Post: 
+Coding for Journalists, Part 2: HTML — Workflows, Nesting and Paragraphs">&laquo; Coding for Journalists, Part 2: HTML — Workflows, Nesting and Paragraphs</a></p> 
          
         </div>
 

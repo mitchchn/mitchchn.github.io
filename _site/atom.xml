@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-14T10:41:05-04:00</updated>
+ <updated>2014-05-14T17:42:03-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -13,11 +13,15 @@
 
  
  <entry>
-   <title>8 Terminal Utilities Every OS X User Should Know</title>
-   <link href="http://mitchchn.me/2014/2014-05-14-os+x+terminal/"/>
-   <updated>2014-05-13T23:44:51-04:00</updated>
-   <id>http://mitchchn.me/2014/2014-05-14-os x terminal</id>
-   <content type="html">&lt;h2 id=&quot;open&quot;&gt;1. &lt;strong&gt;open&lt;/strong&gt;&lt;/h2&gt;
+   <title>Eight Terminal Utilities Every OS X Command Line User Should Know</title>
+   <link href="http://mitchchn.me/2014/os%20x%20terminal/"/>
+   <updated>2014-05-14T00:00:00-04:00</updated>
+   <id>http://mitchchn.me/2014/os x terminal</id>
+   <content type="html">&lt;p&gt;The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If you’re migrating from Linux, you’ll find many familiar commands work the way you expect. But power users often aren’t aware that OS X comes with a number of its own text-absed utilites not found on any other operating system. Learning about these more esoteric programs can make you more productive on the command line and help you bridge the gap between UNIX and your Mac.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;open&quot;&gt;1. &lt;strong&gt;open&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;open&lt;/code&gt; opens files, directories and applications. Exciting, right? But it really does come in handy as a &lt;strong&gt;command-line double-click.&lt;/strong&gt; For instance, typing:&lt;/p&gt;
 
@@ -46,7 +50,8 @@
 
 &lt;p&gt;Using &lt;code&gt;pbcopy&lt;/code&gt; with pipes is a great way to capture the output of a command without having to scroll up and carefully select it. This makes it easy to share diagnostic information. &lt;code&gt;pbcopy&lt;/code&gt; and &lt;code&gt;pbpaste&lt;/code&gt; can also be used to automate or speed up certain kinds of tasks. For instance, if you want to save email subject lines to a task list, you could copy the subjects from Mail.app and run:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;$ pbpaste &amp;gt;&amp;gt; tasklist.txt&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pbpaste &amp;gt;&amp;gt; tasklist.txt
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&quot;mdfind&quot;&gt;3. &lt;strong&gt;mdfind&lt;/strong&gt;&lt;/h2&gt;
 
@@ -89,224 +94,68 @@
 
 &lt;h2 id=&quot;launchctl&quot;&gt;5. &lt;strong&gt;launchctl&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;code&gt;launchctl&lt;/code&gt; lets you interact with the OS X init script system, &lt;code&gt;launchd&lt;/code&gt;. Using launch agents and launch daemons, you can control the services that start up when you turn on your computer. You can even set up scripts to run periodically in the background.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;launchctl&lt;/code&gt; lets you interact with the OS X init script system, &lt;code&gt;launchd&lt;/code&gt;. By With launch daemons and launch agents, you can control the services that start up when you boot your computer. You can even set up scripts to run periodically or at timed intervals in the background.&lt;/p&gt;
 
-&lt;p&gt;For example, if you’d like to have the Apache web server start up when you boot your Mac, simply type:&lt;/p&gt;
+&lt;p&gt;For example, if you’d like to have the Apache web server start automatically when you turn on your Mac, simply type:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Running &lt;code&gt;launchctl list&lt;/code&gt; will show you what launch scripts are currently running. You can use &lt;code&gt;sudo launchctl unload -w [path/to/script]&lt;/code&gt; to remove scripts from your boot sequence.&lt;/p&gt;
+&lt;p&gt;Running &lt;code&gt;launchctl list&lt;/code&gt; will show you what launch scripts that are currently running. You can use &lt;code&gt;sudo launchctl unload -w [path/to/script]&lt;/code&gt; to remove scripts from your boot sequence. I like to remove the auto-update “helpers” created by Adobe apps and Microsoft Office.&lt;/p&gt;
 
-&lt;p&gt;Launch agents and dademons are stored in the folllowing locations:&lt;/p&gt;
+&lt;p&gt;Launchd scripts are stored in the folllowing locations:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;~/Library/LaunchAgents         Per-user agents provided by the user.
-/Library/LaunchAgents          Per-user agents provided by the administrator.
-/Library/LaunchDaemons         System-wide daemons provided by the administrator.
-/System/Library/LaunchAgents   Per-user agents provided by OS X.
-/System/Library/LaunchDaemons  System-wide daemons provided by OS X.
+&lt;pre&gt;&lt;code&gt;~/Library/LaunchAgents    
+/Library/LaunchAgents          
+/Library/LaunchDaemons
+/System/Library/LaunchAgents
+/System/Library/LaunchDaemons
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;(This information is from Paul Annesley’s &lt;a href=&quot;http://paul.annesley.cc/2012/09/mac-os-x-launchd-is-cool/&quot;&gt;blog post&lt;/a&gt;, which also provides a great walkthrough of the contents of a launchd script.)&lt;/p&gt;
-
-&lt;p&gt;If you’d like to learn how to write your own launch scripts, Apple provides some useful documentation on their &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html&quot;&gt;Developer site&lt;/a&gt;. You can also use the &lt;a href=&quot;http://www.peterborgapps.com/lingon/&quot;&gt;Lingon&lt;/a&gt; app if you’d prefer to avoid the command line entirely.&lt;/p&gt;
+&lt;p&gt;To see what goes into a launch agent or daemon, there’s a great blog post by &lt;a href=&quot;http://paul.annesley.cc/2012/09/mac-os-x-launchd-is-cool/&quot;&gt;Paul Annesley&lt;/a&gt; that walks you through the file format. And if you’d like to learn how to write your own &lt;code&gt;launchd&lt;/code&gt; scripts, Apple provides some helpful documentation on their &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html&quot;&gt;Developer site&lt;/a&gt;. There’s also the fantastic &lt;a href=&quot;http://www.peterborgapps.com/lingon/&quot;&gt;Lingon&lt;/a&gt; app if you’d prefer to avoid the command line entirely.&lt;/p&gt;
 
 &lt;h2 id=&quot;say&quot;&gt;6. &lt;strong&gt;say&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;This is a fun one: &lt;code&gt;say&lt;/code&gt; converts text to speech, using the same TTS engine OS X uses for &lt;a href=&quot;http://www.apple.com/accessibility/osx/voiceover/&quot;&gt;VoiceOver&lt;/a&gt;. Without any options, &lt;code&gt;say&lt;/code&gt; will simply speak whatever text you give it out loud:&lt;/p&gt;
+&lt;p&gt;This is a fun one: &lt;code&gt;say&lt;/code&gt; converts text to speech, using the same TTS engine OS X uses for &lt;a href=&quot;http://www.apple.com/accessibility/osx/voiceover/&quot;&gt;VoiceOver&lt;/a&gt;. Without any options, &lt;code&gt;say&lt;/code&gt; will simply speak whatever text you give it out loud.:&lt;sup id=&quot;fnref:mac&quot;&gt;&lt;a href=&quot;#fn:mac&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ say &quot;Never trust a computer you can&#39;t lift.&quot;[^mac]
+&lt;pre&gt;&lt;code&gt;$ say &quot;Never trust a computer you can&#39;t lift.&quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You can change the default voice (and language!) from the &lt;strong&gt;Dictation &amp;amp; Speech&lt;/strong&gt; panel in System Preferences.&lt;/p&gt;
+&lt;p&gt;You can also use &lt;code&gt;say&lt;/code&gt; to speak the contents of a text file with the &lt;code&gt;-f&lt;/code&gt; flag, and you can store the resulting audio clip with the &lt;code&gt;-o&lt;/code&gt; flag:&lt;/p&gt;
 
-&lt;h2 id=&quot;brew&quot;&gt;7. &lt;strong&gt;brew&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ say -f mynovel.txt -o myaudiobook.aiff
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;OK–this isn’t technically a native command. But no OS X power user should be without &lt;a href=&quot;http://brew.sh&quot;&gt;Homebrew&lt;/a&gt;. The website calls it “The missing package manager for OS X,” and that couldn’t be truer. If you’ve ever used &lt;code&gt;apt-get&lt;/code&gt; in Linux, you will feel right at home in Homebrew. &lt;code&gt;brew&lt;/code&gt; gives you easy access to thousands of free apps and utilities from the open source community. &lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;say&lt;/code&gt; command can be useful in place of console logging or alert sounds in scripts. For instance, you can set up an Automator or &lt;a href=&quot;http://www.noodlesoft.com/hazel.php&quot;&gt;Hazel&lt;/a&gt; script to do batch file processing and then announce the completion with &lt;code&gt;say&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;But the most enjoyable use for &lt;code&gt;say&lt;/code&gt; is rather more sinister: if you have &lt;code&gt;ssh&lt;/code&gt; access to a friend or coworker’s Mac, you can silently log into their machine and haunt them through the command line. Give ‘em a Siri-ous surprise.&lt;/p&gt;
+
+&lt;p&gt;You can set the voice (and language!) used by &lt;code&gt;say&lt;/code&gt; by changing the default setting in the &lt;strong&gt;Dictation &amp;amp; Speech&lt;/strong&gt; panel in System Preferences.&lt;/p&gt;
+
+&lt;h2 id=&quot;disktuil&quot;&gt;7. &lt;strong&gt;disktuil&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;diskutil&lt;/code&gt; is a command line interface to the &lt;strong&gt;Disk Utility&lt;/strong&gt; that comes with OS X. It can do everything its graphical cousin can, but it also has some additional capabilities—such as filling a disk with zeroes or random data. Simply type &lt;code&gt;diskutil list&lt;/code&gt; to see the path names of disks and removable media attached to your machine, and then point the command at the volume you want to operate on. Be careful: &lt;code&gt;diskutil&lt;/code&gt; can permanently destroy data if it’s used incorrectly.&lt;/p&gt;
+
+&lt;h2 id=&quot;brew&quot;&gt;8. &lt;strong&gt;brew&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Akright–this isn’t technically a native command. But no OS X power user should be without &lt;a href=&quot;http://brew.sh&quot;&gt;Homebrew&lt;/a&gt;. The website calls it “The missing package manager for OS X,” and that couldn’t be truer. If you’ve ever used &lt;code&gt;apt-get&lt;/code&gt; in Linux, you will feel right at home in Homebrew. &lt;code&gt;brew&lt;/code&gt; gives you easy access to thousands of free apps and utilities from the open source community. &lt;/p&gt;
 
 &lt;p&gt;For instance, &lt;code&gt;brew install imagemagick&lt;/code&gt; will set you up with &lt;a href=&quot;http://www.imagemagick.org&quot;&gt;ImageMagick&lt;/a&gt;, a powerful utility that makes it possible to do anything from whipping up animated gifs to converting images between dozens of different types. &lt;code&gt;brew install node&lt;/code&gt; will get you &lt;a href=&quot;http://nodejs.org&quot;&gt;NodeJS&lt;/a&gt;, the hot new tool for developing and running server-side JavaScript apps on your Mac.&lt;/p&gt;
 
-&lt;p&gt;You can have fun with Homebrew too: &lt;code&gt;brew install archey&lt;/code&gt; gives you &lt;strong&gt;Archey&lt;/strong&gt;, a fun script for displaying your Mac’s specs next to a colourful Apple logo. The selection in Homebrew is huge—and because it’s so easy to create &lt;a href=&quot;https://github.com/Homebrew/homebrew/wiki/Formula-Cookbook&quot;&gt;formulas&lt;/a&gt;, new packages are being added all the time.&lt;/p&gt;
-
-&lt;p&gt;But the best part about Homebrew? It keeps all its files i a single directory: &lt;code&gt;/usr/local/&lt;/code&gt;. That means you can install newer versions of system software, such as &lt;code&gt;python&lt;/code&gt; and &lt;code&gt;mysql&lt;/code&gt;, without interfering with the built-in equivalents. If you ever want to remove Homebrew, all you have to do is delete the contents of &lt;code&gt;/usr/local/&lt;/code&gt;.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>What's Jekyll?</title>
-   <link href="http://mitchchn.me/2014/2014-04-25-whats-jekyll/"/>
-   <updated>2014-05-13T19:14:21-04:00</updated>
-   <id>http://mitchchn.me/2014/2014-04-25-whats-jekyll</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It’s an immensely useful tool. Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Test&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;This is a footnote with &amp;lt;hello&amp;gt; multiple pieces of code in it &amp;lt;really&amp;gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Coding for Journalists, Part 2: HTML — Workflows, Nesting and Paragraphs</title>
-   <link href="http://mitchchn.me/2014/2014-05-09-coding-for-jorunalists-p2/"/>
-   <updated>2014-05-13T04:44:06-04:00</updated>
-   <id>http://mitchchn.me/2014/2014-05-09-coding-for-jorunalists-p2</id>
-   <content type="html">&lt;p&gt;In &lt;a href=&quot;/2014/coding-for-journalists-p1/&quot;&gt;Part 1&lt;/a&gt;, we set up our environment and tested it out with a little HTML code. More importantly, we built a basic &lt;strong&gt;coding workflow.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Having and practicing a good workflow is important—not just for the sake of productivity, but because every project is different. A new employer might mean having to learn a new CMS, for instance, or even a new programming language. That’s why it’s important not to learn specific tools, but to have simple procedures that you know well and can fall back on.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Your new coding environment might not be as fancy as something like &lt;a href=&quot;http://www.codecademy.com&quot;&gt;Codeacademy&lt;/a&gt;, but it will work anywhere, from your blog to the Huffington Post. To recap, the steps in our HTML workflow are:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Write your prose and code in a text editor.&lt;/li&gt;
-  &lt;li&gt;Save the file with the extension &lt;code&gt;.html&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Double-click the HTML file to view it in your web browser.&lt;/li&gt;
-  &lt;li&gt;Make changes and corrections to your code, re-save the file, and reload the page.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Now that we’re comfortable with this process, it’s time to learn more HTML.&lt;/p&gt;
-
-&lt;h2 id=&quot;nesting&quot;&gt;Nesting&lt;/h2&gt;
-
-&lt;p&gt;As we saw in Part 1, HTML is a language of tags. There are a few dozen tags in &lt;a href=&quot;https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5/HTML5_element_list&quot;&gt;HTML5&lt;/a&gt; (down from well over a hundred in HTML4). We’ll learn what many of them are for, but first let’s take a look at what they all have in common.&lt;/p&gt;
-
-&lt;p&gt;HTML tags interact in predictable ways. One features of tags is that they can &lt;strong&gt;nest&lt;/strong&gt;, stacking together like Russian dolls. Nested tags inherit the properties of their surrounding tags. For instance, this line of code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;It was the best of times, it was the blurst of times.&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;…produces the following output:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;&lt;em&gt;It was the best of times, it was the blurst of times.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags encapsulate the &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tags, which encapsulate the text on the inside. Both tags apply their respective formatting to their inner contents. Tag nesting does not have to be symmetrical:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;It was the best of times, &amp;lt;em&amp;gt;it was was the blurst of times.&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;It was the best of times, &lt;em&gt;it was was the blurst of times.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In this case, the &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag applies to the entire line, but the &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag only affects the second half.&lt;/p&gt;
-
-&lt;p&gt;Notice that in both examples, the tags are closed in reverse order from how they were opened. This pattern is called &lt;strong&gt;Last In, First Out (LIFO).&lt;/strong&gt; Following this practice in your own code is crucial. The innermost opening tag should &lt;em&gt;always&lt;/em&gt; get the innermost closing tag. The outermost opening tag should &lt;em&gt;always&lt;/em&gt; get the outermost closing tag. For instance, this line:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;Please don&#39;t do this.&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;…is bad HTML. So is this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;em&amp;gt;&amp;lt;strong&amp;gt;Also don&#39;t do&amp;lt;/em&amp;gt; this. Please.&amp;lt;/strong&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you ignore my advice and type these lines of code into your text editor (try it!) they will still work as expected. HTML is designed to be resilient, and browsers are forgiving of simple mistakes.&lt;sup id=&quot;fnref:nesting&quot;&gt;&lt;a href=&quot;#fn:nesting&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; But why learn bad habits? Learn to nest correctly. &lt;strong&gt;LIFO.&lt;/strong&gt;&lt;sup id=&quot;fnref:fifo&quot;&gt;&lt;a href=&quot;#fn:fifo&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;parents-children-and-siblings&quot;&gt;Parents, children, and siblings&lt;/h3&gt;
-
-&lt;p&gt;Tags can be on the outside of other tags (“parents”), inside other tags (“children”), or at the same level as other tags in the tag hierarchy (“siblings”). This line of code contains parent, child and sibling tags:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;em&amp;gt;&amp;lt;strong&amp;gt;All TV&amp;lt;/strong&amp;gt; and no beer make Homer &amp;lt;strong&amp;gt;go crazy.&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;&lt;strong&gt;All TV&lt;/strong&gt; and no beer make Homer &lt;strong&gt;go crazy.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In this example, &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; is a parent tag with two children (the two &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags). The &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags are also siblings to each other. Child tags inherit properties from parent tags, but sibling tags do not affect each other. Child tags can also be parents to their own child tags, passing down both their own properties and those of the original parents (“grandparents”).&lt;/p&gt;
-
-&lt;p&gt;As you can imagine, nesting more than a few tags together can make your code  difficult to read—and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in a &lt;strong&gt;tree structure.&lt;/strong&gt; For instance, the above code could also be written out like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    &amp;lt;em&amp;gt;
-        &amp;lt;strong&amp;gt;All TV&amp;lt;/strong&amp;gt; and no beer make Homer
-        &amp;lt;strong&amp;gt;go crazy.&amp;lt;/strong&amp;gt;
-    &amp;lt;/em&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;On each new line, hit the &lt;kbd&gt;tab&lt;/kbd&gt; key to indent child tags and line up sibling tags. Your text editor will keep track of what level you’re on when you press &lt;kbd&gt;enter&lt;/kbd&gt;. To go “up” a level, press &lt;kbd&gt;backspace&lt;/kbd&gt; at the beginning of a line. You can also select one or more lines of code and press &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;tab&lt;/kbd&gt; to unindent them by a single level.&lt;/p&gt;
-
-&lt;p&gt;There is no limit to how deep the tag hierarchy can go—grandchildren, great-grandchildren, etc.—or how many sibling tags can exist at a particular level. As a matter of fact, most webpages are built with long and intricate &lt;strong&gt;tag trees.&lt;/strong&gt; But no matter how branches the tree sprouts, the same principle applies: &lt;strong&gt;child tags inherit all the properties of their parents (and grandparents, and great-grandparents…..)&lt;/strong&gt; For this reason, writing good HTML is as much about structuring your tags as it is about choosing them.&lt;/p&gt;
-
-&lt;h2 id=&quot;whitespace-and-the-paragraph-tag-p&quot;&gt;Whitespace and the Paragraph Tag: &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;Whitespace in HTML is insignifcant. Extra spaces, tabs and line breaks are treated by web browsers as if they weren’t there at all:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;This&amp;lt;/strong&amp;gt;       is
-        weirdly-formatted
-
-and &amp;lt;em&amp;gt;ugly 
-&amp;lt;/em&amp;gt;            
-              code.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;&lt;strong&gt;This&lt;/strong&gt; is weirdly-formatted and &lt;em&gt;ugly&lt;/em&gt; code.&lt;/blockquote&gt;
-
-&lt;p&gt;Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the tree format shown above). But this creates problems for writers who need to write in paragraphs (all of them):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;This is &amp;lt;strong&amp;gt;one&amp;lt;/strong&amp;gt; paragraph.
-
-This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; paragraph.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;This is &lt;strong&gt;one&lt;/strong&gt; paragraph. This is supposed to be &lt;strong&gt;another&lt;/strong&gt; paragraph.&lt;/blockquote&gt;
-
-&lt;p&gt;Thankfully, there’s a tag for that. Using the HTML &lt;strong&gt;paragraph tag&lt;/strong&gt; &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, we can get the expected behaviour:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
-This is &amp;lt;strong&amp;gt;one&amp;lt;/strong&amp;gt; paragraph.
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;
-This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; paragraph.
-&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;&lt;p&gt;This is &lt;strong&gt;one&lt;/strong&gt; paragraph.&lt;/p&gt;&lt;p&gt;This is supposed to be &lt;strong&gt;another&lt;/strong&gt; paragraph.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;Like most tags, the &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag has an opening tag and a closing tag: &lt;code&gt;&amp;lt;/p&amp;gt;&lt;/code&gt; It is a good practice to wrap all your paragraphs in &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags. They will not only get the proper amount of line-spacing, but also the correct fonts, colours, and formatting that your site has set up for its body copy.&lt;sup id=&quot;fnref:br&quot;&gt;&lt;a href=&quot;#fn:br&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;Manually inserting &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags between paragraphs is one of the most tedious parts of writing prose in HTML. For that reason, coders and writers have come up with several ways to make the task easier: &lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;WordPress&lt;/strong&gt; will automatically convert blank lines into paragraph breaks. If you know your code will be going into WordPress, simply ignore the &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag and press enter twice between paragraphs. Then copy your code into the WordPress text editor and submit your post. Other CMSes may also have an option to work this way.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bywordapp.com/markdown/guide.html&quot;&gt;Markdown&lt;/a&gt; treats blank lines as paragraph breaks, just like WordPress. Many CMSes support Markdown either natively or with plugins.&lt;/li&gt;
-  &lt;li&gt;Use the &lt;strong&gt;Find&lt;/strong&gt; feature in your text editor to search for line breaks and replace them with new lines. Write your article with blank lines between paragraphs, and then use the &lt;a href=&quot;http://regex.bastardsbook.com&quot;&gt;regular expression&lt;/a&gt; feature in your editor to replace &lt;code&gt;\n&lt;/code&gt; with &lt;code&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;You can have fun with Homebrew too: &lt;code&gt;brew install archey&lt;/code&gt; will get you &lt;strong&gt;Archey&lt;/strong&gt;, a fun script for displaying your Mac’s specs next to a colourful Apple logo. The selection in Homebrew is huge—and because it’s so easy to create &lt;a href=&quot;https://github.com/Homebrew/homebrew/wiki/Formula-Cookbook&quot;&gt;formulas&lt;/a&gt;, new packages are being added all the time.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;/public/img/regexp.png&quot; /&gt;
-    &lt;figcaption&gt;&lt;span class=&quot;elegant&quot;&gt;Replacing paragraph breaks with tags&amp;mdash;&lt;/span&gt;In &lt;strong&gt;TextWrangler&lt;/strong&gt;, go to &lt;strong&gt;Search -&amp;gt; Find&lt;/strong&gt; and set up the above search. Make sure &#39;Grep&#39; is checked. Hit &lt;strong&gt;Replace All&lt;/strong&gt;. The only manual change you will need to make is to add a single opening &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag before your first paragraph.&lt;/figcaption&gt;
+    &lt;img src=&quot;/public/img/archey.png&quot; /&gt;
+    &lt;figcaption&gt;&lt;span class=&quot;elegant&quot;&gt;Archey&amp;mdash;&lt;/span&gt;My command line brings all the boys to the yard.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Or alternatively, just get used to writing &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; a whole lot. It’s not so bad. &lt;span style=&quot;font-family: &#39;comic sans ms&#39;&quot;&gt;&lt;strong&gt;Better than manually fixing the layout in your coworker’s Word document set in Comic Sans MS.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;But the best part about Homebrew? It keeps all its files i a single directory: &lt;code&gt;/usr/local/&lt;/code&gt;. That means you can install newer versions of system software, such as &lt;code&gt;python&lt;/code&gt; and &lt;code&gt;mysql&lt;/code&gt;, without interfering with the built-in equivalents. If you ever want to remove Homebrew, all you have to do is delete the contents of &lt;code&gt;/usr/local/&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;In Part 3, we’ll learn the dozen or so HTML tags every writer should know.&lt;/p&gt;
-
+&lt;p&gt;For more fun with Terminal.app , here is an A-Z list of &lt;a href=&quot;http://ss64.com/osx/&quot;&gt;all available console commands in OS X 10.9 Mavericks&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:nesting&quot;&gt;
-      &lt;p&gt;Just as browsers will forgive out-of-order nesting, they will also try to make sense of your code if you accidentally leave out closing tags. Depending on various factors, an unclosed tag will apply to the rest of the section or the rest of the &lt;em&gt;entire page&lt;/em&gt;. This is probably not what you intended to happen. So nest properly, and close your tags. &lt;a href=&quot;#fnref:nesting&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:fifo&quot;&gt;
-      &lt;p&gt;The opposite, found in certain programming languages, is called FIFO: first in first out. &lt;a href=&quot;#fnref:fifo&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:br&quot;&gt;
-      &lt;p&gt;The &lt;strong&gt;line break tag&lt;/strong&gt; &amp;lt;br&amp;gt; creates one or more manual line breaks between blocks of text. Using multiple &amp;lt;br&amp;gt; tags is a little like hitting ‘enter’ a bunch of times in Word. But &amp;lt;br&amp;gt; does not come with any of the formatting benefits of the &amp;lt;p&amp;gt; tag. It can cause ugly layout inconsistencies. Use it only as a last resort. &lt;a href=&quot;#fnref:br&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:mac&quot;&gt;
+      &lt;p&gt;https://www.youtube.com/watch?v=G0FtgZNOD44 &lt;a href=&quot;#fnref:mac&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -580,33 +429,6 @@ This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; para
  </entry>
  
  <entry>
-   <title>Plain Text</title>
-   <link href="http://mitchchn.me/2014/plain-text/"/>
-   <updated>2014-05-05T19:30:21-04:00</updated>
-   <id>http://mitchchn.me/2014/plain-text</id>
-   <content type="html">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Text is free.&lt;/strong&gt;  That’s “free” as in speech and in beer. Text is an open format. No one company owns it or can charge you money to read or edit your own work.&lt;sup id=&quot;fnref:microsoft&quot;&gt;&lt;a href=&quot;#fn:microsoft&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; You get to choose your own tools.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Text is universal.&lt;/strong&gt; Any computer [phone, tablet] can open plain text. You can keep your plain text files in &lt;a href=&quot;http://www.dropbox.com&quot;&gt;Dropbox&lt;/a&gt; and work on them from from wherever you are. Text looks the same everywhere, so you can share it with editors and collaborators without worrying about different software versions or formatting issues.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Text is distraction-free.&lt;/strong&gt; Text editors are fast, lightweight, and have few bells and whistles. Some are designed &lt;a href=&quot;http://bywordapp.com&quot;&gt;especially for writers&lt;/a&gt;. The lack of options and formatting lets you focus on your writing.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:microsoft&quot;&gt;
-      &lt;p&gt;Twenty years from now, will you be able to open the Word document you wrote last night? Maybe—if you pay to upgrade to the latest version of Office—but why let Microsoft control the medium you do all your work in? &lt;a href=&quot;#fnref:microsoft&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
    <title>Coding for Journalists, Part 0: Why Code?</title>
    <link href="http://mitchchn.me/2014/coding-for-journalists-p0/"/>
    <updated>2014-05-03T00:00:00-04:00</updated>
@@ -665,87 +487,6 @@ But before we get that far, we have to start with the basics. That includes lear
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Melville thumps a snake in the eye</title>
-   <link href="http://mitchchn.me/2014/2014-05-1-melville/"/>
-   <updated>2014-05-02T23:28:23-04:00</updated>
-   <id>http://mitchchn.me/2014/2014-05-1-melville</id>
-   <content type="html">&lt;p&gt;Akin to the adventure of Perseus and Andromeda—indeed, by some supposed to be indirectly derived from it—is that famous story of St. George and the Dragon; which dragon I maintain to have been a whale; for in many old chronicles whales and dragons are strangely jumbled together, and often stand for each other. “Thou art as a lion of the waters, and as a dragon of the sea,” saith Ezekiel; hereby, plainly meaning a whale; in truth, some versions of the Bible use that word itself. Besides, it would much subtract from the glory of the exploit had St. George but encountered a crawling reptile of the land, instead of doing battle with the great monster of the deep. Any man may kill a snake, but only a Perseus, a St. George, a Coffin, have the heart in them to march boldly up to a whale.&lt;/p&gt;
-
-&lt;p&gt;Let not the modern paintings of this scene mislead us; for though the creature encountered by that valiant whaleman of old is vaguely represented of a griffin-like shape, and though the battle is depicted on land and the saint on horseback, yet considering the great ignorance of those times, when the true form of the whale was unknown to artists; and considering that as in Perseus’ case, St. George’s whale might have crawled up out of the sea on the beach; and considering that the animal ridden by St. George might have been only a large seal, or sea-horse; bearing all this in mind, it will not appear altogether incompatible with the sacred legend and the ancientest draughts of the scene, to hold this so-called dragon no other than the great Leviathan himself.&lt;/p&gt;
-
-&lt;p&gt;In fact, placed before the strict and piercing truth, this whole story will fare like that fish, flesh, and fowl idol of the Philistines, Dagon by name; who being planted before the ark of Israel, his horse’s head and both the palms of his hands fell off from him, and only the stump or fishy part of him remained. Thus, then, one of our own noble stamp, even a whaleman, is the tutelary guardian of England; and by good rights, we harpooneers of Nantucket should be enrolled in the most noble order of St. George. And therefore, let not the knights of that honourable company (none of whom, I venture to say, have ever had to do with a whale like their great patron), let them never eye a Nantucketer with disdain, since even in our woollen frocks and tarred trowsers we are much better entitled to St. George’s decoration than they.
-Whether to admit Hercules among us or not, concerning this I long remained dubious: for though according to the Greek mythologies, that antique Crockett and Kit Carson—that brawny doer of rejoicing good deeds, was swallowed down and thrown up by a whale; still, whether that strictly makes a whaleman of him, that might be mooted. It nowhere appears that he ever actually harpooned his fish, unless, indeed, from the inside. Nevertheless, he may be deemed a sort of involuntary whaleman; at any rate the whale caught him, if he did not the whale. I claim him for one of our clan.&lt;/p&gt;
-
-&lt;p&gt;But, by the best contradictory authorities, this Grecian story of Hercules and the whale is considered to be derived from the still more ancient Hebrew story of Jonah and the whale; and vice versa; certainly they are very similar. If I claim the demigod then, why not the prophet?&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Modo decus consternatique diversas</title>
-   <link href="http://mitchchn.me/2014/2013-12-31-modo-decus/"/>
-   <updated>2014-05-02T18:12:35-04:00</updated>
-   <id>http://mitchchn.me/2014/2013-12-31-modo-decus</id>
-   <content type="html">&lt;p&gt;Lorem markdownum dives, est neglectos &lt;strong&gt;classe&lt;/strong&gt; tellus: superest lacrimis. De
-causa fingit poterit poscebatur pars frugiferas Thebae sua, Taenarius anxia:
-ora? Ita vigor Ismenides triones.&lt;/p&gt;
-
-&lt;p&gt;Est iuxta fortis ignibus cernit alta abstrahere nisi: manu cui quod, volenti de
-Peleus amnis lenis ad solet. &lt;em&gt;Editus namque&lt;/em&gt; fuit. Et ictu subterque quam victa
-pando, crescentemque quid senes frondibus artus latravit murmur: stimulos
-Iliaden ad.&lt;/p&gt;
-
-&lt;h2 id=&quot;uno-illa-iter-penthea&quot;&gt;Uno illa iter penthea&lt;/h2&gt;
-
-&lt;p&gt;Audaci et Amazone aureus ut veteres urbis sitientes flumen palmas &lt;em&gt;signa&lt;/em&gt;, et
-decorum cupit enim! Agantur et unam et quod. Eventuque gerit vias posuere retia
-corpore multae thalamoque duxque quacumque &lt;a href=&quot;http://textfromdog.tumblr.com/&quot;&gt;concipit
-odioque&lt;/a&gt;, in. &lt;em&gt;Gravior&lt;/em&gt; in cuspide parte
-sprevit, ille illuc anus nam adesset haec lacertosi sub Hiberi radix? Unde facti
-et dare, pedibusque ora fallat temptat, da ille Haemonio quidque australem
-vocat, crepitantia.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Ratem ubi quas dies; facis, sua solae hoc oetaeas si incessit ignarus stipite
-urbis. Dubio pace populo, &lt;em&gt;invenit&lt;/em&gt; dea vera porrigit verba, adversaque inpar
-nunc lati anguem attollite mediis quod, huic.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;non-sumus-munere-phaethon-audis-exanimis-manant&quot;&gt;Non sumus munere Phaethon audis exanimis manant&lt;/h3&gt;
-
-&lt;p&gt;Atria qui &lt;em&gt;gregibus crimina supervolat&lt;/em&gt; plagarum portibus pudet, miseranda
-rubuerunt et rerum officioque puto, foret equos; tendit. Quoque detractare
-monstri coniunx et cecidit tamen, nuda sidera antemnas. In &lt;a href=&quot;http://textfromdog.tumblr.com/&quot;&gt;tyranni
-veniente&lt;/a&gt;, animi fugit simul &lt;strong&gt;accipis aequatam
-occupat&lt;/strong&gt; conclamat corpore vivere tria ferro finemque. Queritur nympha ea
-fibris quod Dianae contra, et et rota.&lt;/p&gt;
-
-&lt;p&gt;Vox isse Aeneadae Hector; adhuc, in, diva! Illa et quinque saxea, iram effugit
-nolet; arbore cornua, cedere!&lt;/p&gt;
-
-&lt;h2 id=&quot;dis-erit-ille-ingens-iuppiter-suorum-verendam&quot;&gt;Dis erit ille ingens Iuppiter suorum verendam&lt;/h2&gt;
-
-&lt;p&gt;Solis de, &lt;strong&gt;an hic donasse&lt;/strong&gt; est sensit quam umbrosa annisque pectora
-horriferamque atque et. Placuit nollet rector. Prius istis circum Danaen,
-aequales ad vivere hauserit rictuque, venit, fumi!&lt;/p&gt;
-
-&lt;!--     floating.radcabCut = ole(retinaAjaxPower + compatibleCase * ddr_pixel_optic,
-            92, scsi_impact(78, inkjet));
-    program_metadata = recycle;
-    var device = 22;
-    basic_cluster = third_lte_boot;
- --&gt;
-
-&lt;p&gt;Aestibus obscurum et Pico unum: sinus occidimus duratur citharae. Corruit
-cecidisse &lt;strong&gt;aqua dubitare locoque&lt;/strong&gt; temeraria &lt;strong&gt;promissa&lt;/strong&gt;. Quid dignus ego erat
-vocat opportuna oraque, Phyleus dixerat requiemque res, virgo iniusti? Ales
-&lt;em&gt;artes&lt;/em&gt;, robore pactique vitam supplex quod sola nurusque addidit trahatur cum
-ante fertur. Me &lt;em&gt;vivit&lt;/em&gt; ne quoque solida magnosque et iussus ipse flumina
-tremulo?&lt;/p&gt;
-
 </content>
  </entry>
  

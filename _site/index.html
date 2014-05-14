@@ -137,132 +137,21 @@
     <article class="post">
       <header class = "post-header">
   
-  	<h2 class="post-title"><a href=/2014/2014-05-14-os+x+terminal/>8 Terminal Utilities Every OS X User Should Know</a></h2>
+  	<h2 class="post-title"><a href=/2014/os%20x%20terminal/>Eight Terminal Utilities Every OS X Command Line User Should Know</a></h2>
   
   
   <p class="controls">
-  <time class="controls post-date">May 13, 2014</time>
+  <time class="controls post-date">May 14, 2014</time>
   </p>
  <!---->
 </header> 
             <div class="post-content">
-<h2 id="open">1. <strong>open</strong></h2>
-
-<p><code>open</code> opens files, directories and applications. Exciting, right? But it really does come in handy as a <strong>command-line double-click.</strong> For instance, typing:</p>
-
-<pre><code>$ open /Applications/Safari.app/
-</code></pre>
-
-<p>…will launch Safari as if you had double-clicked its icon in the Finder.</p>
-
-<p>If you point <code>open</code> at a file instead, it will try to load the file with its associated GUI application. For instance, <code>open screenshot.png</code> on an image should open the image in Preview. You can use the flag <code>-a</code> to choose the application, or <code>-e</code> to open the file in TextEdit.</p>
-
-<p>Running <code>open</code> on a directory will take you straight to that directory in a Finder window. This is especially useful for bringing up the current directory, by typing <code>open .</code>.</p>
-
-<p>Remember that the integration between Finder and Terminal goes both ways – if you drag a file from Finder into a Terminal window, its full path gets pasted into the command line.</p>
-
-<h2 id="pbcopy-and-pbpaste">2. <strong>pbcopy</strong> and <strong>pbpaste</strong></h2>
-
-<p>These two commands let you copy and paste text from the command line. Of course, you could also just use your mouse — but the real power of <code>pbcopy</code> and <code>pbbpaste</code>comes from the fact that they’re UNIX commands, and that means they benefit from piping, redirection, and the ability to be in scripts in conjunction with other commands. Typing:</p>
-
-<pre><code>$ ls ~ | pbcopy
-</code></pre>
-
-<p>…will copy a list of files in your home directory to the OS X clipboard. You can easily capture the contents of a file:</p>
-
-<pre><code>$ cat blogpost.txt | pbcopy
-</code></pre>
-
-<p>Using <code>pbcopy</code> with pipes is a great way to capture the output of a command without having to scroll up and carefully select it. This makes it easy to share diagnostic information. <code>pbcopy</code> and <code>pbpaste</code> can also be used to automate or speed up certain kinds of tasks. For instance, if you want to save email subject lines to a task list, you could copy the subjects from Mail.app and run:</p>
-
-<p><code>$ pbpaste &gt;&gt; tasklist.txt</code></p>
-
-<h2 id="mdfind">3. <strong>mdfind</strong></h2>
-
-<p>Many a Linux power user has tried to use <code>locate</code> to search for files on a Mac and then quickly discovered that it didn’t work. There’s always the venerable UNIX <code>find</code> command, but OS X comes with its own killer search tool: Spotlight. So why not tap into its power from the command line?</p>
-
-<p>That’s exactly what <code>mdfind</code> does. Anything Spotlight can find, <code>mdfind</code> can find too. That includes the ability searching inside files and metadata.</p>
-
-<p><code>mdfind</code> comes with a few conveniences that make it stand out from big blue brother. For instance, the <code>-onlyin</code> flag can restrict the search to a single directory:</p>
-
-<pre><code>$ mdfind -onlyin ~/Documents essay
-</code></pre>
-
-<p>The <code>mdfind</code> database should stay up to date in the background, but you can also troubleshoot it (as well as Spotlight) using <code>mdutil</code>. If Spotlight isn’t working the way it should, <code>mdutil -E</code> will erase the index and rebuild it from scratch. You can also turn off indexing entirely with <code>mdutil -i off</code>.</p>
-
-<h2 id="screencapture">4. <strong>screencapture</strong></h2>
-
-<p>‘screencapture’ lets you take many different kinds of screenshots. It’s similar to <strong>Grab.app</strong> and the keyboard shortcuts <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>3</kbd> and <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>4</kbd>, except it’s far more flexible. Here are just a few different ways you can use <code>screencapture</code>:</p>
-
-<p>Capture the contents of the screen, including the cursor, and attach the image (named ‘image.png’ to a new Mail message:</p>
-
-<pre><code>$ screencapture -C -M image.png
-</code></pre>
-
-<p>Select a window using your mouse, then capture its contents without the drop shadow and copy the image to the clipboard:</p>
-
-<pre><code>$ screencapture -c W
-</code></pre>
-
-<p>Capture the screen after a delay of 10 seconds and then open the new image in Preview:</p>
-
-<pre><code>$ screencapture -T 10 -P image.png
-</code></pre>
-
-<p>Select a portion of the screen with your mouse, capture its contents, and save the image as a pdf:</p>
-
-<pre><code>$ screencapture -s -t pdf image.pdf
-</code></pre>
-
-<p>To see more options, type <code>screencapture --help</code> </p>
-
-<h2 id="launchctl">5. <strong>launchctl</strong></h2>
-
-<p><code>launchctl</code> lets you interact with the OS X init script system, <code>launchd</code>. Using launch agents and launch daemons, you can control the services that start up when you turn on your computer. You can even set up scripts to run periodically in the background.</p>
-
-<p>For example, if you’d like to have the Apache web server start up when you boot your Mac, simply type:</p>
-
-<pre><code>$ sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
-</code></pre>
-
-<p>Running <code>launchctl list</code> will show you what launch scripts are currently running. You can use <code>sudo launchctl unload -w [path/to/script]</code> to remove scripts from your boot sequence.</p>
-
-<p>Launch agents and dademons are stored in the folllowing locations:</p>
-
-<pre><code>~/Library/LaunchAgents         Per-user agents provided by the user.
-/Library/LaunchAgents          Per-user agents provided by the administrator.
-/Library/LaunchDaemons         System-wide daemons provided by the administrator.
-/System/Library/LaunchAgents   Per-user agents provided by OS X.
-/System/Library/LaunchDaemons  System-wide daemons provided by OS X.
-</code></pre>
-
-<p>(This information is from Paul Annesley’s <a href="http://paul.annesley.cc/2012/09/mac-os-x-launchd-is-cool/">blog post</a>, which also provides a great walkthrough of the contents of a launchd script.)</p>
-
-<p>If you’d like to learn how to write your own launch scripts, Apple provides some useful documentation on their <a href="https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html">Developer site</a>. You can also use the <a href="http://www.peterborgapps.com/lingon/">Lingon</a> app if you’d prefer to avoid the command line entirely.</p>
-
-<h2 id="say">6. <strong>say</strong></h2>
-
-<p>This is a fun one: <code>say</code> converts text to speech, using the same TTS engine OS X uses for <a href="http://www.apple.com/accessibility/osx/voiceover/">VoiceOver</a>. Without any options, <code>say</code> will simply speak whatever text you give it out loud:</p>
-
-<pre><code>$ say "Never trust a computer you can't lift."[^mac]
-</code></pre>
-
-<p>You can change the default voice (and language!) from the <strong>Dictation &amp; Speech</strong> panel in System Preferences.</p>
-
-<h2 id="brew">7. <strong>brew</strong></h2>
-
-<p>OK–this isn’t technically a native command. But no OS X power user should be without <a href="http://brew.sh">Homebrew</a>. The website calls it “The missing package manager for OS X,” and that couldn’t be truer. If you’ve ever used <code>apt-get</code> in Linux, you will feel right at home in Homebrew. <code>brew</code> gives you easy access to thousands of free apps and utilities from the open source community. </p>
-
-<p>For instance, <code>brew install imagemagick</code> will set you up with <a href="http://www.imagemagick.org">ImageMagick</a>, a powerful utility that makes it possible to do anything from whipping up animated gifs to converting images between dozens of different types. <code>brew install node</code> will get you <a href="http://nodejs.org">NodeJS</a>, the hot new tool for developing and running server-side JavaScript apps on your Mac.</p>
-
-<p>You can have fun with Homebrew too: <code>brew install archey</code> gives you <strong>Archey</strong>, a fun script for displaying your Mac’s specs next to a colourful Apple logo. The selection in Homebrew is huge—and because it’s so easy to create <a href="https://github.com/Homebrew/homebrew/wiki/Formula-Cookbook">formulas</a>, new packages are being added all the time.</p>
-
-<p>But the best part about Homebrew? It keeps all its files i a single directory: <code>/usr/local/</code>. That means you can install newer versions of system software, such as <code>python</code> and <code>mysql</code>, without interfering with the built-in equivalents. If you ever want to remove Homebrew, all you have to do is delete the contents of <code>/usr/local/</code>.</p>
+<p>The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If you’re migrating from Linux, you’ll find many familiar commands work the way you expect. But power users often aren’t aware that OS X comes with a number of its own text-absed utilites not found on any other operating system. Learning about these more esoteric programs can make you more productive on the command line and help you bridge the gap between UNIX and your Mac.</p>
 
 
 
 <div class="controls">
-<p><a class="readlink" href="/2014/2014-05-14-os+x+terminal/">Read more</a></p>
+<p><a class="readlink" href="/2014/os%20x%20terminal/">Read more</a></p>
 </div>
 </div>
 
@@ -272,7 +161,7 @@
 <p><em>Got feedback? <a href="http://twitter.com/mitchchn">@mitchchn</a></em></p>
 
  
-<a class="permalink" href=/2014/2014-05-14-os+x+terminal/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
+<a class="permalink" href=/2014/os%20x%20terminal/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
 </footer> -->
     </article>
     <hr>
@@ -280,66 +169,7 @@
     <article class="post">
       <header class = "post-header">
   
-  	  <h2 class="post-title link-post"><a href=http://jekyllrb.com>What's Jekyll?</a>
-      </h2>
-	
-  
-  <p class="controls">
-  <time class="controls post-date">May 13, 2014</time>
-  </p>
- <!--
-   <p class="category">
-  <span>Filed in: </span>
-  <a>
-  <i class="fa fa-tag text-icon"></i><span>code</span>
-  </a>
-  </p>
-  -->
-</header> 
-            <div class="post-content">
-<p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/jekyll/jekyll/blob/master/README.markdown">the project’s readme</a>:</p>
-
-<blockquote>
-  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
-</blockquote>
-
-<p>It’s an immensely useful tool. Find out more by <a href="https://github.com/jekyll/jekyll">visiting the project on GitHub</a>.</p>
-
-<p>Test<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>This is a footnote with &lt;hello&gt; multiple pieces of code in it &lt;really&gt; <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-
-<div class="controls">
-<p><a class="readlink" href="/2014/2014-04-25-whats-jekyll/">Read more</a></p>
-</div>
-</div>
-
-
-</div>
-<!-- <footer class = "controls">
-<p><em>Got feedback? <a href="http://twitter.com/mitchchn">@mitchchn</a></em></p>
-
- 
-  <a class="tag controls">
-  <i class="fa fa-tag text-icon"></i><span>code</span>
-  </a>
-  
-<a class="permalink" href=/2014/2014-04-25-whats-jekyll/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
-</footer> -->
-    </article>
-    <hr>
-
-    <article class="post">
-      <header class = "post-header">
-  
-  	<h2 class="post-title"><a href=/2014/2014-05-09-coding-for-jorunalists-p2/>Coding for Journalists, Part 2: HTML — Workflows, Nesting and Paragraphs</a></h2>
+  	<h2 class="post-title"><a href=/2014/coding-for-journalists-p2/>Coding for Journalists, Part 2: HTML — Workflows, Nesting and Paragraphs</a></h2>
   
   
   <p class="controls">
@@ -355,7 +185,7 @@
 
 
 <div class="controls">
-<p><a class="readlink" href="/2014/2014-05-09-coding-for-jorunalists-p2/">Read more</a></p>
+<p><a class="readlink" href="/2014/coding-for-journalists-p2/">Read more</a></p>
 </div>
 </div>
 
@@ -365,7 +195,41 @@
 <p><em>Got feedback? <a href="http://twitter.com/mitchchn">@mitchchn</a></em></p>
 
  
-<a class="permalink" href=/2014/2014-05-09-coding-for-jorunalists-p2/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
+<a class="permalink" href=/2014/coding-for-journalists-p2/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
+</footer> -->
+    </article>
+    <hr>
+
+    <article class="post">
+      <header class = "post-header">
+  
+  	<h2 class="post-title"><a href=/2014/coding-for-journalists-p1/>Coding for Journalists, Part 1: Text Editing and First Steps with HTML</a></h2>
+  
+  
+  <p class="controls">
+  <time class="controls post-date">May 06, 2014</time>
+  </p>
+ <!---->
+</header> 
+            <div class="post-content">
+<p>All code, no matter the language, is written in plain text. Plain text documents are those that don’t allow for any formatting, such as applying fonts, colours, and sizes. Documents that permit formatting are called rich text.</p>
+
+<p>Rich text is what you produce in Microsoft Word or the visual editor in your CMS. Another name for it is <abbr title="What You See is What You Get">WYSIWYG</abbr>. But plain text is the only format web browsers truly understand. To start writing HTML, you’ll need to to write plain text with a <strong>text editor.</strong></p>
+
+
+
+<div class="controls">
+<p><a class="readlink" href="/2014/coding-for-journalists-p1/">Read more</a></p>
+</div>
+</div>
+
+
+</div>
+<!-- <footer class = "controls">
+<p><em>Got feedback? <a href="http://twitter.com/mitchchn">@mitchchn</a></em></p>
+
+ 
+<a class="permalink" href=/2014/coding-for-journalists-p1/><i class="fa fa-chain text-icon"></i>[PERMALINK]</a>
 </footer> -->
     </article>
     <hr>
@@ -377,15 +241,13 @@
   <h4 class="section-title">Recent posts</h4>
    <ul class="post-list">
   
-      <li class="recent-post"><time>13 May</time><a href="/2014/2014-05-14-os+x+terminal/">8 Terminal Utilities Every OS X User Should Know</a></li>
-  
-      <li class="recent-post"><time>13 May</time><a href="/2014/2014-04-25-whats-jekyll/">What's Jekyll?</a></li>
-  
-      <li class="recent-post"><time>13 May</time><a href="/2014/2014-05-09-coding-for-jorunalists-p2/">Coding for Journalists, Part 2: HTML — Workflows, Nesting and Paragraphs</a></li>
+      <li class="recent-post"><time>14 May</time><a href="/2014/os%20x%20terminal/">Eight Terminal Utilities Every OS X Command Line User Should Know</a></li>
   
       <li class="recent-post"><time>13 May</time><a href="/2014/coding-for-journalists-p2/">Coding for Journalists, Part 2: HTML — Workflows, Nesting and Paragraphs</a></li>
   
       <li class="recent-post"><time>06 May</time><a href="/2014/coding-for-journalists-p1/">Coding for Journalists, Part 1: Text Editing and First Steps with HTML</a></li>
+  
+      <li class="recent-post"><time>03 May</time><a href="/2014/coding-for-journalists-p0/">Coding for Journalists, Part 0: Why Code?</a></li>
   
   </ul>
 </section>
