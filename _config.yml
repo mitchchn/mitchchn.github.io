@@ -31,3 +31,9 @@ github:
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
+
+# RSS
+
+name: mitchchn.me
+description: "Coffee, Code, Language and Giant Spiders - By Mitchell Cohen"
+url: http://mitchchn.me
