@@ -44,7 +44,7 @@ Using `pbcopy` with pipes is a great way to capture the output of a command with
 
 Many a Linux power user has tried to use `locate` to search for files on a Mac and then quickly discovered that it didn't work. There's always the venerable UNIX `find` command, but OS X comes with its own killer search tool: Spotlight. So why not tap into its power from the command line?
 
-That's exactly what `mdfind` does. Anything Spotlight can find, `mdfind` can find too. That includes the ability searching inside files and metadata.
+That's exactly what `mdfind` does. Anything Spotlight can find, `mdfind` can find too. That includes the ability to search inside files and metadata.
 
 `mdfind` comes with a few conveniences that make it stand out from big blue brother. For instance, the `-onlyin` flag can restrict the search to a single directory:
 

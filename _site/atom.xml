@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-14T18:10:49-04:00</updated>
+ <updated>2014-05-14T18:11:36-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -57,7 +57,7 @@
 
 &lt;p&gt;Many a Linux power user has tried to use &lt;code&gt;locate&lt;/code&gt; to search for files on a Mac and then quickly discovered that it didn’t work. There’s always the venerable UNIX &lt;code&gt;find&lt;/code&gt; command, but OS X comes with its own killer search tool: Spotlight. So why not tap into its power from the command line?&lt;/p&gt;
 
-&lt;p&gt;That’s exactly what &lt;code&gt;mdfind&lt;/code&gt; does. Anything Spotlight can find, &lt;code&gt;mdfind&lt;/code&gt; can find too. That includes the ability searching inside files and metadata.&lt;/p&gt;
+&lt;p&gt;That’s exactly what &lt;code&gt;mdfind&lt;/code&gt; does. Anything Spotlight can find, &lt;code&gt;mdfind&lt;/code&gt; can find too. That includes the ability to search inside files and metadata.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;mdfind&lt;/code&gt; comes with a few conveniences that make it stand out from big blue brother. For instance, the &lt;code&gt;-onlyin&lt;/code&gt; flag can restrict the search to a single directory:&lt;/p&gt;
 
