@@ -46,7 +46,7 @@ Many a Linux power user has tried to use `locate` to search for files on a Mac a
 
 That's exactly what `mdfind` does. Anything Spotlight can find, `mdfind` can find too. That includes the ability to search inside files and metadata.
 
-`mdfind` comes with a few conveniences that make it stand out from big blue brother. For instance, the `-onlyin` flag can restrict the search to a single directory:
+`mdfind` comes with a few conveniences that make it stand out from its big blue brother. For instance, the `-onlyin` flag can restrict the search to a single directory:
 
     $ mdfind -onlyin ~/Documents essay
 
@@ -54,13 +54,13 @@ The `mdfind` database should stay up to date in the background, but you can also
 
 ## 4. **screencapture**
 
-'screencapture' lets you take many different kinds of screenshots. It's similar to **Grab.app** and the keyboard shortcuts <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>3</kbd> and <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>4</kbd>, except it's far more flexible. Here are just a few different ways you can use `screencapture`:
+`screencapture` lets you take many different kinds of screenshots. It's similar to **Grab.app** and the keyboard shortcuts <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>3</kbd> and <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>4</kbd>, except it's far more flexible. Here are just a few different ways you can use `screencapture`:
 
-Capture the contents of the screen, including the cursor, and attach the image (named 'image.png' to a new Mail message:
+Capture the contents of the screen, including the cursor, and attach the resulting image (named 'image.png') to a new Mail message:
 
     $ screencapture -C -M image.png
 
-Select a window using your mouse, then capture its contents without the drop shadow and copy the image to the clipboard:
+Select a window using your mouse, then capture its contents without the window's drop shadow and copy the image to the clipboard:
 
     $ screencapture -c W
 
@@ -77,13 +77,13 @@ To see more options, type `screencapture --help`
 
 ## 5. **launchctl**
 
-`launchctl` lets you interact with the OS X init script system, `launchd`. By With launch daemons and launch agents, you can control the services that start up when you boot your computer. You can even set up scripts to run periodically or at timed intervals in the background.
+`launchctl` lets you interact with the OS X init script system, `launchd`. With launch daemons and launch agents, you can control the services that start up when you boot your computer. You can even set up scripts to run periodically or at timed intervals in the background, similar to cron jobs on Linux.
 
 For example, if you'd like to have the Apache web server start automatically when you turn on your Mac, simply type:
 
     $ sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
 
-Running `launchctl list` will show you what launch scripts that are currently running. You can use `sudo launchctl unload -w [path/to/script]` to remove scripts from your boot sequence. I like to remove the auto-update "helpers" created by Adobe apps and Microsoft Office.
+Running `launchctl list` will show you what launch scripts are currently loaded. `sudo launchctl unload [path/to/script]` will stop and unload running scripts, and adding the `-w` flag will remove those scripts permanently from your boot sequence. I like to run this one on all the auto-update "helpers" created by Adobe apps and Microsoft Office.
 
 Launchd scripts are stored in the folllowing locations:
 
@@ -106,7 +106,7 @@ You can also use `say` to speak the contents of a text file with the `-f` flag, 
 
     $ say -f mynovel.txt -o myaudiobook.aiff
 
-The `say` command can be useful in place of console logging or alert sounds in scripts. For instance, you can set up an Automator or [Hazel](http://www.noodlesoft.com/hazel.php) script to do batch file processing and then announce the completion with `say`.
+The `say` command can be useful in place of console logging or alert sounds in scripts. For instance, you can set up an Automator or [Hazel](http://www.noodlesoft.com/hazel.php) script to do batch file processing and then announce the task's completion with `say`.
 
 But the most enjoyable use for `say` is rather more sinister: if you have `ssh` access to a friend or coworker's Mac, you can silently log into their machine and haunt them through the command line. Give 'em a Siri-ous surprise.
 

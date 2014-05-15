@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-14T21:32:20-04:00</updated>
+ <updated>2014-05-14T21:32:32-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -59,7 +59,7 @@
 
 &lt;p&gt;That’s exactly what &lt;code&gt;mdfind&lt;/code&gt; does. Anything Spotlight can find, &lt;code&gt;mdfind&lt;/code&gt; can find too. That includes the ability to search inside files and metadata.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;mdfind&lt;/code&gt; comes with a few conveniences that make it stand out from big blue brother. For instance, the &lt;code&gt;-onlyin&lt;/code&gt; flag can restrict the search to a single directory:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mdfind&lt;/code&gt; comes with a few conveniences that make it stand out from its big blue brother. For instance, the &lt;code&gt;-onlyin&lt;/code&gt; flag can restrict the search to a single directory:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ mdfind -onlyin ~/Documents essay
 &lt;/code&gt;&lt;/pre&gt;
@@ -68,14 +68,14 @@
 
 &lt;h2 id=&quot;screencapture&quot;&gt;4. &lt;strong&gt;screencapture&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;‘screencapture’ lets you take many different kinds of screenshots. It’s similar to &lt;strong&gt;Grab.app&lt;/strong&gt; and the keyboard shortcuts &lt;kbd&gt;cmd&lt;/kbd&gt; + &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;3&lt;/kbd&gt; and &lt;kbd&gt;cmd&lt;/kbd&gt; + &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;4&lt;/kbd&gt;, except it’s far more flexible. Here are just a few different ways you can use &lt;code&gt;screencapture&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;screencapture&lt;/code&gt; lets you take many different kinds of screenshots. It’s similar to &lt;strong&gt;Grab.app&lt;/strong&gt; and the keyboard shortcuts &lt;kbd&gt;cmd&lt;/kbd&gt; + &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;3&lt;/kbd&gt; and &lt;kbd&gt;cmd&lt;/kbd&gt; + &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;4&lt;/kbd&gt;, except it’s far more flexible. Here are just a few different ways you can use &lt;code&gt;screencapture&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;Capture the contents of the screen, including the cursor, and attach the image (named ‘image.png’ to a new Mail message:&lt;/p&gt;
+&lt;p&gt;Capture the contents of the screen, including the cursor, and attach the resulting image (named ‘image.png’) to a new Mail message:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ screencapture -C -M image.png
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Select a window using your mouse, then capture its contents without the drop shadow and copy the image to the clipboard:&lt;/p&gt;
+&lt;p&gt;Select a window using your mouse, then capture its contents without the window’s drop shadow and copy the image to the clipboard:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ screencapture -c W
 &lt;/code&gt;&lt;/pre&gt;
@@ -94,14 +94,14 @@
 
 &lt;h2 id=&quot;launchctl&quot;&gt;5. &lt;strong&gt;launchctl&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;code&gt;launchctl&lt;/code&gt; lets you interact with the OS X init script system, &lt;code&gt;launchd&lt;/code&gt;. By With launch daemons and launch agents, you can control the services that start up when you boot your computer. You can even set up scripts to run periodically or at timed intervals in the background.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;launchctl&lt;/code&gt; lets you interact with the OS X init script system, &lt;code&gt;launchd&lt;/code&gt;. With launch daemons and launch agents, you can control the services that start up when you boot your computer. You can even set up scripts to run periodically or at timed intervals in the background, similar to cron jobs on Linux.&lt;/p&gt;
 
 &lt;p&gt;For example, if you’d like to have the Apache web server start automatically when you turn on your Mac, simply type:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Running &lt;code&gt;launchctl list&lt;/code&gt; will show you what launch scripts that are currently running. You can use &lt;code&gt;sudo launchctl unload -w [path/to/script]&lt;/code&gt; to remove scripts from your boot sequence. I like to remove the auto-update “helpers” created by Adobe apps and Microsoft Office.&lt;/p&gt;
+&lt;p&gt;Running &lt;code&gt;launchctl list&lt;/code&gt; will show you what launch scripts are currently loaded. &lt;code&gt;sudo launchctl unload [path/to/script]&lt;/code&gt; will stop and unload running scripts, and adding the &lt;code&gt;-w&lt;/code&gt; flag will remove those scripts permanently from your boot sequence. I like to run this one on all the auto-update “helpers” created by Adobe apps and Microsoft Office.&lt;/p&gt;
 
 &lt;p&gt;Launchd scripts are stored in the folllowing locations:&lt;/p&gt;
 
@@ -126,7 +126,7 @@
 &lt;pre&gt;&lt;code&gt;$ say -f mynovel.txt -o myaudiobook.aiff
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The &lt;code&gt;say&lt;/code&gt; command can be useful in place of console logging or alert sounds in scripts. For instance, you can set up an Automator or &lt;a href=&quot;http://www.noodlesoft.com/hazel.php&quot;&gt;Hazel&lt;/a&gt; script to do batch file processing and then announce the completion with &lt;code&gt;say&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;say&lt;/code&gt; command can be useful in place of console logging or alert sounds in scripts. For instance, you can set up an Automator or &lt;a href=&quot;http://www.noodlesoft.com/hazel.php&quot;&gt;Hazel&lt;/a&gt; script to do batch file processing and then announce the task’s completion with &lt;code&gt;say&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;But the most enjoyable use for &lt;code&gt;say&lt;/code&gt; is rather more sinister: if you have &lt;code&gt;ssh&lt;/code&gt; access to a friend or coworker’s Mac, you can silently log into their machine and haunt them through the command line. Give ‘em a Siri-ous surprise.&lt;/p&gt;
 

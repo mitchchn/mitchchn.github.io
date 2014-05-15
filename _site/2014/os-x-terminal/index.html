@@ -193,7 +193,7 @@
 
 <p>That’s exactly what <code>mdfind</code> does. Anything Spotlight can find, <code>mdfind</code> can find too. That includes the ability to search inside files and metadata.</p>
 
-<p><code>mdfind</code> comes with a few conveniences that make it stand out from big blue brother. For instance, the <code>-onlyin</code> flag can restrict the search to a single directory:</p>
+<p><code>mdfind</code> comes with a few conveniences that make it stand out from its big blue brother. For instance, the <code>-onlyin</code> flag can restrict the search to a single directory:</p>
 
 <pre><code>$ mdfind -onlyin ~/Documents essay
 </code></pre>
@@ -202,14 +202,14 @@
 
 <h2 id="screencapture">4. <strong>screencapture</strong></h2>
 
-<p>‘screencapture’ lets you take many different kinds of screenshots. It’s similar to <strong>Grab.app</strong> and the keyboard shortcuts <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>3</kbd> and <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>4</kbd>, except it’s far more flexible. Here are just a few different ways you can use <code>screencapture</code>:</p>
+<p><code>screencapture</code> lets you take many different kinds of screenshots. It’s similar to <strong>Grab.app</strong> and the keyboard shortcuts <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>3</kbd> and <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>4</kbd>, except it’s far more flexible. Here are just a few different ways you can use <code>screencapture</code>:</p>
 
-<p>Capture the contents of the screen, including the cursor, and attach the image (named ‘image.png’ to a new Mail message:</p>
+<p>Capture the contents of the screen, including the cursor, and attach the resulting image (named ‘image.png’) to a new Mail message:</p>
 
 <pre><code>$ screencapture -C -M image.png
 </code></pre>
 
-<p>Select a window using your mouse, then capture its contents without the drop shadow and copy the image to the clipboard:</p>
+<p>Select a window using your mouse, then capture its contents without the window’s drop shadow and copy the image to the clipboard:</p>
 
 <pre><code>$ screencapture -c W
 </code></pre>
@@ -228,14 +228,14 @@
 
 <h2 id="launchctl">5. <strong>launchctl</strong></h2>
 
-<p><code>launchctl</code> lets you interact with the OS X init script system, <code>launchd</code>. By With launch daemons and launch agents, you can control the services that start up when you boot your computer. You can even set up scripts to run periodically or at timed intervals in the background.</p>
+<p><code>launchctl</code> lets you interact with the OS X init script system, <code>launchd</code>. With launch daemons and launch agents, you can control the services that start up when you boot your computer. You can even set up scripts to run periodically or at timed intervals in the background, similar to cron jobs on Linux.</p>
 
 <p>For example, if you’d like to have the Apache web server start automatically when you turn on your Mac, simply type:</p>
 
 <pre><code>$ sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
 </code></pre>
 
-<p>Running <code>launchctl list</code> will show you what launch scripts that are currently running. You can use <code>sudo launchctl unload -w [path/to/script]</code> to remove scripts from your boot sequence. I like to remove the auto-update “helpers” created by Adobe apps and Microsoft Office.</p>
+<p>Running <code>launchctl list</code> will show you what launch scripts are currently loaded. <code>sudo launchctl unload [path/to/script]</code> will stop and unload running scripts, and adding the <code>-w</code> flag will remove those scripts permanently from your boot sequence. I like to run this one on all the auto-update “helpers” created by Adobe apps and Microsoft Office.</p>
 
 <p>Launchd scripts are stored in the folllowing locations:</p>
 
@@ -260,7 +260,7 @@
 <pre><code>$ say -f mynovel.txt -o myaudiobook.aiff
 </code></pre>
 
-<p>The <code>say</code> command can be useful in place of console logging or alert sounds in scripts. For instance, you can set up an Automator or <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> script to do batch file processing and then announce the completion with <code>say</code>.</p>
+<p>The <code>say</code> command can be useful in place of console logging or alert sounds in scripts. For instance, you can set up an Automator or <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> script to do batch file processing and then announce the task’s completion with <code>say</code>.</p>
 
 <p>But the most enjoyable use for <code>say</code> is rather more sinister: if you have <code>ssh</code> access to a friend or coworker’s Mac, you can silently log into their machine and haunt them through the command line. Give ‘em a Siri-ous surprise.</p>
 
