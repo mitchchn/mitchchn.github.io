@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-15T03:06:12-04:00</updated>
+ <updated>2014-05-15T04:18:08-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -137,7 +137,7 @@
 
 &lt;p&gt;You can set the voice (and language!) used by &lt;code&gt;say&lt;/code&gt; by changing the default setting in the &lt;strong&gt;Dictation &amp;amp; Speech&lt;/strong&gt; panel in System Preferences.&lt;/p&gt;
 
-&lt;h2 id=&quot;disktuil&quot;&gt;7. &lt;strong&gt;disktuil&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;diskutil&quot;&gt;7. &lt;strong&gt;diskutil&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;diskutil&lt;/code&gt; is a command line interface to the &lt;strong&gt;Disk Utility&lt;/strong&gt; app that comes with OS X. It can do everything its graphical cousin can, but it also has some extra capabilities—such as filling a disk with zeroes or random data. Simply type &lt;code&gt;diskutil list&lt;/code&gt; to see the path names of disks and removable media attached to your machine, and then point the command at the volume you want to operate on. Be careful: &lt;code&gt;diskutil&lt;/code&gt; can permanently destroy data if it’s used incorrectly.&lt;/p&gt;
 

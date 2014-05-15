@@ -120,7 +120,7 @@ You can set the voice (and language!) used by `say` by changing the default sett
 
 [^mac]: https://www.youtube.com/watch?v=G0FtgZNOD44
 
-## 7. **disktuil**
+## 7. **diskutil**
 
 `diskutil` is a command line interface to the **Disk Utility** app that comes with OS X. It can do everything its graphical cousin can, but it also has some extra capabilities---such as filling a disk with zeroes or random data. Simply type `diskutil list` to see the path names of disks and removable media attached to your machine, and then point the command at the volume you want to operate on. Be careful: `diskutil` can permanently destroy data if it's used incorrectly.
 
