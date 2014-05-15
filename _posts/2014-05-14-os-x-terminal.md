@@ -132,13 +132,6 @@ You can have fun with Homebrew too: `brew install archey` will get you **Archey*
     <figcaption><span class="elegant">Archey&mdash;</span>My command line brings all the boys to the yard.</figcaption>
 </figure>
 
-Like any great Mac app, Homebrew uses emoji:
-
-
-
-
-
-
 But the best part about Homebrew? It keeps all its files in a single directory: `/usr/local/`. That means you can install newer versions of system software, such as `python` and `mysql`, without interfering with the built-in equivalents. If you ever want to remove Homebrew, all you have to do is delete the contents of `/usr/local/`.
 
 [^compiling]: In truth, Homebrew is more similar to FreeBSD's Ports system than Linux's apt. It uses a hybrid source/binary system: if no binary is available for a particular package it will simply download the source tarball and compile it---not a problem on today's multicore Macs.
