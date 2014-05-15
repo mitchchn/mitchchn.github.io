@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-14T21:32:32-04:00</updated>
+ <updated>2014-05-14T22:43:36-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -30,7 +30,7 @@
 
 &lt;p&gt;…will launch Safari as if you had double-clicked its icon in the Finder.&lt;sup id=&quot;fnref:bundles&quot;&gt;&lt;a href=&quot;#fn:bundles&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;If you point &lt;code&gt;open&lt;/code&gt; at a file instead, it will try to load the file with its associated GUI application. For instance, &lt;code&gt;open screenshot.png&lt;/code&gt; on an image should open the image in Preview. You can use the flag &lt;code&gt;-a&lt;/code&gt; to choose the application, or &lt;code&gt;-e&lt;/code&gt; to open the file in TextEdit.&lt;/p&gt;
+&lt;p&gt;If you point &lt;code&gt;open&lt;/code&gt; at a file instead, it will try to load the file with its associated GUI application. &lt;code&gt;open screenshot.png&lt;/code&gt; on an image will open that image in Preview. You can set the &lt;code&gt;-a&lt;/code&gt; flag to choose the app yourself, or &lt;code&gt;-e&lt;/code&gt; to open the file for editing in TextEdit.&lt;/p&gt;
 
 &lt;p&gt;Running &lt;code&gt;open&lt;/code&gt; on a directory will take you straight to that directory in a Finder window. This is especially useful for bringing up the current directory by typing &lt;code&gt;open .&lt;/code&gt;&lt;/p&gt;
 
@@ -134,20 +134,22 @@
 
 &lt;h2 id=&quot;disktuil&quot;&gt;7. &lt;strong&gt;disktuil&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;code&gt;diskutil&lt;/code&gt; is a command line interface to the &lt;strong&gt;Disk Utility&lt;/strong&gt; that comes with OS X. It can do everything its graphical cousin can, but it also has some additional capabilities—such as filling a disk with zeroes or random data. Simply type &lt;code&gt;diskutil list&lt;/code&gt; to see the path names of disks and removable media attached to your machine, and then point the command at the volume you want to operate on. Be careful: &lt;code&gt;diskutil&lt;/code&gt; can permanently destroy data if it’s used incorrectly.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;diskutil&lt;/code&gt; is a command line interface to the &lt;strong&gt;Disk Utility&lt;/strong&gt; app that comes with OS X. It can do everything its graphical cousin can, but it also has some extra capabilities—such as filling a disk with zeroes or random data. Simply type &lt;code&gt;diskutil list&lt;/code&gt; to see the path names of disks and removable media attached to your machine, and then point the command at the volume you want to operate on. Be careful: &lt;code&gt;diskutil&lt;/code&gt; can permanently destroy data if it’s used incorrectly.&lt;/p&gt;
 
 &lt;h2 id=&quot;brew&quot;&gt;8. &lt;strong&gt;brew&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;Alright–this isn’t technically a native command. But no OS X power user should be without &lt;a href=&quot;http://brew.sh&quot;&gt;Homebrew&lt;/a&gt;. The website calls it “The missing package manager for OS X,” and that couldn’t be truer. If you’ve ever used &lt;code&gt;apt-get&lt;/code&gt; in Linux, you will feel right at home in Homebrew. &lt;code&gt;brew&lt;/code&gt; gives you easy access to thousands of free apps and utilities from the open source community. &lt;/p&gt;
+&lt;p&gt;Alright–this isn’t technically a native command. But no OS X power user should be without &lt;a href=&quot;http://brew.sh&quot;&gt;Homebrew&lt;/a&gt;. The website calls it “The missing package manager for OS X,” and that couldn’t be truer. If you’ve ever used &lt;code&gt;apt-get&lt;/code&gt; in Linux, you will feel right at home in Homebrew.&lt;sup id=&quot;fnref:compiling&quot;&gt;&lt;a href=&quot;#fn:compiling&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;For instance, &lt;code&gt;brew install imagemagick&lt;/code&gt; will set you up with &lt;a href=&quot;http://www.imagemagick.org&quot;&gt;ImageMagick&lt;/a&gt;, a powerful utility that makes it possible to do anything from whipping up animated gifs to converting images between dozens of different types. &lt;code&gt;brew install node&lt;/code&gt; will get you &lt;a href=&quot;http://nodejs.org&quot;&gt;NodeJS&lt;/a&gt;, the hot new tool for developing and running server-side JavaScript apps on your Mac.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;brew&lt;/code&gt; gives you easy access to thousands of free utilities and libraries from the open source community. For instance, &lt;code&gt;brew install imagemagick&lt;/code&gt; will set you up with &lt;a href=&quot;http://www.imagemagick.org&quot;&gt;ImageMagick&lt;/a&gt;, a powerful utility that makes it possible to do anything from whipping up animated gifs to converting images between dozens of different types. &lt;code&gt;brew install node&lt;/code&gt; will introduce you to &lt;a href=&quot;http://nodejs.org&quot;&gt;NodeJS&lt;/a&gt;, the hot new tool for developing and running server-side JavaScript apps.&lt;/p&gt;
 
-&lt;p&gt;You can have fun with Homebrew too: &lt;code&gt;brew install archey&lt;/code&gt; will get you &lt;strong&gt;Archey&lt;/strong&gt;, a fun script for displaying your Mac’s specs next to a colourful Apple logo. The selection in Homebrew is huge—and because it’s so easy to create &lt;a href=&quot;https://github.com/Homebrew/homebrew/wiki/Formula-Cookbook&quot;&gt;formulas&lt;/a&gt;, new packages are being added all the time.&lt;/p&gt;
+&lt;p&gt;You can have fun with Homebrew too: &lt;code&gt;brew install archey&lt;/code&gt; will get you &lt;strong&gt;Archey&lt;/strong&gt;, a cool little script for displaying your Mac’s specs next to a colourful Apple logo. The selection in Homebrew is huge—and because it’s so easy to create &lt;a href=&quot;https://github.com/Homebrew/homebrew/wiki/Formula-Cookbook&quot;&gt;formulas&lt;/a&gt;, new packages are being added all the time.&lt;/p&gt;
 
 &lt;figure&gt;
     &lt;img src=&quot;/public/img/archey.png&quot; /&gt;
     &lt;figcaption&gt;&lt;span class=&quot;elegant&quot;&gt;Archey&amp;mdash;&lt;/span&gt;My command line brings all the boys to the yard.&lt;/figcaption&gt;
 &lt;/figure&gt;
+
+&lt;p&gt;Like any great Mac app, Homebrew uses emoji:&lt;/p&gt;
 
 &lt;p&gt;But the best part about Homebrew? It keeps all its files in a single directory: &lt;code&gt;/usr/local/&lt;/code&gt;. That means you can install newer versions of system software, such as &lt;code&gt;python&lt;/code&gt; and &lt;code&gt;mysql&lt;/code&gt;, without interfering with the built-in equivalents. If you ever want to remove Homebrew, all you have to do is delete the contents of &lt;code&gt;/usr/local/&lt;/code&gt;.&lt;/p&gt;
 
@@ -159,6 +161,9 @@
     &lt;/li&gt;
     &lt;li id=&quot;fn:mac&quot;&gt;
       &lt;p&gt;https://www.youtube.com/watch?v=G0FtgZNOD44 &lt;a href=&quot;#fnref:mac&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:compiling&quot;&gt;
+      &lt;p&gt;In truth, Homebrew is more similar to FreeBSD’s Ports system than Linux’s apt. It uses a hybrid source/binary system: if no binary is available for a particular package it will simply download the source tarball and compile it—not a problem on today’s multicore Macs. &lt;a href=&quot;#fnref:compiling&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;

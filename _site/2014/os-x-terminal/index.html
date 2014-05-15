@@ -164,7 +164,7 @@
 
 <p>…will launch Safari as if you had double-clicked its icon in the Finder.<sup id="fnref:bundles"><a href="#fn:bundles" class="footnote">1</a></sup></p>
 
-<p>If you point <code>open</code> at a file instead, it will try to load the file with its associated GUI application. For instance, <code>open screenshot.png</code> on an image should open the image in Preview. You can use the flag <code>-a</code> to choose the application, or <code>-e</code> to open the file in TextEdit.</p>
+<p>If you point <code>open</code> at a file instead, it will try to load the file with its associated GUI application. <code>open screenshot.png</code> on an image will open that image in Preview. You can set the <code>-a</code> flag to choose the app yourself, or <code>-e</code> to open the file for editing in TextEdit.</p>
 
 <p>Running <code>open</code> on a directory will take you straight to that directory in a Finder window. This is especially useful for bringing up the current directory by typing <code>open .</code></p>
 
@@ -268,20 +268,22 @@
 
 <h2 id="disktuil">7. <strong>disktuil</strong></h2>
 
-<p><code>diskutil</code> is a command line interface to the <strong>Disk Utility</strong> that comes with OS X. It can do everything its graphical cousin can, but it also has some additional capabilities—such as filling a disk with zeroes or random data. Simply type <code>diskutil list</code> to see the path names of disks and removable media attached to your machine, and then point the command at the volume you want to operate on. Be careful: <code>diskutil</code> can permanently destroy data if it’s used incorrectly.</p>
+<p><code>diskutil</code> is a command line interface to the <strong>Disk Utility</strong> app that comes with OS X. It can do everything its graphical cousin can, but it also has some extra capabilities—such as filling a disk with zeroes or random data. Simply type <code>diskutil list</code> to see the path names of disks and removable media attached to your machine, and then point the command at the volume you want to operate on. Be careful: <code>diskutil</code> can permanently destroy data if it’s used incorrectly.</p>
 
 <h2 id="brew">8. <strong>brew</strong></h2>
 
-<p>Alright–this isn’t technically a native command. But no OS X power user should be without <a href="http://brew.sh">Homebrew</a>. The website calls it “The missing package manager for OS X,” and that couldn’t be truer. If you’ve ever used <code>apt-get</code> in Linux, you will feel right at home in Homebrew. <code>brew</code> gives you easy access to thousands of free apps and utilities from the open source community. </p>
+<p>Alright–this isn’t technically a native command. But no OS X power user should be without <a href="http://brew.sh">Homebrew</a>. The website calls it “The missing package manager for OS X,” and that couldn’t be truer. If you’ve ever used <code>apt-get</code> in Linux, you will feel right at home in Homebrew.<sup id="fnref:compiling"><a href="#fn:compiling" class="footnote">3</a></sup></p>
 
-<p>For instance, <code>brew install imagemagick</code> will set you up with <a href="http://www.imagemagick.org">ImageMagick</a>, a powerful utility that makes it possible to do anything from whipping up animated gifs to converting images between dozens of different types. <code>brew install node</code> will get you <a href="http://nodejs.org">NodeJS</a>, the hot new tool for developing and running server-side JavaScript apps on your Mac.</p>
+<p><code>brew</code> gives you easy access to thousands of free utilities and libraries from the open source community. For instance, <code>brew install imagemagick</code> will set you up with <a href="http://www.imagemagick.org">ImageMagick</a>, a powerful utility that makes it possible to do anything from whipping up animated gifs to converting images between dozens of different types. <code>brew install node</code> will introduce you to <a href="http://nodejs.org">NodeJS</a>, the hot new tool for developing and running server-side JavaScript apps.</p>
 
-<p>You can have fun with Homebrew too: <code>brew install archey</code> will get you <strong>Archey</strong>, a fun script for displaying your Mac’s specs next to a colourful Apple logo. The selection in Homebrew is huge—and because it’s so easy to create <a href="https://github.com/Homebrew/homebrew/wiki/Formula-Cookbook">formulas</a>, new packages are being added all the time.</p>
+<p>You can have fun with Homebrew too: <code>brew install archey</code> will get you <strong>Archey</strong>, a cool little script for displaying your Mac’s specs next to a colourful Apple logo. The selection in Homebrew is huge—and because it’s so easy to create <a href="https://github.com/Homebrew/homebrew/wiki/Formula-Cookbook">formulas</a>, new packages are being added all the time.</p>
 
 <figure>
     <img src="/public/img/archey.png" />
     <figcaption><span class="elegant">Archey&mdash;</span>My command line brings all the boys to the yard.</figcaption>
 </figure>
+
+<p>Like any great Mac app, Homebrew uses emoji:</p>
 
 <p>But the best part about Homebrew? It keeps all its files in a single directory: <code>/usr/local/</code>. That means you can install newer versions of system software, such as <code>python</code> and <code>mysql</code>, without interfering with the built-in equivalents. If you ever want to remove Homebrew, all you have to do is delete the contents of <code>/usr/local/</code>.</p>
 
@@ -293,6 +295,9 @@
     </li>
     <li id="fn:mac">
       <p>https://www.youtube.com/watch?v=G0FtgZNOD44 <a href="#fnref:mac" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:compiling">
+      <p>In truth, Homebrew is more similar to FreeBSD’s Ports system than Linux’s apt. It uses a hybrid source/binary system: if no binary is available for a particular package it will simply download the source tarball and compile it—not a problem on today’s multicore Macs. <a href="#fnref:compiling" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

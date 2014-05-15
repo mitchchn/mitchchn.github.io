@@ -16,7 +16,7 @@ The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If yo
 
 ...will launch Safari as if you had double-clicked its icon in the Finder.[^bundles]
 
-If you point `open` at a file instead, it will try to load the file with its associated GUI application. For instance, `open screenshot.png` on an image should open the image in Preview. You can use the flag `-a` to choose the application, or `-e` to open the file in TextEdit.
+If you point `open` at a file instead, it will try to load the file with its associated GUI application. `open screenshot.png` on an image will open that image in Preview. You can set the `-a` flag to choose the app yourself, or `-e` to open the file for editing in TextEdit.
 
 Running `open` on a directory will take you straight to that directory in a Finder window. This is especially useful for bringing up the current directory by typing `open .`
 
@@ -117,22 +117,30 @@ You can set the voice (and language!) used by `say` by changing the default sett
 
 ## 7. **disktuil**
 
-`diskutil` is a command line interface to the **Disk Utility** that comes with OS X. It can do everything its graphical cousin can, but it also has some additional capabilities---such as filling a disk with zeroes or random data. Simply type `diskutil list` to see the path names of disks and removable media attached to your machine, and then point the command at the volume you want to operate on. Be careful: `diskutil` can permanently destroy data if it's used incorrectly.
+`diskutil` is a command line interface to the **Disk Utility** app that comes with OS X. It can do everything its graphical cousin can, but it also has some extra capabilities---such as filling a disk with zeroes or random data. Simply type `diskutil list` to see the path names of disks and removable media attached to your machine, and then point the command at the volume you want to operate on. Be careful: `diskutil` can permanently destroy data if it's used incorrectly.
 
 ## 8. **brew**
 
-Alright--this isn't technically a native command. But no OS X power user should be without [Homebrew](http://brew.sh). The website calls it "The missing package manager for OS X," and that couldn't be truer. If you've ever used `apt-get` in Linux, you will feel right at home in Homebrew. `brew` gives you easy access to thousands of free apps and utilities from the open source community. 
+Alright--this isn't technically a native command. But no OS X power user should be without [Homebrew](http://brew.sh). The website calls it "The missing package manager for OS X," and that couldn't be truer. If you've ever used `apt-get` in Linux, you will feel right at home in Homebrew.[^compiling]
 
-For instance, `brew install imagemagick` will set you up with [ImageMagick](http://www.imagemagick.org), a powerful utility that makes it possible to do anything from whipping up animated gifs to converting images between dozens of different types. `brew install node` will get you [NodeJS](http://nodejs.org), the hot new tool for developing and running server-side JavaScript apps on your Mac.
+`brew` gives you easy access to thousands of free utilities and libraries from the open source community. For instance, `brew install imagemagick` will set you up with [ImageMagick](http://www.imagemagick.org), a powerful utility that makes it possible to do anything from whipping up animated gifs to converting images between dozens of different types. `brew install node` will introduce you to [NodeJS](http://nodejs.org), the hot new tool for developing and running server-side JavaScript apps.
 
-You can have fun with Homebrew too: `brew install archey` will get you **Archey**, a fun script for displaying your Mac's specs next to a colourful Apple logo. The selection in Homebrew is huge---and because it's so easy to create [formulas](https://github.com/Homebrew/homebrew/wiki/Formula-Cookbook), new packages are being added all the time.
+You can have fun with Homebrew too: `brew install archey` will get you **Archey**, a cool little script for displaying your Mac's specs next to a colourful Apple logo. The selection in Homebrew is huge---and because it's so easy to create [formulas](https://github.com/Homebrew/homebrew/wiki/Formula-Cookbook), new packages are being added all the time.
 
 <figure>
     <img src="/public/img/archey.png">
     <figcaption><span class="elegant">Archey&mdash;</span>My command line brings all the boys to the yard.</figcaption>
 </figure>
 
+Like any great Mac app, Homebrew uses emoji:
+
+
+
+
+
 
 But the best part about Homebrew? It keeps all its files in a single directory: `/usr/local/`. That means you can install newer versions of system software, such as `python` and `mysql`, without interfering with the built-in equivalents. If you ever want to remove Homebrew, all you have to do is delete the contents of `/usr/local/`.
+
+[^compiling]: In truth, Homebrew is more similar to FreeBSD's Ports system than Linux's apt. It uses a hybrid source/binary system: if no binary is available for a particular package it will simply download the source tarball and compile it---not a problem on today's multicore Macs.
 
 For more fun with **Terminal.app**, here is an A-Z list of [all available console commands in OS X 10.9 Mavericks](http://ss64.com/osx/).
