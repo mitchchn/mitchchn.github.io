@@ -33,7 +33,12 @@ These two commands let you copy and paste text from the command line. Of course,
 
 ...will copy a list of files in your home directory to the OS X clipboard. You can easily capture the contents of a file:
 
-    $ cat blogpost.txt | pbcopy
+    $ pbcopy < blogpost.txt
+
+..or do something crazier. This hacked-up script will grab the link of the latest Google doodle and copy it to your clipboard.
+
+    $ curl http://www.google.com/doodles#oodles/archive | grep -A5 'latest-doodle on' | grep 'img src' | sed s/.*'<img src="\/\/'/''/ | sed s/'" alt=".*'/''/ | pbcopy
+
 
 Using `pbcopy` with pipes is a great way to capture the output of a command without having to scroll up and carefully select it. This makes it easy to share diagnostic information. `pbcopy` and `pbpaste` can also be used to automate or speed up certain kinds of tasks. For instance, if you want to save email subject lines to a task list, you could copy the subjects from Mail.app and run:
 
