@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-14T23:48:18-04:00</updated>
+ <updated>2014-05-15T00:05:55-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -149,7 +149,9 @@
     &lt;figcaption&gt;&lt;span class=&quot;elegant&quot;&gt;Archey&amp;mdash;&lt;/span&gt;My command line brings all the boys to the yard.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;But the best part about Homebrew? It keeps all its files in a single directory: &lt;code&gt;/usr/local/&lt;/code&gt;. That means you can install newer versions of system software, such as &lt;code&gt;python&lt;/code&gt; and &lt;code&gt;mysql&lt;/code&gt;, without interfering with the built-in equivalents. If you ever want to remove Homebrew, all you have to do is delete the contents of &lt;code&gt;/usr/local/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;But the best part about Homebrew? It keeps all its files in a single directory: &lt;code&gt;/usr/local/&lt;/code&gt;. That means you can install newer versions of system software, such as &lt;code&gt;python&lt;/code&gt; and &lt;code&gt;mysql&lt;/code&gt;, without interfering with the built-in equivalents. And if you ever want to get rid of your Homebrew installation, it’s easy to remove. &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Edit—May 15:&lt;/em&gt; Someone suggested to me that that you should not blindly delete the contents of &lt;code&gt;/usr/local/&lt;/code&gt;. That’s a fair precaution. To remove Homebrew safely, use the &lt;a href=&quot;https://gist.github.com/mxcl/1173223&quot;&gt;uninstall script&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;For more fun with &lt;strong&gt;Terminal.app&lt;/strong&gt;, here is an A-Z list of &lt;a href=&quot;http://ss64.com/osx/&quot;&gt;all available console commands in OS X 10.9 Mavericks&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
