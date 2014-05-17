@@ -70,7 +70,7 @@ If you frequently use `ssh` to access a secure server, such as Amazon's EC2, you
 
     $ ssh [server]
 
-Thanks to a Hacker News user, **pling**, for remnding me about this one.
+Thanks to a Hacker News user, **pling**, for reminding me about this one.
 
 ### man ###
 
