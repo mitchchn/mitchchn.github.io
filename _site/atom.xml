@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-17T15:03:08-04:00</updated>
+ <updated>2014-05-17T16:36:13-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -194,7 +194,7 @@ $ ssh [server]
       &lt;p&gt;Besides: *you* don’t need to learn basic web development—but surely you have an intelligent, non-hacker friend who does. Or maybe you’d just like to scrutinize my code, recommendations, and writing style for mistakes. Both types are welcome here. &lt;a href=&quot;#fnref:html&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:cleaner&quot;&gt;
-      &lt;p&gt;A user on HackerNews suggested that the HTML output of &lt;code&gt;textutil&lt;/code&gt; is cleaner than what you’d get frm TextEdit and MS Word. That’s good to know if true. As I’ve written before, it’s always better to write HTML by hand. &lt;a href=&quot;#fnref:cleaner&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;A Hacker News poster suggested that the HTML output of &lt;code&gt;textutil&lt;/code&gt; is cleaner than what you’d get from TextEdit and MS Word. That’s good to know if true. As I’ve written before, it’s always better to write HTML by hand. &lt;a href=&quot;#fnref:cleaner&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;

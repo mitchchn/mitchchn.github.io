@@ -44,7 +44,7 @@ Another interesting feature of `textuil` is its ability to concatenate (join tog
 
 Thanks to **cstross** from Hacker News for teaching me about `textutil`.
 
-[^cleaner]: A user on HackerNews suggested that the HTML output of `textutil` is cleaner than what you'd get frm TextEdit and MS Word. That's good to know if true. As I've written before, it's always better to write HTML by hand.
+[^cleaner]: A Hacker News poster suggested that the HTML output of `textutil` is cleaner than what you'd get from TextEdit and MS Word. That's good to know if true. As I've written before, it's always better to write HTML by hand.
 
 ### sips ###
 
