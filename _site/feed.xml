@@ -131,7 +131,7 @@ $ ssh [server]
 
 &lt;h3 id=&quot;textutil&quot;&gt;textutil&lt;/h3&gt;
 
-&lt;p&gt;&lt;code&gt;textutil&lt;/code&gt; uses Cocoa’s text engine to manipulate documents and convert them between various formats, including &lt;strong&gt;.doc&lt;/strong&gt;, &lt;strong&gt;.txt&lt;/strong&gt;, &lt;em&gt;.html&lt;/em&gt; and &lt;strong&gt;.rtf&lt;/strong&gt;. For example, here’s how to make an HTML file out of a simple Word document:&lt;sup id=&quot;fnref:cleaner&quot;&gt;&lt;a href=&quot;#fn:cleaner&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;textutil&lt;/code&gt; uses Cocoa’s text engine to manipulate documents and convert them between various formats, including &lt;strong&gt;.doc&lt;/strong&gt;, &lt;strong&gt;.txt&lt;/strong&gt;, &lt;strong&gt;.html&lt;/strong&gt; and &lt;strong&gt;.rtf&lt;/strong&gt;. For example, here’s how to make an HTML file out of a simple Word document:&lt;sup id=&quot;fnref:cleaner&quot;&gt;&lt;a href=&quot;#fn:cleaner&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ textutil -convert html article.doc
 &lt;/code&gt;&lt;/pre&gt;

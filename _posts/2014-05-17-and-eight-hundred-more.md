@@ -34,7 +34,7 @@ This black magic is made possible thanks to [Launch Services](https://developer.
 
 ### textutil ###
 
-`textutil` uses Cocoa's text engine to manipulate documents and convert them between various formats, including **.doc**, **.txt**, *.html* and **.rtf**. For example, here's how to make an HTML file out of a simple Word document:[^cleaner]
+`textutil` uses Cocoa's text engine to manipulate documents and convert them between various formats, including **.doc**, **.txt**, **.html** and **.rtf**. For example, here's how to make an HTML file out of a simple Word document:[^cleaner]
 
     $ textutil -convert html article.doc
 
