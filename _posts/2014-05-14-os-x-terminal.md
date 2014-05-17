@@ -67,7 +67,7 @@ Capture the contents of the screen, including the cursor, and attach the resulti
 
 Select a window using your mouse, then capture its contents without the window's drop shadow and copy the image to the clipboard:
 
-    $ screencapture -c W
+    $ screencapture -c -W
 
 Capture the screen after a delay of 10 seconds and then open the new image in Preview:
     

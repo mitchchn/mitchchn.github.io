@@ -4,13 +4,108 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-15T04:18:08-04:00</updated>
+ <updated>2014-05-17T14:33:27-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>(And eight hundred more)</title>
+   <link href="http://mitchchn.me/2014/2014-05-16-and-eight-hundred-more/"/>
+   <updated>2014-05-17T14:34:04-04:00</updated>
+   <id>http://mitchchn.me/2014/2014-05-16-and-eight-hundred-more</id>
+   <content type="html">&lt;p&gt;On Wednesday night I went to bed pretty pleased with myself. My article abut the &lt;a href=&quot;/2014/os-x-terminal&quot;&gt;OS X command line&lt;/a&gt; had found some traction on reddit, pulling in a few hundred visitors over the course of an evening. Not bad for a week-old personal blog, eh?&lt;/p&gt;
+
+&lt;p&gt;I was in for one hell of a surprise. When I woke up on Thursday morning—my 25th birthday—the number of pageviews had reached 30,000. By Friday evening, just over 100,000 people had seen my article. And it feels like a good tenth of them have responded in some way: comments, compliments, and criticism. Gratitude. Typo corrections. Sage advice. Birthday wishes.&lt;/p&gt;
+
+&lt;p&gt;To someone entirely unused to online notoriety, it feels as though a very geeky flash mob materialized in my apartment one evening, stayed for dinner, then went home and reviewed my cooking on Yelp. I am a little dazed.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;With any luck, at least a few of those visitors will invite themselves back. The Terminal post was meant for a more technical audience than my main series, &lt;a href=&quot;/2014/coding-for-journalists-p0&quot;&gt;Coding for Journalists&lt;/a&gt;. But it won’t be the last of its kind. And one of my goals for this place is to explore some of the more basic topics in hackerdom in a way that’s compelling for people of different backgrounds and skill levels. I hope I’m succeeding.&lt;sup id=&quot;fnref:html&quot;&gt;&lt;a href=&quot;#fn:html&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;you-forgot-x&quot;&gt;“You forgot X!”&lt;/h2&gt;
+
+&lt;p&gt;Of course, there are far more than just eight utilities every Terminal user should know.&lt;/p&gt;
+
+&lt;p&gt;In the past couple days, dozens of people have shared with me their own favourite Terminal one-liners and scripts. I’ve learned new tricks about the tools I covered in my article, and discovered others I’d rarely or never touched. In fact, the best thing about the reaction to my article wasn’t the feedback directed at the post, my blog, or myself; it was the discussion that spawned all around the Mac-o-sphere about the command line and how to make the most of it.&lt;/p&gt;
+
+&lt;p&gt;I’m going to highlight a few of the more interesting utilities I missed in this post. It’s also worth taking a look at the comment section on &lt;a href=&quot;https://news.ycombinator.com/item?id=7747982&quot;&gt;Hacker News&lt;/a&gt;. There are troves of good information out there from people much more knowledgeable than I will ever be.&lt;/p&gt;
+
+&lt;p&gt;And now, in no particular order, the shortlist:&lt;/p&gt;
+
+&lt;h3 id=&quot;open&quot;&gt;open&lt;/h3&gt;
+
+&lt;p&gt;I covered &lt;code&gt;open&lt;/code&gt; previously, but it deserves an encore for a feature several people brought to my attention. Typing &lt;code&gt;open -a Safari&lt;/code&gt; will launch Safari—no matter where Safari is located on the system. The same shortcut works for any Mac application. There’s no need to have the full path.&lt;/p&gt;
+
+&lt;p&gt;This black magic is made possible thanks to &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/Carbon/reference/LaunchServicesReference/Reference/reference.html&quot;&gt;Launch Services&lt;/a&gt;, the same system that associates filetypes with their applications in Finder. Thank you to all the users on reddit and Twitter who introduced me to this trick.&lt;/p&gt;
+
+&lt;h3 id=&quot;textutil&quot;&gt;textutil&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;textutil&lt;/code&gt; uses Cocoa’s text engine to manipulate documents and convert them between various formats, including &lt;strong&gt;.doc&lt;/strong&gt;, &lt;strong&gt;.txt&lt;/strong&gt;, &lt;em&gt;.html&lt;/em&gt; and &lt;strong&gt;.rtf&lt;/strong&gt;. For example, here’s how to make an HTML file out of a simple Word document:&lt;sup id=&quot;fnref:cleaner&quot;&gt;&lt;a href=&quot;#fn:cleaner&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ textutil -convert html article.doc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Another interesting feature of &lt;code&gt;textuil&lt;/code&gt; is its ability to concatenate (join together) multiple files into one long document. This command will join three Word documents together into one .rtf:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ textutil -cat rtf article1.doc article2.doc article3.doc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Thanks to &lt;strong&gt;cstross&lt;/strong&gt; from Hacker News for teaching me about &lt;code&gt;textutil&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;sips&quot;&gt;sips&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;sips&lt;/code&gt; is an image processing tool and a native alternative to ImageMagick. Because it’s built on top of Apple’s &lt;a href=&quot;http://en.wikipedia.org/wiki/Core_Image&quot;&gt;Core Image&lt;/a&gt;, the capabilities of &lt;code&gt;sips&lt;/code&gt; go quite deep into areas such as colour profiles. But it’s also a nice tool for quick image manipulations, like converting, resizing, cropping, and rotating.&lt;/p&gt;
+
+&lt;p&gt;This script will convert a folder filled with jpegs to pngs:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ for file in *.jpeg; do sips -s format png $file --out $file.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Dr. Drang has a great &lt;a href=&quot;http://www.leancrew.com/all-this/2014/05/a-little-sips/&quot;&gt;writeup of his sips&lt;/a&gt; and how he uses it in workflows for his clients.&lt;/p&gt;
+
+&lt;h3 id=&quot;ssh-add&quot;&gt;ssh-add&lt;/h3&gt;
+
+&lt;p&gt;If you frequently use &lt;code&gt;ssh&lt;/code&gt; to access a secure server, such as Amazon’s EC2, you should know about &lt;code&gt;ssh-add&lt;/code&gt;. This command lets you save your private key file to the OS X &lt;a href=&quot;http://en.wikipedia.org/wiki/Keychain_\(Apple\)&quot;&gt;Keychain&lt;/a&gt;. Set it up once, and you can use the bare &lt;code&gt;ssh&lt;/code&gt; command without manually including the private key file or messing around with the contents of &lt;code&gt;~/.ssh/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Before:&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ssh -i keyfile.pem [server]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;After:&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ssh-add -k keyfile.pem
+
+$ ssh [server]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Thanks to a Hacker News user, &lt;strong&gt;pling&lt;/strong&gt;, for remnding me about this one.&lt;/p&gt;
+
+&lt;h3 id=&quot;man&quot;&gt;man&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;man&lt;/code&gt; command to bring up help manuals isn’t exclusive to OS X, nor is there much that’s new to say about it. But Twitter user &lt;a href=&quot;http://twitter.com/peternlewis&quot;&gt;@peternlewis&lt;/a&gt; reminded me of a &lt;strong&gt;Terminal.app&lt;/strong&gt; feature that is worth repeating. If you begin typing the name of a command into the &lt;strong&gt;Help&lt;/strong&gt; menu, Terminal will automatically bring up the relevant &lt;code&gt;man&lt;/code&gt; pages.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/man.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are still more utilities I haven’t had a chance to cover in these two posts—and that’s not including the dozens of essential UNIX commands that are beyond the scope of a Mac-only list. But I hope that you’ve found at least some of these choices helpful for your own workflow. If you have your own favourites that you’d like to share, give me a shout on &lt;a href=&quot;http://mitchchn.me/&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:html&quot;&gt;
+      &lt;p&gt;Besides: *you* don’t need to learn basic web development—but surely you have an intelligent, non-hacker friend who does. Or maybe you’d just like to scrutinize my code, recommendations, and writing style for mistakes. Both types are welcome here. &lt;a href=&quot;#fnref:html&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:cleaner&quot;&gt;
+      &lt;p&gt;A user on HackerNews suggested that the HTML output of &lt;code&gt;textutil&lt;/code&gt; is cleaner than what you’d get frm TextEdit and MS Word. That’s good to know if true. As I’ve written before, it’s always better to write HTML by hand. &lt;a href=&quot;#fnref:cleaner&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Eight Terminal Utilities Every OS X Command Line User Should Know</title>
@@ -82,7 +177,7 @@
 
 &lt;p&gt;Select a window using your mouse, then capture its contents without the window’s drop shadow and copy the image to the clipboard:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ screencapture -c W
+&lt;pre&gt;&lt;code&gt;$ screencapture -c -W
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Capture the screen after a delay of 10 seconds and then open the new image in Preview:&lt;/p&gt;
@@ -169,6 +264,187 @@
     &lt;/li&gt;
     &lt;li id=&quot;fn:compiling&quot;&gt;
       &lt;p&gt;In truth, Homebrew is more similar to FreeBSD’s Ports system than Linux’s apt. It uses a hybrid source/binary system: if no binary is available for a particular package it will simply download the source tarball and compile it—not a problem on today’s multicore Macs. &lt;a href=&quot;#fnref:compiling&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What's Jekyll?</title>
+   <link href="http://mitchchn.me/2014/2014-04-25-whats-jekyll/"/>
+   <updated>2014-05-13T19:14:21-04:00</updated>
+   <id>http://mitchchn.me/2014/2014-04-25-whats-jekyll</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s an immensely useful tool. Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Test&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;This is a footnote with &amp;lt;hello&amp;gt; multiple pieces of code in it &amp;lt;really&amp;gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Coding for Journalists, Part 2: HTML — Workflows, Nesting and Paragraphs</title>
+   <link href="http://mitchchn.me/2014/2014-05-09-coding-for-jorunalists-p2/"/>
+   <updated>2014-05-13T04:44:06-04:00</updated>
+   <id>http://mitchchn.me/2014/2014-05-09-coding-for-jorunalists-p2</id>
+   <content type="html">&lt;p&gt;In &lt;a href=&quot;/2014/coding-for-journalists-p1/&quot;&gt;Part 1&lt;/a&gt;, we set up our environment and tested it out with a little HTML code. More importantly, we built a basic &lt;strong&gt;coding workflow.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Having and practicing a good workflow is important—not just for the sake of productivity, but because every project is different. A new employer might mean having to learn a new CMS, for instance, or even a new programming language. That’s why it’s important not to learn specific tools, but to have simple procedures that you know well and can fall back on.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Your new coding environment might not be as fancy as something like &lt;a href=&quot;http://www.codecademy.com&quot;&gt;Codeacademy&lt;/a&gt;, but it will work anywhere, from your blog to the Huffington Post. To recap, the steps in our HTML workflow are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Write your prose and code in a text editor.&lt;/li&gt;
+  &lt;li&gt;Save the file with the extension &lt;code&gt;.html&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Double-click the HTML file to view it in your web browser.&lt;/li&gt;
+  &lt;li&gt;Make changes and corrections to your code, re-save the file, and reload the page.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now that we’re comfortable with this process, it’s time to learn more HTML.&lt;/p&gt;
+
+&lt;h2 id=&quot;nesting&quot;&gt;Nesting&lt;/h2&gt;
+
+&lt;p&gt;As we saw in Part 1, HTML is a language of tags. There are a few dozen tags in &lt;a href=&quot;https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5/HTML5_element_list&quot;&gt;HTML5&lt;/a&gt; (down from well over a hundred in HTML4). We’ll learn what many of them are for, but first let’s take a look at what they all have in common.&lt;/p&gt;
+
+&lt;p&gt;HTML tags interact in predictable ways. One features of tags is that they can &lt;strong&gt;nest&lt;/strong&gt;, stacking together like Russian dolls. Nested tags inherit the properties of their surrounding tags. For instance, this line of code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;It was the best of times, it was the blurst of times.&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;…produces the following output:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;It was the best of times, it was the blurst of times.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags encapsulate the &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tags, which encapsulate the text on the inside. Both tags apply their respective formatting to their inner contents. Tag nesting does not have to be symmetrical:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;It was the best of times, &amp;lt;em&amp;gt;it was was the blurst of times.&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;It was the best of times, &lt;em&gt;it was was the blurst of times.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this case, the &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag applies to the entire line, but the &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag only affects the second half.&lt;/p&gt;
+
+&lt;p&gt;Notice that in both examples, the tags are closed in reverse order from how they were opened. This pattern is called &lt;strong&gt;Last In, First Out (LIFO).&lt;/strong&gt; Following this practice in your own code is crucial. The innermost opening tag should &lt;em&gt;always&lt;/em&gt; get the innermost closing tag. The outermost opening tag should &lt;em&gt;always&lt;/em&gt; get the outermost closing tag. For instance, this line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;Please don&#39;t do this.&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;…is bad HTML. So is this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;em&amp;gt;&amp;lt;strong&amp;gt;Also don&#39;t do&amp;lt;/em&amp;gt; this. Please.&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you ignore my advice and type these lines of code into your text editor (try it!) they will still work as expected. HTML is designed to be resilient, and browsers are forgiving of simple mistakes.&lt;sup id=&quot;fnref:nesting&quot;&gt;&lt;a href=&quot;#fn:nesting&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; But why learn bad habits? Learn to nest correctly. &lt;strong&gt;LIFO.&lt;/strong&gt;&lt;sup id=&quot;fnref:fifo&quot;&gt;&lt;a href=&quot;#fn:fifo&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;parents-children-and-siblings&quot;&gt;Parents, children, and siblings&lt;/h3&gt;
+
+&lt;p&gt;Tags can be on the outside of other tags (“parents”), inside other tags (“children”), or at the same level as other tags in the tag hierarchy (“siblings”). This line of code contains parent, child and sibling tags:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;em&amp;gt;&amp;lt;strong&amp;gt;All TV&amp;lt;/strong&amp;gt; and no beer make Homer &amp;lt;strong&amp;gt;go crazy.&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;&lt;strong&gt;All TV&lt;/strong&gt; and no beer make Homer &lt;strong&gt;go crazy.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this example, &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; is a parent tag with two children (the two &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags). The &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tags are also siblings to each other. Child tags inherit properties from parent tags, but sibling tags do not affect each other. Child tags can also be parents to their own child tags, passing down both their own properties and those of the original parents (“grandparents”).&lt;/p&gt;
+
+&lt;p&gt;As you can imagine, nesting more than a few tags together can make your code  difficult to read—and almost impossible to bugfix. When your code involves multiple levels of tags, consider formatting it in a &lt;strong&gt;tree structure.&lt;/strong&gt; For instance, the above code could also be written out like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    &amp;lt;em&amp;gt;
+        &amp;lt;strong&amp;gt;All TV&amp;lt;/strong&amp;gt; and no beer make Homer
+        &amp;lt;strong&amp;gt;go crazy.&amp;lt;/strong&amp;gt;
+    &amp;lt;/em&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On each new line, hit the &lt;kbd&gt;tab&lt;/kbd&gt; key to indent child tags and line up sibling tags. Your text editor will keep track of what level you’re on when you press &lt;kbd&gt;enter&lt;/kbd&gt;. To go “up” a level, press &lt;kbd&gt;backspace&lt;/kbd&gt; at the beginning of a line. You can also select one or more lines of code and press &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;tab&lt;/kbd&gt; to unindent them by a single level.&lt;/p&gt;
+
+&lt;p&gt;There is no limit to how deep the tag hierarchy can go—grandchildren, great-grandchildren, etc.—or how many sibling tags can exist at a particular level. As a matter of fact, most webpages are built with long and intricate &lt;strong&gt;tag trees.&lt;/strong&gt; But no matter how branches the tree sprouts, the same principle applies: &lt;strong&gt;child tags inherit all the properties of their parents (and grandparents, and great-grandparents…..)&lt;/strong&gt; For this reason, writing good HTML is as much about structuring your tags as it is about choosing them.&lt;/p&gt;
+
+&lt;h2 id=&quot;whitespace-and-the-paragraph-tag-p&quot;&gt;Whitespace and the Paragraph Tag: &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Whitespace in HTML is insignifcant. Extra spaces, tabs and line breaks are treated by web browsers as if they weren’t there at all:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;strong&amp;gt;This&amp;lt;/strong&amp;gt;       is
+        weirdly-formatted
+
+and &amp;lt;em&amp;gt;ugly 
+&amp;lt;/em&amp;gt;            
+              code.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;&lt;strong&gt;This&lt;/strong&gt; is weirdly-formatted and &lt;em&gt;ugly&lt;/em&gt; code.&lt;/blockquote&gt;
+
+&lt;p&gt;Because HTML ignores whitespace, you have the freedom to format your code however you like (such as in the tree format shown above). But this creates problems for writers who need to write in paragraphs (all of them):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This is &amp;lt;strong&amp;gt;one&amp;lt;/strong&amp;gt; paragraph.
+
+This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; paragraph.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;This is &lt;strong&gt;one&lt;/strong&gt; paragraph. This is supposed to be &lt;strong&gt;another&lt;/strong&gt; paragraph.&lt;/blockquote&gt;
+
+&lt;p&gt;Thankfully, there’s a tag for that. Using the HTML &lt;strong&gt;paragraph tag&lt;/strong&gt; &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, we can get the expected behaviour:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
+This is &amp;lt;strong&amp;gt;one&amp;lt;/strong&amp;gt; paragraph.
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; paragraph.
+&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;&lt;p&gt;This is &lt;strong&gt;one&lt;/strong&gt; paragraph.&lt;/p&gt;&lt;p&gt;This is supposed to be &lt;strong&gt;another&lt;/strong&gt; paragraph.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Like most tags, the &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag has an opening tag and a closing tag: &lt;code&gt;&amp;lt;/p&amp;gt;&lt;/code&gt; It is a good practice to wrap all your paragraphs in &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags. They will not only get the proper amount of line-spacing, but also the correct fonts, colours, and formatting that your site has set up for its body copy.&lt;sup id=&quot;fnref:br&quot;&gt;&lt;a href=&quot;#fn:br&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Manually inserting &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags between paragraphs is one of the most tedious parts of writing prose in HTML. For that reason, coders and writers have come up with several ways to make the task easier: &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;WordPress&lt;/strong&gt; will automatically convert blank lines into paragraph breaks. If you know your code will be going into WordPress, simply ignore the &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag and press enter twice between paragraphs. Then copy your code into the WordPress text editor and submit your post. Other CMSes may also have an option to work this way.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bywordapp.com/markdown/guide.html&quot;&gt;Markdown&lt;/a&gt; treats blank lines as paragraph breaks, just like WordPress. Many CMSes support Markdown either natively or with plugins.&lt;/li&gt;
+  &lt;li&gt;Use the &lt;strong&gt;Find&lt;/strong&gt; feature in your text editor to search for line breaks and replace them with new lines. Write your article with blank lines between paragraphs, and then use the &lt;a href=&quot;http://regex.bastardsbook.com&quot;&gt;regular expression&lt;/a&gt; feature in your editor to replace &lt;code&gt;\n&lt;/code&gt; with &lt;code&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/public/img/regexp.png&quot; /&gt;
+    &lt;figcaption&gt;&lt;span class=&quot;elegant&quot;&gt;Replacing paragraph breaks with tags&amp;mdash;&lt;/span&gt;In &lt;strong&gt;TextWrangler&lt;/strong&gt;, go to &lt;strong&gt;Search -&amp;gt; Find&lt;/strong&gt; and set up the above search. Make sure &#39;Grep&#39; is checked. Hit &lt;strong&gt;Replace All&lt;/strong&gt;. The only manual change you will need to make is to add a single opening &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag before your first paragraph.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Or alternatively, just get used to writing &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; a whole lot. It’s not so bad. &lt;span style=&quot;font-family: &#39;comic sans ms&#39;&quot;&gt;&lt;strong&gt;Better than manually fixing the layout in your coworker’s Word document set in Comic Sans MS.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;In Part 3, we’ll learn the dozen or so HTML tags every writer should know.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:nesting&quot;&gt;
+      &lt;p&gt;Just as browsers will forgive out-of-order nesting, they will also try to make sense of your code if you accidentally leave out closing tags. Depending on various factors, an unclosed tag will apply to the rest of the section or the rest of the &lt;em&gt;entire page&lt;/em&gt;. This is probably not what you intended to happen. So nest properly, and close your tags. &lt;a href=&quot;#fnref:nesting&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:fifo&quot;&gt;
+      &lt;p&gt;The opposite, found in certain programming languages, is called FIFO: first in first out. &lt;a href=&quot;#fnref:fifo&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:br&quot;&gt;
+      &lt;p&gt;The &lt;strong&gt;line break tag&lt;/strong&gt; &amp;lt;br&amp;gt; creates one or more manual line breaks between blocks of text. Using multiple &amp;lt;br&amp;gt; tags is a little like hitting ‘enter’ a bunch of times in Word. But &amp;lt;br&amp;gt; does not come with any of the formatting benefits of the &amp;lt;p&amp;gt; tag. It can cause ugly layout inconsistencies. Use it only as a last resort. &lt;a href=&quot;#fnref:br&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -442,6 +718,57 @@ This is supposed to be &amp;lt;strong&amp;gt;another&amp;lt;/strong&amp;gt; para
  </entry>
  
  <entry>
+   <title>Plain Text</title>
+   <link href="http://mitchchn.me/2014/plain-text/"/>
+   <updated>2014-05-05T19:30:21-04:00</updated>
+   <id>http://mitchchn.me/2014/plain-text</id>
+   <content type="html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Text is free.&lt;/strong&gt;  That’s “free” as in speech and in beer. Text is an open format. No one company owns it or can charge you money to read or edit your own work.&lt;sup id=&quot;fnref:microsoft&quot;&gt;&lt;a href=&quot;#fn:microsoft&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; You get to choose your own tools.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Text is universal.&lt;/strong&gt; Any computer [phone, tablet] can open plain text. You can keep your plain text files in &lt;a href=&quot;http://www.dropbox.com&quot;&gt;Dropbox&lt;/a&gt; and work on them from from wherever you are. Text looks the same everywhere, so you can share it with editors and collaborators without worrying about different software versions or formatting issues.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Text is distraction-free.&lt;/strong&gt; Text editors are fast, lightweight, and have few bells and whistles. Some are designed &lt;a href=&quot;http://bywordapp.com&quot;&gt;especially for writers&lt;/a&gt;. The lack of options and formatting lets you focus on your writing.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:microsoft&quot;&gt;
+      &lt;p&gt;Twenty years from now, will you be able to open the Word document you wrote last night? Maybe—if you pay to upgrade to the latest version of Office—but why let Microsoft control the medium you do all your work in? &lt;a href=&quot;#fnref:microsoft&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Coding For Journalists P2</title>
+   <link href="http://mitchchn.me/2014/coding-for-journalists-p2/"/>
+   <updated>2014-05-03T21:03:46-04:00</updated>
+   <id>http://mitchchn.me/2014/coding-for-journalists-p2</id>
+   <content type="html">&lt;h2 id=&quot;how&quot;&gt;4. How&lt;/h2&gt;
+
+&lt;p&gt;You only need two things to write for the web: ** computer and a text editor**.&lt;/p&gt;
+
+&lt;p&gt;If you have friends who study computer science, they might tell you that Real Programmers use Linux. If they work at trendy startups, they will tell you to buy a MacBook Pro. Don’t listen to them. Any computer can churn out code.[^1]&lt;/p&gt;
+
+&lt;p&gt;You’ll need a text editor write plain text – the native format of the web. Anything you publish online, whether it originates in a Word document or Wordpress or a scrap of paper, ends up as a plain text file somewhere on a web server. For this reason (among others) many professional web writers choose to ditch MS Word and produce all their content in plain text. So it’s a good idea to get comfortable using a text editor – not just for coding, but also for writing copy.&lt;/p&gt;
+
+&lt;p&gt;You can go ahead and use the text editor that came with your computer, but there are good, free alternatives that will make your life easier. For Windows users, I recommend &lt;a href=&quot;http://notepad-plus-plus.org/&quot;&gt;Notepad++&lt;/a&gt;. For Mac users, you can’t go wrong with &lt;a href=&quot;http://www.barebones.com/products/textwrangler/&quot;&gt;TextWrangler&lt;/a&gt;. Both editors are simple to use, but powerful enough to create anything you see on the web.&lt;/p&gt;
+
+&lt;p&gt;Once you’ve installed an editor, practice creating and saving text files. You’ll notice that if you save your files with the extension &lt;code&gt;.html&lt;/code&gt;, your editor will recognize that you’re writing HTML code and colour the tags apropriately. This handy feature helps you distinguish your code from your copy:&lt;/p&gt;
+
+&lt;p&gt;//To-do: editor screenshot&lt;/p&gt;
+
+&lt;p&gt;Good editors have plenty more advanced features – none of which you need to start coding. Speaking of which, in the next post we’ll be writing basic HTML — specifically, HTML5: the newest version and the best one yet for writers. Stay tuned.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
    <title>Coding for Journalists, Part 0: Why Code?</title>
    <link href="http://mitchchn.me/2014/coding-for-journalists-p0/"/>
    <updated>2014-05-03T00:00:00-04:00</updated>
@@ -500,6 +827,87 @@ But before we get that far, we have to start with the basics. That includes lear
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Melville thumps a snake in the eye</title>
+   <link href="http://mitchchn.me/2014/2014-05-1-melville/"/>
+   <updated>2014-05-02T23:28:23-04:00</updated>
+   <id>http://mitchchn.me/2014/2014-05-1-melville</id>
+   <content type="html">&lt;p&gt;Akin to the adventure of Perseus and Andromeda—indeed, by some supposed to be indirectly derived from it—is that famous story of St. George and the Dragon; which dragon I maintain to have been a whale; for in many old chronicles whales and dragons are strangely jumbled together, and often stand for each other. “Thou art as a lion of the waters, and as a dragon of the sea,” saith Ezekiel; hereby, plainly meaning a whale; in truth, some versions of the Bible use that word itself. Besides, it would much subtract from the glory of the exploit had St. George but encountered a crawling reptile of the land, instead of doing battle with the great monster of the deep. Any man may kill a snake, but only a Perseus, a St. George, a Coffin, have the heart in them to march boldly up to a whale.&lt;/p&gt;
+
+&lt;p&gt;Let not the modern paintings of this scene mislead us; for though the creature encountered by that valiant whaleman of old is vaguely represented of a griffin-like shape, and though the battle is depicted on land and the saint on horseback, yet considering the great ignorance of those times, when the true form of the whale was unknown to artists; and considering that as in Perseus’ case, St. George’s whale might have crawled up out of the sea on the beach; and considering that the animal ridden by St. George might have been only a large seal, or sea-horse; bearing all this in mind, it will not appear altogether incompatible with the sacred legend and the ancientest draughts of the scene, to hold this so-called dragon no other than the great Leviathan himself.&lt;/p&gt;
+
+&lt;p&gt;In fact, placed before the strict and piercing truth, this whole story will fare like that fish, flesh, and fowl idol of the Philistines, Dagon by name; who being planted before the ark of Israel, his horse’s head and both the palms of his hands fell off from him, and only the stump or fishy part of him remained. Thus, then, one of our own noble stamp, even a whaleman, is the tutelary guardian of England; and by good rights, we harpooneers of Nantucket should be enrolled in the most noble order of St. George. And therefore, let not the knights of that honourable company (none of whom, I venture to say, have ever had to do with a whale like their great patron), let them never eye a Nantucketer with disdain, since even in our woollen frocks and tarred trowsers we are much better entitled to St. George’s decoration than they.
+Whether to admit Hercules among us or not, concerning this I long remained dubious: for though according to the Greek mythologies, that antique Crockett and Kit Carson—that brawny doer of rejoicing good deeds, was swallowed down and thrown up by a whale; still, whether that strictly makes a whaleman of him, that might be mooted. It nowhere appears that he ever actually harpooned his fish, unless, indeed, from the inside. Nevertheless, he may be deemed a sort of involuntary whaleman; at any rate the whale caught him, if he did not the whale. I claim him for one of our clan.&lt;/p&gt;
+
+&lt;p&gt;But, by the best contradictory authorities, this Grecian story of Hercules and the whale is considered to be derived from the still more ancient Hebrew story of Jonah and the whale; and vice versa; certainly they are very similar. If I claim the demigod then, why not the prophet?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Modo decus consternatique diversas</title>
+   <link href="http://mitchchn.me/2014/2013-12-31-modo-decus/"/>
+   <updated>2014-05-02T18:12:35-04:00</updated>
+   <id>http://mitchchn.me/2014/2013-12-31-modo-decus</id>
+   <content type="html">&lt;p&gt;Lorem markdownum dives, est neglectos &lt;strong&gt;classe&lt;/strong&gt; tellus: superest lacrimis. De
+causa fingit poterit poscebatur pars frugiferas Thebae sua, Taenarius anxia:
+ora? Ita vigor Ismenides triones.&lt;/p&gt;
+
+&lt;p&gt;Est iuxta fortis ignibus cernit alta abstrahere nisi: manu cui quod, volenti de
+Peleus amnis lenis ad solet. &lt;em&gt;Editus namque&lt;/em&gt; fuit. Et ictu subterque quam victa
+pando, crescentemque quid senes frondibus artus latravit murmur: stimulos
+Iliaden ad.&lt;/p&gt;
+
+&lt;h2 id=&quot;uno-illa-iter-penthea&quot;&gt;Uno illa iter penthea&lt;/h2&gt;
+
+&lt;p&gt;Audaci et Amazone aureus ut veteres urbis sitientes flumen palmas &lt;em&gt;signa&lt;/em&gt;, et
+decorum cupit enim! Agantur et unam et quod. Eventuque gerit vias posuere retia
+corpore multae thalamoque duxque quacumque &lt;a href=&quot;http://textfromdog.tumblr.com/&quot;&gt;concipit
+odioque&lt;/a&gt;, in. &lt;em&gt;Gravior&lt;/em&gt; in cuspide parte
+sprevit, ille illuc anus nam adesset haec lacertosi sub Hiberi radix? Unde facti
+et dare, pedibusque ora fallat temptat, da ille Haemonio quidque australem
+vocat, crepitantia.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Ratem ubi quas dies; facis, sua solae hoc oetaeas si incessit ignarus stipite
+urbis. Dubio pace populo, &lt;em&gt;invenit&lt;/em&gt; dea vera porrigit verba, adversaque inpar
+nunc lati anguem attollite mediis quod, huic.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;non-sumus-munere-phaethon-audis-exanimis-manant&quot;&gt;Non sumus munere Phaethon audis exanimis manant&lt;/h3&gt;
+
+&lt;p&gt;Atria qui &lt;em&gt;gregibus crimina supervolat&lt;/em&gt; plagarum portibus pudet, miseranda
+rubuerunt et rerum officioque puto, foret equos; tendit. Quoque detractare
+monstri coniunx et cecidit tamen, nuda sidera antemnas. In &lt;a href=&quot;http://textfromdog.tumblr.com/&quot;&gt;tyranni
+veniente&lt;/a&gt;, animi fugit simul &lt;strong&gt;accipis aequatam
+occupat&lt;/strong&gt; conclamat corpore vivere tria ferro finemque. Queritur nympha ea
+fibris quod Dianae contra, et et rota.&lt;/p&gt;
+
+&lt;p&gt;Vox isse Aeneadae Hector; adhuc, in, diva! Illa et quinque saxea, iram effugit
+nolet; arbore cornua, cedere!&lt;/p&gt;
+
+&lt;h2 id=&quot;dis-erit-ille-ingens-iuppiter-suorum-verendam&quot;&gt;Dis erit ille ingens Iuppiter suorum verendam&lt;/h2&gt;
+
+&lt;p&gt;Solis de, &lt;strong&gt;an hic donasse&lt;/strong&gt; est sensit quam umbrosa annisque pectora
+horriferamque atque et. Placuit nollet rector. Prius istis circum Danaen,
+aequales ad vivere hauserit rictuque, venit, fumi!&lt;/p&gt;
+
+&lt;!--     floating.radcabCut = ole(retinaAjaxPower + compatibleCase * ddr_pixel_optic,
+            92, scsi_impact(78, inkjet));
+    program_metadata = recycle;
+    var device = 22;
+    basic_cluster = third_lte_boot;
+ --&gt;
+
+&lt;p&gt;Aestibus obscurum et Pico unum: sinus occidimus duratur citharae. Corruit
+cecidisse &lt;strong&gt;aqua dubitare locoque&lt;/strong&gt; temeraria &lt;strong&gt;promissa&lt;/strong&gt;. Quid dignus ego erat
+vocat opportuna oraque, Phyleus dixerat requiemque res, virgo iniusti? Ales
+&lt;em&gt;artes&lt;/em&gt;, robore pactique vitam supplex quod sola nurusque addidit trahatur cum
+ante fertur. Me &lt;em&gt;vivit&lt;/em&gt; ne quoque solida magnosque et iussus ipse flumina
+tremulo?&lt;/p&gt;
+
 </content>
  </entry>
  
