@@ -136,7 +136,7 @@ $ ssh [server]
 &lt;pre&gt;&lt;code&gt;$ textutil -convert html article.doc
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Another interesting feature of &lt;code&gt;textuil&lt;/code&gt; is its ability to concatenate (join together) multiple files into one long document. This command will join three Word documents together into one .rtf:&lt;/p&gt;
+&lt;p&gt;Another interesting feature of &lt;code&gt;textutil&lt;/code&gt; is its ability to concatenate (join together) multiple files into one long document. This command will join three Word documents together into one .rtf:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ textutil -cat rtf article1.doc article2.doc article3.doc
 &lt;/code&gt;&lt;/pre&gt;

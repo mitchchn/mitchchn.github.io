@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-17T16:36:13-04:00</updated>
+ <updated>2014-05-17T16:38:14-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -145,7 +145,7 @@ $ ssh [server]
 &lt;pre&gt;&lt;code&gt;$ textutil -convert html article.doc
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Another interesting feature of &lt;code&gt;textuil&lt;/code&gt; is its ability to concatenate (join together) multiple files into one long document. This command will join three Word documents together into one .rtf:&lt;/p&gt;
+&lt;p&gt;Another interesting feature of &lt;code&gt;textutil&lt;/code&gt; is its ability to concatenate (join together) multiple files into one long document. This command will join three Word documents together into one .rtf:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ textutil -cat rtf article1.doc article2.doc article3.doc
 &lt;/code&gt;&lt;/pre&gt;

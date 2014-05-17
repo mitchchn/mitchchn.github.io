@@ -38,7 +38,7 @@ This black magic is made possible thanks to [Launch Services](https://developer.
 
     $ textutil -convert html article.doc
 
-Another interesting feature of `textuil` is its ability to concatenate (join together) multiple files into one long document. This command will join three Word documents together into one .rtf:
+Another interesting feature of `textutil` is its ability to concatenate (join together) multiple files into one long document. This command will join three Word documents together into one .rtf:
 
     $ textutil -cat rtf article1.doc article2.doc article3.doc
 
