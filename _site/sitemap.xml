@@ -9,6 +9,12 @@
   </url>
   
   <url>
+    <loc>http://mitchchn.me/2014/and-eight-hundred-more/</loc>
+    <lastmod>2014-05-17T00:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://mitchchn.me/2014/os-x-terminal/</loc>
     <lastmod>2014-05-14T00:00:00-04:00</lastmod>
     <priority>0.8</priority>
@@ -71,35 +77,35 @@
   
   <url>
     <loc>http://mitchchn.me/404.html</loc>
-    <lastmod>2014-05-17T14:33:27-04:00</lastmod>
+    <lastmod>2014-05-17T14:34:05-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mitchchn.me/about.html</loc>
-    <lastmod>2014-05-17T14:33:27-04:00</lastmod>
+    <lastmod>2014-05-17T14:34:05-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mitchchn.me/archive.html</loc>
-    <lastmod>2014-05-17T14:33:27-04:00</lastmod>
+    <lastmod>2014-05-17T14:34:05-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mitchchn.me/</loc>
-    <lastmod>2014-05-17T14:33:27-04:00</lastmod>
+    <lastmod>2014-05-17T14:34:05-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://mitchchn.me/indexfound.html</loc>
-    <lastmod>2014-05-17T14:33:27-04:00</lastmod>
+    <lastmod>2014-05-17T14:34:05-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

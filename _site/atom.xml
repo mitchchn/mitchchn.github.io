@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-17T14:33:27-04:00</updated>
+ <updated>2014-05-17T14:34:05-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -94,6 +94,100 @@ $ ssh [server]
 
 &lt;p&gt;There are still more utilities I haven’t had a chance to cover in these two posts—and that’s not including the dozens of essential UNIX commands that are beyond the scope of a Mac-only list. But I hope that you’ve found at least some of these choices helpful for your own workflow. If you have your own favourites that you’d like to share, give me a shout on &lt;a href=&quot;http://mitchchn.me/&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
 
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:html&quot;&gt;
+      &lt;p&gt;Besides: *you* don’t need to learn basic web development—but surely you have an intelligent, non-hacker friend who does. Or maybe you’d just like to scrutinize my code, recommendations, and writing style for mistakes. Both types are welcome here. &lt;a href=&quot;#fnref:html&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:cleaner&quot;&gt;
+      &lt;p&gt;A user on HackerNews suggested that the HTML output of &lt;code&gt;textutil&lt;/code&gt; is cleaner than what you’d get frm TextEdit and MS Word. That’s good to know if true. As I’ve written before, it’s always better to write HTML by hand. &lt;a href=&quot;#fnref:cleaner&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>(And eight hundred more)</title>
+   <link href="http://mitchchn.me/2014/and-eight-hundred-more/"/>
+   <updated>2014-05-17T00:00:00-04:00</updated>
+   <id>http://mitchchn.me/2014/and-eight-hundred-more</id>
+   <content type="html">&lt;p&gt;On Wednesday night I went to bed pretty pleased with myself. My article abut the &lt;a href=&quot;/2014/os-x-terminal&quot;&gt;OS X command line&lt;/a&gt; had found some traction on reddit, pulling in a few hundred visitors over the course of an evening. Not bad for a week-old personal blog, eh?&lt;/p&gt;
+
+&lt;p&gt;I was in for one hell of a surprise. When I woke up on Thursday morning—my 25th birthday—the number of pageviews had reached 30,000. By Friday evening, just over 100,000 people had seen my article. And it feels like a good tenth of them have responded in some way: comments, compliments, and criticism. Gratitude. Typo corrections. Sage advice. Birthday wishes.&lt;/p&gt;
+
+&lt;p&gt;To someone entirely unused to online notoriety, it feels as though a very geeky flash mob materialized in my apartment one evening, stayed for dinner, then went home and reviewed my cooking on Yelp. I am a little dazed.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;With any luck, at least a few of those visitors will invite themselves back. The Terminal post was meant for a more technical audience than my main series, &lt;a href=&quot;/2014/coding-for-journalists-p0&quot;&gt;Coding for Journalists&lt;/a&gt;. But it won’t be the last of its kind. And one of my goals for this place is to explore some of the more basic topics in hackerdom in a way that’s compelling for people of different backgrounds and skill levels. I hope I’m succeeding.&lt;sup id=&quot;fnref:html&quot;&gt;&lt;a href=&quot;#fn:html&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;you-forgot-x&quot;&gt;“You forgot X!”&lt;/h2&gt;
+
+&lt;p&gt;Of course, there are far more than just eight utilities every Terminal user should know.&lt;/p&gt;
+
+&lt;p&gt;In the past couple days, dozens of people have shared with me their own favourite Terminal one-liners and scripts. I’ve learned new tricks about the tools I covered in my article, and discovered others I’d rarely or never touched. In fact, the best thing about the reaction to my article wasn’t the feedback directed at the post, my blog, or myself; it was the discussion that spawned all around the Mac-o-sphere about the command line and how to make the most of it.&lt;/p&gt;
+
+&lt;p&gt;I’m going to highlight a few of the more interesting utilities I missed in this post. It’s also worth taking a look at the comment section on &lt;a href=&quot;https://news.ycombinator.com/item?id=7747982&quot;&gt;Hacker News&lt;/a&gt;. There are troves of good information out there from people much more knowledgeable than I will ever be.&lt;/p&gt;
+
+&lt;p&gt;And now, in no particular order, the shortlist:&lt;/p&gt;
+
+&lt;h3 id=&quot;open&quot;&gt;open&lt;/h3&gt;
+
+&lt;p&gt;I covered &lt;code&gt;open&lt;/code&gt; previously, but it deserves an encore for a feature several people brought to my attention. Typing &lt;code&gt;open -a Safari&lt;/code&gt; will launch Safari—no matter where Safari is located on the system. The same shortcut works for any Mac application. There’s no need to have the full path.&lt;/p&gt;
+
+&lt;p&gt;This black magic is made possible thanks to &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/Carbon/reference/LaunchServicesReference/Reference/reference.html&quot;&gt;Launch Services&lt;/a&gt;, the same system that associates filetypes with their applications in Finder. Thank you to all the users on reddit and Twitter who introduced me to this trick.&lt;/p&gt;
+
+&lt;h3 id=&quot;textutil&quot;&gt;textutil&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;textutil&lt;/code&gt; uses Cocoa’s text engine to manipulate documents and convert them between various formats, including &lt;strong&gt;.doc&lt;/strong&gt;, &lt;strong&gt;.txt&lt;/strong&gt;, &lt;em&gt;.html&lt;/em&gt; and &lt;strong&gt;.rtf&lt;/strong&gt;. For example, here’s how to make an HTML file out of a simple Word document:&lt;sup id=&quot;fnref:cleaner&quot;&gt;&lt;a href=&quot;#fn:cleaner&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ textutil -convert html article.doc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Another interesting feature of &lt;code&gt;textuil&lt;/code&gt; is its ability to concatenate (join together) multiple files into one long document. This command will join three Word documents together into one .rtf:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ textutil -cat rtf article1.doc article2.doc article3.doc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Thanks to &lt;strong&gt;cstross&lt;/strong&gt; from Hacker News for teaching me about &lt;code&gt;textutil&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;sips&quot;&gt;sips&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;sips&lt;/code&gt; is an image processing tool and a native alternative to ImageMagick. Because it’s built on top of Apple’s &lt;a href=&quot;http://en.wikipedia.org/wiki/Core_Image&quot;&gt;Core Image&lt;/a&gt;, the capabilities of &lt;code&gt;sips&lt;/code&gt; go quite deep into areas such as colour profiles. But it’s also a nice tool for quick image manipulations, like converting, resizing, cropping, and rotating.&lt;/p&gt;
+
+&lt;p&gt;This script will convert a folder filled with jpegs to pngs:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ for file in *.jpeg; do sips -s format png $file --out $file.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Dr. Drang has a great &lt;a href=&quot;http://www.leancrew.com/all-this/2014/05/a-little-sips/&quot;&gt;writeup of his sips&lt;/a&gt; and how he uses it in workflows for his clients.&lt;/p&gt;
+
+&lt;h3 id=&quot;ssh-add&quot;&gt;ssh-add&lt;/h3&gt;
+
+&lt;p&gt;If you frequently use &lt;code&gt;ssh&lt;/code&gt; to access a secure server, such as Amazon’s EC2, you should know about &lt;code&gt;ssh-add&lt;/code&gt;. This command lets you save your private key file to the OS X &lt;a href=&quot;http://en.wikipedia.org/wiki/Keychain_\(Apple\)&quot;&gt;Keychain&lt;/a&gt;. Set it up once, and you can use the bare &lt;code&gt;ssh&lt;/code&gt; command without manually including the private key file or messing around with the contents of &lt;code&gt;~/.ssh/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Before:&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ssh -i keyfile.pem [server]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;After:&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ssh-add -k keyfile.pem
+
+$ ssh [server]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Thanks to a Hacker News user, &lt;strong&gt;pling&lt;/strong&gt;, for remnding me about this one.&lt;/p&gt;
+
+&lt;h3 id=&quot;man&quot;&gt;man&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;man&lt;/code&gt; command to bring up help manuals isn’t exclusive to OS X, nor is there much that’s new to say about it. But Twitter user &lt;a href=&quot;http://twitter.com/peternlewis&quot;&gt;@peternlewis&lt;/a&gt; reminded me of a &lt;strong&gt;Terminal.app&lt;/strong&gt; feature that is worth repeating. If you begin typing the name of a command into the &lt;strong&gt;Help&lt;/strong&gt; menu, Terminal will automatically bring up the relevant &lt;code&gt;man&lt;/code&gt; pages.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/man.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are still more utilities I haven’t had a chance to cover in these two posts—and that’s not including the dozens of essential UNIX commands that are beyond the scope of a Mac-only list. But I hope that you’ve found at least some of these choices helpful for your own workflow. If you have your own favourites that you’d like to share, give me a shout on &lt;a href=&quot;http://mitchchn.me/&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:html&quot;&gt;
