@@ -1,7 +1,5 @@
-<header class = "post-header" id="post-content">
-  <div class="post-controls text-center">
-  <time class="post-controls post-date" datetime="{{page.date}}" itemprop="datePublished" content="{{page.date | date: '%Y-%m-%d'}}">{{ page.date | date: "%B %d, %Y" }}</time>&nbsp;&bull;&nbsp;<span itemprop="author">Mitchell Cohen</span>
-  </div>
+<div class = "post-info post-controls text-center" id="post-content">
+  <time class="post-controls post-date" datetime="{{page.date}}" itemprop="datePublished" content="{{page.date | date: '%Y-%m-%d'}}">{{ page.date | date: "%B %d, %Y" }}</time>&nbsp;&bull;&nbsp;<span class="author" itemprop="author">Mitchell Cohen</span>
  <!--{% if page.tag %}
    <p class="category">
   <span>Filed in: </span>
@@ -10,4 +8,4 @@
   </a>
   </p>
   {% endif %}-->
-</header>
+</div>
