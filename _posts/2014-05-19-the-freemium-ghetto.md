@@ -56,7 +56,7 @@ Better labeling for freemium apps would give paid apps more of a chance to succe
 
 The Freemium Ghetto would be good news for freemium creators too---at least in the long run. By reserving the "FREE" label for those apps that truly deserve it, Apple would build consumer trust and confidence in its platform. That's something all developers should want to see happen.
 
-More honesty would help developers avoid the kind of PR blow-ups that happen when children (or childish adults) waste hundreds of dollars on an app or game they believed was be free. Parents would find the three-way distinction easier to understand than the existing choice between Paid, Free and "Free."
+More honesty would help developers avoid the kind of PR blow-ups that happen when children (or childish adults) waste hundreds of dollars on an app or game they believed to be free. Parents would find the three-way distinction easier to understand than the existing choice between Paid, Free and "Free."
 
 But the best part for developers? An exclusive category for apps with IAP would do wonders for exposure. No longer would freemium apps have to compete with free apps for their spot in the rankings. In the Freemium Ghetto, the majority of freemium apps would be more visible than they are now.
 
