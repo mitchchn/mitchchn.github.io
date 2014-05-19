@@ -24,7 +24,7 @@ It's time for Apple to put its foot down and tell non-free apps where they belon
 
 ## Solution 1: Merge Freemium and Paid Apps
 
-I don't hate the freemium business model. Some companies wield in-app purchases [for evil](http://www.escapistmagazine.com/articles/view/video-games/editorials/reviews/10956-Dungeon-Keeper-Mobile-Review-Wallet-Reaper), but plenty of small developers have found[well-deserved success](https://www.fiftythree.com/paper) by releasing their product for free with paid upgrades.
+I don't hate the freemium business model. Some companies wield in-app purchases [for evil](http://www.escapistmagazine.com/articles/view/video-games/editorials/reviews/10956-Dungeon-Keeper-Mobile-Review-Wallet-Reaper), but plenty of small developers have found [well-deserved success](https://www.fiftythree.com/paper) by releasing their product for free with paid upgrades.
 
 Freemium apps can be hugely effective, and that's all the more reason why Apple needs to move them somewhere else. They're are just too good at what they do. Their cost of entry---zilch---is just too compelling. They bulldoze everything in their path.
 
