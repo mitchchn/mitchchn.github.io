@@ -1,5 +1,5 @@
 ---
-title: "How Apple Can Clean Up the App Store: The Freemium Ghetto"
+title: "How Apple Could Clean Up the App Store: The Freemium Ghetto"
 layout: post
 ---
 
@@ -12,6 +12,8 @@ Count the problems in this picture:
 I count eight, not including my crying-out-for-a-lightning-cable battery life and the one-bar reception on Rogers.[^rogers]
 
 Eight of the top ten "Free" iPhone apps on the App Store are not free at all. They contain in-app purchases, as Apple generously points out---in size 8-pt. Helvetica Neue, in text a few shades darker than the white background, right underneath the big blue buttons that scream <span style="color:blue">FREE</span>.
+
+<!--more-->
 
 These warnings are an improvement over the old state of affairs. Apple first introduced [in-app purchase disclaimers](http://www.engadget.com/2013/03/22/apple-adds-in-app-purchase-disclaimer-to-itunes-app-store/) to the App Store in March 2013. At the time, those messages were only visible in iTunes on the desktop, and only on individual app pages. It wasn't until iOS 7.1.1, released a year later in April 2014, that Apple [added those messages](http://www.macrumors.com/2014/04/22/in-app-purchases-top-charts/) to the mobile "Top Charts" listings.
 
@@ -27,7 +29,7 @@ It's time for Apple to put its foot down and tell non-free apps where they belon
 
 I don't hate the in-app purchase ("freemium") business model. While some companies wield in-app purchases [for evil](http://www.escapistmagazine.com/articles/view/video-games/editorials/reviews/10956-Dungeon-Keeper-Mobile-Review-Wallet-Reaper), plenty of small developers have chosen the freemium model as the path to [well-deserved success](https://www.fiftythree.com/paper). Freemium is often more effective and lucrative than any other option, includings ads. Any developer in 2014 would be foolish not to consider it.
 
-But that's all the more reason why Apple needs to do keep freemium apps separate. They're are just too good at what they do. Their cost of entry---nothing---is too compelling for paid apps to compete with, and their presence on the Free list makes it harder for apps that are truly free to distinguish themselves.
+But that's all the more reason why Apple needs to keep freemium apps separate. They're are just too good at what they do. Their cost of entry---nothing---is too compelling for paid apps to compete with, and their presence on the Free list makes it harder for apps that are truly free to distinguish themselves.
 
 If the biggest problem with freemium apps is that they aren't actually free, one possible solution is obvious: group them with the paid apps instead. That way, consumers could browse the Free listings without having to worry about spending a cent, and all monetized apps would compete on the same level.
 

@@ -331,9 +331,8 @@ article {
     }
 
     .post-content ul {
-        list-style: disc !important;
+        list-style: disc;
         li {
-            list-style: disc;
             margin-left: 1em;
         }
     }
@@ -468,6 +467,10 @@ line-height: 1.5714em;
 margin-top: 1.5714em;
 margin-bottom: 0em;
 padding: 0 2px;
+}
+
+ul,li {
+    list-style: none;
 }
 
 /*

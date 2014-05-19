@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-19T01:56:50-04:00</updated>
+ <updated>2014-05-19T02:15:54-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -13,9 +13,9 @@
 
  
  <entry>
-   <title>How Apple Can Clean Up the App Store: The Freemium Ghetto</title>
+   <title>How Apple Could Clean Up the App Store: The Freemium Ghetto</title>
    <link href="http://mitchchn.me/2014/the-freemium-ghetto/"/>
-   <updated>2014-05-19T01:58:45-04:00</updated>
+   <updated>2014-05-19T02:16:27-04:00</updated>
    <id>http://mitchchn.me/2014/the-freemium-ghetto</id>
    <content type="html">&lt;p&gt;Count the problems in this picture:&lt;/p&gt;
 
@@ -26,6 +26,8 @@
 &lt;p&gt;I count eight, not including my crying-out-for-a-lightning-cable battery life and the one-bar reception on Rogers.&lt;sup id=&quot;fnref:rogers&quot;&gt;&lt;a href=&quot;#fn:rogers&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;Eight of the top ten “Free” iPhone apps on the App Store are not free at all. They contain in-app purchases, as Apple generously points out—in size 8-pt. Helvetica Neue, in text a few shades darker than the white background, right underneath the big blue buttons that scream &lt;span style=&quot;color:blue&quot;&gt;FREE&lt;/span&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;These warnings are an improvement over the old state of affairs. Apple first introduced &lt;a href=&quot;http://www.engadget.com/2013/03/22/apple-adds-in-app-purchase-disclaimer-to-itunes-app-store/&quot;&gt;in-app purchase disclaimers&lt;/a&gt; to the App Store in March 2013. At the time, those messages were only visible in iTunes on the desktop, and only on individual app pages. It wasn’t until iOS 7.1.1, released a year later in April 2014, that Apple &lt;a href=&quot;http://www.macrumors.com/2014/04/22/in-app-purchases-top-charts/&quot;&gt;added those messages&lt;/a&gt; to the mobile “Top Charts” listings.&lt;/p&gt;
 
@@ -39,7 +41,7 @@
 
 &lt;p&gt;I don’t hate the in-app purchase (“freemium”) business model. While some companies wield in-app purchases &lt;a href=&quot;http://www.escapistmagazine.com/articles/view/video-games/editorials/reviews/10956-Dungeon-Keeper-Mobile-Review-Wallet-Reaper&quot;&gt;for evil&lt;/a&gt;, plenty of small developers have chosen the freemium model as the path to &lt;a href=&quot;https://www.fiftythree.com/paper&quot;&gt;well-deserved success&lt;/a&gt;. Freemium is often more effective and lucrative than any other option, includings ads. Any developer in 2014 would be foolish not to consider it.&lt;/p&gt;
 
-&lt;p&gt;But that’s all the more reason why Apple needs to do keep freemium apps separate. They’re are just too good at what they do. Their cost of entry—nothing—is too compelling for paid apps to compete with, and their presence on the Free list makes it harder for apps that are truly free to distinguish themselves.&lt;/p&gt;
+&lt;p&gt;But that’s all the more reason why Apple needs to keep freemium apps separate. They’re are just too good at what they do. Their cost of entry—nothing—is too compelling for paid apps to compete with, and their presence on the Free list makes it harder for apps that are truly free to distinguish themselves.&lt;/p&gt;
 
 &lt;p&gt;If the biggest problem with freemium apps is that they aren’t actually free, one possible solution is obvious: group them with the paid apps instead. That way, consumers could browse the Free listings without having to worry about spending a cent, and all monetized apps would compete on the same level.&lt;/p&gt;
 
