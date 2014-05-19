@@ -50,17 +50,19 @@ A better solution requires a third type of app and a third category on the "Top 
 
 All apps now belong to one of three types: **Free**, **Paid**, and **Demo** (freemium).[^demo]
 
-Drawing solid lines between these groups would improve the app-shopping experience immensely. In this system, it's immediately obvious whether there's a possibility of an app ever costing money. There'd be no more need to question whether that free game you just impulse-downloaded has hidden costs. The App Store would feel less like the casino it resembles today.
+This simple reorganization would improve the app-shopping experience immensely. Thanks to the Freemium Ghetto, "Free" would become a safe word. There'd be no more need to question if that game you just impulse-downloaded wanted to sucker you in with hidden costs. Apps would wear their intentions on their sleeves. The App Store would feel less like the casino it resembles today.
 
-Better labeling for freemium apps would give paid apps more of a chance to succeed. Given the choice between an app labeled "FREE" and one that costs a buck, it's obvious what most consumers will choose. But if the decision is between a demo and a full version, the choice is more even-handed.
+More honest labeling would give paid apps more of a chance to succeed. Given the choice between an app labeled "FREE" and one that costs a buck, it's obvious what most consumers will pick. But if the decision is between a demo and a full version, the choice is more even-handed.
 
-The Freemium Ghetto would be good news for freemium creators too---at least in the long run. By reserving the "FREE" label for those apps that truly deserve it, Apple would build consumer trust and confidence in its platform. That's something all developers should want to see happen.
+The Freemium Ghetto would be good news for freemium creators too---at least in the long run. They would avoid the kind of PR blow-ups that emerge when children (or childish adults) waste hundreds of dollars on an app or game they believed to be free. Parents would find the three-way distinction easier to understand than the existing choice between Paid, Free and "Free."
 
-More honesty would help developers avoid the kind of PR blow-ups that happen when children (or childish adults) waste hundreds of dollars on an app or game they believed to be free. Parents would find the three-way distinction easier to understand than the existing choice between Paid, Free and "Free."
+By reserving the "FREE" label for those apps that truly deserve it, Apple would build consumer trust and confidence in its platform. That's something all developers should want to see happen.
 
-But the best part for developers? An exclusive category for apps with IAP would do wonders for exposure. No longer would freemium apps have to compete with free apps for their spot in the rankings. In the Freemium Ghetto, the majority of freemium apps would be more visible than they are now.
+But the best part for developers? An exclusive category for apps with IAP would do wonders for exposure. No longer would freemium apps have to compete with free apps for positions in the rankings. In the Freemium Ghetto, the majority of them would be more visible than they are now.
 
-These are all good reasons why Apple should build the Freemium Ghetto. It might sound like kind of scary change that will make certain big name game publishers angry, but it'd be worth it. Do it for your customers. Do it for your developer community. Do it the future of the App Store.
+These are all reasons why Apple should build the Freemium Ghetto. It might sound like kind of scary change that would make certain big name game publishers angry, but it'd be worth it.
+
+Do it for your customers, Apple. Do it for your developer community. Do it the future of the App Store.
 
 [^rogers]: For Americans: Pretend AT&T and Fox Broadcasting had a Canadian baby out of wedlock. That's Rogers. One part Big Telecom, one part Big Media.
 
