@@ -50,7 +50,7 @@ A better solution requires a third type of app and a third category on the "Top 
 
 All apps now belong to one of three types: **Free**, **Paid**, and **Demo** (freemium).[^demo]
 
-This simple reorganization would improve the app-shopping experience immensely. Thanks to the Freemium Ghetto, "Free" would become a safe word. There'd be no more need to question if that game you just impulse-downloaded wanted to sucker you in with hidden costs. Apps would wear their intentions on their sleeves. The App Store would feel less like the casino it resembles today.
+This simple reorganization would improve the app-shopping experience immensely. Thanks to the Freemium Ghetto, "Free" would become a safe word on the App Store. There'd be no more need to question if that game you just impulse-downloaded wanted to sucker you in with hidden costs. Apps would wear their intentions on their sleeves. The App Store would feel less like the casino it resembles today.
 
 More honest labeling would give paid apps more of a chance to succeed. Given the choice between an app labeled "FREE" and one that costs a buck, it's obvious what most consumers will pick. But if the decision is between a demo and a full version, the choice is more even-handed.
 
