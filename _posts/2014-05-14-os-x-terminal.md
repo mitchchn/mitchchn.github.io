@@ -7,6 +7,8 @@ The OS X Terminal opens up a world of powerful UNIX utilities and scripts. If yo
 
 <!--more-->
 
+**Update:** Thanks to reader feedback, I've written about a few more commands in [(And eight hundred more)](http://www.mitchchn.me/2014/and-eight-hundred-more/).
+
 ## 1. **open**
 
 
