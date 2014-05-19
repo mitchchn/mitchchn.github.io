@@ -34,7 +34,7 @@ Here is what the App Store might look like if freemium and paid apps shared a si
 
 <a href="/public/img/problem_paid.png"><img src="/public/img/problem_paid.png"></a>
 
-This setup might be more respectful to users. But it would be a kick in the pants for developers of traditional paid apps. Only a handful would ever make it near the top ten when pitted against freemium competition.
+This setup might be more respectful of users. But it would be a kick in the pants for developers of traditional paid apps. Only a handful would ever make it near the top ten when pitted against freemium competition.
 
 Freemium developers wouldn't be so happy either. They'd have to put up with the stigma of being labelled "Paid". Nor would consumers be any less confused by the melange of payment options than they are now. Merging lists is a bad deal for everyone.
 
@@ -56,11 +56,11 @@ Better labeling for freemium apps would give paid apps more of a chance to succe
 
 The Freemium Ghetto would be good news for freemium creators too---at least in the long run. By reserving the "FREE" label for those apps that truly deserve it, Apple would build consumer trust and confidence in its platform. That's something all developers should want to see happen.
 
-More honesty would help developers avoid the kind of PR disasters that blow up when children (or childish adults) waste hundreds of dollars on an app or game they mistakingly believed to be free. Parents would find the three-way distinction easier to understand than the existing choice between Paid, Free and "Free."
+More honesty would help developers avoid the kind of PR blow-ups that happen when children (or childish adults) waste hundreds of dollars on an app or game they believed was be free. Parents would find the three-way distinction easier to understand than the existing choice between Paid, Free and "Free."
 
 But the best part for developers? An exclusive category for apps with IAP would do wonders for exposure. No longer would freemium apps have to compete with free apps for their spot in the rankings. In the Freemium Ghetto, the majority of freemium apps would be more visible than they are now.
 
-These are all reasons why Apple should build the Freemium Ghetto. It might sound like kind of scary change that will make certain big name game publishers angry, but it'd be worth it. Do it for your customers. Do it for your developer community. Do it the future of the App Store.
+These are all good reasons why Apple should build the Freemium Ghetto. It might sound like kind of scary change that will make certain big name game publishers angry, but it'd be worth it. Do it for your customers. Do it for your developer community. Do it the future of the App Store.
 
 [^rogers]: For Americans: Pretend AT&T and Fox Broadcasting had a Canadian baby out of wedlock. That's Rogers. One part Big Telecom, one part Big Media.
 
