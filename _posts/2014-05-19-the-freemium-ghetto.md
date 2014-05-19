@@ -1,5 +1,5 @@
 ---
-title: "How Apple Can Solve Freemium Creep: Build The Freemium Ghetto"
+title: "How Apple Can Solve Freemium Creep: Make a Freemium Ghetto"
 layout: post
 ---
 
