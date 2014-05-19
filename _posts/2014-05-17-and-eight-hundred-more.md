@@ -4,7 +4,7 @@ title: "(And eight hundred more)"
 ---
 
 
-On Wednesday night I went to bed pretty pleased with myself. My article abut the [OS X command line](/2014/os-x-terminal) had found some traction on reddit, pulling in a few hundred visitors over the course of an evening. Not bad for a week-old personal blog, eh?
+On Wednesday night I went to bed pretty pleased with myself. My article abut the [OS X command line](/2014/os-x-terminal) had captured the attention of a few hundred visitors that evening. I'd even received a bit of feedback. Not bad for a week-old personal blog, eh?
 
 I was in for one hell of a surprise. When I woke up on Thursday morning---my 25th birthday---the number of pageviews had reached 30,000. By Friday evening, just over 100,000 people had seen my article. And it feels like a good tenth of them have responded in some way: comments, compliments, and criticism. Gratitude. Typo corrections. Sage advice. Birthday wishes.
 
