@@ -1,4 +1,3 @@
-@import "compass/reset";
 
 @import "partials/typography";
 @import "settings";
@@ -306,6 +305,8 @@ $post-all-content: "header,footer,
                     .post-content img,
                     .post-content .banner";
 
+
+
 article {
     margin-top: $equal-margin * 2.5;
 
@@ -314,11 +315,11 @@ article {
         margin-right: auto;
     }
     #{$post-text-content} {
-        width: 90%;
+        width: 95%;
         max-width: 700px;
     }
     .banner {
-        margin-bottom: $equal-margin * 2;
+        margin-bottom: $equal-margin;
         width: 700px;
         max-width: 100%;
     }
@@ -329,6 +330,14 @@ article {
         list-style-type: decimal;
     }
 
+    .post-content ul {
+        list-style: disc !important;
+        li {
+            list-style: disc;
+            margin-left: 1em;
+        }
+    }
+
     .post-content blockquote > p {
         width: 110%;
     }
@@ -336,6 +345,7 @@ article {
     .post-content blockquote > p:last-child {
         margin-bottom: 0;
     }
+
 
     .footnotes {
         border-top: 1px solid #aaa;
@@ -351,6 +361,12 @@ article {
     }
 }
 
+.small-image {
+    width: 80%;
+@media #{$medium} {
+    width: 60%;
+}
+}
 
 a.readlink {
     color: $primary-color;

@@ -4,7 +4,7 @@
  <title>mitchchn.me</title>
  <link href="http://mitchchn.me/atom.xml" rel="self"/>
  <link href="http://mitchchn.me/"/>
- <updated>2014-05-18T04:25:26-04:00</updated>
+ <updated>2014-05-19T01:56:50-04:00</updated>
  <id>http://mitchchn.me</id>
  <author>
    <name>Mitchell Cohen</name>
@@ -13,59 +13,74 @@
 
  
  <entry>
-   <title>How Apple Could Clean Up the App Store: Make a Freemium Ghetto</title>
+   <title>How Apple Can Clean Up the App Store: The Freemium Ghetto</title>
    <link href="http://mitchchn.me/2014/the-freemium-ghetto/"/>
-   <updated>2014-05-18T04:25:26-04:00</updated>
+   <updated>2014-05-19T01:58:45-04:00</updated>
    <id>http://mitchchn.me/2014/the-freemium-ghetto</id>
    <content type="html">&lt;p&gt;Count the problems in this picture:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/public/img/problem_free.png&quot;&gt;&lt;img src=&quot;/public/img/problem_free.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;banner&quot;&gt;
+&lt;a href=&quot;/public/img/problem_free.png&quot;&gt;&lt;img src=&quot;/public/img/problem_free.png&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
 
-&lt;p&gt;There are eight of them (not including my crying-out-for-a-lightning-cable battery levels and the one-bar reception on Rogers&lt;sup id=&quot;fnref:rogers&quot;&gt;&lt;a href=&quot;#fn:rogers&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;).&lt;/p&gt;
+&lt;p&gt;I count eight, not including my crying-out-for-a-lightning-cable battery life and the one-bar reception on Rogers.&lt;sup id=&quot;fnref:rogers&quot;&gt;&lt;a href=&quot;#fn:rogers&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;Eight of the top ten “Free” iPhone apps on the App Store are not free at all. They contain in-app purchases. I know this for a fact because Apple helpfully points it out in size 7-pt. Helvetica Neue—in text a few shades darker than the white App Store background—right underneath big blue buttons that scream “FREE”.&lt;/p&gt;
+&lt;p&gt;Eight of the top ten “Free” iPhone apps on the App Store are not free at all. They contain in-app purchases, as Apple generously points out—in size 8-pt. Helvetica Neue, in text a few shades darker than the white background, right underneath the big blue buttons that scream &lt;span style=&quot;color:blue&quot;&gt;FREE&lt;/span&gt;.&lt;/p&gt;
 
-&lt;p&gt;Believe it or not, this tiny concession to transparency is an improvement over the old state of affairs. Apple first introduced &lt;a href=&quot;http://www.engadget.com/2013/03/22/apple-adds-in-app-purchase-disclaimer-to-itunes-app-store/&quot;&gt;in-app purchase disclaimers&lt;/a&gt; to the App Store in March 2013. At the time, those messages were only visible in iTunes on the desktop, and only on individual app pages. It wasn’t until iOS 7.1.1, released a year later in April 2014, that Apple &lt;a href=&quot;http://www.macrumors.com/2014/04/22/in-app-purchases-top-charts/&quot;&gt;added those warnings&lt;/a&gt; to the mobile “Top Charts” listings.&lt;/p&gt;
+&lt;p&gt;These warnings are an improvement over the old state of affairs. Apple first introduced &lt;a href=&quot;http://www.engadget.com/2013/03/22/apple-adds-in-app-purchase-disclaimer-to-itunes-app-store/&quot;&gt;in-app purchase disclaimers&lt;/a&gt; to the App Store in March 2013. At the time, those messages were only visible in iTunes on the desktop, and only on individual app pages. It wasn’t until iOS 7.1.1, released a year later in April 2014, that Apple &lt;a href=&quot;http://www.macrumors.com/2014/04/22/in-app-purchases-top-charts/&quot;&gt;added those messages&lt;/a&gt; to the mobile “Top Charts” listings.&lt;/p&gt;
 
-&lt;p&gt;The move was more than past due. (It was also prompted by an FTC investigation, $32-million in refunds, and a media backlash.) But it wasn’t nearly enough to stem the confusion and annoyance caused by freemium apps cluttering up the Free list. &lt;/p&gt;
+&lt;p&gt;That last change was more than past due. (It was also prompted by an FTC investigation, $32-million in refunds, and a media backlash.) But it  fell short of the mark in so many ways. It failed to address the source of all the consumer confusion over in-app purchases.&lt;/p&gt;
 
-&lt;p&gt;I don’t hate the in-app purchase model (also known as “fremium” or “free-to-play” in the gaming world). While [some companies] have been known to use in-app purchases &lt;a href=&quot;http://www.escapistmagazine.com/articles/view/video-games/editorials/reviews/10956-Dungeon-Keeper-Mobile-Review-Wallet-Reaper&quot;&gt;for evil&lt;/a&gt;, many small developers have achieved well-earned success thanks to the same model. By all measures, freemium is an attractive way of doing business on mobile. Any developer in 2014 would be foolish not to consider it.&lt;/p&gt;
+&lt;p&gt;Apps with in-app purchases are still too easy to mistake for their free counterparts. They’re still cluttering up parts of the App Store where they don’t belong. And they’re more popular than ever, crowding out free and paid apps alike. None of these problems can be fixed with disclaimers.&lt;/p&gt;
 
-&lt;p&gt;But that’s all the more reason why Apple needs to do a better job at separating apps with hidden purchases from their free and paid counterparts. Freemium apps are just too good at what they do. Their lack of an upfront cost is too compelling for paid apps to compete with, and it also makes it harder for apps that are truly free to distinguish themselves.&lt;/p&gt;
+&lt;p&gt;It’s time for Apple to put its foot down and tell non-free apps where they belong. It’s time they were sent to the Freemium Ghetto.&lt;/p&gt;
 
-&lt;h2 id=&quot;not-all-non-free-apps-are-alike&quot;&gt;Not all non-free apps are alike&lt;/h2&gt;
+&lt;h2 id=&quot;solution-1-merge-freemium-and-paid-apps&quot;&gt;Solution 1: Merge Freemium and Paid Apps&lt;/h2&gt;
 
-&lt;p&gt;If the biggest problem with freemium apps is that they aren’t actually free, one possible solution is obvious: group them with the paid apps instead. That way, consumers could browse the free listings without worrying about having to spend a cent, and all monetized apps would be put on the same level. This kind of change would by easy for Apple to implement, and it’s alluring in its simplicity. But I also think it’s the wrong approach, for consumers as well as developers.&lt;/p&gt;
+&lt;p&gt;I don’t hate the in-app purchase (“freemium”) business model. While some companies wield in-app purchases &lt;a href=&quot;http://www.escapistmagazine.com/articles/view/video-games/editorials/reviews/10956-Dungeon-Keeper-Mobile-Review-Wallet-Reaper&quot;&gt;for evil&lt;/a&gt;, plenty of small developers have chosen the freemium model as the path to &lt;a href=&quot;https://www.fiftythree.com/paper&quot;&gt;well-deserved success&lt;/a&gt;. Freemium is often more effective and lucrative than any other option, includings ads. Any developer in 2014 would be foolish not to consider it.&lt;/p&gt;
 
-&lt;p&gt;This is what the App Store might look like if freemium and paid apps shared a single “Paid” list:&lt;/p&gt;
+&lt;p&gt;But that’s all the more reason why Apple needs to do keep freemium apps separate. They’re are just too good at what they do. Their cost of entry—nothing—is too compelling for paid apps to compete with, and their presence on the Free list makes it harder for apps that are truly free to distinguish themselves.&lt;/p&gt;
+
+&lt;p&gt;If the biggest problem with freemium apps is that they aren’t actually free, one possible solution is obvious: group them with the paid apps instead. That way, consumers could browse the Free listings without having to worry about spending a cent, and all monetized apps would compete on the same level.&lt;/p&gt;
+
+&lt;p&gt;This option is alluring in its simplicity. But it’s the wrong approach, both for consumers and developers. Here is what the App Store might look like if freemium and paid apps shared a single “Paid” list:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/public/img/problem_paid.png&quot;&gt;&lt;img src=&quot;/public/img/problem_paid.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;See the problems? Mixing “free” apps with paid apps would be just as confusing for consumers as mixing “free” apps with free apps. Nor would this solution do much to level the playing field for paid apps: I can only speculate as to the true order of such a list, but it’s a no-brainer that free apps with IAP would continue to outpace those with a cost of entry.&lt;/p&gt;
+&lt;p&gt;See the problem? In this scenario, only a handful of paid apps would make it near the top ten.&lt;sup id=&quot;fnref:speculate&quot;&gt;&lt;a href=&quot;#fn:speculate&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; The playing field would be far from level.
+In a merged list, freemium apps would have to put up with the stigma of the “Paid” label, and paid apps would be buried even deeper by the freemium competition. Nor would consumers be any less confused by the melange of payment outcomes than they are now. It’s a bad deal for everyone.&lt;/p&gt;
 
-&lt;p&gt;On a merged list, developers of freemium apps would have to deal with the added stigma of the “Paid” label, and developers of paid apps would find themselves being pushed far down the list by “free” competition. It’s a bad deal for everyone.&lt;sup id=&quot;fnref:kind&quot;&gt;&lt;a href=&quot;#fn:kind&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h2 id=&quot;solution-2-the-freemium-ghetto&quot;&gt;Solution 2: The Freemium Ghetto&lt;/h2&gt;
 
-&lt;h2 id=&quot;the-freemium-ghetto&quot;&gt;The Freemium Ghetto&lt;/h2&gt;
+&lt;p&gt;A better solution involves adding a third category to the “Top Charts” screen. The existing “Top Grossing” list would have to hit the chopping board, but it’s a metric that’s almost completely meaningless for consumers anyway. In its place, a new list would rise up—one where freemium apps can thrive. &lt;/p&gt;
 
-&lt;p&gt;A better solution involves adding a third list to the “Top Charts” screen. Notice that I said third, not fourth: “Top Grossing” is a metric that’s almost completely meaningless for consumers, and it should be removed or hidden somewhere less prominent. In its place, there would be a new list—one where freemium apps can thrive. Behold: &lt;strong&gt;The Freemium Ghetto&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Behold: &lt;strong&gt;The Freemium Ghetto&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/freemium_ghetto.png&quot; width=&quot;65%&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;text-center banner&quot;&gt;
+&lt;img src=&quot;/public/img/freemium_ghetto.png&quot; class=&quot;small-image&quot; /&gt;
+&lt;/div&gt;
 
-&lt;p&gt;I chose the word “Demo” for my mockup because I’m fond of its connotations from the gaming world. Perhaps Apple could come up with a better moniker. It doesn’t matter. What matters is that there’s a clear separation between the three kinds of apps on the App Store: &lt;strong&gt;Free&lt;/strong&gt;, &lt;strong&gt;Paid&lt;/strong&gt;, and &lt;strong&gt;Demo&lt;/strong&gt; (Freemium).&lt;/p&gt;
+&lt;p&gt;I’m fond of the word “Demo” because of its connotations from the gaming world. Perhaps Apple could come up with a better moniker. It doesn’t matter. What matters is that there’s a clear separation between the three types of apps on the App Store: &lt;strong&gt;Free&lt;/strong&gt;, &lt;strong&gt;Paid&lt;/strong&gt;, and &lt;strong&gt;Demo&lt;/strong&gt; (freemium).&lt;/p&gt;
 
-&lt;p&gt;Drawing solid lines between these categories would help consumers immensely. It would remove the cognitive overload of having to figure out if an app is really “free”. Even off the chart, apps with IAP would signify their status by wearing a “Demo” button instead of a “Free” button. The addition of a third category would also open up space on the Free list, giving truly free apps (and their developers) more exposure.&lt;/p&gt;
+&lt;p&gt;Drawing solid lines between these categories would improve the app-shopping experience immensely. In this system, it’s immediately obvious whether there’s a possibility of an app ever costing money. Gone would be the cognitive friction of having to question whether that free app you just impulse-downloaded comes with hidden costs. The App Store would feel less like a sketchy casino than it does today.&lt;/p&gt;
 
-&lt;p&gt;Removing the word “Free” from freemium apps would give paid apps more of a chance to succeed. Given a choice between a free app and an app that costs any amount of money, it’s obvious what a consumer will choose. If that choice is between a demo and a full app that costs 99 cents, the decision is a little more balanced.&lt;/p&gt;
+&lt;p&gt;Better labeling for freemium apps would give paid apps more of a chance to succeed. Given the option of an app labeled “FREE” versus one that costs any amount of money, it’s obvious which one most consumers will choose. But if the decision is between a demo and a full version that costs 99 cents, the choice is more even-handed.&lt;/p&gt;
 
-&lt;p&gt;But I also believe the Freemium Ghetto could be a good thing for freemium creators, at least in the long run. By being more honest about their business model, developers could avoid the kind of PR disasters that happen when children (or childish adults) accidentally waste hundreds on an app that they believed was free. And having a separate ranking would elevate freemium apps that are currently lower down on the Free list. In the Freemium Ghetto, those apps would be more visible than they were before.&lt;/p&gt;
+&lt;p&gt;The Freemium Ghetto would be good news for freemium creators too—at least in the long run. By restricting the “free” label only to those apps that deserve it, Apple would build consumer trust and confidence in its platform. That’s something all developers should want to see happen. And by being more honest about their business model, developers would avoid the kind of PR disasters that happen when children (or childish adults) waste hundreds of dollars on an app or game they mistakingly believed to be free.&lt;/p&gt;
+
+&lt;p&gt;Clearer categorization would make parental controls easier for device owners to understand and set up. Don’t want your kids to spend any money on their iPhones? Just disable purchases for “demos” or disable access to demos entirely. More transparency and control would go a long way to lift the negative stigma weighing the freemium model down. (I’ve never heard of a developer being attacked for calling a demo a demo.)&lt;/p&gt;
+
+&lt;p&gt;But the best part for developers? An exclusive category for apps with IAP would help those apps get more exposure. No longer would they have to compete with free apps for their positions in the ranking. In the Freemium Ghetto, the majority of freemium apps would be more visible than they are now.&lt;/p&gt;
+
+&lt;p&gt;So think about it, Apple: embrace the Freemium Ghetto. It might sound like kind of scary change that will make certain big name game publishers angry, but it’d be worth it. Do it for your customers. Do it for your developer community. Do it the future of the App Store.&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:rogers&quot;&gt;
       &lt;p&gt;For Americans: Pretend AT&amp;amp;T and Fox Broadcasting had a Canadian baby out of wedlock. That’s Rogers. One part Big Telecom, one part Big Media. &lt;a href=&quot;#fnref:rogers&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:kind&quot;&gt;
-      &lt;p&gt;In fact, my imagined list is probably too kind to paid apps: in the absence of truly free competition, freemium apps would fare even better in the rankings than they do already. Merging freemium and paid apps onto a single list would only &lt;em&gt;further disadvantage paid apps&lt;/em&gt; on the App Store. And in today’s mobile market, paid apps need all the help they can get. &lt;a href=&quot;#fnref:kind&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:speculate&quot;&gt;
+      &lt;p&gt;The true order is anyone’s guess, but it’s a no-brainer that apps that are free to download would far outpace those with an upfront cost. &lt;a href=&quot;#fnref:speculate&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
