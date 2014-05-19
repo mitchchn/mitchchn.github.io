@@ -64,7 +64,7 @@ These are all reasons why Apple should build the Freemium Ghetto. It might sound
 
 Do it for your customers, Apple. Do it for your developer community. Do it the future of the App Store.
 
-*Disagree? Tell me! [@mitchchn](http://twitter.com/mitchchn)*
+*Agree? Not so much? Tell me: [@mitchchn](http://twitter.com/mitchchn)*
 
 [^rogers]: For Americans: Pretend AT&T and Fox Broadcasting had a Canadian baby out of wedlock. That's Rogers. One part Big Telecom, one part Big Media.
 
