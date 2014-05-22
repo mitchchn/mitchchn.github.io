@@ -34,7 +34,7 @@ Here is what the App Store might look like if freemium and paid apps shared a si
 
 <a href="/public/img/problem_paid.png"><img src="/public/img/problem_paid.png"></a>
 
-This setup might seem come across as more respectful of App Store browsers. But it's got its problems. A merged list would be a slap in the face to developers of traditional paid apps. Only a handful would ever make it near the top ten when pitted against freemium competition.
+This setup might come across as more respectful of App Store browsers. But it's got its problems. A merged list would be a slap in the face to developers of traditional paid apps. Only a handful would ever make it near the top ten when pitted against freemium competition.
 
 Freemium developers wouldn't be so thrilled with this arrangement either. They'd have to put up with the stigma of being called "Paid". Nor would consumers be any less confused by the melange of payment options than they are now. Merging lists is a bad deal for everyone.
 
